@@ -112,7 +112,7 @@ export default async function HomePage() {
           HERO — Playful + Business
           ═══════════════════════════════════════ */}
       <section className="hero-section-home bg-dots" style={{ position: 'relative' }}>
-        <div className="hero-container-home" style={{ width: '100%', maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '60px', flexWrap: 'wrap' }}>
+        <div className="hero-container-home" style={{ width: '100%', maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '60px', flexWrap: 'wrap' }}>
 
           {/* Left — copy */}
           <div className="anim-slide-left hero-content-home" style={{ flex: '1.2', minWidth: '300px' }}>

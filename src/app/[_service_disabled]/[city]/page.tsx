@@ -210,7 +210,7 @@ export default async function DynamicPage({ params }: PageProps) {
           HERO — city-specific
           ═══════════════════════════════════════ */}
       <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
-        <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '50px', flexWrap: 'wrap' }}>
+        <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '50px', flexWrap: 'wrap' }}>
 
           {/* Left — copy */}
           <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
