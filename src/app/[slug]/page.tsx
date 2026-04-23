@@ -7,12 +7,10 @@ import { notFound } from "next/navigation";
 import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import CoverageSection from "@/components/CoverageSection";
 
 interface PageProps {
   params: Promise<{
-    service: string;
-    city: string;
+    slug: string;
   }>;
 }
 
@@ -51,74 +49,92 @@ const ZapIcon = ({ size = 24, ...props }: IconProps) => (
   </svg>
 );
 
-
-
-async function getPageData(serviceSlug: string, citySlug: string) {
+async function getPageData(slug: string) {
   const cities = getCities();
   const services = getServices();
 
-  const city = cities.find(c => c.slug === citySlug);
-  const service = services.find(s => s.slug === serviceSlug);
+  // Sort services by length descending to match longest prefix first
+  const sortedServices = [...services].sort((a, b) => b.slug.length - a.slug.length);
+  
+  let matchedService: Service | undefined;
+  let matchedCity: City | undefined;
 
-  if (!city || !service) return null;
+  for (const service of sortedServices) {
+    const prefix = service.slug + '-';
+    if (slug.startsWith(prefix)) {
+      const citySlug = slug.slice(prefix.length);
+      const city = cities.find(c => c.slug === citySlug);
+      if (city) {
+        matchedService = service;
+        matchedCity = city;
+        break;
+      }
+    }
+  }
+
+  if (!matchedCity || !matchedService) return null;
+
+  const city = matchedCity;
+  const service = matchedService;
+  const serviceSlug = service.slug;
 
   let content = "";
-  if (service.slug.includes('24h')) {
+  if (serviceSlug.includes('24h')) {
     content = getSEOContent('pomocdrogowa24h.md');
-  } else if (service.slug.includes('tania-laweta')) {
+  } else if (serviceSlug.includes('tania-laweta')) {
     content = getSEOContent('tanialaweta.md');
-  } else if (service.slug.includes('holowanie-samochodu')) {
+  } else if (serviceSlug.includes('holowanie-samochodu')) {
     content = getSEOContent('holowaniesamochodumiasto.md');
-  } else if (service.slug.includes('holowanie-auta') || service.slug.includes('holowanie-auto')) {
+  } else if (serviceSlug.includes('holowanie-auta') || serviceSlug.includes('holowanie-auto')) {
     content = getSEOContent('holowanieautamiasto.md');
-  } else if (service.slug.includes('holowanie')) {
+  } else if (serviceSlug.includes('holowanie')) {
     content = getSEOContent('holowaniemiasto.md');
-  } else if (service.slug.includes('pomoc-drogowa-cennik')) {
+  } else if (serviceSlug.includes('pomoc-drogowa-cennik')) {
     content = getSEOContent('pomocdrogowacennik.md');
-  } else if (service.slug.includes('laweta-cena-za-km')) {
+  } else if (serviceSlug.includes('laweta-cena-za-km')) {
     content = getSEOContent('lawetacenazakm.md');
-  } else if (service.slug.includes('laweta-calodobowa')) {
+  } else if (serviceSlug.includes('laweta-calodobowa')) {
     content = getSEOContent('lawetacalodobowamiasto.md');
-  } else if (service.slug.includes('holowanie-z-oc-sprawcy')) {
+  } else if (serviceSlug.includes('holowanie-z-oc-sprawcy')) {
     content = getSEOContent('holowaniezocsprawcymiasto.md');
-  } else if (service.slug.includes('laweta')) {
+  } else if (serviceSlug.includes('laweta')) {
     content = getSEOContent('lawetamiasto.md');
-  } else if (service.slug.includes('szybka-pomoc-drogowa')) {
+  } else if (serviceSlug.includes('szybka-pomoc-drogowa')) {
     content = getSEOContent('szybkapomocdrogowamiasto.md');
-  } else if (service.slug.includes('transport-samochodow')) {
+  } else if (serviceSlug.includes('transport-samochodow')) {
     content = getSEOContent('transportsamochodow.md');
-  } else if (service.slug.includes('wyciaganie-z-rowu')) {
+  } else if (serviceSlug.includes('wyciaganie-z-rowu')) {
     content = getSEOContent('wyciaganiezrowu.md');
-  } else if (service.slug.includes('mobilny-serwis-opon')) {
+  } else if (serviceSlug.includes('mobilny-serwis-opon')) {
     content = getSEOContent('mobilnyserwisoponmiasto.md');
-  } else if (service.slug.includes('awaryjne-odpalanie-auta')) {
+  } else if (serviceSlug.includes('awaryjne-odpalanie-auta')) {
     content = getSEOContent('awaryjneodpalenieautamiasto.md');
-  } else if (service.slug.includes('tanie-holowanie')) {
+  } else if (serviceSlug.includes('tanie-holowanie')) {
     content = getSEOContent('tanieholowanie.md');
-  } else if (service.slug.includes('polecana') || service.slug.includes('polecane')) {
-    if (service.slug.includes('autoholowanie')) {
+  } else if (serviceSlug.includes('polecana') || serviceSlug.includes('polecane')) {
+    if (serviceSlug.includes('autoholowanie')) {
       content = getSEOContent('polecaneautoholowanie.md');
-    } else if (service.slug.includes('holowanie')) {
+    } else if (serviceSlug.includes('holowanie')) {
       content = getSEOContent('polecaneholowanie.md');
-    } else if (service.slug.includes('autolaweta')) {
+    } else if (serviceSlug.includes('autolaweta')) {
       content = getSEOContent('polecanaautolaweta.md');
-    } else if (service.slug.includes('laweta')) {
+    } else if (serviceSlug.includes('laweta')) {
       content = getSEOContent('polecanalaweta.md');
-    } else if (service.slug.includes('auto-pomoc')) {
+    } else if (serviceSlug.includes('auto-pomoc')) {
       content = getSEOContent('polecanaautopomoc_v2.md');
-    } else if (service.slug.includes('autopomoc')) {
+    } else if (serviceSlug.includes('autopomoc')) {
       content = getSEOContent('polecanaautopomoc.md');
     } else {
       content = getSEOContent('polecanapomoc.md');
     }
-  } else if (service.slug.includes('najtansza-pomoc-drogowa') || service.slug.includes('tania-pomoc-drogowa')) {
+  } else if (serviceSlug.includes('najtansza-pomoc-drogowa') || serviceSlug.includes('tania-pomoc-drogowa')) {
     content = getSEOContent('najtanszapomocdrogowa.md');
   } else {
     content = getSEOContent('pomocdrogowamiasto.md');
   }
 
   const serviceTitle = service.template.replace(/\[Miasto\]/g, city.name);
-  let seoContent = content ? replaceSEOTemplate(content, city, '[TWÓJ NUMER TELEFONU]') : "";
+  let seoContent = content ? replaceSEOTemplate(content, city, '572 272 930') : "";
 
   seoContent = seoContent
     .replace(/\[H2\]\s?/g, '')
@@ -133,7 +149,7 @@ async function getPageData(serviceSlug: string, citySlug: string) {
     </div>`)
     .replace(/\*\*(.*?)\*\*/g, '<strong style="color: var(--primary); font-weight: 900;">$1</strong>')
     .replace(/\n\n/g, '</p><p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">')
-    .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 950; color: var(--primary); font-size: 1.1em; letter-spacing: -0.5px; white-space: nowrap;">572 272 930</span>')
+    .replace(/572 272 930/g, '<span class="seo-phone" style="font-weight: 950; color: var(--primary); font-size: 1.1em; letter-spacing: -0.5px; white-space: nowrap;">572 272 930</span>')
     .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 900; color: var(--secondary);">laweciarz.pro</strong>');
 
   seoContent = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${seoContent}</p>`;
@@ -143,8 +159,8 @@ async function getPageData(serviceSlug: string, citySlug: string) {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { service: serviceSlug, city: citySlug } = await params;
-  const data = await getPageData(serviceSlug, citySlug);
+  const { slug } = await params;
+  const data = await getPageData(slug);
   if (!data) return { title: "Nie znaleziono - laweciarz.pro" };
   const { miejscownik } = declineCity(data.city.name);
   return {
@@ -154,17 +170,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function DynamicPage({ params }: PageProps) {
-  const { service: serviceSlug, city: citySlug } = await params;
-  const data = await getPageData(serviceSlug, citySlug);
+  const { slug } = await params;
+  const data = await getPageData(slug);
   if (!data) notFound();
 
   const { city, service, serviceTitle, contentChunks } = data;
   const { miejscownik } = declineCity(city.name);
 
-  // ─── City-tier logic for dynamic effects ───────────────────────────
+  // ─── City-tier logic for dynamic effects
   const MAJOR_CITIES = ['warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk', 'szczecin', 'bydgoszcz', 'lublin', 'katowice', 'rzeszow', 'bialystok'];
   const MEDIUM_CITIES = ['torun', 'gliwice', 'zabrze', 'bytom', 'chorzow', 'ruda-slaska', 'zielona-gora', 'opole', 'elblag', 'plock', 'walbrzych', 'radom', 'olsztyn', 'kielce'];
-  const tier = MAJOR_CITIES.includes(citySlug) ? 'major' : MEDIUM_CITIES.includes(citySlug) ? 'medium' : 'small';
+  const tier = MAJOR_CITIES.includes(city.slug) ? 'major' : MEDIUM_CITIES.includes(city.slug) ? 'medium' : 'small';
   const cityMeta = {
     major: { eta: '15', drivers: '12+', label: 'DUŻE MIASTO', etaLabel: 'błyskawiczny dojazd' },
     medium: { eta: '15', drivers: '6+', label: 'MIASTO', etaLabel: 'błyskawiczny dojazd' },
@@ -175,11 +191,6 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-main.webp', '/images/hero-1.webp', '/images/hero-2.webp',
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
-
-  const allCities = getCities();
-  const districtCities = allCities
-    .filter(c => c.district === city.district && c.slug !== city.slug)
-    .slice(0, 24);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -206,13 +217,8 @@ export default async function DynamicPage({ params }: PageProps) {
       />
       <Navigation locationText={city.name.toUpperCase()} />
 
-      {/* ═══════════════════════════════════════
-          HERO — city-specific
-          ═══════════════════════════════════════ */}
       <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
         <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '50px', flexWrap: 'wrap' }}>
-
-          {/* Left — copy */}
           <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
             <div className="hero-badge-container">
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
@@ -231,10 +237,7 @@ export default async function DynamicPage({ params }: PageProps) {
                 <span key={i}>
                   {part.replace(/\s24h/gi, '\u00A024H')}
                   {i < arr.length - 1 && (
-                    <span style={{
-                      color: 'var(--primary)',
-                      display: 'inline-block'
-                    }}>{city.name}</span>
+                    <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
                   )}
                 </span>
               ))}
@@ -257,7 +260,6 @@ export default async function DynamicPage({ params }: PageProps) {
             </a>
           </div>
 
-          {/* Right — image with city badge */}
           <div className="anim-slide-right hero-image-slug" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
             <div className="hero-image-frame">
               <Image
@@ -270,17 +272,10 @@ export default async function DynamicPage({ params }: PageProps) {
               />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4), transparent 50%)' }} />
             </div>
-
-
-
-
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          STATS BAR — city-specific numbers
-          ═══════════════════════════════════════ */}
       <section style={{ background: 'var(--secondary)', color: 'white', borderTop: '8px solid var(--primary)' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
           {[
@@ -300,9 +295,6 @@ export default async function DynamicPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          SEO CONTENT
-          ═══════════════════════════════════════ */}
       <section style={{ background: 'white', padding: '80px 20px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           {contentChunks.map((chunk, index) => {
@@ -334,9 +326,6 @@ export default async function DynamicPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          TRUST FEATURES — matching homepage cards
-          ═══════════════════════════════════════ */}
       <section style={{ padding: '80px 20px', background: '#f8fafc' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <div style={{ marginBottom: '50px' }}>
@@ -347,128 +336,37 @@ export default async function DynamicPage({ params }: PageProps) {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
             {[
-              { 
-                icon: <TruckIcon size={32} />, 
-                title: 'PLATFORMY HYDRAULICZNE', 
-                desc: `Specjalistyczny sprzęt do bezpiecznego transportu aut luksusowych i sportowych w ${miejscownik}.` 
-              },
-              { 
-                icon: <ShieldIcon size={32} />, 
-                title: 'PEŁNE OCP 500 000 ZŁ', 
-                desc: 'Twoje auto jest w pełni ubezpieczone. Gwarantujemy najwyższy standard ochrony ładunku.' 
-              },
-              { 
-                icon: <WalletIcon size={32} />, 
-                title: 'PŁATNOŚĆ KARTĄ / BLIK', 
-                desc: 'Wygodne rozliczenia bezgotówkowe na miejscu zdarzenia. Akceptujemy karty i płatności mobilne.' 
-              },
-              { 
-                icon: <ZapIcon size={32} />, 
-                title: 'DOSTĘPNOŚĆ 24H/7', 
-                desc: 'Działamy non-stop, również w niedziele i święta. Zawsze gotowi do akcji w Twojej okolicy.' 
-              },
+              { icon: <TruckIcon size={32} />, title: 'PLATFORMY HYDRAULICZNE', desc: `Specjalistyczny sprzęt do bezpiecznego transportu aut luksusowych i sportowych w ${miejscownik}.` },
+              { icon: <ShieldIcon size={32} />, title: 'PEŁNE OCP 500 000 ZŁ', desc: 'Twoje auto jest w pełni ubezpieczone. Gwarantujemy najwyższy standard ochrony ładunku.' },
+              { icon: <WalletIcon size={32} />, title: 'PŁATNOŚĆ KARTĄ / BLIK', desc: 'Wygodne rozliczenia bezgotówkowe na miejscu zdarzenia. Akceptujemy karty i płatności mobilne.' },
+              { icon: <ZapIcon size={32} />, title: 'DOSTĘPNOŚĆ 24H/7', desc: 'Działamy non-stop, również w niedziele i święta. Zawsze gotowi do akcji w Twojej okolicy.' },
             ].map((feat, i) => (
-              <div key={i} className={`card-lift anim-slide-up anim-delay-${i + 1}`}
-                style={{ 
-                  padding: '40px 30px', 
-                  background: 'white', 
-                  borderRadius: '32px', 
-                  boxShadow: '0 15px 45px rgba(0,0,0,0.05)',
-                  border: '1px solid #f1f5f9',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}>
-                <div style={{ 
-                  width: '60px', 
-                  height: '60px', 
-                  borderRadius: '16px', 
-                  background: 'rgba(220,38,38,0.1)', 
-                  color: 'var(--primary)', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center',
-                  marginBottom: '28px'
-                }}>
+              <div key={i} className={`card-lift anim-slide-up anim-delay-${i + 1}`} style={{ padding: '40px 30px', background: 'white', borderRadius: '32px', boxShadow: '0 15px 45px rgba(0,0,0,0.05)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(220,38,38,0.1)', color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '28px' }}>
                   {feat.icon}
                 </div>
-                <h3 style={{ 
-                  fontWeight: 950, 
-                  fontSize: '1.2rem', 
-                  textTransform: 'uppercase', 
-                  marginBottom: '15px', 
-                  letterSpacing: '-0.5px' 
-                }}>
-                  {feat.title}
-                </h3>
-                <p style={{ 
-                  fontWeight: 600, 
-                  color: '#64748b', 
-                  fontSize: '0.95rem', 
-                  lineHeight: 1.6 
-                }}>
-                  {feat.desc}
-                </p>
-                <div style={{ 
-                  position: 'absolute', 
-                  top: 0, 
-                  right: 0, 
-                  width: '100px', 
-                  height: '100px', 
-                  background: 'linear-gradient(135deg, transparent 80%, rgba(220,38,38,0.03) 0%)',
-                  pointerEvents: 'none'
-                }} />
+                <h3 style={{ fontWeight: 950, fontSize: '1.2rem', textTransform: 'uppercase', marginBottom: '15px', letterSpacing: '-0.5px' }}>{feat.title}</h3>
+                <p style={{ fontWeight: 600, color: '#64748b', fontSize: '0.95rem', lineHeight: 1.6 }}>{feat.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          MASSIVE CTA — city-specific
-          ═══════════════════════════════════════ */}
-      <section style={{
-        background: 'var(--primary)', color: 'white',
-        padding: '100px 20px', textAlign: 'center',
-        position: 'relative', overflow: 'hidden',
-        borderTop: '8px solid var(--secondary)'
-      }}>
-        <div style={{ position: 'absolute', top: '-80px', left: '-80px', width: '350px', height: '350px', borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
-        <div style={{ position: 'absolute', bottom: '-100px', right: '-60px', width: '420px', height: '420px', borderRadius: '50%', background: 'rgba(0,0,0,0.12)' }} />
+      <section style={{ background: 'var(--primary)', color: 'white', padding: '100px 20px', textAlign: 'center', position: 'relative', overflow: 'hidden', borderTop: '8px solid var(--secondary)' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-          <div className="badge" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', marginBottom: '20px' }}>
-            JESTEŚMY W {city.name.toUpperCase()}
-          </div>
-          <h2 style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 950, marginBottom: '20px', lineHeight: 1, textTransform: 'uppercase', letterSpacing: '-2px' }}>
-            AWARIA POJAZDU<br />W {city.name.toUpperCase()}?
-          </h2>
-          <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.5rem)', fontWeight: 900, marginBottom: '44px', opacity: 0.88 }}>
-            NIE CZEKAJ — DOJAZD W {cityMeta.eta} MINUT!
-          </p>
-          <a href="tel:+48572272930" className="btn-power hero-massive-btn" style={{
-            background: 'white', color: 'var(--primary)',
-            fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', padding: '28px 48px',
-            boxShadow: '0 12px 40px rgba(0,0,0,0.2), 0 8px 0 rgba(0,0,0,0.2)',
-            gap: '16px', maxWidth: '500px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            margin: '0 auto'
-          }}>
+          <div className="badge" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', marginBottom: '20px' }}>JESTEŚMY W {city.name.toUpperCase()}</div>
+          <h2 style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 950, marginBottom: '20px', lineHeight: 1, textTransform: 'uppercase', letterSpacing: '-2px' }}>AWARIA POJAZDU<br />W {city.name.toUpperCase()}?</h2>
+          <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.5rem)', fontWeight: 900, marginBottom: '44px', opacity: 0.88 }}>NIE CZEKAJ — DOJAZD W {cityMeta.eta} MINUT!</p>
+          <a href="tel:+48572272930" className="btn-power hero-massive-btn" style={{ background: 'white', color: 'var(--primary)', fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', padding: '28px 48px', boxShadow: '0 12px 40px rgba(0,0,0,0.2), 0 8px 0 rgba(0,0,0,0.2)', gap: '16px', maxWidth: '500px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto' }}>
             <div className="animate-pulse"><PhoneIcon size={42} /></div>
             <span className="cta-phone-number" style={{ fontWeight: 950 }}>572 272 930</span>
           </a>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          GOOGLE MAPS IFRAME
-          ═══════════════════════════════════════ */}
       <section style={{ width: '100%', height: '450px', background: '#eee', borderTop: '4px solid var(--primary)' }}>
-        <iframe
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          loading="lazy"
-          allowFullScreen
-          src={`https://maps.google.com/maps?q=${encodeURIComponent(city.name + ' ' + city.province)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
-        ></iframe>
+        <iframe width="100%" height="100%" style={{ border: 0 }} loading="lazy" allowFullScreen src={`https://maps.google.com/maps?q=${encodeURIComponent(city.name + ' ' + city.province)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}></iframe>
       </section>
 
       <Footer currentCity={city} />
@@ -483,7 +381,7 @@ export async function generateStaticParams() {
   const params = [];
   for (const service of services.slice(0, 3)) {
     for (const citySlug of topCitySlugs) {
-      params.push({ service: service.slug, city: citySlug });
+      params.push({ slug: `${service.slug}-${citySlug}` });
     }
   }
   return params;

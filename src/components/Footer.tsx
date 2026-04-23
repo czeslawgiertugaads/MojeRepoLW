@@ -48,14 +48,13 @@ export default function Footer({ currentCity }: FooterProps) {
             </div>
           </div>
 
-          {/* Column 2 & 3: Grouped Cities 
           <div>
             <div style={{ fontWeight: 950, marginBottom: '35px', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '14px', color: 'var(--primary)' }}>{sectionTitle}</div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
               <ul style={{ listStyle: 'none', fontWeight: 600, display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.95rem', padding: 0 }}>
                 {displayCities.slice(0, 8).map((city, i) => (
                   <li key={i}>
-                    <Link href={`/pomoc-drogowa/${city.slug}`} style={{ opacity: 0.5, color: 'white', textDecoration: 'none', transition: 'opacity 0.2s' }}>
+                    <Link href={`/pomoc-drogowa-${city.slug}`} style={{ opacity: 0.5, color: 'white', textDecoration: 'none', transition: 'opacity 0.2s' }}>
                       {city.name}
                     </Link>
                   </li>
@@ -64,7 +63,7 @@ export default function Footer({ currentCity }: FooterProps) {
               <ul style={{ listStyle: 'none', fontWeight: 600, display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.95rem', padding: 0 }}>
                 {displayCities.slice(8, 16).map((city, i) => (
                   <li key={i}>
-                    <Link href={`/pomoc-drogowa/${city.slug}`} style={{ opacity: 0.5, color: 'white', textDecoration: 'none', transition: 'opacity 0.2s' }}>
+                    <Link href={`/pomoc-drogowa-${city.slug}`} style={{ opacity: 0.5, color: 'white', textDecoration: 'none', transition: 'opacity 0.2s' }}>
                       {city.name}
                     </Link>
                   </li>
@@ -72,7 +71,6 @@ export default function Footer({ currentCity }: FooterProps) {
               </ul>
             </div>
           </div>
-          */}
 
           {/* Column 4: Contact & Conversion */}
           <div>

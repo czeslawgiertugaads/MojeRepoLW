@@ -350,9 +350,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Coverage Section 
       <CoverageSection cities={topCities} showAll={false} />
-      */}
 
       {/* Baza Wiedzy */}
       {/* Baza Wiedzy 

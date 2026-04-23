@@ -54,7 +54,7 @@ export default function CoverageSection({ cities, showAll = false, showMap = tru
           margin: '0 auto'
         }}>
           {cities.map(city => (
-            <Link key={city.slug} href={`/pomoc-drogowa/${city.slug}`} className="card" style={{ padding: '15px', fontWeight: 900, fontSize: '13px', textTransform: 'uppercase', color: 'black', textDecoration: 'none' }}>
+            <Link key={city.slug} href={`/pomoc-drogowa-${city.slug}`} className="card" style={{ padding: '15px', fontWeight: 900, fontSize: '13px', textTransform: 'uppercase', color: 'black', textDecoration: 'none' }}>
               {city.name}
             </Link>
           ))}
