@@ -121,12 +121,10 @@ body {
     overflow: hidden !important;
   }
   .hero-image-home, .hero-image-slug {
-    height: 20svh !important;
+    flex: 1 !important;
     min-height: 150px !important;
-    max-height: 180px !important;
     width: 100% !important;
     margin-bottom: 0px !important;
-    flex: none !important;
     position: relative !important;
   }
   .hero-content-home, .hero-content-slug {
@@ -135,9 +133,10 @@ body {
     justify-content: space-between !important;
     align-items: center !important;
     text-align: center !important;
-    height: 60% !important;
+    height: auto !important;
     flex: none !important;
     padding-bottom: 20px !important;
+    padding-top: 10px !important;
   }
   .hero-content-home h1, .hero-content-slug h1 {
     margin-bottom: 12px !important;
