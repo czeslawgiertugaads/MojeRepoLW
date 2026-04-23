@@ -29,6 +29,66 @@ body {
   padding: 0 20px;
 }
 
+/* ─── Motto Cards (TANIO / SZYBKO / BEZPIECZNIE / CAŁĄ DOBĘ) ─── */
+.motto-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  border: 1px solid #f1f5f9;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.motto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+.motto-card-watermark {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  opacity: 0.05;
+  color: var(--primary);
+  transform: rotate(-10deg);
+  pointer-events: none;
+  line-height: 0;
+}
+.motto-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(220,38,38,0.1);
+  color: var(--primary);
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+.motto-card-text {
+  position: relative;
+  z-index: 2;
+}
+.motto-card-text h3 {
+  font-size: 1.55rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.motto-card-text p {
+  font-weight: 600;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
 .badge {
   display: inline-block;
   padding: 6px 14px;
@@ -139,6 +199,62 @@ body {
     padding-bottom: 12px !important;
     padding-top: 10px !important;
     gap: 16px !important;
+  }
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .features-grid .card-lift {
+    padding: 30px 20px !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    min-height: auto !important;
+  }
+  .features-grid .card-lift div:first-child {
+    /* Watermark icon */
+    transform: scale(0.7) rotate(-10deg) !important;
+    right: -20px !important;
+    bottom: -20px !important;
+    margin-bottom: 0 !important;
+  }
+  .features-grid .card-lift h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 8px !important;
+  }
+  .features-grid .card-lift p {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Motto cards (TANIO/SZYBKO/BEZPIECZNIE) mobile */
+  .motto-card {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+    padding: 18px 20px !important;
+    border-radius: 18px !important;
+  }
+  .motto-card-watermark {
+    display: none !important;
+  }
+  .motto-card-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 12px !important;
+    flex-shrink: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .motto-card-text h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 3px !important;
+  }
+  .motto-card-text p {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+    color: #666 !important;
   }
   .hero-content-home h1, .hero-content-slug h1 {
     margin-bottom: 0 !important;

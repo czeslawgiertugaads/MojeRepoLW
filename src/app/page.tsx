@@ -33,9 +33,15 @@ const ZapIcon = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
-const CoinsIcon = ({ size = 24 }: { size?: number }) => (
+const TruckIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><path d="M16 18h3a1 1 0 0 0 1-1v-3.05a1 1 0 0 0-.293-.707l-2.657-2.657A1 1 0 0 0 16.343 10H14"/><circle cx="18" cy="18" r="2"/>
+  </svg>
+);
+
+const WalletIcon = ({ size = 24 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
   </svg>
 );
 
@@ -229,31 +235,41 @@ export default async function HomePage() {
               Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>laweciarz.pro</span>
             </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px' }}>
+          <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px' }}>
             {[
               {
-                num: '01', icon: <CoinsIcon size={36} />,
-                t: 'UCZCIWY CENNIK',
-                d: 'Przejrzyste stawki bez ukrytych kosztów. Cenę usługi poznasz zawsze przed wyjazdem lawety. Gwarantujemy brak dopłat na miejscu.'
+                num: '01', icon: <WalletIcon size={36} />,
+                t: 'TANIO',
+                d: 'Gwarantujemy jedne z najniższych cen w regionie. Od razu poznasz koszt usługi – bez ukrytych opłat i doliczania na miejscu.'
               },
               {
-                num: '02', icon: <ShieldIcon size={36} />,
-                t: 'PLATFORMY HYDRAULICZNE',
-                d: 'Bezpieczny załadunek aut sportowych, nisko zawieszonych oraz mocno uszkodzonych. 100% pełnego ubezpieczenia OCP.'
+                num: '02', icon: <TruckIcon size={36} />,
+                t: 'SZYBKO',
+                d: 'Nasi kierowcy stacjonują w wielu punktach miasta, dzięki czemu pomoc dociera na miejsce zazwyczaj w 15-20 minut.'
               },
               {
-                num: '03', icon: <ClockIcon size={36} />,
-                t: 'NATYCHMIASTOWY DOJAZD',
-                d: 'Flota zaparkowana w strategicznych węzłach autostrad i tras szybkiego ruchu. Zawsze jesteśmy blisko.'
+                num: '03', icon: <ShieldIcon size={36} />,
+                t: 'BEZPIECZNIE',
+                d: 'Twoje auto jest w dobrych rękach. Mamy nowoczesne lawety i doświadczonych fachowców, którzy zadbają o każdy detal.'
+              },
+              {
+                num: '04', icon: <ClockIcon size={36} />,
+                t: 'CAŁĄ DOBĘ',
+                d: 'Działamy non-stop, w nocy, niedziele i święta. Dzwonisz i jedziemy – jesteśmy gotowi do pomocy o każdej porze.'
               }
             ].map((adv, i) => (
-              <div key={i} className={`card card-lift anim-slide-up anim-delay-${i + 1}`}
-                style={{ padding: '40px', background: 'white', border: '2px solid transparent', borderRadius: '24px', boxShadow: '0 10px 40px rgba(0,0,0,0.04)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(220, 38, 38, 0.1)', color: 'var(--primary)', marginBottom: '24px' }}>
-                  {adv.icon}
+              <div key={i} className={`motto-card anim-slide-up anim-delay-${i + 1}`}>
+                {/* Background Icon Watermark */}
+                <div className="motto-card-watermark">
+                  {React.cloneElement(adv.icon as React.ReactElement, { size: 140 })}
                 </div>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 950, marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '-0.5px' }}>{adv.t}</h3>
-                <p style={{ fontWeight: 600, color: '#555', lineHeight: 1.6, fontSize: '1.05rem' }}>{adv.d}</p>
+                <div className="motto-card-icon">
+                  {React.cloneElement(adv.icon as React.ReactElement, { size: 28 })}
+                </div>
+                <div className="motto-card-text">
+                  <h3>{adv.t}</h3>
+                  <p>{adv.d}</p>
+                </div>
               </div>
             ))}
           </div>

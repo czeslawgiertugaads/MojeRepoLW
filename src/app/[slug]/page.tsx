@@ -349,19 +349,42 @@ export default async function DynamicPage({ params }: PageProps) {
               Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>laweciarz.pro</span>
             </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
+          <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
             {[
-              { icon: <TruckIcon size={32} />, title: 'PLATFORMY HYDRAULICZNE', desc: `Specjalistyczny sprzęt do bezpiecznego transportu aut luksusowych i sportowych w ${miejscownik}.` },
-              { icon: <ShieldIcon size={32} />, title: 'PEŁNE OCP 500 000 ZŁ', desc: 'Twoje auto jest w pełni ubezpieczone. Gwarantujemy najwyższy standard ochrony ładunku.' },
-              { icon: <WalletIcon size={32} />, title: 'PŁATNOŚĆ KARTĄ / BLIK', desc: 'Wygodne rozliczenia bezgotówkowe na miejscu zdarzenia. Akceptujemy karty i płatności mobilne.' },
-              { icon: <ZapIcon size={32} />, title: 'DOSTĘPNOŚĆ 24H/7', desc: 'Działamy non-stop, również w niedziele i święta. Zawsze gotowi do akcji w Twojej okolicy.' },
+              { icon: <WalletIcon size={32} />, title: 'TANIO', desc: 'Nie martw się o koszty. Gwarantujemy niskie ceny i brak ukrytych opłat – od początku wiesz, ile zapłacisz.' },
+              { icon: <TruckIcon size={32} />, title: 'SZYBKO', desc: `Przyjedziemy do Ciebie w 15-20 minut. Mamy lawety rozstawione w ${miejscownik}, więc pomoc dotrze bardzo szybko.` },
+              { icon: <ShieldIcon size={32} />, title: 'BEZPIECZNIE', desc: 'Twoje auto jest u nas bezpieczne. Mamy nowoczesny sprzęt i doświadczonych kierowców, którzy zadbają o Twój samochód.' },
+              { icon: <ZapIcon size={32} />, title: 'CAŁĄ DOBĘ', desc: 'Działamy non-stop, w nocy i w święta. Zawsze odbieramy telefon i ruszamy na pomoc na terenie Twojej okolicy.' },
             ].map((feat, i) => (
-              <div key={i} className={`card-lift anim-slide-up anim-delay-${i + 1}`} style={{ padding: '40px 30px', background: 'white', borderRadius: '32px', boxShadow: '0 15px 45px rgba(0,0,0,0.05)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(220,38,38,0.1)', color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '28px' }}>
-                  {feat.icon}
+              <div key={i} className={`card card-lift anim-slide-up anim-delay-${i + 1}`} 
+                style={{ 
+                  padding: '40px 30px', 
+                  background: 'white', 
+                  borderRadius: '24px', 
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.04)', 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'flex-start',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  borderLeft: '5px solid var(--primary)'
+                }}>
+                {/* Background Icon Watermark */}
+                <div style={{ 
+                  position: 'absolute', 
+                  right: '-15px', 
+                  bottom: '-15px', 
+                  opacity: 0.05, 
+                  color: 'var(--primary)',
+                  transform: 'rotate(-10deg)'
+                }}>
+                  {React.cloneElement(feat.icon as React.ReactElement, { size: 140 })}
                 </div>
-                <h3 style={{ fontWeight: 950, fontSize: '1.2rem', textTransform: 'uppercase', marginBottom: '15px', letterSpacing: '-0.5px' }}>{feat.title}</h3>
-                <p style={{ fontWeight: 600, color: '#64748b', fontSize: '0.95rem', lineHeight: 1.6 }}>{feat.desc}</p>
+
+                <div style={{ position: 'relative', zIndex: 2 }}>
+                  <h3 style={{ fontWeight: 950, fontSize: '1.4rem', textTransform: 'uppercase', marginBottom: '12px', letterSpacing: '-0.5px' }}>{feat.title}</h3>
+                  <p style={{ fontWeight: 600, color: '#555', fontSize: '1.05rem', lineHeight: 1.5, maxWidth: '90%' }}>{feat.desc}</p>
+                </div>
               </div>
             ))}
           </div>
