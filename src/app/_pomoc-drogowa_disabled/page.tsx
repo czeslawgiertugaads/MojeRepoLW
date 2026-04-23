@@ -1,0 +1,199 @@
+import { getCities, getSEOContent } from "@/lib/seo-utils";
+import FloatingCTA from "@/components/FloatingCTA";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import CoverageSection from "@/components/CoverageSection";
+import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pomoc Drogowa i Holowanie 24/7 - LAWECIARZ.PRO",
+  description: `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. laweciarz.pro to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
+};
+
+const PhoneIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  </svg>
+);
+
+export default function PomocDrogowaPage() {
+  const allCities = getCities();
+  
+  const prioritySlugs = [
+    'warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk', 'szczecin', 'bydgoszcz', 
+    'lublin', 'bialystok', 'katowice', 'gdynia', 'czestochowa', 'radom', 'torun', 'sosnowiec',
+    'rzeszow', 'kielce', 'gliwice', 'olsztyn', 'zabrze', 'bielsko-biala', 'bytom', 'zielona-gora',
+    'rybnik', 'ruda-slaska', 'tychy', 'gorzow-wielkopolski', 'elblag', 'plock', 'dabrowa-gornicza', 'walbrzych'
+  ];
+
+  const topCities = [
+    ...allCities.filter(c => prioritySlugs.includes(c.slug)),
+    ...allCities.filter(c => !prioritySlugs.includes(c.slug))
+  ].slice(0, 24);
+
+  let content = getSEOContent('pomocdrogowa_single.md');
+
+  content = content
+    .replace(/\[H2\]\s?/g, '')
+    .replace(/^# .*/gm, '')
+    .replace(/---/g, '')
+    .replace(/^## (.*)/gm, (match, p1) => {
+      const cleanTitle = p1
+        .replace(/\[Miasto\]|\[Miasta\]|\[Miastu\]|\[Mieście\]/gi, '')
+        .replace(/laweciarz\.Expert/gi, '')
+        .trim();
+      return `<h2 class="seo-h2" style="font-size: 1.7rem; margin-top: 50px; margin-bottom: 20px; color: var(--secondary);">${cleanTitle}</h2>`;
+    })
+    .replace(/^- (.*)/gm, `<div style="display: flex; align-items: flex-start; margin-bottom: 12px; padding-left: 10px;">
+      <span style="color: var(--primary); margin-right: 12px; margin-top: 4px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </span>
+      <span style="font-weight: 600; font-size: 0.95rem;">$1</span>
+    </div>`)
+    .replace(/\*\*(.*?)\*\*/g, '<strong style="color: var(--primary); font-weight: 900;">$1</strong>')
+    .replace(/\n\n/g, '</p><p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">')
+    .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
+    .replace(/laweciarz\.Expert/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
+
+  content = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${content}</p>`;
+  const contentChunks = content.split('<h2');
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Pomoc Drogowa i Holowanie 24/7 - laweciarz.pro",
+    "image": "https://laweciarz.pro/images/hero-main.webp",
+    "description": `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. laweciarz.pro to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
+    "brand": {
+      "@type": "Brand",
+      "name": "laweciarz.pro"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "5364"
+    }
+  };
+
+  return (
+    <main style={{ minHeight: '100vh', background: 'white', overflowX: 'hidden' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Navigation locationText="TWOJA OKOLICA" />
+
+      {/* ═══════════════════════════════════════
+          HERO — matching slug style
+          ═══════════════════════════════════════ */}
+      <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
+        <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '50px', flexWrap: 'wrap' }}>
+          
+          <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
+            <div className="hero-badge-container">
+              <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
+              <div className="badge-accent anim-bounce-in anim-delay-2">TWOJA OKOLICA</div>
+            </div>
+            
+            <h1 className="anim-slide-left anim-delay-1" style={{ 
+              fontSize: 'clamp(2.4rem, 7vw, 6rem)', 
+              fontWeight: 950, 
+              lineHeight: 0.92, 
+              textTransform: 'uppercase', 
+              letterSpacing: '-2px', 
+              marginBottom: '28px' 
+            }}>
+              <span style={{ fontSize: '0.4em', display: 'block', letterSpacing: '4px', color: '#666', marginBottom: '8px' }}>PROFESJONALNA</span>
+              POMOC <span style={{ color: 'var(--primary)' }}>DROGOWA</span>
+            </h1>
+ 
+            <p className="anim-slide-left anim-delay-2" style={{ 
+              fontSize: 'clamp(1rem, 2vw, 1.3rem)', fontWeight: 600, 
+              marginBottom: '36px', lineHeight: 1.55, maxWidth: '600px', color: '#444' 
+            }}>
+               Jesteśmy najsilniejszym ogniwem w Twojej okolicy. Kiedy inni zawodzą – przyjeżdżamy i rozwiązujemy Twój problem. Dojazd w 15 minut.
+            </p>
+
+            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-3 hero-massive-btn" style={{ fontSize: '1.8rem', padding: '24px 40px', width: '100%', maxWidth: '540px', gap: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="animate-pulse"><PhoneIcon size={36} /></div>
+              <span style={{ fontWeight: 950 }}>572 272 930</span>
+            </a>
+          </div>
+
+          <div className="anim-slide-right hero-image-slug" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
+            <div className="hero-image-frame">
+              <Image 
+                src="/images/hero-main.webp" 
+                alt="laweciarz.pro Pomoc Drogowa" 
+                fill 
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }} 
+                priority 
+              />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4), transparent 50%)' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          STATS BAR
+          ═══════════════════════════════════════ */}
+      <section style={{ background: 'var(--secondary)', color: 'white', borderTop: '8px solid var(--primary)' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+          {[
+            { num: '15', unit: 'MIN', label: 'Średni czas dojazdu' },
+            { num: '5.0', unit: '', label: 'Ocena Google Maps' },
+            { num: '24', unit: '/7', label: 'Dostępność usług' },
+          ].map((s, i) => (
+            <div key={i} className={`stat-block anim-count anim-delay-${i + 1}`} style={{
+              padding: '36px 20px',
+              borderRight: i < 2 ? '1px solid rgba(255,255,255,0.07)' : 'none',
+              textAlign: 'center'
+            }}>
+              <div className="stat-number">{s.num}<span style={{ fontSize: '55%', color: 'white', opacity: 0.5 }}>{s.unit}</span></div>
+              <div className="stat-label" style={{ color: 'rgba(255,255,255,0.45)' }}>{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          SEO CONTENT
+          ═══════════════════════════════════════ */}
+      <section style={{ padding: '80px 20px', background: '#fff' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          {contentChunks.map((chunk, index) => {
+            const htmlContent = index === 0 ? chunk : `<h2${chunk} `;
+            const isCTA = index % 3 === 1;
+            return (
+              <div key={index} style={{ marginBottom: '40px' }}>
+                <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                {isCTA && (
+                  <div className="cta-strip" style={{ margin: '40px 0' }}>
+                    <div>
+                      <div style={{ fontWeight: 950, fontSize: '1.1rem', marginBottom: '4px' }}>
+                        POTRZEBUJESZ POMOCY TERAZ?
+                      </div>
+                      <div style={{ fontSize: '13px', opacity: 0.6, fontWeight: 600 }}>
+                        Ekipa laweciarz.pro jest gotowa do wyjazdu 24h
+                      </div>
+                    </div>
+                    <a href="tel:+48572272930" className="btn-power" style={{ padding: '14px 28px', fontSize: '1rem', flexShrink: 0 }}>
+                      WZYWAM POMOC
+                    </a>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <CoverageSection cities={topCities} />
+      <Footer />
+      <FloatingCTA />
+    </main>
+  );
+}
