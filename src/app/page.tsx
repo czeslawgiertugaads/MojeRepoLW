@@ -17,37 +17,37 @@ const PhoneIcon = ({ size = 24 }: { size?: number }) => (
 
 const ClockIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+    <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
   </svg>
 );
 
 const ShieldIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
 
 const ZapIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
   </svg>
 );
 
 const CoinsIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+    <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
   </svg>
 );
 
 const CheckIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="20 6 9 17 4 12"/>
+    <polyline points="20 6 9 17 4 12" />
   </svg>
 );
 
 const StarIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="none">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
   </svg>
 );
 
@@ -58,35 +58,30 @@ export default async function HomePage() {
     .filter(c => largestCitySlugs.includes(c.slug))
     .slice(0, 10);
 
-  // Fetch dynamic news from Google News RSS
-  const newsData = await fetch(
-    `https://news.google.com/rss/search?q=pomoc+drogowa+wypadek+PL&hl=pl&gl=PL&ceid=PL:pl`,
-    { next: { revalidate: 86400 } } // Refresh every 24 hours
-  ).then(res => res.text());
-
-  // Simple XML parser for RSS items
-  const roadNews = newsData
-    .split('<item>')
-    .slice(1, 4)
-    .map(item => {
-      const title = item.match(/<title>(.*?)<\/title>/)?.[1] || 'Aktualności drogowe';
-      const link = item.match(/<link>(.*?)<\/link>/)?.[1] || 'https://news.google.com';
-      const pubDate = item.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || '';
-      const source = item.match(/<source.*?>(.*?)<\/source>/)?.[1] || 'Google News';
-      
-      // Clean up title (remove source suffix typical for Google News)
-      const cleanTitle = title.split(' - ')[0];
-      const dateObj = new Date(pubDate);
-      const formattedDate = dateObj.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
-
-      return {
-        title: cleanTitle,
-        date: formattedDate,
-        source: source,
-        url: link,
-        excerpt: 'Najnowsze doniesienia z dróg i aktualizacje dotyczące bezpieczeństwa ruchu drogowego w Polsce.'
-      };
-    });
+  // Static road news - updated periodically
+  const roadNews = [
+    {
+      title: 'Ważne: Sezon zimowy a stan nawierzchni — co warto wiedzieć przed długą trasą',
+      date: '23.04.2026',
+      source: 'laweciarz.pro',
+      url: 'https://news.google.com/search?q=wypadek+droga+polska',
+      excerpt: 'Zmienne warunki pogodowe i stan nawierzchni to główne przyczyny awarii na polskich drogach. Sprawdź, jak się przygotować.'
+    },
+    {
+      title: 'Holowanie po wypadku — jakie masz prawa i jak działa pomoc z OC sprawcy?',
+      date: '22.04.2026',
+      source: 'laweciarz.pro',
+      url: 'https://news.google.com/search?q=holowanie+OC+sprawca',
+      excerpt: 'Wielu kierowców nie wie, że koszty holowania po wypadku pokrywa ubezpieczenie sprawcy. Wyjaśniamy procedurę krok po kroku.'
+    },
+    {
+      title: 'Laweta 24h — kiedy dzwonić, co podać dyspozyturze i ile to kosztuje?',
+      date: '21.04.2026',
+      source: 'laweciarz.pro',
+      url: 'https://news.google.com/search?q=laweta+pomoc+drogowa+cena',
+      excerpt: 'Awaria w trasie to stres, ale z właściwym numerem pod ręką wrócimy do domu bezpiecznie. Sprawdź co zrobić krok po kroku.'
+    }
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -159,13 +154,13 @@ export default async function HomePage() {
           <div className="anim-slide-right hero-image-home" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
             {/* Main image frame */}
             <div className="hero-image-frame">
-              <Image 
-                src="/images/hero-main.webp" 
-                alt="laweciarz.pro Pomoc Drogowa" 
-                fill 
+              <Image
+                src="/images/hero-main.webp"
+                alt="laweciarz.pro Pomoc Drogowa"
+                fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }} 
-                priority 
+                style={{ objectFit: 'cover' }}
+                priority
               />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.35), transparent 50%)' }} />
             </div>
@@ -178,7 +173,7 @@ export default async function HomePage() {
           ═══════════════════════════════════════ */}
       <div className="ticker-wrap" style={{ background: 'var(--secondary)', color: 'white', padding: '15px 0', borderTop: '4px solid var(--primary)' }}>
         <div className="ticker-inner">
-          {[1,2,3,4,5,6].map(i => (
+          {[1, 2, 3, 4, 5, 6].map(i => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
               <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Pomoc Drogowa 24/7</span>
               <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
@@ -200,18 +195,18 @@ export default async function HomePage() {
             ŚREDNIA 5.0 (5364 OPINIE)
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', color: '#fbbf24', marginBottom: '32px' }}>
-            {[1,2,3,4,5].map(s => <StarIcon key={s} size={64} />)}
+            {[1, 2, 3, 4, 5].map(s => <StarIcon key={s} size={64} />)}
           </div>
-          
-          <p style={{ 
-            fontStyle: 'italic', 
-            fontWeight: 900, 
-            fontSize: 'clamp(1.5rem, 5vw, 3rem)', 
-            marginBottom: '30px', 
+
+          <p style={{
+            fontStyle: 'italic',
+            fontWeight: 900,
+            fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+            marginBottom: '30px',
             lineHeight: 1.1,
-            color: '#000' 
+            color: '#000'
           }}>
-            „Pełen profesjonalizm i błyskawiczna pomoc. Panowie praktycznie uratowali mi życie 
+            „Pełen profesjonalizm i błyskawiczna pomoc. Panowie praktycznie uratowali mi życie
             na trasie, gdy auto stanęło w nocy. Zdecydowanie polecam każdemu!”
           </p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
@@ -301,7 +296,6 @@ export default async function HomePage() {
               </h2>
             </div>
           </div>
-          {/* 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '32px' }}>
             {roadNews.map((news, idx) => (
               <a key={idx} href={news.url} target="_blank" rel="noopener noreferrer" className={`card card-lift anim-slide-up anim-delay-${idx + 1}`}
@@ -315,12 +309,11 @@ export default async function HomePage() {
                   {news.excerpt}
                 </p>
                 <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 950, fontSize: '14px', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                  CZYTAJ PEŁNY RAPORT W GOOGLE NEWS <ChevronRightIcon size={20} />
+                  CZYTAJ WIĘCEJ <ChevronRightIcon size={20} />
                 </div>
               </a>
             ))}
           </div>
-          */}
         </div>
       </section>
 
@@ -340,7 +333,7 @@ export default async function HomePage() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="badge" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', marginBottom: '24px' }}>AWARIA? DZIAŁAMY JUŻ</div>
           <h2 style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', fontWeight: 950, marginBottom: '24px', lineHeight: 0.95, textTransform: 'uppercase', letterSpacing: '-2px' }}>
-            POTRZEBUJESZ<br/>POMOCY TERAZ?
+            POTRZEBUJESZ<br />POMOCY TERAZ?
           </h2>
           <p style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '50px', opacity: 0.88 }}>
             Dostępni 24h / 7 dni w tygodniu · Dojazd do 15 minut
@@ -409,6 +402,6 @@ export default async function HomePage() {
 
 const ChevronRightIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="9 18 15 12 9 6"/>
+    <polyline points="9 18 15 12 9 6" />
   </svg>
 );
