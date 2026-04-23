@@ -158,7 +158,12 @@ async function getPageData(slug: string) {
   const capitalize = (s: string) => s.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   const serviceTitleCapitalized = capitalize(serviceTitle);
 
-  return { city, service, serviceTitle: serviceTitleCapitalized, contentChunks };
+  let dynamicLawetaText = "Laweta";
+  if (serviceTitleCapitalized.toLowerCase().includes('laweta')) {
+    dynamicLawetaText = "Pomoc Drogowa";
+  }
+
+  return { city, service, serviceTitle: serviceTitleCapitalized, dynamicLawetaText, contentChunks };
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -168,14 +173,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   const { miejscownik } = declineCity(data.city.name);
 
-  let dynamicLawetaText = "Laweta";
-  if (data.serviceTitle.toLowerCase().includes('laweta')) {
-    dynamicLawetaText = "Pomoc Drogowa";
-  }
-
   return {
     title: `${data.serviceTitle} 24/7 - laweciarz.pro`.toUpperCase(),
-    description: `${data.serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`,
+    description: `${data.serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`,
   };
 }
 
@@ -184,7 +184,7 @@ export default async function DynamicPage({ params }: PageProps) {
   const data = await getPageData(slug);
   if (!data) notFound();
 
-  const { city, service, serviceTitle, contentChunks } = data;
+  const { city, service, serviceTitle, dynamicLawetaText, contentChunks } = data;
   const { miejscownik } = declineCity(city.name);
 
   // ─── City-tier logic for dynamic effects
@@ -202,12 +202,14 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
 
+  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": `${serviceTitle} - laweciarz.pro`,
     "image": `https://laweciarz.pro${heroImages[0]}`,
-    "description": `${serviceTitle} ⭐⭐⭐⭐⭐ 📞 572 272 930. Potrzebujesz fachowej pomocy? laweciarz.pro to profesjonalne holowanie, laweta i pomoc drogowa 24h w miejscowości ${city.name}. Błyskawiczny dojazd w 15 minut!`,
+    "description": descriptionTemplate,
     "brand": {
       "@type": "Brand",
       "name": "laweciarz.pro"
