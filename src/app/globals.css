@@ -113,8 +113,8 @@ body {
   }
   .hero-section-home, .hero-section-slug {
     padding: 10px 15px !important;
-    height: calc(100dvh - 140px) !important;
-    max-height: calc(100dvh - 140px) !important;
+    height: calc(100svh - 140px) !important;
+    max-height: calc(100svh - 140px) !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
