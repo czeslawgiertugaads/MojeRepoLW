@@ -353,7 +353,6 @@ export default async function HomePage() {
       <CoverageSection cities={topCities} showAll={false} />
 
       {/* Baza Wiedzy */}
-      {/* Baza Wiedzy 
       <section style={{ padding: '100px clamp(12px, 3vw, 20px)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
@@ -389,7 +388,6 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-      */}
 
       <Footer />
       <FloatingCTA />
