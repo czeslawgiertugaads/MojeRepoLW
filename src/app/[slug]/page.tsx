@@ -155,17 +155,27 @@ async function getPageData(slug: string) {
   seoContent = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${seoContent}</p>`;
   const contentChunks = seoContent.split('<h2');
 
-  return { city, service, serviceTitle, contentChunks };
+  const capitalize = (s: string) => s.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const serviceTitleCapitalized = capitalize(serviceTitle);
+
+  return { city, service, serviceTitle: serviceTitleCapitalized, contentChunks };
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const data = await getPageData(slug);
   if (!data) return { title: "Nie znaleziono - laweciarz.pro" };
+  
   const { miejscownik } = declineCity(data.city.name);
+
+  let dynamicLawetaText = "Laweta";
+  if (data.serviceTitle.toLowerCase().includes('laweta')) {
+    dynamicLawetaText = "Pomoc Drogowa";
+  }
+
   return {
     title: `${data.serviceTitle} 24/7 - laweciarz.pro`.toUpperCase(),
-    description: `${data.serviceTitle} ⭐⭐⭐⭐⭐ 📞 572 272 930. Potrzebujesz fachowej pomocy? laweciarz.pro to profesjonalne holowanie, laweta i pomoc drogowa 24h w ${miejscownik}. Błyskawiczny dojazd w 15 minut!`,
+    description: `${data.serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`,
   };
 }
 
@@ -233,14 +243,17 @@ export default async function DynamicPage({ params }: PageProps) {
               letterSpacing: '-2px',
               marginBottom: '28px'
             }}>
-              {service.template.split(/\[Miasto\]/gi).map((part, i, arr) => (
-                <span key={i}>
-                  {part.replace(/\s24h/gi, '\u00A024H')}
-                  {i < arr.length - 1 && (
-                    <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
-                  )}
-                </span>
-              ))}
+              {service.template.split(/\[Miasto\]/gi).map((part, i, arr) => {
+                const capitalizedPart = part.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+                return (
+                  <span key={i}>
+                    {capitalizedPart.replace(/\s24h/gi, '\u00A024H')}
+                    {i < arr.length - 1 && (
+                      <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
+                    )}
+                  </span>
+                );
+              })}
             </h1>
 
             <p className="anim-slide-left anim-delay-2" style={{
