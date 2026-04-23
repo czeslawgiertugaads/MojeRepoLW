@@ -37,7 +37,7 @@ export default function Footer({ currentCity }: FooterProps) {
           {/* Column 1: Brand & About */}
           <div>
             <div style={{ fontSize: '28px', fontWeight: 950, marginBottom: '30px', letterSpacing: '-0.5px', textTransform: 'uppercase', display: 'flex', alignItems: 'flex-end' }}>
-              <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
+              <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'white', fontSize: '0.75em' }}>.PRO</span>
             </div>
             <p style={{ fontWeight: 600, opacity: 0.6, lineHeight: 1.7, marginBottom: '35px', fontSize: '1rem' }}>
               Twój niezawodny partner w sytuacjach drogowych. Dysponujemy nowoczesną flotą autoholowników gotowych do akcji w Twojej okolicy. Bezpieczeństwo i szybkość to nasz priorytet.
