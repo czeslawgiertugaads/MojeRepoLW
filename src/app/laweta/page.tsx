@@ -3,8 +3,15 @@ import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CoverageSection from "@/components/CoverageSection";
+import AdvantagesSection from "@/components/AdvantagesSection";
 import Image from "next/image";
 import { Metadata } from "next";
+
+const StarIcon = ({ size = 24 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="none">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  </svg>
+);
 
 export const metadata: Metadata = {
   title: "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
@@ -135,6 +142,67 @@ export default function LawetaPage() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════
+          SEPARATOR — Trust Ticker
+          ═══════════════════════════════════════ */}
+      <div className="ticker-wrap" style={{ background: 'var(--secondary)', color: 'white', padding: '15px 0', borderTop: '4px solid var(--primary)' }}>
+        <div className="ticker-inner">
+          {[1, 2, 3].map(i => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Pomoc Drogowa 24/7</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>OSOBOWE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>BUS</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>TIR</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>CIĘŻAROWE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>MASZYNY ROLNICZE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>GABARYTY</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════
+          CLEAN REVIEW — Right under Separator
+          ═══════════════════════════════════════ */}
+      <section style={{ padding: '60px 20px', background: '#fff' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '1000px' }}>
+          <div className="badge-accent" style={{ background: 'var(--primary)', color: '#fff', marginBottom: '16px', fontWeight: 950, padding: '8px 20px', borderRadius: '50px' }}>
+            ŚREDNIA 5.0 (5364 OPINIE)
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', color: '#fbbf24', marginBottom: '32px' }}>
+            {[1, 2, 3, 4, 5].map(s => <StarIcon key={s} size={64} />)}
+          </div>
+
+          <p style={{
+            fontStyle: 'italic',
+            fontWeight: 900,
+            fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+            marginBottom: '30px',
+            lineHeight: 1.1,
+            color: '#000'
+          }}>
+            „Pełen profesjonalizm i błyskawiczna pomoc. Panowie praktycznie uratowali mi życie
+            na trasie, gdy auto stanęło w nocy. Zdecydowanie polecam każdemu!”
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#eee', color: '#888', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 950, fontSize: '14px' }}>MJ</div>
+            <div style={{ textAlign: 'left' }}>
+              <div style={{ fontWeight: 800, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px', color: '#666' }}>Maciej Jastrzębski</div>
+              <div style={{ fontWeight: 700, fontSize: '11px', opacity: 0.5, letterSpacing: '1px', color: '#666' }}>GOOGLE MAPS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <AdvantagesSection />
 
       {/* ═══════════════════════════════════════
           STATS BAR
