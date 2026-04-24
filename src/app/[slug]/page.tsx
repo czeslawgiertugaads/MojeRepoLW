@@ -404,12 +404,16 @@ export default async function DynamicPage({ params }: PageProps) {
       <section style={{ background: '#fcfcfc', padding: '60px 20px', borderTop: '1px solid #f0f0f0' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <h3 style={{ fontSize: '1.4rem', fontWeight: 950, marginBottom: '30px', textTransform: 'uppercase', letterSpacing: '-0.5px' }}>
-            INNE USŁUGI W MIEJSCOWOŚCI {city.name.toUpperCase()}:
+            ZOBACZ TEŻ INNE USŁUGI W {city.name.toUpperCase()}:
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
-            {services.filter(s => s.slug !== service.slug).map((s) => (
+            {services
+              .filter(s => s.slug !== service.slug)
+              .sort(() => 0.5 - Math.random()) // Shuffle
+              .slice(0, 8) // Limit to 8 to hide full strategy and keep it clean
+              .map((s, idx) => (
               <Link 
-                key={s.slug} 
+                key={`${s.slug}-${idx}`} // Added index to ensure uniqueness if data has duplicates
                 href={`/${s.slug}-${city.slug}`}
                 style={{ 
                   padding: '16px 20px', 
