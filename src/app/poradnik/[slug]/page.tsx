@@ -107,7 +107,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <div className="bg-dots" style={{ position: 'absolute', inset: 0, opacity: 0.1 }} />
             <div style={{ position: 'relative', zIndex: 1 }}>
               <h3 style={{ fontSize: '2.5rem', fontWeight: 950, marginBottom: '20px', textTransform: 'uppercase' }}>Potrzebujesz natychmiastowej pomocy?</h3>
-              <p style={{ fontSize: '1.2rem', opacity: 0.8, marginBottom: '40px', fontWeight: 500 }}>Nasi kierowcy są rozstawieni w strategicznych punktach Polski. Dojazd w 15-30 minut gwarantowany.</p>
+              <p style={{ fontSize: '1.2rem', opacity: 0.8, marginBottom: '40px', fontWeight: 500 }}>Nasi kierowcy są rozstawieni w strategicznych punktach Polski. Dojazd w 15-20 minut gwarantowany.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
                 <a href="tel:+48572272930" className="btn-power" style={{ background: 'var(--primary)', padding: '20px 40px', fontSize: '1.4rem' }}>
                    ZADZWOŃ TERAZ
@@ -124,7 +124,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <h4 style={{ fontWeight: 950, fontSize: '1.2rem', textTransform: 'uppercase', marginBottom: '24px', borderBottom: '2px solid #ddd', paddingBottom: '10px' }}>Dlaczego my?</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 {[
-                  { t: 'CZAS DOJAZDU', d: 'Średnio 18 minut' },
+                  { t: 'CZAS DOJAZDU', d: 'Średnio 15 minut' },
                   { t: 'DOSTĘPNOŚĆ', d: '24/7/365' },
                   { t: 'SPRZĘT', d: 'Najnowsze lawety 2026' }
                 ].map((stat, i) => (

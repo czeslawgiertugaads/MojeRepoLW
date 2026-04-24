@@ -15,7 +15,7 @@ const BANNED_BOTS = [
   'blexbot',
 ];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const userAgent = request.headers.get('user-agent')?.toLowerCase() || '';
 
   // Check if the user agent matches any of the banned bots

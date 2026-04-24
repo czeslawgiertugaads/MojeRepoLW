@@ -95,7 +95,7 @@ export default function Footer({ currentCity }: FooterProps) {
                 </a>
                 <p style={{ fontSize: '14px', fontWeight: 600, opacity: 0.5, lineHeight: 1.6 }}>
                   Średni czas dojazdu w Twojej okolicy:<br/>
-                  <strong style={{ color: 'white', opacity: 1 }}>15-30 minut</strong>. Zadzwoń teraz.
+                  <strong style={{ color: 'white', opacity: 1 }}>15 minut</strong>. Zadzwoń teraz.
                 </p>
                 <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                   <a href="mailto:kontakt@laweciarz.pro" style={{ color: 'white', textDecoration: 'none', fontWeight: 750, fontSize: '14px', opacity: 0.8, display: 'flex', alignItems: 'center', gap: '8px' }}>

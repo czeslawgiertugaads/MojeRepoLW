@@ -1,4 +1,5 @@
 export const revalidate = 15552000; // 6 months
+import React from "react";
 import { getCities, getServices, replaceSEOTemplate, getSEOContent, City, Service, slugify, declineCity } from "@/lib/seo-utils";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
+import AdvantagesSection from "@/components/AdvantagesSection";
 import Footer from "@/components/Footer";
 
 interface PageProps {
@@ -27,25 +29,25 @@ const PhoneIcon = ({ size = 24, className = "", ...props }: IconProps) => (
 
 const TruckIcon = ({ size = 24, ...props }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><path d="M16 18h3a1 1 0 0 0 1-1v-3.05a1 1 0 0 0-.293-.707l-2.657-2.657A1 1 0 0 0 16.343 10H14"/><circle cx="18" cy="18" r="2"/>
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><path d="M16 18h3a1 1 0 0 0 1-1v-3.05a1 1 0 0 0-.293-.707l-2.657-2.657A1 1 0 0 0 16.343 10H14" /><circle cx="18" cy="18" r="2" />
   </svg>
 );
 
 const WalletIcon = ({ size = 24, ...props }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
+    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" /><path d="M3 5v14a2 2 0 0 0 2 2h16v-5" /><path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
   </svg>
 );
 
 const ShieldIcon = ({ size = 24, ...props }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
 
 const ZapIcon = ({ size = 24, ...props }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
   </svg>
 );
 
@@ -55,7 +57,7 @@ async function getPageData(slug: string) {
 
   // Sort services by length descending to match longest prefix first
   const sortedServices = [...services].sort((a, b) => b.slug.length - a.slug.length);
-  
+
   let matchedService: Service | undefined;
   let matchedCity: City | undefined;
 
@@ -170,7 +172,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const data = await getPageData(slug);
   if (!data) return { title: "Nie znaleziono - laweciarz.pro" };
-  
+
   const { miejscownik } = declineCity(data.city.name);
 
   return {
@@ -309,11 +311,10 @@ export default async function DynamicPage({ params }: PageProps) {
           ))}
         </div>
       </section>
-
       <section style={{ background: 'white', padding: '80px 20px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           {contentChunks.map((chunk, index) => {
-            const htmlContent = index === 0 ? chunk : `<h2${chunk} `;
+            const htmlContent = index === 0 ? chunk : `<h2${chunk}`;
             const isCTA = index % 3 === 1;
             return (
               <div key={index} style={{ marginBottom: '40px' }}>
@@ -322,7 +323,7 @@ export default async function DynamicPage({ params }: PageProps) {
                   <div className="cta-strip" style={{ margin: '60px 0', flexDirection: 'column', textAlign: 'center', padding: '40px 30px' }}>
                     <div style={{ marginBottom: '24px' }}>
                       <div style={{ fontWeight: 950, fontSize: '1.4rem', marginBottom: '8px', lineHeight: 1.2 }}>
-                        JESTEŚMY W {city.name.toUpperCase()}<br/>
+                        JESTEŚMY W {city.name.toUpperCase()}<br />
                         AWARIA POJAZDU W {miejscownik.toUpperCase()}?
                       </div>
                       <div style={{ fontSize: '15px', color: 'var(--primary)', fontWeight: 900, letterSpacing: '1px' }}>
@@ -341,55 +342,7 @@ export default async function DynamicPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section style={{ padding: '80px 20px', background: '#f8fafc' }}>
-        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ marginBottom: '50px' }}>
-            <div className="section-label">DLACZEGO MY</div>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 950, textTransform: 'uppercase' }}>
-              Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>laweciarz.pro</span>
-            </h2>
-          </div>
-          <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
-            {[
-              { icon: <WalletIcon size={32} />, title: 'TANIO', desc: 'Nie martw się o koszty. Gwarantujemy niskie ceny i brak ukrytych opłat – od początku wiesz, ile zapłacisz.' },
-              { icon: <TruckIcon size={32} />, title: 'SZYBKO', desc: `Przyjedziemy do Ciebie w 15-20 minut. Mamy lawety rozstawione w ${miejscownik}, więc pomoc dotrze bardzo szybko.` },
-              { icon: <ShieldIcon size={32} />, title: 'BEZPIECZNIE', desc: 'Twoje auto jest u nas bezpieczne. Mamy nowoczesny sprzęt i doświadczonych kierowców, którzy zadbają o Twój samochód.' },
-              { icon: <ZapIcon size={32} />, title: 'CAŁĄ DOBĘ', desc: 'Działamy non-stop, w nocy i w święta. Zawsze odbieramy telefon i ruszamy na pomoc na terenie Twojej okolicy.' },
-            ].map((feat, i) => (
-              <div key={i} className={`card card-lift anim-slide-up anim-delay-${i + 1}`} 
-                style={{ 
-                  padding: '40px 30px', 
-                  background: 'white', 
-                  borderRadius: '24px', 
-                  boxShadow: '0 10px 40px rgba(0,0,0,0.04)', 
-                  display: 'flex', 
-                  flexDirection: 'column', 
-                  alignItems: 'flex-start',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  borderLeft: '5px solid var(--primary)'
-                }}>
-                {/* Background Icon Watermark */}
-                <div style={{ 
-                  position: 'absolute', 
-                  right: '-15px', 
-                  bottom: '-15px', 
-                  opacity: 0.05, 
-                  color: 'var(--primary)',
-                  transform: 'rotate(-10deg)'
-                }}>
-                  {React.cloneElement(feat.icon as React.ReactElement, { size: 140 })}
-                </div>
-
-                <div style={{ position: 'relative', zIndex: 2 }}>
-                  <h3 style={{ fontWeight: 950, fontSize: '1.4rem', textTransform: 'uppercase', marginBottom: '12px', letterSpacing: '-0.5px' }}>{feat.title}</h3>
-                  <p style={{ fontWeight: 600, color: '#555', fontSize: '1.05rem', lineHeight: 1.5, maxWidth: '90%' }}>{feat.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AdvantagesSection />
 
       <section style={{ background: 'var(--primary)', color: 'white', padding: '100px 20px', textAlign: 'center', position: 'relative', overflow: 'hidden', borderTop: '8px solid var(--secondary)' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 1 }}>

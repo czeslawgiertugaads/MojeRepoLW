@@ -3,11 +3,13 @@ import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import CoverageSection from '@/components/CoverageSection';
+import AdvantagesSection from '@/components/AdvantagesSection';
 import FloatingCTA from '@/components/FloatingCTA';
 import Image from 'next/image';
 import { getCities, slugify } from "@/lib/seo-utils";
 import { articles } from '@/lib/articles';
 
+interface IconProps { size?: number; }
 // Optimized Raw SVG Icons
 const PhoneIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -147,7 +149,7 @@ export default async function HomePage() {
             </h1>
 
             <p style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)', fontWeight: 600, marginBottom: '40px', color: '#444', maxWidth: '560px', lineHeight: 1.55 }}>
-              Najszybsza laweta w Twojej okolicy. Holujemy auta osobowe, busy i ciężarowe. Dojazd <strong style={{ color: 'var(--primary)' }}>do 15 minut</strong>. Gwarantujemy profesjonalną obsługę i bezpieczeństwo.
+              Najszybsza laweta w Twojej okolicy. Holujemy auta osobowe, busy i ciężarowe. Dojazd <strong style={{ color: 'var(--primary)' }}>w 15 minut</strong>. Gwarantujemy profesjonalną obsługę i bezpieczeństwo.
             </p>
 
             <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ fontSize: '1.8rem', padding: '22px 48px', gap: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -225,56 +227,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════
-          WHY US — DLACZEGO LAWECIARZ.PRO?
-          ═══════════════════════════════════════ */}
-      <section style={{ padding: '80px clamp(12px, 3vw, 20px)', background: '#f8fafc' }}>
-        <div className="container">
-          <div style={{ marginBottom: '60px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h2 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 950, textTransform: 'uppercase', maxWidth: '800px', lineHeight: 1 }}>
-              Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>laweciarz.pro</span>
-            </h2>
-          </div>
-          <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px' }}>
-            {[
-              {
-                num: '01', icon: <WalletIcon size={36} />,
-                t: 'TANIO',
-                d: 'Gwarantujemy jedne z najniższych cen w regionie. Od razu poznasz koszt usługi – bez ukrytych opłat i doliczania na miejscu.'
-              },
-              {
-                num: '02', icon: <TruckIcon size={36} />,
-                t: 'SZYBKO',
-                d: 'Nasi kierowcy stacjonują w wielu punktach miasta, dzięki czemu pomoc dociera na miejsce zazwyczaj w 15-20 minut.'
-              },
-              {
-                num: '03', icon: <ShieldIcon size={36} />,
-                t: 'BEZPIECZNIE',
-                d: 'Twoje auto jest w dobrych rękach. Mamy nowoczesne lawety i doświadczonych fachowców, którzy zadbają o każdy detal.'
-              },
-              {
-                num: '04', icon: <ClockIcon size={36} />,
-                t: 'CAŁĄ DOBĘ',
-                d: 'Działamy non-stop, w nocy, niedziele i święta. Dzwonisz i jedziemy – jesteśmy gotowi do pomocy o każdej porze.'
-              }
-            ].map((adv, i) => (
-              <div key={i} className={`motto-card anim-slide-up anim-delay-${i + 1}`}>
-                {/* Background Icon Watermark */}
-                <div className="motto-card-watermark">
-                  {React.cloneElement(adv.icon as React.ReactElement, { size: 140 })}
-                </div>
-                <div className="motto-card-icon">
-                  {React.cloneElement(adv.icon as React.ReactElement, { size: 28 })}
-                </div>
-                <div className="motto-card-text">
-                  <h3>{adv.t}</h3>
-                  <p>{adv.d}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AdvantagesSection />
 
       {/* ═══════════════════════════════════════
           STATS BAR — bold numbers
@@ -352,7 +305,7 @@ export default async function HomePage() {
             POTRZEBUJESZ<br />POMOCY TERAZ?
           </h2>
           <p style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '50px', opacity: 0.88 }}>
-            Dostępni 24h / 7 dni w tygodniu · Dojazd do 15 minut
+            Dostępni 24h / 7 dni w tygodniu · Dojazd w 15 minut
           </p>
           <a href="tel:+48572272930" className="btn-power hero-massive-btn" style={{
             background: 'white', color: 'var(--primary)',
