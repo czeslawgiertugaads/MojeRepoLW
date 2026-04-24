@@ -41,9 +41,19 @@ export default function HeroSlider() {
             alt="Pomoc Drogowa Laweciarz.pro"
             fill
             priority
+            draggable={false}
             onLoad={() => idx === 0 && setLoading(false)}
-            style={{ objectFit: 'cover' }}
+            style={{ 
+              objectFit: 'cover',
+              userSelect: 'none',
+              WebkitTouchCallout: 'none'
+            }}
             sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          {/* Transparent shield to prevent right-click/opening image */}
+          <div 
+            style={{ position: 'absolute', inset: 0, zIndex: 2, cursor: 'default' }} 
+            onContextMenu={(e) => e.preventDefault()}
           />
         </div>
       ))}
