@@ -647,3 +647,120 @@ body {
     display: none !important;
   }
 }
+
+/* =============================================
+   COOKIE CONSENT
+   ============================================= */
+.cookie-banner-wrapper {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 850px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cookie-banner-container {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  padding: 20px 28px;
+  animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cookie-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.cookie-icon-wrapper {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: #f8fafc;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.cookie-text {
+  flex: 1;
+}
+
+.cookie-text p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cookie-text p strong {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.cookie-text a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(220, 38, 38, 0.2);
+  transition: border-color 0.2s;
+}
+
+.cookie-text a:hover {
+  border-bottom-color: var(--primary);
+}
+
+.btn-cookie {
+  padding: 12px 24px !important;
+  font-size: 0.9rem !important;
+  border-radius: 14px !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .cookie-banner-wrapper {
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+  
+  .cookie-banner-container {
+    padding: 20px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .cookie-icon-wrapper {
+    display: none;
+  }
+
+  .cookie-text p {
+    font-size: 0.85rem;
+  }
+
+  .btn-cookie {
+    width: 100%;
+  }
+}
+

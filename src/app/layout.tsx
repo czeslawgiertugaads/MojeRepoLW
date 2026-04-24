@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 
 import { Suspense } from "react";
 import Tracker from "@/components/Tracker";
+import CookieConsent from "@/components/CookieConsent";
 import Script from 'next/script';
 
 export default function RootLayout({
@@ -36,7 +37,7 @@ export default function RootLayout({
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-C6JHW715ZE"
           strategy="afterInteractive"
-        />
+         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <Tracker />
         </Suspense>
+        <CookieConsent />
         {children}
       </body>
     </html>
