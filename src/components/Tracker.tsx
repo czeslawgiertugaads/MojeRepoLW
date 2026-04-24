@@ -102,9 +102,58 @@ export default function Tracker() {
       }
     };
 
+    // Detection for inspection and source viewing
+    const logSecurityEvent = async (type: string) => {
+      try {
+        const fpPromise = FingerprintJS.load();
+        const fp = await fpPromise;
+        const result = await fp.get();
+        await supabase.from('security_events').insert([{
+          type,
+          path: pathname,
+          fingerprint: result.visitorId,
+          created_at: new Date().toISOString()
+        }]);
+      } catch (e) {}
+    };
+
+    const handleKeydown = (e: KeyboardEvent) => {
+      // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      const isInspect = (e.key === 'F12') || 
+                        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+                        (e.metaKey && e.altKey && (e.key === 'i' || e.key === 'j')) ||
+                        (e.ctrlKey && e.key === 'u') || (e.metaKey && e.key === 'u');
+      
+      if (isInspect) {
+        logSecurityEvent('inspector_shortcut');
+      }
+    };
+
+    // DevTools detection - simple threshold check
+    let lastWidth = window.outerWidth - window.innerWidth;
+    let lastHeight = window.outerHeight - window.innerHeight;
+    
+    const checkDevTools = () => {
+      const widthDiff = window.outerWidth - window.innerWidth;
+      const heightDiff = window.outerHeight - window.innerHeight;
+      
+      if (widthDiff !== lastWidth || heightDiff !== lastHeight) {
+        if (widthDiff > 160 || heightDiff > 160) {
+          logSecurityEvent('devtools_opened');
+        }
+        lastWidth = widthDiff;
+        lastHeight = heightDiff;
+      }
+    };
+
+    window.addEventListener('resize', checkDevTools);
+    document.addEventListener('keydown', handleKeydown);
     document.addEventListener('copy', handleCopy);
     document.addEventListener('click', handleClick);
+    
     return () => {
+      window.removeEventListener('resize', checkDevTools);
+      document.removeEventListener('keydown', handleKeydown);
       document.removeEventListener('copy', handleCopy);
       document.removeEventListener('click', handleClick);
     };

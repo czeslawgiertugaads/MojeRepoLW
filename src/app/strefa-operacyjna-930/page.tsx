@@ -21,13 +21,18 @@ export default function AdminDashboard() {
   const [messages, setMessages] = useState<any[]>([])
   const [copyEvents, setCopyEvents] = useState<any[]>([])
   const [phoneClicks, setPhoneClicks] = useState<any[]>([])
+  const [securityEvents, setSecurityEvents] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [user, setUser] = useState<any>(null)
-  const [activeTab, setActiveTab] = useState('visits') // visits, suspicious, messages, copy, phone
+  const [activeTab, setActiveTab] = useState('visits') // visits, suspicious, messages, copy, phone, security
   const supabase = createClient()
   const router = useRouter()
 
   useEffect(() => {
+    // Basic protection against context menu
+    const handleContext = (e: any) => e.preventDefault();
+    document.addEventListener('contextmenu', handleContext);
+    
     const checkUser = async () => {
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) {
@@ -38,6 +43,7 @@ export default function AdminDashboard() {
       }
     }
     checkUser()
+    return () => document.removeEventListener('contextmenu', handleContext);
   }, [])
 
   const fetchAllData = async () => {
@@ -58,6 +64,10 @@ export default function AdminDashboard() {
     // Fetch Phone Clicks
     const { data: pData } = await supabase.from('phone_clicks').select('*').order('created_at', { ascending: false })
     setPhoneClicks(pData || [])
+
+    // Fetch Security Events
+    const { data: sData } = await supabase.from('security_events').select('*').order('created_at', { ascending: false })
+    setSecurityEvents(sData || [])
     
     setLoading(false)
   }
@@ -80,55 +90,105 @@ export default function AdminDashboard() {
   if (!user && !loading) return null
 
   return (
-    <div style={{ minHeight: '100vh', background: '#f1f5f9', color: '#1e293b', paddingBottom: '100px' }}>
+    <div style={{ minHeight: '100vh', background: '#f1f5f9', color: '#1e293b', paddingBottom: '100px', userSelect: 'none' }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .dash-main { padding: 12px 8px !important; }
+          .dash-header { padding: 10px 15px !important; }
+          .dash-logo { font-size: 14px !important; }
+          .dash-grid { gap: 12px !important; margin-bottom: 20px !important; }
+          .stat-card { padding: 15px !important; }
+          .stat-value { font-size: 20px !important; }
+          .stat-title { font-size: 10px !important; }
+          .tab-btn { padding: 6px 10px !important; font-size: 10px !important; }
+          .data-table th, .data-table td { padding: 8px 6px !important; font-size: 11px !important; }
+          .time-cell { font-size: 10px !important; }
+          .tag-pill { padding: 2px 5px !important; font-size: 9px !important; }
+          .dash-tabs { gap: 4px !important; margin-bottom: 12px !important; }
+        }
+      `}</style>
+      
       {/* Header */}
-      <header style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '16px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10 }}>
+      <header className="dash-header" style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '16px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 10 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ background: 'var(--primary)', color: 'white', padding: '6px 12px', borderRadius: '8px', fontWeight: 950, fontSize: '18px' }}>LAWECIARZ.PRO</div>
-          <h1 style={{ fontSize: '18px', fontWeight: 800, margin: 0 }}>PANEL ANALITYCZNY</h1>
+          <div className="dash-logo" style={{ background: 'var(--primary)', color: 'white', padding: '6px 12px', borderRadius: '8px', fontWeight: 950, fontSize: '18px' }}>LW.PRO</div>
+          <h1 className="dash-title" style={{ fontSize: '18px', fontWeight: 800, margin: 0 }}>PANEL</h1>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <span style={{ fontSize: '14px', fontWeight: 600, color: '#64748b' }}>{user?.email}</span>
-          <button onClick={handleLogout} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'none', border: '1px solid #e2e8f0', padding: '8px 16px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, fontSize: '13px' }}>
-            <LogOut size={16} /> WYLOGUJ
+          <span style={{ fontSize: '12px', fontWeight: 600, color: '#64748b' }}>{user?.email?.split('@')[0]}</span>
+          <button onClick={handleLogout} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'none', border: '1px solid #e2e8f0', padding: '6px 12px', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, fontSize: '11px' }}>
+            <LogOut size={14} /> WYJŚCIE
           </button>
         </div>
       </header>
 
-      <main style={{ padding: '40px', maxWidth: '1400px', margin: '0 auto' }}>
+      <main className="dash-main" style={{ padding: '40px', maxWidth: '1400px', margin: '0 auto' }}>
         {/* Stats Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '40px' }}>
-          <StatCard title="WSZYSTKIE WIZYTY" value={visitors.length.toString()} icon={<RefreshCcw size={24} />} color="blue" />
-          <StatCard title="KLIKNIĘCIA TELEFONU" value={phoneClicks.length.toString()} icon={<MousePointer2 size={24} />} color="green" />
-          <StatCard title="PODEJRZANE IP" value={suspiciousIPs.length.toString()} icon={<ShieldAlert size={24} />} color="orange" />
-          <StatCard title="KOPIOWANIE TREŚCI" value={copyEvents.length.toString()} icon={<Copy size={24} />} color="red" />
+        <div className="dash-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', marginBottom: '40px' }}>
+          <StatCard title="WIZYTY" value={visitors.length.toString()} icon={<RefreshCcw size={20} />} color="blue" />
+          <StatCard title="TEL." value={phoneClicks.length.toString()} icon={<MousePointer2 size={20} />} color="green" />
+          <StatCard title="ALERTY" value={securityEvents.length.toString()} icon={<ShieldAlert size={20} />} color="orange" />
+          <StatCard title="KOPIE" value={copyEvents.length.toString()} icon={<Copy size={20} />} color="red" />
         </div>
 
         {/* Tabs Navigation */}
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '24px', background: 'white', padding: '6px', borderRadius: '12px', border: '1px solid #e2e8f0', width: 'fit-content' }}>
+        <div className="dash-tabs" style={{ display: 'flex', gap: '8px', marginBottom: '24px', background: 'white', padding: '6px', borderRadius: '12px', border: '1px solid #e2e8f0', width: '100%', overflowX: 'auto', whiteSpace: 'nowrap' }}>
           <TabButton active={activeTab === 'visits'} onClick={() => setActiveTab('visits')} label="WIZYTY" icon={<LayoutDashboard size={14} />} />
-          <TabButton active={activeTab === 'phone'} onClick={() => setActiveTab('phone')} label="KLIKNIĘCIA TEL." icon={<MousePointer2 size={14} />} />
-          <TabButton active={activeTab === 'messages'} onClick={() => setActiveTab('messages')} label="WIADOMOŚCI" icon={<Mail size={14} />} />
-          <TabButton active={activeTab === 'suspicious'} onClick={() => setActiveTab('suspicious')} label="PODEJRZANE IP" icon={<ShieldAlert size={14} />} />
-          <TabButton active={activeTab === 'copy'} onClick={() => setActiveTab('copy')} label="KOPIOWANIE" icon={<Copy size={14} />} />
+          <TabButton active={activeTab === 'phone'} onClick={() => setActiveTab('phone')} label="TEL." icon={<MousePointer2 size={14} />} />
+          <TabButton active={activeTab === 'security'} onClick={() => setActiveTab('security')} label="ALERTY" icon={<ShieldAlert size={14} />} />
+          <TabButton active={activeTab === 'messages'} onClick={() => setActiveTab('messages')} label="MAILE" icon={<Mail size={14} />} />
+          <TabButton active={activeTab === 'suspicious'} onClick={() => setActiveTab('suspicious')} label="IP" icon={<ShieldAlert size={14} />} />
+          <TabButton active={activeTab === 'copy'} onClick={() => setActiveTab('copy')} label="COPY" icon={<Copy size={14} />} />
         </div>
 
         {/* Content Section */}
         <div style={{ background: 'white', borderRadius: '20px', border: '1px solid #e2e8f0', overflow: 'hidden', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}>
-          <div style={{ padding: '24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 900 }}>
-              {activeTab === 'visits' && 'OSTATNI ODWIEDZAJĄCY'}
-              {activeTab === 'phone' && 'KLIKNIĘCIA W NUMER TELEFONU'}
-              {activeTab === 'messages' && 'WIADOMOŚCI OD KLIENTÓW'}
-              {activeTab === 'suspicious' && 'ADRESY IP (CYKLICZNE WIZYTY > 3)'}
-              {activeTab === 'copy' && 'REJESTR KOPIOWANIA TREŚCI'}
+          <div style={{ padding: '16px 20px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h3 style={{ margin: 0, fontSize: '14px', fontWeight: 900 }}>
+              {activeTab === 'visits' && 'WIZYTY'}
+              {activeTab === 'phone' && 'TELEFONY'}
+              {activeTab === 'security' && 'ALERTY'}
+              {activeTab === 'messages' && 'MAILE'}
+              {activeTab === 'suspicious' && 'IP (>3)'}
+              {activeTab === 'copy' && 'KOPIE'}
             </h3>
-            <button onClick={fetchAllData} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <RefreshCcw size={16} className={loading ? 'animate-spin' : ''} /> ODŚWIEŻ
+            <button onClick={fetchAllData} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px' }}>
+              <RefreshCcw size={14} className={loading ? 'animate-spin' : ''} /> ODŚWIEŻ
             </button>
           </div>
 
           <div style={{ overflowX: 'auto' }}>
+            <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+            {activeTab === 'security' && (
+              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                <thead>
+                  <tr style={{ background: '#fff1f2' }}>
+                    <TableHeader label="DATA" />
+                    <TableHeader label="TYP ZAGROŻENIA" />
+                    <TableHeader label="STRONA" />
+                    <TableHeader label="FINGERPRINT" />
+                  </tr>
+                </thead>
+                <tbody>
+                  {securityEvents.map((s, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                      <TableCell><TimeCell date={s.created_at} /></TableCell>
+                      <TableCell>
+                        <span style={{ 
+                          background: s.type === 'devtools_opened' ? '#fb7185' : '#fb923c', 
+                          color: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '10px', fontWeight: 900 
+                        }}>
+                          {s.type === 'devtools_opened' ? 'OTWARTO DEVTOOLS' : 'SKRÓT INSPEKCJI KODU'}
+                        </span>
+                      </TableCell>
+                      <TableCell style={{ fontWeight: 700 }}>{s.path}</TableCell>
+                      <TableCell style={{ fontSize: '11px', opacity: 0.5 }}>{s.fingerprint}</TableCell>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+
             {activeTab === 'phone' && (
               <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
