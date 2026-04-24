@@ -7,6 +7,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
+import HeroSlider from "@/components/HeroSlider";
 import AdvantagesSection from "@/components/AdvantagesSection";
 import Footer from "@/components/Footer";
 import CityCTA from "@/components/CityCTA";
@@ -254,69 +255,48 @@ export default async function DynamicPage({ params }: PageProps) {
       <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
         <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '50px', flexWrap: 'wrap' }}>
           <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
-            <div className="hero-badge-container">
+            <div className="hero-badge-container" style={{ marginBottom: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
-              <div className="badge-accent anim-bounce-in anim-delay-2">{cityMeta.label}: {city.name.toUpperCase()}</div>
+              <div className="badge-accent anim-bounce-in anim-delay-2 hidden-mobile">OBSZAR: {city.name.toUpperCase()}</div>
             </div>
 
             {(() => {
               const nameLen = city.name.length;
-              let fontSize = 'clamp(2.4rem, 7vw, 6rem)';
-              if (nameLen > 15) fontSize = 'clamp(2rem, 5vw, 4.2rem)';
-              else if (nameLen > 10) fontSize = 'clamp(2.2rem, 6vw, 5.2rem)';
+              let cityFontSize = 'clamp(3.2rem, 10vw, 7.8rem)';
+              if (nameLen > 15) cityFontSize = 'clamp(2.2rem, 7vw, 4.8rem)';
+              else if (nameLen > 10) cityFontSize = 'clamp(2.8rem, 8vw, 6.2rem)';
               
               return (
-                <h1 className="anim-slide-left anim-delay-1" style={{
-                  fontSize: fontSize,
-                  fontWeight: 950,
-                  lineHeight: 0.92,
+                <h1 style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  lineHeight: 0.95,
                   textTransform: 'uppercase',
-                  letterSpacing: '-2px',
-                  marginBottom: '28px'
+                  marginBottom: '24px',
+                  gap: '8px'
                 }}>
-                  {service.template.split(/\[Miasto\]/gi).map((part, i, arr) => {
-                    const capitalizedPart = part.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
-                    return (
-                      <span key={i}>
-                        {capitalizedPart.replace(/\s24h/gi, '\u00A024H')}
-                        {i < arr.length - 1 && (
-                          <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
-                        )}
-                      </span>
-                    );
-                  })}
+                  <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{service.template.replace(/\[Miasto\]/gi, '').trim().toUpperCase()}</span>
+                  <span style={{ fontSize: cityFontSize, fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>{city.name.toUpperCase()}</span>
                 </h1>
               );
             })()}
 
-            <p className="anim-slide-left anim-delay-2" style={{
-              fontSize: 'clamp(1rem, 2vw, 1.3rem)', fontWeight: 600,
-              marginBottom: '36px', lineHeight: 1.55, maxWidth: '600px', color: '#444'
-            }}>
-              Potrzebujesz pomocy? Przyjedziemy błyskawicznie w ciągu{' '}
-              <strong style={{ color: 'var(--primary)' }}>{cityMeta.eta} minut</strong>.{' '}
-              Zapewniamy profesjonalne holowanie, lawetę i pomoc drogową 24h.
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#555', marginBottom: '40px', maxWidth: '650px', fontWeight: 600, lineHeight: 1.5 }}>
+              Potrzebujesz pomocy? Przyjedziemy błyskawicznie w ciągu <strong style={{ color: 'var(--primary)' }}>{cityMeta.eta} minut</strong>. Zapewniamy profesjonalne holowanie, lawetę i pomoc drogową 24h.
             </p>
 
-            <a href="tel:+48572272930"
-              className="btn-power anim-slide-up anim-delay-3 hero-massive-btn"
-              style={{ fontSize: '1.8rem', padding: '24px 40px', width: '100%', maxWidth: '540px', gap: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="animate-pulse"><PhoneIcon size={36} /></div>
-              <span className="cta-phone-number" style={{ fontWeight: 950 }}>572 272 930</span>
+            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '22px 48px', gap: '20px', display: 'flex', alignItems: 'center', width: 'fit-content' }}>
+              <div className="animate-pulse"><PhoneIcon size={40} /></div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1, textAlign: 'center' }}>
+                <span style={{ fontWeight: 950, fontSize: 'clamp(1.4rem, 4vw, 2.2rem)', letterSpacing: '-1px' }}>WEZWIJ POMOC</span>
+                <span style={{ fontWeight: 800, fontSize: 'clamp(1rem, 2.5vw, 1.4rem)', opacity: 0.9 }}>572 272 930</span>
+              </div>
             </a>
           </div>
 
-          <div className="anim-slide-right hero-image-slug" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
+          <div className="anim-slide-right hero-image-slug" style={{ flex: '1', minWidth: '300px' }}>
             <div className="hero-image-frame">
-              <Image
-                src={heroImages[0]}
-                alt={serviceTitle}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-                priority
-              />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4), transparent 50%)' }} />
+              <HeroSlider />
             </div>
           </div>
         </div>

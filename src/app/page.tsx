@@ -2,6 +2,7 @@ export const revalidate = 86400; // 24 hours
 import React from 'react';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import HeroSlider from '@/components/HeroSlider';
 import Footer from '@/components/Footer';
 import CoverageSection from '@/components/CoverageSection';
 import AdvantagesSection from '@/components/AdvantagesSection';
@@ -139,58 +140,46 @@ export default async function HomePage() {
       {/* ═══════════════════════════════════════
           HERO — Playful + Business
           ═══════════════════════════════════════ */}
-      <section className="hero-section-home bg-dots" style={{ position: 'relative' }}>
+      <section className="hero-section-home bg-dots" style={{ position: 'relative', background: '#fff' }}>
         <div className="hero-container-home" style={{ width: '100%', maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '60px', flexWrap: 'wrap' }}>
 
           {/* Left — copy */}
           <div className="anim-slide-left hero-content-home" style={{ flex: '1.2', minWidth: '300px' }}>
             <div className="hero-badge-container">
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
-              <div className="badge-accent anim-bounce-in anim-delay-2">TWOJA OKOLICA</div>
+              <div className="badge-accent anim-bounce-in anim-delay-2 hidden-mobile">TWOJA OKOLICA: MAZOWIECKIE</div>
             </div>
 
             <h1 style={{
               display: 'flex',
               flexDirection: 'column',
-              fontWeight: 950,
-              lineHeight: 1,
+              lineHeight: 0.95,
               textTransform: 'uppercase',
-              marginBottom: '28px'
+              marginBottom: '32px'
             }}>
-              <span style={{ fontSize: 'clamp(1rem, 3vw, 1.6rem)', color: '#666', letterSpacing: '4px', marginBottom: '4px' }}>
-                PROFESJONALNA
-              </span>
-              <span style={{ fontSize: 'clamp(2.5rem, 9.5vw, 6.5rem)', color: 'var(--primary)', lineHeight: 0.9, letterSpacing: '-3px' }}>
-                POMOC DROGOWA
-              </span>
-              <span style={{ fontSize: 'clamp(1.6rem, 5.5vw, 2.5rem)', color: 'var(--secondary)', letterSpacing: '-1px', marginTop: '6px', whiteSpace: 'nowrap' }}>
-                LAWETA I HOLOWANIE
-              </span>
+              <span style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', color: '#666', letterSpacing: '6px', fontWeight: 800, marginBottom: '8px' }}>PROFESJONALNA</span>
+              <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>POMOC</span>
+              <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px', marginTop: '-10px' }}>DROGOWA</span>
+              <span style={{ fontSize: 'clamp(1.8rem, 5vw, 3.8rem)', fontWeight: 900, color: '#1a1a1a', letterSpacing: '-1px', marginTop: '12px' }}>LAWETA I HOLOWANIE</span>
             </h1>
 
-            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)', fontWeight: 600, marginBottom: '40px', color: '#444', maxWidth: '560px', lineHeight: 1.55 }}>
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#555', marginBottom: '40px', maxWidth: '650px', fontWeight: 600, lineHeight: 1.5 }}>
               Najszybsza laweta w Twojej okolicy. Holujemy auta osobowe, busy i ciężarowe. Dojazd <strong style={{ color: 'var(--primary)' }}>w 15 minut</strong>. Gwarantujemy profesjonalną obsługę i bezpieczeństwo.
             </p>
 
-            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ fontSize: '1.8rem', padding: '22px 48px', gap: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="animate-pulse"><PhoneIcon size={36} /></div>
-              <span style={{ fontWeight: 950 }}>WEZWIJ POMOC</span>
+            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '22px 48px', gap: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'fit-content' }}>
+              <div className="animate-pulse"><PhoneIcon size={40} /></div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1, textAlign: 'center' }}>
+                <span style={{ fontWeight: 950, fontSize: 'clamp(1.4rem, 4vw, 2.2rem)', letterSpacing: '-1px' }}>WEZWIJ POMOC</span>
+                <span style={{ fontWeight: 800, fontSize: 'clamp(1rem, 2.5vw, 1.4rem)', opacity: 0.9 }}>572 272 930</span>
+              </div>
             </a>
           </div>
 
-          {/* Right — image */}
-          <div className="anim-slide-right hero-image-home" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
-            {/* Main image frame */}
+          {/* Right — image frame with slider */}
+          <div className="anim-slide-right hero-image-home" style={{ flex: '1', minWidth: '300px' }}>
             <div className="hero-image-frame">
-              <Image
-                src="/images/hero-main.webp"
-                alt="laweciarz.pro Pomoc Drogowa"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-                priority
-              />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.35), transparent 50%)' }} />
+              <HeroSlider />
             </div>
           </div>
         </div>
