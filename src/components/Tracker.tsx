@@ -24,10 +24,20 @@ export default function Tracker() {
         const ipData = await ipResponse.json()
         const ip = ipData.ip
 
+        let city = null;
+        try {
+          const geoRes = await fetch('https://ipapi.co/json/', { priority: 'low' });
+          if (geoRes.ok) {
+            const geoData = await geoRes.json();
+            city = geoData.city;
+          }
+        } catch (e) {}
+
         const data = {
           fingerprint,
           ip,
           path: pathname,
+          city: city,
           referrer: document.referrer || 'direct',
           campaign_id: searchParams.get('campaign_id') || searchParams.get('gclid') || null,
           screen_resolution: `${window.screen.width}x${window.screen.height}`,
@@ -36,9 +46,6 @@ export default function Tracker() {
         }
 
         // Insert into Supabase
-        // Note: IP is automatically handled by Supabase if we use an Edge Function, 
-        // but here we can try to get it from a public API if needed.
-        // For simplicity, we start with what we have.
         await supabase.from('visitors').insert([data])
 
       } catch (error) {

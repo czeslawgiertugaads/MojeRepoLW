@@ -217,8 +217,8 @@ export default function AdminDashboard() {
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="DATA" />
-                    <TableHeader label="FINGERPRINT / IP" />
-                    <TableHeader label="LOKALIZACJA" />
+                    <TableHeader label="MIEJSCOWOŚĆ" />
+                    <TableHeader label="STRONA / IP" />
                     <TableHeader label="URZĄDZENIE" />
                   </tr>
                 </thead>
@@ -227,12 +227,11 @@ export default function AdminDashboard() {
                     <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
                       <TableCell><TimeCell date={v.created_at} /></TableCell>
                       <TableCell>
-                        <div style={{ fontSize: '11px', opacity: 0.5 }}>{v.fingerprint}</div>
-                        <div style={{ fontWeight: 800 }}>{v.ip}</div>
+                        <div style={{ fontWeight: 900, color: 'var(--primary)', fontSize: '13px' }}>{v.city || 'Nieznane'}</div>
                       </TableCell>
                       <TableCell>
-                        <div style={{ fontWeight: 700 }}>{v.path}</div>
-                        <div style={{ fontSize: '11px', opacity: 0.5 }}>{v.referrer}</div>
+                         <div style={{ fontWeight: 700 }}>{v.path}</div>
+                         <div style={{ fontSize: '11px', opacity: 0.5 }}>IP: {v.ip}</div>
                       </TableCell>
                       <TableCell style={{ fontSize: '11px' }}>{v.user_agent?.substring(0, 50)}...</TableCell>
                     </tr>
