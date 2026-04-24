@@ -9,6 +9,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
 import AdvantagesSection from "@/components/AdvantagesSection";
 import Footer from "@/components/Footer";
+import CityCTA from "@/components/CityCTA";
 
 interface PageProps {
   params: Promise<{
@@ -136,7 +137,21 @@ async function getPageData(slug: string) {
   }
 
   const serviceTitle = service.template.replace(/\[Miasto\]/g, city.name);
-  let seoContent = content ? replaceSEOTemplate(content, city, '572 272 930') : "";
+  let rawContent = content || "";
+  
+  // Fix H2 inflection: replace [Mieście] with [Miasto] in lines starting with ##
+  rawContent = rawContent.split('\n').map(line => {
+    if (line.trim().startsWith('##')) {
+      return line.replace(/\[Mieście\]/g, '[Miasto]')
+                 .replace(/\[Miasta\]/g, '[Miasto]')
+                 .replace(/\[Miastu\]/g, '[Miasto]')
+                 .replace(/\[Biernik\]/g, '[Miasto]')
+                 .replace(/\[Narzędnik\]/g, '[Miasto]');
+    }
+    return line;
+  }).join('\n');
+
+  let seoContent = replaceSEOTemplate(rawContent, city, '572 272 930');
 
   seoContent = seoContent
     .replace(/\[H2\]\s?/g, '')
@@ -165,7 +180,12 @@ async function getPageData(slug: string) {
     dynamicLawetaText = "Pomoc Drogowa";
   }
 
-  return { city, service, serviceTitle: serviceTitleCapitalized, dynamicLawetaText, contentChunks };
+  const nearbyCities = cities
+    .filter(c => c.district === city.district && c.slug !== city.slug)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 12);
+
+  return { city, service, serviceTitle: serviceTitleCapitalized, dynamicLawetaText, contentChunks, nearbyCities };
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -186,7 +206,7 @@ export default async function DynamicPage({ params }: PageProps) {
   const data = await getPageData(slug);
   if (!data) notFound();
 
-  const { city, service, serviceTitle, dynamicLawetaText, contentChunks } = data;
+  const { city, service, serviceTitle, dynamicLawetaText, contentChunks, nearbyCities } = data;
   const { miejscownik } = declineCity(city.name);
 
   // ─── City-tier logic for dynamic effects
@@ -320,21 +340,7 @@ export default async function DynamicPage({ params }: PageProps) {
               <div key={index} style={{ marginBottom: '40px' }}>
                 <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                 {isCTA && (
-                  <div className="cta-strip" style={{ margin: '60px 0', flexDirection: 'column', textAlign: 'center', padding: '40px 30px' }}>
-                    <div style={{ marginBottom: '24px' }}>
-                      <div style={{ fontWeight: 950, fontSize: '1.4rem', marginBottom: '8px', lineHeight: 1.2 }}>
-                        JESTEŚMY W {city.name.toUpperCase()}<br />
-                        AWARIA POJAZDU W {miejscownik.toUpperCase()}?
-                      </div>
-                      <div style={{ fontSize: '15px', color: 'var(--primary)', fontWeight: 900, letterSpacing: '1px' }}>
-                        NIE CZEKAJ — DOJAZD W {cityMeta.eta} MINUT!
-                      </div>
-                    </div>
-                    <a href="tel:+48572272930" className="btn-power hero-massive-btn" style={{ padding: '20px 40px', fontSize: '2rem', width: '100%', maxWidth: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px' }}>
-                      <PhoneIcon size={32} />
-                      <span className="cta-phone-number" style={{ fontWeight: 950 }}>572 272 930</span>
-                    </a>
-                  </div>
+                  <CityCTA cityName={city.name} miejscownik={miejscownik} eta={cityMeta.eta} />
                 )}
               </div>
             );
@@ -343,6 +349,38 @@ export default async function DynamicPage({ params }: PageProps) {
       </section>
 
       <AdvantagesSection />
+
+      {nearbyCities.length > 0 && (
+        <section style={{ background: 'white', padding: '60px 20px', borderTop: '1px solid #f0f0f0' }}>
+          <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+            <h3 style={{ fontSize: '1.4rem', fontWeight: 950, marginBottom: '30px', textTransform: 'uppercase', letterSpacing: '-0.5px' }}>
+              OBSŁUGUJEMY RÓWNIEŻ POBLISKIE MIEJSCOWOŚCI:
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '15px' }}>
+              {nearbyCities.map((nc) => (
+                <Link 
+                  key={nc.slug} 
+                  href={`/pomoc-drogowa-${nc.slug}`}
+                  style={{ 
+                    padding: '12px 16px', 
+                    background: '#f8f8f8', 
+                    borderRadius: '12px', 
+                    color: '#444', 
+                    textDecoration: 'none', 
+                    fontSize: '0.9rem', 
+                    fontWeight: 700,
+                    transition: 'all 0.2s',
+                    border: '1px solid #eee'
+                  }}
+                  className="nearby-link"
+                >
+                  {nc.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section style={{ background: 'var(--primary)', color: 'white', padding: '100px 20px', textAlign: 'center', position: 'relative', overflow: 'hidden', borderTop: '8px solid var(--secondary)' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 1 }}>

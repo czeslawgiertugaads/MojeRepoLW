@@ -15,9 +15,12 @@ export interface Service {
   slug: string;
 }
 
+let cachedCities: City[] | null = null;
 export function getCities(): City[] {
+  if (cachedCities) return cachedCities;
   const filePath = path.join(process.cwd(), 'cities.json');
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  cachedCities = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  return cachedCities!;
 }
 
 export function getSEOContent(fileName: string): string {
@@ -28,14 +31,17 @@ export function getSEOContent(fileName: string): string {
   return "";
 }
 
+let cachedServices: Service[] | null = null;
 export function getServices(): Service[] {
+  if (cachedServices) return cachedServices;
   const filePath = path.join(process.cwd(), 'services.json');
   const templates: string[] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   
-  return templates.map(template => ({
+  cachedServices = templates.map(template => ({
     template,
     slug: slugify(template.replace(/\[Miasto\]/g, '').trim())
   }));
+  return cachedServices;
 }
 
 export function declineCity(name: string): { mianownik: string; dopelniacz: string; celownik: string; biernik: string; narzednik: string; miejscownik: string } {

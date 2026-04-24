@@ -20,9 +20,21 @@ export default function Footer({ currentCity }: FooterProps) {
   let sectionTitle = "Główne Miasta";
 
   if (currentCity) {
-    const provinceCities = allCities.filter(c => c.province === currentCity.province && c.slug !== currentCity.slug);
-    displayCities = [...provinceCities].sort(() => 0.5 - Math.random()).slice(0, 16);
-    sectionTitle = `Obszar woj. ${currentCity.province}`;
+    const district = currentCity.district || "Pozostałe";
+    let distCities = allCities.filter(c => c.district === district && c.slug !== currentCity.slug);
+    
+    // If we have too few cities in the district, add some from the province as fallback
+    if (distCities.length < 16) {
+      const provinceCities = allCities.filter(c => 
+        c.province === currentCity.province && 
+        c.district !== district && 
+        c.slug !== currentCity.slug
+      );
+      distCities = [...distCities, ...provinceCities].slice(0, 100);
+    }
+
+    displayCities = [...distCities].sort(() => 0.5 - Math.random()).slice(0, 16);
+    sectionTitle = district !== "Pozostałe" ? `Obszar powiat ${district}` : `Obszar woj. ${currentCity.province}`;
   } else {
     displayCities = allCities
       .filter(c => largestCitySlugs.includes(c.slug))
