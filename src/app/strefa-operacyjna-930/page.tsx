@@ -158,9 +158,8 @@ export default function AdminDashboard() {
           </div>
 
           <div style={{ overflowX: 'auto' }}>
-            <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
             {activeTab === 'security' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#fff1f2' }}>
                     <TableHeader label="DATA" />
@@ -190,7 +189,7 @@ export default function AdminDashboard() {
             )}
 
             {activeTab === 'phone' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="DATA" />
@@ -213,7 +212,7 @@ export default function AdminDashboard() {
             )}
 
             {activeTab === 'visits' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="DATA" />
@@ -241,7 +240,7 @@ export default function AdminDashboard() {
             )}
 
             {activeTab === 'messages' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="DATA" />
@@ -266,7 +265,7 @@ export default function AdminDashboard() {
             )}
 
             {activeTab === 'suspicious' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="ADRES IP" />
@@ -293,7 +292,7 @@ export default function AdminDashboard() {
             )}
 
             {activeTab === 'copy' && (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+              <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
                   <tr style={{ background: '#f8fafc' }}>
                     <TableHeader label="DATA" />
