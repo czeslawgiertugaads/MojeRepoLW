@@ -401,6 +401,40 @@ export default async function DynamicPage({ params }: PageProps) {
         </div>
       </section>
 
+      <section style={{ background: '#fcfcfc', padding: '60px 20px', borderTop: '1px solid #f0f0f0' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <h3 style={{ fontSize: '1.4rem', fontWeight: 950, marginBottom: '30px', textTransform: 'uppercase', letterSpacing: '-0.5px' }}>
+            INNE USŁUGI W MIEJSCOWOŚCI {city.name.toUpperCase()}:
+          </h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
+            {services.filter(s => s.slug !== service.slug).map((s) => (
+              <Link 
+                key={s.slug} 
+                href={`/${s.slug}-${city.slug}`}
+                style={{ 
+                  padding: '16px 20px', 
+                  background: 'white', 
+                  borderRadius: '16px', 
+                  color: 'black', 
+                  textDecoration: 'none', 
+                  fontSize: '0.85rem', 
+                  fontWeight: 900,
+                  transition: 'all 0.2s',
+                  border: '2px solid #eee',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}
+                className="service-link"
+              >
+                <div style={{ width: '8px', height: '8px', background: 'var(--primary)', borderRadius: '50%' }} />
+                {s.template.replace('[Miasto]', city.name)}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {nearbyCities.length > 0 && (
         <section style={{ background: 'white', padding: '60px 20px', borderTop: '1px solid #f0f0f0' }}>
           <div style={{ maxWidth: '1400px', margin: '0 auto' }}>

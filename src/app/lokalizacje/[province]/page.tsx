@@ -103,7 +103,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
               {groupedByDistrict[district].map(city => (
                 <Link
                   key={city.slug}
-                  href={`/pomoc-drogowa/${city.slug}`}
+                  href={`/pomoc-drogowa-${city.slug}`}
                   style={{
                     fontSize: '13px',
                     fontWeight: 600,

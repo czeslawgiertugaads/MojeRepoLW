@@ -66,8 +66,48 @@ export default function Tracker() {
       }
     };
 
+    // Add click tracking for phone numbers
+    const handleClick = async (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      if (anchor && anchor.href.startsWith('tel:')) {
+        const phone = anchor.href.replace('tel:', '');
+
+        // 1. Track in GA4
+        if (typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'phone_click', {
+            'phone_number': phone,
+            'page_location': window.location.href,
+            'page_path': pathname
+          });
+        }
+
+        // 2. Track in Supabase
+        try {
+          const fpPromise = FingerprintJS.load();
+          const fp = await fpPromise;
+          const result = await fp.get();
+          const fingerprint = result.visitorId;
+
+          await supabase.from('phone_clicks').insert([{
+            path: pathname,
+            phone: phone,
+            fingerprint: fingerprint,
+            created_at: new Date().toISOString()
+          }]);
+        } catch (err) {
+          console.error('Phone click tracking error:', err);
+        }
+      }
+    };
+
     document.addEventListener('copy', handleCopy);
-    return () => document.removeEventListener('copy', handleCopy);
+    document.addEventListener('click', handleClick);
+    return () => {
+      document.removeEventListener('copy', handleCopy);
+      document.removeEventListener('click', handleClick);
+    };
   }, [pathname, searchParams, supabase])
 
   return null

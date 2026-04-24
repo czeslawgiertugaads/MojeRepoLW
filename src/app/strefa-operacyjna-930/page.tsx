@@ -20,9 +20,10 @@ export default function AdminDashboard() {
   const [visitors, setVisitors] = useState<any[]>([])
   const [messages, setMessages] = useState<any[]>([])
   const [copyEvents, setCopyEvents] = useState<any[]>([])
+  const [phoneClicks, setPhoneClicks] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [user, setUser] = useState<any>(null)
-  const [activeTab, setActiveTab] = useState('visits') // visits, suspicious, messages, copy
+  const [activeTab, setActiveTab] = useState('visits') // visits, suspicious, messages, copy, phone
   const supabase = createClient()
   const router = useRouter()
 
@@ -53,6 +54,10 @@ export default function AdminDashboard() {
     // Fetch Copy Events
     const { data: cData } = await supabase.from('copy_events').select('*').order('created_at', { ascending: false })
     setCopyEvents(cData || [])
+
+    // Fetch Phone Clicks
+    const { data: pData } = await supabase.from('phone_clicks').select('*').order('created_at', { ascending: false })
+    setPhoneClicks(pData || [])
     
     setLoading(false)
   }
@@ -94,7 +99,7 @@ export default function AdminDashboard() {
         {/* Stats Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '40px' }}>
           <StatCard title="WSZYSTKIE WIZYTY" value={visitors.length.toString()} icon={<RefreshCcw size={24} />} color="blue" />
-          <StatCard title="NOWE WIADOMOŚCI" value={messages.length.toString()} icon={<Mail size={24} />} color="green" />
+          <StatCard title="KLIKNIĘCIA TELEFONU" value={phoneClicks.length.toString()} icon={<MousePointer2 size={24} />} color="green" />
           <StatCard title="PODEJRZANE IP" value={suspiciousIPs.length.toString()} icon={<ShieldAlert size={24} />} color="orange" />
           <StatCard title="KOPIOWANIE TREŚCI" value={copyEvents.length.toString()} icon={<Copy size={24} />} color="red" />
         </div>
@@ -102,6 +107,7 @@ export default function AdminDashboard() {
         {/* Tabs Navigation */}
         <div style={{ display: 'flex', gap: '8px', marginBottom: '24px', background: 'white', padding: '6px', borderRadius: '12px', border: '1px solid #e2e8f0', width: 'fit-content' }}>
           <TabButton active={activeTab === 'visits'} onClick={() => setActiveTab('visits')} label="WIZYTY" icon={<LayoutDashboard size={14} />} />
+          <TabButton active={activeTab === 'phone'} onClick={() => setActiveTab('phone')} label="KLIKNIĘCIA TEL." icon={<MousePointer2 size={14} />} />
           <TabButton active={activeTab === 'messages'} onClick={() => setActiveTab('messages')} label="WIADOMOŚCI" icon={<Mail size={14} />} />
           <TabButton active={activeTab === 'suspicious'} onClick={() => setActiveTab('suspicious')} label="PODEJRZANE IP" icon={<ShieldAlert size={14} />} />
           <TabButton active={activeTab === 'copy'} onClick={() => setActiveTab('copy')} label="KOPIOWANIE" icon={<Copy size={14} />} />
@@ -112,6 +118,7 @@ export default function AdminDashboard() {
           <div style={{ padding: '24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 900 }}>
               {activeTab === 'visits' && 'OSTATNI ODWIEDZAJĄCY'}
+              {activeTab === 'phone' && 'KLIKNIĘCIA W NUMER TELEFONU'}
               {activeTab === 'messages' && 'WIADOMOŚCI OD KLIENTÓW'}
               {activeTab === 'suspicious' && 'ADRESY IP (CYKLICZNE WIZYTY > 3)'}
               {activeTab === 'copy' && 'REJESTR KOPIOWANIA TREŚCI'}
@@ -122,6 +129,29 @@ export default function AdminDashboard() {
           </div>
 
           <div style={{ overflowX: 'auto' }}>
+            {activeTab === 'phone' && (
+              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+                <thead>
+                  <tr style={{ background: '#f8fafc' }}>
+                    <TableHeader label="DATA" />
+                    <TableHeader label="STRONA (SKĄD KLIKNĄŁ)" />
+                    <TableHeader label="FINGERPRINT" />
+                    <TableHeader label="NUMER" />
+                  </tr>
+                </thead>
+                <tbody>
+                  {phoneClicks.map((p, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                      <TableCell><TimeCell date={p.created_at} /></TableCell>
+                      <TableCell style={{ fontWeight: 800 }}>{p.path}</TableCell>
+                      <TableCell style={{ fontSize: '11px', opacity: 0.5 }}>{p.fingerprint}</TableCell>
+                      <TableCell style={{ fontWeight: 900, color: 'var(--primary)' }}>{p.phone}</TableCell>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+
             {activeTab === 'visits' && (
               <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>

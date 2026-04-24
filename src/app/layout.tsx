@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 
 import { Suspense } from "react";
 import Tracker from "@/components/Tracker";
+import Script from 'next/script';
 
 export default function RootLayout({
   children,
@@ -31,6 +32,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`} data-scroll-behavior="smooth">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C6JHW715ZE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C6JHW715ZE');
+          `}
+        </Script>
+      </head>
       <body>
         <Suspense fallback={null}>
           <Tracker />
