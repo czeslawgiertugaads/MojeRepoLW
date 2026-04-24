@@ -192,7 +192,7 @@ async function getPageData(slug: string) {
     .sort(() => 0.5 - Math.random())
     .slice(0, 12);
 
-  return { city, service, serviceTitle: serviceTitleCapitalized, dynamicLawetaText, contentChunks, nearbyCities };
+  return { city, service, serviceTitle: serviceTitleCapitalized, dynamicLawetaText, contentChunks, nearbyCities, services };
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -213,7 +213,7 @@ export default async function DynamicPage({ params }: PageProps) {
   const data = await getPageData(slug);
   if (!data) notFound();
 
-  const { city, service, serviceTitle, dynamicLawetaText, contentChunks, nearbyCities } = data;
+  const { city, service, serviceTitle, dynamicLawetaText, contentChunks, nearbyCities, services } = data;
   const { miejscownik } = declineCity(city.name);
 
   // ─── City-tier logic for dynamic effects
