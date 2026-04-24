@@ -46,11 +46,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     }
   };
 
+  const siteNameLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LAWECIARZ.PRO",
+    "url": "https://laweciarz.pro.pl/"
+  };
+
   return (
     <main style={{ background: '#fff', minHeight: '100vh', paddingBottom: '120px' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
       {/* Navigation */}
       <nav style={{ background: 'white', padding: '20px 40px', borderBottom: '1px solid #eee', position: 'sticky', top: 0, zIndex: 100 }}>

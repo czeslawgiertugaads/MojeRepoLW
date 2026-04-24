@@ -250,11 +250,22 @@ export default async function DynamicPage({ params }: PageProps) {
     }
   };
 
+  const siteNameLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LAWECIARZ.PRO",
+    "url": "https://laweciarz.pro.pl/"
+  };
+
   return (
     <main style={{ minHeight: '100vh', background: 'var(--background)', overflowX: 'hidden' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
       <Navigation locationText={city.name.toUpperCase()} />
 

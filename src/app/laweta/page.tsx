@@ -26,9 +26,9 @@ const PhoneIcon = ({ size = 24 }: { size?: number }) => (
 
 export default function LawetaPage() {
   const allCities = getCities();
-  
+
   const prioritySlugs = [
-    'warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk', 'szczecin', 'bydgoszcz', 
+    'warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk', 'szczecin', 'bydgoszcz',
     'lublin', 'bialystok', 'katowice', 'gdynia', 'czestochowa', 'radom', 'torun', 'sosnowiec',
     'rzeszow', 'kielce', 'gliwice', 'olsztyn', 'zabrze', 'bielsko-biala', 'bytom', 'zielona-gora',
     'rybnik', 'ruda-slaska', 'tychy', 'gorzow-wielkopolski', 'elblag', 'plock', 'dabrowa-gornicza', 'walbrzych'
@@ -68,12 +68,12 @@ export default function LawetaPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Laweta i Transport Pojazdów 24/7 - laweciarz.pro",
+    "name": "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
     "image": "https://laweciarz.pro/images/hero-main.webp",
     "description": `Laweta na pełnej platformie ⭐⭐⭐⭐⭐ 📞 572 272 930. Bezpieczny transport aut osobowych, elektrycznych, sportowych i dostawczych. Całodobowa laweta i holowanie 24h. Dojazd w 15 minut!`,
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "lAWECIARZ.PRO "
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -82,11 +82,22 @@ export default function LawetaPage() {
     }
   };
 
+  const siteNameLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LAWECIARZ.PRO",
+    "url": "https://laweciarz.pro.pl/"
+  };
+
   return (
     <main style={{ minHeight: '100vh', background: 'white', overflowX: 'hidden' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
       <Navigation locationText="TWOJA OKOLICA" />
 
@@ -95,28 +106,28 @@ export default function LawetaPage() {
           ═══════════════════════════════════════ */}
       <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
         <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '50px', flexWrap: 'wrap' }}>
-          
+
           <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
             <div className="hero-badge-container">
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
               <div className="badge-accent anim-bounce-in anim-delay-2">TWOJA OKOLICA</div>
             </div>
-            
-            <h1 className="anim-slide-left anim-delay-1" style={{ 
-              fontSize: 'clamp(2.4rem, 7vw, 6rem)', 
-              fontWeight: 950, 
-              lineHeight: 0.92, 
-              textTransform: 'uppercase', 
-              letterSpacing: '-2px', 
-              marginBottom: '28px' 
+
+            <h1 className="anim-slide-left anim-delay-1" style={{
+              fontSize: 'clamp(2.4rem, 7vw, 6rem)',
+              fontWeight: 950,
+              lineHeight: 0.92,
+              textTransform: 'uppercase',
+              letterSpacing: '-2px',
+              marginBottom: '28px'
             }}>
               <span style={{ fontSize: '0.4em', display: 'block', letterSpacing: '4px', color: '#666', marginBottom: '8px' }}>PROFESJONALNA</span>
               LAWETA <span style={{ color: 'var(--primary)' }}>24/7</span>
             </h1>
- 
-            <p className="anim-slide-left anim-delay-2" style={{ 
-              fontSize: 'clamp(1rem, 2vw, 1.3rem)', fontWeight: 600, 
-              marginBottom: '36px', lineHeight: 1.55, maxWidth: '600px', color: '#444' 
+
+            <p className="anim-slide-left anim-delay-2" style={{
+              fontSize: 'clamp(1rem, 2vw, 1.3rem)', fontWeight: 600,
+              marginBottom: '36px', lineHeight: 1.55, maxWidth: '600px', color: '#444'
             }}>
               Bezpieczny transport pojazdów na pełnej platformie hydraulicznej. Holujemy auta osobowe, sportowe i elektryczne. Szybki dojazd tam, gdzie nas potrzebujesz.
             </p>
@@ -129,13 +140,13 @@ export default function LawetaPage() {
 
           <div className="anim-slide-right hero-image-slug" style={{ flex: '1', minWidth: '300px', position: 'relative' }}>
             <div className="hero-image-frame">
-              <Image 
-                src="/images/hero-main.webp" 
-                alt="laweciarz.pro Laweta 24h" 
-                fill 
+              <Image
+                src="/images/hero-main.webp"
+                alt="laweciarz.pro Laweta 24h"
+                fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }} 
-                priority 
+                style={{ objectFit: 'cover' }}
+                priority
               />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4), transparent 50%)' }} />
             </div>

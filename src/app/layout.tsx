@@ -13,12 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LAWECIARZ.PRO - Profesjonalna Pomoc Drogowa, Laweta i Holowanie 24/7",
-  description: `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. laweciarz.pro to najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Profesjonalna obsługa, dojazd 15 minut!`,
+  title: "Profesjonalna Pomoc Drogowa, Laweta i Holowanie 24/7 - LAWECIARZ.PRO",
+  description: `Pomoc Drogowa, Laweta i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. LAWECIARZ.PRO - to najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Profesjonalna obsługa, dojazd 15 minut!`,
   robots: {
     index: true,
     follow: true,
   },
+  openGraph: {
+    siteName: "LAWECIARZ.PRO",
+  }
 };
 
 import { Suspense } from "react";
@@ -37,7 +40,7 @@ export default function RootLayout({
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-C6JHW715ZE"
           strategy="afterInteractive"
-         />
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

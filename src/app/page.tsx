@@ -129,11 +129,22 @@ export default async function HomePage() {
     }
   };
 
+  const siteNameLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LAWECIARZ.PRO",
+    "url": "https://laweciarz.pro.pl/"
+  };
+
   return (
     <main style={{ minHeight: '100vh', background: '#fff', overflowX: 'hidden' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
       <Navigation />
 
