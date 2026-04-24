@@ -60,7 +60,49 @@ const StarIcon = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
+async function getGoogleNews() {
+  try {
+    const res = await fetch('https://news.google.com/rss/search?q=wypadek+drogowy+polska+OR+utrudnienia+ruchu+OR+transport+drogowy&hl=pl&gl=PL&ceid=PL:pl', {
+      next: { revalidate: 3600 } // Cache for 1 hour
+    });
+    const xml = await res.text();
+    
+    // Simple RSS parsing via regex (safe for server-side trusted feed)
+    const items = [];
+    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+    let match;
+    
+    while ((match = itemRegex.exec(xml)) !== null && items.length < 3) {
+      const content = match[1];
+      const title = content.match(/<title>(.*?)<\/title>/)?.[1] || "Wiadomość drogowa";
+      const link = content.match(/<link>(.*?)<\/link>/)?.[1] || "#";
+      const pubDate = content.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || "";
+      
+      // Clean title from source
+      const cleanTitle = title.split(' - ')[0];
+      const source = title.split(' - ')[1] || "Google News";
+      
+      const dateObj = new Date(pubDate);
+      const formattedDate = !isNaN(dateObj.getTime()) 
+        ? `${dateObj.getDate()}.${dateObj.getMonth() + 1}.${dateObj.getFullYear()}`
+        : "Dzisiaj";
+
+      items.push({
+        title: cleanTitle,
+        url: link,
+        date: formattedDate,
+        source: source
+      });
+    }
+    return items;
+  } catch (err) {
+    console.error("RSS Fetch error:", err);
+    return [];
+  }
+}
+
 export default async function HomePage() {
+  const roadNews = await getGoogleNews();
   const allCities = getCities();
   const largestCitySlugs = ['warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk'];
   const topCities = allCities
@@ -68,29 +110,6 @@ export default async function HomePage() {
     .slice(0, 10);
 
   // Static road news - updated periodically
-  const roadNews = [
-    {
-      title: 'Ważne: Sezon zimowy a stan nawierzchni — co warto wiedzieć przed długą trasą',
-      date: '23.04.2026',
-      source: 'laweciarz.pro',
-      url: 'https://news.google.com/search?q=wypadek+droga+polska',
-      excerpt: 'Zmienne warunki pogodowe i stan nawierzchni to główne przyczyny awarii na polskich drogach. Sprawdź, jak się przygotować.'
-    },
-    {
-      title: 'Holowanie po wypadku — jakie masz prawa i jak działa pomoc z OC sprawcy?',
-      date: '22.04.2026',
-      source: 'laweciarz.pro',
-      url: 'https://news.google.com/search?q=holowanie+OC+sprawca',
-      excerpt: 'Wielu kierowców nie wie, że koszty holowania po wypadku pokrywa ubezpieczenie sprawcy. Wyjaśniamy procedurę krok po kroku.'
-    },
-    {
-      title: 'Laweta 24h — kiedy dzwonić, co podać dyspozyturze i ile to kosztuje?',
-      date: '21.04.2026',
-      source: 'laweciarz.pro',
-      url: 'https://news.google.com/search?q=laweta+pomoc+drogowa+cena',
-      excerpt: 'Awaria w trasie to stres, ale z właściwym numerem pod ręką wrócimy do domu bezpiecznie. Sprawdź co zrobić krok po kroku.'
-    }
-  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -254,7 +273,7 @@ export default async function HomePage() {
 
 
       {/* ═══════════════════════════════════════
-          NEWS — Editorial layout
+          NEWS — Dynamic Google News RSS
           ═══════════════════════════════════════ */}
       <section style={{ padding: '100px clamp(12px, 3vw, 20px)' }}>
         <div className="container">
@@ -269,20 +288,20 @@ export default async function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '32px' }}>
             {roadNews.map((news, idx) => (
               <a key={idx} href={news.url} target="_blank" rel="noopener noreferrer" className={`card card-lift anim-slide-up anim-delay-${idx + 1}`}
-                style={{ padding: 'clamp(24px, 5vw, 48px)', border: '1px solid #eee', borderRadius: '32px', display: 'flex', flexDirection: 'column', textDecoration: 'none', color: 'inherit' }}>
+                style={{ padding: 'clamp(24px, 5vw, 42px)', border: '1px solid #eee', borderRadius: '32px', display: 'flex', flexDirection: 'column', textDecoration: 'none', color: 'inherit' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-                  <span className="badge-accent" style={{ fontSize: '11px', padding: '8px 16px' }}>{news.source}</span>
-                  <span style={{ fontSize: '12px', color: '#aaa', fontWeight: 800 }}>{news.date}</span>
+                  <span className="badge-accent" style={{ fontSize: '10px', padding: '6px 12px' }}>{news.source}</span>
+                  <span style={{ fontSize: '11px', color: '#aaa', fontWeight: 800 }}>{news.date}</span>
                 </div>
-                <h3 style={{ fontSize: '1.6rem', fontWeight: 950, marginBottom: '20px', lineHeight: 1.25 }}>{news.title}</h3>
-                <p style={{ color: '#666', fontWeight: 600, lineHeight: 1.6, marginBottom: '30px', fontSize: '1.05rem' }}>
-                  {news.excerpt}
-                </p>
-                <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 950, fontSize: '14px', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 950, marginBottom: '20px', lineHeight: 1.25 }}>{news.title}</h3>
+                <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 950, fontSize: '13px', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   CZYTAJ WIĘCEJ <ChevronRightIcon size={20} />
                 </div>
               </a>
             ))}
+            {roadNews.length === 0 && (
+              <p style={{ opacity: 0.5, fontWeight: 600 }}>Ładowanie najnowszych wiadomości drogowych...</p>
+            )}
           </div>
         </div>
       </section>
