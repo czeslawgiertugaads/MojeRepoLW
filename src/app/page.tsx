@@ -144,7 +144,7 @@ export default async function HomePage() {
         <div className="hero-container-home" style={{ width: '100%', maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '60px', flexWrap: 'wrap' }}>
 
           {/* Left — copy */}
-          <div className="anim-slide-left hero-content-home" style={{ flex: '1.2', minWidth: '300px' }}>
+          <div className="anim-hero-entrance hero-content-home" style={{ flex: '1.2', minWidth: '300px' }}>
             <div className="hero-badge-container">
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
               <div className="badge-accent anim-bounce-in anim-delay-2 hidden-mobile">TWOJA OKOLICA: MAZOWIECKIE</div>
@@ -190,13 +190,21 @@ export default async function HomePage() {
           ═══════════════════════════════════════ */}
       <div className="ticker-wrap" style={{ background: 'var(--secondary)', color: 'white', padding: '15px 0', borderTop: '4px solid var(--primary)' }}>
         <div className="ticker-inner">
-          {[1, 2, 3, 4, 5, 6].map(i => (
+          {[1, 2, 3].map(i => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
               <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Pomoc Drogowa 24/7</span>
               <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
-              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Laweta Cała Polska</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>OSOBOWE</span>
               <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
-              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Mobilny Serwis Opon</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>BUS</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>TIR</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>CIĘŻAROWE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>MASZYNY ROLNICZE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>GABARYTY</span>
               <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
             </div>
           ))}

@@ -49,7 +49,13 @@ const ShieldIcon = ({ size = 24, ...props }: IconProps) => (
 
 const ZapIcon = ({ size = 24, ...props }: IconProps) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+  </svg>
+);
+
+const StarIcon = ({ size = 24, ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="none" {...props}>
+    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
   </svg>
 );
 
@@ -254,7 +260,7 @@ export default async function DynamicPage({ params }: PageProps) {
 
       <section className="hero-section-slug bg-dots" style={{ position: 'relative' }}>
         <div className="hero-container-slug" style={{ width: '100%', maxWidth: '1400px', margin: '0 auto', display: 'flex', alignItems: 'stretch', gap: '50px', flexWrap: 'wrap' }}>
-          <div className="anim-slide-left hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
+          <div className="anim-hero-entrance hero-content-slug" style={{ flex: '1.2', minWidth: '300px' }}>
             <div className="hero-badge-container" style={{ marginBottom: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               <div className="badge-live anim-bounce-in">DOSTĘPNI TERAZ · 24 / 7</div>
               <div className="badge-accent anim-bounce-in anim-delay-2 hidden-mobile">OBSZAR: {city.name.toUpperCase()}</div>
@@ -302,6 +308,63 @@ export default async function DynamicPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* ─── Ticker — now including all requested types ─── */}
+      <div className="ticker-wrap" style={{ background: 'var(--secondary)', color: 'white', padding: '15px 0', borderTop: '4px solid var(--primary)' }}>
+        <div className="ticker-inner">
+          {[1, 2, 3].map(i => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>Pomoc Drogowa {city.name.toUpperCase()}</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>OSOBOWE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>BUS</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>TIR</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>CIĘŻAROWE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>MASZYNY ROLNICZE</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+              <span style={{ fontWeight: 950, fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>GABARYTY</span>
+              <span style={{ color: 'var(--primary)', fontSize: '20px' }}>★</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── Premium Review Section (Maciej Jastrzębski) ─── */}
+      <section style={{ padding: '60px 20px', background: '#fff' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '1000px' }}>
+          <div className="badge-accent" style={{ background: 'var(--primary)', color: '#fff', marginBottom: '16px', fontWeight: 950, padding: '8px 20px', borderRadius: '50px' }}>
+            ŚREDNIA 5.0 (5364 OPINIE)
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', color: '#fbbf24', marginBottom: '32px' }}>
+            {[1, 2, 3, 4, 5].map(s => <StarIcon key={s} size={64} />)}
+          </div>
+
+          <p style={{
+            fontStyle: 'italic',
+            fontWeight: 900,
+            fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+            marginBottom: '30px',
+            lineHeight: 1.1,
+            color: '#000'
+          }}>
+            „Pełen profesjonalizm i błyskawiczna pomoc. Panowie praktycznie uratowali mi życie
+            na trasie, gdy auto stanęło w nocy. Zdecydowanie polecam każdemu!”
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#eee', color: '#888', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 950, fontSize: '14px' }}>MJ</div>
+            <div style={{ textAlign: 'left' }}>
+              <div style={{ fontWeight: 800, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px', color: '#666' }}>Maciej Jastrzębski</div>
+              <div style={{ fontWeight: 700, fontSize: '11px', opacity: 0.5, letterSpacing: '1px', color: '#666' }}>GOOGLE MAPS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <AdvantagesSection />
+
       <section style={{ background: 'var(--secondary)', color: 'white', borderTop: '8px solid var(--primary)' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
           {[
@@ -320,6 +383,7 @@ export default async function DynamicPage({ params }: PageProps) {
           ))}
         </div>
       </section>
+      {/* SEO Content Chunks */}
       <section style={{ background: 'white', padding: '80px 20px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           {contentChunks.map((chunk, index) => {
@@ -336,8 +400,6 @@ export default async function DynamicPage({ params }: PageProps) {
           })}
         </div>
       </section>
-
-      <AdvantagesSection />
 
       {nearbyCities.length > 0 && (
         <section style={{ background: 'white', padding: '60px 20px', borderTop: '1px solid #f0f0f0' }}>
