@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { Suspense } from "react";
+import Tracker from "@/components/Tracker";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`} data-scroll-behavior="smooth">
-      <body>{children}</body>
+      <body>
+        <Suspense fallback={null}>
+          <Tracker />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }
