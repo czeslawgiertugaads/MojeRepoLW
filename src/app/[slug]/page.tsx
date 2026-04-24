@@ -1,4 +1,4 @@
-export const revalidate = 15552000; // 6 months
+export const revalidate = 63072000; // 2 years
 import React from "react";
 import { getCities, getServices, replaceSEOTemplate, getSEOContent, City, Service, slugify, declineCity } from "@/lib/seo-utils";
 import { Metadata } from "next";
@@ -259,26 +259,35 @@ export default async function DynamicPage({ params }: PageProps) {
               <div className="badge-accent anim-bounce-in anim-delay-2">{cityMeta.label}: {city.name.toUpperCase()}</div>
             </div>
 
-            <h1 className="anim-slide-left anim-delay-1" style={{
-              fontSize: 'clamp(2.4rem, 7vw, 6rem)',
-              fontWeight: 950,
-              lineHeight: 0.92,
-              textTransform: 'uppercase',
-              letterSpacing: '-2px',
-              marginBottom: '28px'
-            }}>
-              {service.template.split(/\[Miasto\]/gi).map((part, i, arr) => {
-                const capitalizedPart = part.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-                return (
-                  <span key={i}>
-                    {capitalizedPart.replace(/\s24h/gi, '\u00A024H')}
-                    {i < arr.length - 1 && (
-                      <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
-                    )}
-                  </span>
-                );
-              })}
-            </h1>
+            {(() => {
+              const nameLen = city.name.length;
+              let fontSize = 'clamp(2.4rem, 7vw, 6rem)';
+              if (nameLen > 15) fontSize = 'clamp(2rem, 5vw, 4.2rem)';
+              else if (nameLen > 10) fontSize = 'clamp(2.2rem, 6vw, 5.2rem)';
+              
+              return (
+                <h1 className="anim-slide-left anim-delay-1" style={{
+                  fontSize: fontSize,
+                  fontWeight: 950,
+                  lineHeight: 0.92,
+                  textTransform: 'uppercase',
+                  letterSpacing: '-2px',
+                  marginBottom: '28px'
+                }}>
+                  {service.template.split(/\[Miasto\]/gi).map((part, i, arr) => {
+                    const capitalizedPart = part.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+                    return (
+                      <span key={i}>
+                        {capitalizedPart.replace(/\s24h/gi, '\u00A024H')}
+                        {i < arr.length - 1 && (
+                          <span style={{ color: 'var(--primary)', display: 'inline-block' }}>{city.name}</span>
+                        )}
+                      </span>
+                    );
+                  })}
+                </h1>
+              );
+            })()}
 
             <p className="anim-slide-left anim-delay-2" style={{
               fontSize: 'clamp(1rem, 2vw, 1.3rem)', fontWeight: 600,

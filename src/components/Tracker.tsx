@@ -47,6 +47,27 @@ export default function Tracker() {
     }
 
     trackVisit()
+
+    // Add copy tracking
+    const handleCopy = async () => {
+      try {
+        const selection = window.getSelection()?.toString();
+        if (!selection) return;
+
+        const { createClient } = await import('@/lib/supabase');
+        const supabase = createClient();
+        await supabase.from('copy_events').insert([{
+          path: pathname,
+          content_preview: selection.substring(0, 500),
+          created_at: new Date().toISOString()
+        }]);
+      } catch (err) {
+        console.error('Copy tracking error:', err);
+      }
+    };
+
+    document.addEventListener('copy', handleCopy);
+    return () => document.removeEventListener('copy', handleCopy);
   }, [pathname, searchParams, supabase])
 
   return null

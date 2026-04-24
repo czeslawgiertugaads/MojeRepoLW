@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /strefa-operacyjna-930
+Disallow: /polityka-prywatnosci
 
 Sitemap: https://laweciarz.pro/sitemap.xml

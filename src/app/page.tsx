@@ -1,3 +1,4 @@
+export const revalidate = 86400; // 24 hours
 import React from 'react';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { City, getCities, slugify } from "@/lib/seo-utils";
+import { City, getCities } from "@/lib/seo-utils";
+import ContactForm from "./ContactForm";
 
 interface FooterProps {
   currentCity?: City;
@@ -8,7 +9,6 @@ interface FooterProps {
 export default function Footer({ currentCity }: FooterProps) {
   const allCities = getCities();
 
-  // Largest cities list for default view
   const largestCitySlugs = [
     'warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk',
     'szczecin', 'bydgoszcz', 'lublin', 'bialystok', 'katowice', 'gdynia',
@@ -23,7 +23,6 @@ export default function Footer({ currentCity }: FooterProps) {
     const district = currentCity.district || "Pozostałe";
     let distCities = allCities.filter(c => c.district === district && c.slug !== currentCity.slug);
     
-    // If we have too few cities in the district, add some from the province as fallback
     if (distCities.length < 16) {
       const provinceCities = allCities.filter(c => 
         c.province === currentCity.province && 
@@ -105,13 +104,13 @@ export default function Footer({ currentCity }: FooterProps) {
                 }}>
                   572 272 930
                 </a>
-                <p style={{ fontSize: '14px', fontWeight: 600, opacity: 0.5, lineHeight: 1.6 }}>
-                  Średni czas dojazdu w Twojej okolicy:<br/>
-                  <strong style={{ color: 'white', opacity: 1 }}>15 minut</strong>. Zadzwoń teraz.
-                </p>
+                
+                {/* Zintegrowany minimalistyczny formularz */}
+                <ContactForm />
+
                 <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-                  <a href="mailto:kontakt@laweciarz.pro" style={{ color: 'white', textDecoration: 'none', fontWeight: 750, fontSize: '14px', opacity: 0.8, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <a href="mailto:kontakt@laweciarz.pro" style={{ color: 'white', textDecoration: 'none', fontWeight: 750, fontSize: '12px', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     kontakt@laweciarz.pro
                   </a>
                 </div>
@@ -119,8 +118,17 @@ export default function Footer({ currentCity }: FooterProps) {
           </div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: '100px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.05)', fontSize: '12px', fontWeight: 800, opacity: 0.3, textAlign: 'center', letterSpacing: '1px' }}>
-        © 2026 LAWECIARZ.PRO – LOKALNY SYSTEM POMOCY DROGOWEJ. WSZYSTKIE PRAWA ZASTRZEŻONE.
+
+      <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: '80px', paddingTop: '30px', maxWidth: '1400px', margin: '80px auto 0' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', fontSize: '11px', fontWeight: 800, color: '#444', padding: '0 20px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ background: '#333', color: '#666', padding: '4px 8px', borderRadius: '4px', fontWeight: 950, fontSize: '12px' }}>LAWECIARZ.PRO</div>
+            <span>© 2026 WSZELKIE PRAWA ZASTRZEŻONE.</span>
+          </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            {/* Linki ukryte zgodnie z instrukcją */}
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -26,7 +26,7 @@ export default function LoginPage() {
       setError(error.message)
       setLoading(false)
     } else {
-      router.push('/admin')
+      router.push('/strefa-operacyjna-930')
       router.refresh()
     }
   }

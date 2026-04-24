@@ -20,8 +20,6 @@ export default function GlobalError({
 
   // Return null or a simple blank view while redirecting
   return (
-    <html>
-      <body style={{ background: 'white' }}></body>
-    </html>
+    <div style={{ minHeight: '100vh', background: 'white' }} />
   );
 }
