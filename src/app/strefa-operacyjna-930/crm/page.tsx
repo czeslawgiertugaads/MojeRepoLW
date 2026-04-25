@@ -253,10 +253,10 @@ export default function CRMPage() {
                           {s.name}
                         </div>
                         <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
-                           {s.service_osobowe && <Car size={14} color="#3b82f6" title="Osobowe" />}
-                           {s.service_bus && <Truck size={14} color="#16a34a" title="Bus" />}
-                           {s.service_tir && <Truck size={14} color="#ef4444" strokeWidth={3} title="TIR" />}
-                           {s.service_wulkanizacja && <Disc size={14} color="#f59e0b" title="Wulkanizacja" />}
+                           {s.service_osobowe && <span title="Osobowe"><Car size={14} color="#3b82f6" /></span>}
+                           {s.service_bus && <span title="Bus"><Truck size={14} color="#16a34a" /></span>}
+                           {s.service_tir && <span title="TIR"><Truck size={14} color="#ef4444" strokeWidth={3} /></span>}
+                           {s.service_wulkanizacja && <span title="Wulkanizacja"><Disc size={14} color="#f59e0b" /></span>}
                         </div>
                         <div style={{ fontSize: '12px', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '4px', marginTop: '4px' }}><MapPin size={12} /> {s.base_city}</div>
                         {s.notes && <div style={{ fontSize: '11px', color: '#64748b', fontStyle: 'italic', marginTop: '6px' }}>📝 {s.notes}</div>}
