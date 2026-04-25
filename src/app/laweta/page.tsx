@@ -80,7 +80,7 @@ export default function LawetaPage() {
     "@type": "LocalBusiness",
     "name": "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Laweta na pełnej platformie ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO ⭐ 5.0`,
+    "description": `Laweta na pełnej platformie ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO - dzia`,
     "telephone": "572 272 930",
     "priceRange": "$$",
     "address": {

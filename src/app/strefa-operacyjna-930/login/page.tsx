@@ -33,7 +33,7 @@ export default function LoginPage() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc' }}>
-      <div style={{ maxWidth: '400px', width: '100%', padding: '40px', background: 'white', borderRadius: '24px', boxShadow: '0 20px 50px rgba(0,0,0,0.05)' }}>
+      <div style={{ maxWidth: '400px', width: '100%', padding: 'clamp(20px, 8vw, 40px)', background: 'white', borderRadius: '24px', boxShadow: '0 20px 50px rgba(0,0,0,0.05)' }}>
         <h1 style={{ fontSize: '24px', fontWeight: 950, marginBottom: '8px', textAlign: 'center' }}>PANEL ADMINA</h1>
         <p style={{ color: '#666', textAlign: 'center', marginBottom: '32px', fontSize: '14px' }}>Zaloguj się, aby zarządzać statystykami</p>
 

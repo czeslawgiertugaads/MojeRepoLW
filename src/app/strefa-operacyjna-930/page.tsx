@@ -13,7 +13,13 @@ import {
   LogOut,
   Mail,
   Copy,
-  LayoutDashboard
+  LayoutDashboard,
+  Truck,
+  History,
+  Plus,
+  Search,
+  Building2,
+  FileText
 } from 'lucide-react'
 
 export default function AdminDashboard() {
@@ -128,15 +134,21 @@ export default function AdminDashboard() {
           <StatCard title="WIZYTY" value={visitors.length.toString()} icon={<RefreshCcw size={20} />} color="blue" />
           <StatCard title="TEL." value={phoneClicks.length.toString()} icon={<MousePointer2 size={20} />} color="green" />
           <StatCard title="ALERTY" value={securityEvents.length.toString()} icon={<ShieldAlert size={20} />} color="orange" />
-          <StatCard title="KOPIE" value={copyEvents.length.toString()} icon={<Copy size={20} />} color="red" />
+          <div onClick={() => router.push('/strefa-operacyjna-930/crm')} style={{ cursor: 'pointer', background: '#1e293b', padding: '24px', borderRadius: '20px', display: 'flex', alignItems: 'center', gap: '20px', color: 'white', border: '1px solid #1e293b shadow-xl transition-transform' }}>
+            <div style={{ background: 'rgba(255,255,255,0.1)', color: 'white', padding: '12px', borderRadius: '12px' }}><Truck size={20} /></div>
+            <div>
+                <div style={{ fontSize: '11px', fontWeight: 800, opacity: 0.7, textTransform: 'uppercase' }}>ZLECENIA / CRM</div>
+                <div style={{ fontSize: '18px', fontWeight: 950 }}>OTWÓRZ BAZĘ ➔</div>
+            </div>
+          </div>
         </div>
 
         {/* Tabs Navigation */}
         <div className="dash-tabs" style={{ display: 'flex', gap: '8px', marginBottom: '24px', background: 'white', padding: '6px', borderRadius: '12px', border: '1px solid #e2e8f0', width: '100%', overflowX: 'auto', whiteSpace: 'nowrap' }}>
           <TabButton active={activeTab === 'visits'} onClick={() => setActiveTab('visits')} label="WIZYTY" icon={<LayoutDashboard size={14} />} />
           <TabButton active={activeTab === 'phone'} onClick={() => setActiveTab('phone')} label="TEL." icon={<MousePointer2 size={14} />} />
-          <TabButton active={activeTab === 'security'} onClick={() => setActiveTab('security')} label="ALERTY" icon={<ShieldAlert size={14} />} />
           <TabButton active={activeTab === 'messages'} onClick={() => setActiveTab('messages')} label="MAILE" icon={<Mail size={14} />} />
+          <TabButton active={activeTab === 'security'} onClick={() => setActiveTab('security')} label="ALERTY" icon={<ShieldAlert size={14} />} />
           <TabButton active={activeTab === 'suspicious'} onClick={() => setActiveTab('suspicious')} label="IP" icon={<ShieldAlert size={14} />} />
           <TabButton active={activeTab === 'copy'} onClick={() => setActiveTab('copy')} label="COPY" icon={<Copy size={14} />} />
         </div>
@@ -158,6 +170,7 @@ export default function AdminDashboard() {
           </div>
 
           <div style={{ overflowX: 'auto' }}>
+
             {activeTab === 'security' && (
               <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
                 <thead>
@@ -319,6 +332,29 @@ export default function AdminDashboard() {
           </div>
         </div>
       </main>
+    </div>
+  )
+}
+
+function Modal({ title, children, onClose }: any) {
+  return (
+    <div style={{ position: 'fixed', inset: 0, background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '20px' }}>
+      <div style={{ background: 'white', borderRadius: '24px', width: '100%', maxWidth: '500px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)' }}>
+        <div style={{ padding: '20px 24px', borderBottom: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8fafc' }}>
+          <h2 style={{ margin: 0, fontSize: '14px', fontWeight: 950, letterSpacing: '1px' }}>{title}</h2>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: '#64748b' }}>&times;</button>
+        </div>
+        <div style={{ padding: '24px' }}>{children}</div>
+      </div>
+    </div>
+  )
+}
+
+function Input({ label, ...props }: any) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+      <label style={{ fontSize: '11px', fontWeight: 900, color: '#64748b' }}>{label.toUpperCase()}</label>
+      <input {...props} style={{ padding: '10px 14px', borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '14px', outline: 'none' }} />
     </div>
   )
 }
