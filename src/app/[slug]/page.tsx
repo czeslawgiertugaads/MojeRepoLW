@@ -158,20 +158,10 @@ async function getPageData(slug: string) {
     }
   }
 
-  const serviceTitle = service.template.replace(/\[Miasto\]/g, city.name);
+  const serviceTitle = replaceSEOTemplate(service.template, city, "").trim();
   let rawContent = content || "";
   
-  // Fix H2 inflection: replace [Mieście] with [Miasto] in lines starting with ##
-  rawContent = rawContent.split('\n').map(line => {
-    if (line.trim().startsWith('##')) {
-      return line.replace(/\[Mieście\]/g, '[Miasto]')
-                 .replace(/\[Miasta\]/g, '[Miasto]')
-                 .replace(/\[Miastu\]/g, '[Miasto]')
-                 .replace(/\[Biernik\]/g, '[Miasto]')
-                 .replace(/\[Narzędnik\]/g, '[Miasto]');
-    }
-    return line;
-  }).join('\n');
+
 
   let seoContent = replaceSEOTemplate(rawContent, city, '572 272 930');
 

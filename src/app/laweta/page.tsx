@@ -50,7 +50,9 @@ export default function LawetaPage() {
     .replace(/^# .*/gm, '')
     .replace(/---/g, '')
     .replace(/^## (.*)/gm, (match, p1) => {
-      const cleanTitle = p1.trim();
+      const cleanTitle = p1
+        .replace(/\[Miasto\]|\[Miasta\]|\[Miastu\]|\[Mieście\]/gi, '')
+        .trim();
       return `<h2 class="seo-h2" style="font-size: 1.7rem; margin-top: 50px; margin-bottom: 20px; color: var(--secondary);">${cleanTitle}</h2>`;
     })
     .replace(/^- (.*)/gm, `<div style="display: flex; align-items: flex-start; margin-bottom: 12px; padding-left: 10px;">
@@ -61,9 +63,14 @@ export default function LawetaPage() {
     </div>`)
     .replace(/\*\*(.*?)\*\*/g, '<strong style="color: var(--primary); font-weight: 900;">$1</strong>')
     .replace(/\n\n/g, '</p><p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">')
-    .replace(/\[Miasto\]|\[Miasta\]|\[Miastu\]|\[Mieście\]/gi, '')
+    .replace(/\[Miasto\]/gi, 'naszą firmę')
+    .replace(/w \[Mieście\]/gi, '24h')
+    .replace(/na terenie \[Miasta\]/gi, 'w całej Polsce')
+    .replace(/\[Mieście\]/gi, 'okolicy')
+    .replace(/\[Miasta\]/gi, 'całego regionu')
+    .replace(/\[Biernik\]/gi, 'Twój pojazd')
     .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
-    .replace(/Mocnyhol\.pl/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
+    .replace(/laweciarz\.Expert|Mocnyhol\.pl/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
 
   content = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${content}</p>`;
   const contentChunks = content.split('<h2');

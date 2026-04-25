@@ -66,35 +66,52 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
+      <style>{`
+        @media (max-width: 1024px) {
+          .article-container { gap: 40px !important; padding: 40px 15px !important; }
+          .article-main { flex: 1 !important; width: 100% !important; }
+          .article-sidebar { flex: 1 !important; width: 100% !important; }
+        }
+        @media (max-width: 768px) {
+          .article-nav { padding: 15px 20px !important; }
+          .article-h1 { fontSize: clamp(1.8rem, 8vw, 3rem) !important; marginBottom: 20px !important; }
+          .article-excerpt { fontSize: 1.1rem !important; paddingLeft: 20px !important; marginBottom: 30px !important; }
+          .article-image-container { height: 300px !important; marginBottom: 30px !important; borderRadius: 20px !important; }
+          .article-body h2 { fontSize: 1.6rem !important; marginTop: 40px !important; }
+          .article-cta-card { padding: 40px 25px !important; borderRadius: 24px !important; }
+          .article-cta-card h3 { fontSize: 1.8rem !important; }
+        }
+      `}</style>
+
       {/* Navigation */}
-      <nav style={{ background: 'white', padding: '20px 40px', borderBottom: '1px solid #eee', position: 'sticky', top: 0, zIndex: 100 }}>
+      <nav className="article-nav" style={{ background: 'white', padding: '20px 40px', borderBottom: '1px solid #eee', position: 'sticky', top: 0, zIndex: 100 }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 950, textDecoration: 'none', color: 'black', display: 'flex', alignItems: 'flex-end' }}>
             <span style={{ color: 'var(--primary)' }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
           </Link>
-          <Link href="/" style={{ color: '#666', fontWeight: 800, textTransform: 'uppercase', fontSize: '12px', textDecoration: 'none', letterSpacing: '1px' }}>← POWRÓT DO BAZY</Link>
+          <Link href="/" style={{ color: '#666', fontWeight: 800, textTransform: 'uppercase', fontSize: '10px', textDecoration: 'none', letterSpacing: '1px' }}>← POWRÓT</Link>
         </div>
       </nav>
 
-      <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '60px', padding: '60px 20px' }}>
+      <div className="article-container" style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '60px', padding: '60px 20px' }}>
         
         {/* Main Content */}
-        <article style={{ flex: '2', minWidth: '320px' }}>
+        <article className="article-main" style={{ flex: '2', minWidth: '320px' }}>
           <div style={{ marginBottom: '40px' }}>
             <div style={{ display: 'flex', gap: '8px', marginBottom: '20px' }}>
               {article.tags.map(tag => (
                 <span key={tag} style={{ background: '#f1f5f9', color: '#475569', padding: '4px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: 900 }}>{tag}</span>
               ))}
             </div>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 950, lineHeight: 1, marginBottom: '30px', textTransform: 'uppercase', letterSpacing: '-2px' }}>
+            <h1 className="article-h1" style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 950, lineHeight: 1, marginBottom: '30px', textTransform: 'uppercase', letterSpacing: '-2px' }}>
               {article.title}
             </h1>
-            <p style={{ fontSize: '1.35rem', fontWeight: 600, color: '#666', lineHeight: 1.6, marginBottom: '50px', borderLeft: '6px solid var(--primary)', paddingLeft: '30px' }}>
+            <p className="article-excerpt" style={{ fontSize: '1.35rem', fontWeight: 600, color: '#666', lineHeight: 1.6, marginBottom: '50px', borderLeft: '6px solid var(--primary)', paddingLeft: '30px' }}>
               {article.excerpt}
             </p>
           </div>
 
-          <div style={{ position: 'relative', width: '100%', height: '500px', borderRadius: '32px', overflow: 'hidden', marginBottom: '60px', boxShadow: '20px 20px 0 #f8fafc' }}>
+          <div className="article-image-container" style={{ position: 'relative', width: '100%', height: '500px', borderRadius: '32px', overflow: 'hidden', marginBottom: '60px', boxShadow: '20px 20px 0 #f8fafc' }}>
              <Image 
                src={article.image} 
                alt={article.title} 
@@ -105,7 +122,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
              />
           </div>
 
-          <div className="article-body" style={{ fontSize: '1.25rem', lineHeight: 1.8, color: '#1a1a1a', fontWeight: 500 }}>
+          <div className="article-body" style={{ fontSize: '1.2rem', lineHeight: 1.8, color: '#1a1a1a', fontWeight: 500 }}>
              <div dangerouslySetInnerHTML={{ 
                __html: article.content
                  .replace(/\n\n/g, '<br/><br/>')
@@ -117,7 +134,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
 
           {/* Bottom Card */}
-          <div style={{ marginTop: '80px', padding: '60px', background: 'var(--secondary)', color: 'white', borderRadius: '40px', position: 'relative', overflow: 'hidden' }}>
+          <div className="article-cta-card" style={{ marginTop: '80px', padding: '60px', background: 'var(--secondary)', color: 'white', borderRadius: '40px', position: 'relative', overflow: 'hidden' }}>
             <div className="bg-dots" style={{ position: 'absolute', inset: 0, opacity: 0.1 }} />
             <div style={{ position: 'relative', zIndex: 1 }}>
               <h3 style={{ fontSize: '2.5rem', fontWeight: 950, marginBottom: '20px', textTransform: 'uppercase' }}>Potrzebujesz natychmiastowej pomocy?</h3>
@@ -132,7 +149,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </article>
 
         {/* Sidebar */}
-        <aside style={{ flex: '0.8', minWidth: '300px' }}>
+        <aside className="article-sidebar" style={{ flex: '0.8', minWidth: '300px' }}>
           <div style={{ position: 'sticky', top: '140px' }}>
             <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '32px', border: '1px solid #eee' }}>
               <h4 style={{ fontWeight: 950, fontSize: '1.2rem', textTransform: 'uppercase', marginBottom: '24px', borderBottom: '2px solid #ddd', paddingBottom: '10px' }}>Dlaczego my?</h4>

@@ -63,6 +63,12 @@ export default function PomocDrogowaPage() {
     </div>`)
     .replace(/\*\*(.*?)\*\*/g, '<strong style="color: var(--primary); font-weight: 900;">$1</strong>')
     .replace(/\n\n/g, '</p><p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">')
+    .replace(/\[Miasto\]/gi, 'naszą firmę')
+    .replace(/w \[Mieście\]/gi, '24h')
+    .replace(/na terenie \[Miasta\]/gi, 'w całej Polsce')
+    .replace(/\[Mieście\]/gi, 'okolicy')
+    .replace(/\[Miasta\]/gi, 'całego regionu')
+    .replace(/\[Biernik\]/gi, 'Twój pojazd')
     .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
     .replace(/laweciarz\.Expert/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
 

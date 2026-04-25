@@ -49,7 +49,7 @@ export function getServices(): Service[] {
   
   cachedServices = templates.map(template => ({
     template,
-    slug: slugify(template.replace(/\[Miasto\]/g, '').trim())
+    slug: slugify(template.replace(/\[Miasto\]|\[Mieście\]|\[Miasta\]/g, '').replace(/\s+w\s*$/g, '').trim())
   }));
   return cachedServices;
 }
@@ -224,7 +224,7 @@ export function declineCity(name: string, city?: City): { mianownik: string; dop
 }
 
 export function replaceSEOTemplate(text: string, city: City, phone: string = '572 272 930'): string {
-  const { mianownik, dopelniacz, celownik, biernik, narzednik, miejscownik } = declineCity(city.name);
+  const { mianownik, dopelniacz, celownik, biernik, narzednik, miejscownik } = declineCity(city.name, city);
 
   return text
     .replace(/\[Miasto\]/g, mianownik)
