@@ -8,7 +8,7 @@ To właśnie ta kompleksowość sprawia, że laweciarz.pro jest polecaną auto p
 
 To właśnie ta kompleksowość sprawia, że laweciarz.pro jest polecaną auto pomocą w [Mieście] nie tylko przez kierowców prywatnych, ale też przez firmy ubezpieczeniowe, kancelarie prawne specjalizujące się w szkodach komunikacyjnych i menedżerów flot samochodowych, którzy potrzebują jednego sprawdzonego partnera do obsługi wszystkich zdarzeń drogowych dotyczących ich pojazdów. Polecana auto pomoc w [Mieście] to też firma, która nie znika po zakończeniu transportu – jeśli klient potrzebuje pomocy przy dalszych formalnościach, doradzamy i wspieramy aż do pełnego zamknięcia sprawy.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU] – polecana auto pomoc w [Mieście] jest gotowa na każde wezwanie.
+Zadzwoń: 572 272 930 – polecana auto pomoc w [Mieście] jest gotowa na każde wezwanie.
 
 ---
 
@@ -26,7 +26,7 @@ Pełen zakres usług przez całą dobę: Holowanie i transport lawetą, awaryjne
 
 Dostępność w dniach świątecznych: laweciarz.pro utrzymuje pełną gotowość operacyjną w Boże Narodzenie, Wielkanoc, Nowy Rok i wszystkie inne dni ustawowo wolne od pracy. Szczególnie w tych dniach – gdy natężenie ruchu jest wysokie i gdy inne firmy ograniczają dyspozycyjność – nasza polecana całodobowa auto pomoc w [Mieście] 24h ma szczególną wartość.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -44,7 +44,7 @@ Rozliczenie z Assistance: Większość polis komunikacyjnych zawiera pakiet Assi
 
 Rozliczenie z AC: Jeśli jesteś właścicielem polisy AC obejmującej dany rodzaj zdarzenia, koszty auto pomocy mogą być refundowane w ramach likwidacji szkody. Nasi pracownicy przygotują dokumentację zgodną z wymaganiami Twojego ubezpieczyciela.
 
-Polecana tania auto pomoc w [Mieście] od laweciarz.pro może Cię finalnie nie kosztować nic – a nawet jeśli koszt poniesiesz, będzie on zawsze znany z góry, uczciwy i zgodny z rynkowymi stawkami. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Polecana tania auto pomoc w [Mieście] od laweciarz.pro może Cię finalnie nie kosztować nic – a nawet jeśli koszt poniesiesz, będzie on zawsze znany z góry, uczciwy i zgodny z rynkowymi stawkami. Zadzwoń: 572 272 930.
 
 ---
 
@@ -60,7 +60,7 @@ Kompetencje komunikacyjne: Dyspozytor i kierowcy laweciarz.pro są przeszkoleni 
 
 Kompetencje logistyczne: Dyspozytor laweciarz.pro koordynuje nie tylko przyjazd pojazdu holowniczego, ale też – jeśli klient tego potrzebuje – pomaga w organizacji transportu zastępczego, wskazuje warsztaty pracujące w danej chwili i informuje o możliwościach parkowania pojazdu w przypadku, gdy warsztat jest nieczynny.
 
-Profesjonalna i polecana auto pomoc w [Mieście] od laweciarz.pro to suma tych wszystkich kompetencji – dostępnych przy każdym zleceniu, przez całą dobę, dla każdego klienta. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Profesjonalna i polecana auto pomoc w [Mieście] od laweciarz.pro to suma tych wszystkich kompetencji – dostępnych przy każdym zleceniu, przez całą dobę, dla każdego klienta. Zadzwoń: 572 272 930.
 
 ---
 
@@ -74,7 +74,7 @@ System GPS w czasie rzeczywistym: Dyspozytor widzi na ekranie aktualną lokaliza
 
 Lokalna wiedza kierowców: Nasi kierowcy znają [Miasto] doskonale – nie tylko z map, ale z praktyki codziennej jazdy. Wiedzą które ulice są chroniczne zakorkowane w określonych godzinach, znają przejazdy techniczne i skróty niewidoczne w standardowych nawigacjach, potrafią błyskawicznie znaleźć dojazd do niestandardowej lokalizacji.
 
-Kiedy czas dojazdu może być dłuższy niż 20 minut: laweciarz.pro komunikuje uczciwie, że przy ekstremalnych warunkach drogowych – gęste opady śniegu, masowe zdarzenie na głównej arterii [Miasta], kilka jednoczesnych pilnych zleceń – czas dojazdu może się wydłużyć. Klient jest o tym informowany natychmiast, z aktualnym szacunkiem czasu i na bieżąco aktualizowanymi informacjami. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Kiedy czas dojazdu może być dłuższy niż 20 minut: laweciarz.pro komunikuje uczciwie, że przy ekstremalnych warunkach drogowych – gęste opady śniegu, masowe zdarzenie na głównej arterii [Miasta], kilka jednoczesnych pilnych zleceń – czas dojazdu może się wydłużyć. Klient jest o tym informowany natychmiast, z aktualnym szacunkiem czasu i na bieżąco aktualizowanymi informacjami. Zadzwoń: 572 272 930.
 
 ---
 
@@ -90,7 +90,7 @@ Co powtarza się najczęściej w opiniach o naszej auto pomocy w [Mieście]? Trz
 
 Wzywanie polecanej auto pomocy w [Mieście] od laweciarz.pro jest celowo uproszczone do absolutnego minimum. Oto jak to działa:
 
-Zadzwoń pod numer [TWÓJ NUMER TELEFONU]: To jedyne co musisz zrobić. Jeden telefon uruchamia cały system. Dyspozytor przeprowadzi Cię przez pozostałe kroki.
+Zadzwoń pod numer 572 272 930: To jedyne co musisz zrobić. Jeden telefon uruchamia cały system. Dyspozytor przeprowadzi Cię przez pozostałe kroki.
 
 Podaj lokalizację: Nazwa ulicy, numer drogi, pobliskie skrzyżowanie lub charakterystyczny budynek. Jeśli nie wiesz gdzie jesteś – włącz lokalizację GPS w telefonie i udostępnij ją dyspozytorowi przez SMS lub WhatsApp.
 
@@ -102,7 +102,7 @@ Czekaj bezpiecznie: Odejdź od pojazdu na bezpieczną odległość od jezdni. Je
 
 Po interwencji: Sprawdź protokół przyjęcia pojazdu przed podpisaniem. Upewnij się że otrzymałeś fakturę VAT. Jeśli planujesz rozliczenie z ubezpieczenia – poproś o ewentualne dodatkowe dokumenty, których może wymagać Twoje towarzystwo.
 
-Polecana auto pomoc w [Mieście] od laweciarz.pro to firma, do której możesz dzwonić nie tylko w sytuacji awaryjnej, ale też wcześniej – żeby zapytać o zakres usług, warunki współpracy dla firm lub możliwości rozliczenia planowanego transportu z ubezpieczenia. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Polecana auto pomoc w [Mieście] od laweciarz.pro to firma, do której możesz dzwonić nie tylko w sytuacji awaryjnej, ale też wcześniej – żeby zapytać o zakres usług, warunki współpracy dla firm lub możliwości rozliczenia planowanego transportu z ubezpieczenia. Zadzwoń: 572 272 930.
 
 ---
 
@@ -174,13 +174,13 @@ Korzystam z auto pomocy laweciarz.pro od czterech lat – za każdym razem kiedy
 
 Polecana auto pomoc w [Mieście] od laweciarz.pro to firma, do której dzwonisz raz – niezależnie od tego, czy potrzebujesz technika z boosterem, lawety platformowej, wyciągarki z rowu czy pomocy przy rozliczeniu z ubezpieczycielem. Jeden numer, jeden dyspozytor, kompleksowa obsługa każdej sytuacji drogowej.
 
-Zapisz numer [TWÓJ NUMER TELEFONU] w telefonie już teraz i poleć go bliskim. Polecana auto pomoc w [Mieście] jest gotowa.
+Zapisz numer 572 272 930 w telefonie już teraz i poleć go bliskim. Polecana auto pomoc w [Mieście] jest gotowa.
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dostępność: 24h / 7 dni w tygodniu / 365 dni w roku**
 📋 **Obsługa ubezpieczeń: OC sprawcy, AC, Assistance – dokumentacja w standardzie**
 
 ---
 
-*laweciarz.pro – polecana auto pomoc w [Mieście]. Kompleksowe wsparcie drogowe: holowanie, laweta, autopomoc, awaryjne uruchamianie, wymiana koła, dowóz paliwa. Rozliczenie z OC sprawcy i Assistance. Całodobowa dyspozytornia. Zadzwoń: [TWÓJ NUMER TELEFONU]. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – polecana auto pomoc w [Mieście]. Kompleksowe wsparcie drogowe: holowanie, laweta, autopomoc, awaryjne uruchamianie, wymiana koła, dowóz paliwa. Rozliczenie z OC sprawcy i Assistance. Całodobowa dyspozytornia. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*

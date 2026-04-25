@@ -8,10 +8,20 @@ export interface City {
   province?: string;
   district?: string;
   commune?: string;
+  miejscownik?: string;
+  dopelniacz?: string;
 }
 
 export interface Service {
   template: string;
+  slug: string;
+}
+
+export interface Highway {
+  id: string;
+  name: string;
+  title: string;
+  description: string;
   slug: string;
 }
 
@@ -44,7 +54,25 @@ export function getServices(): Service[] {
   return cachedServices;
 }
 
-export function declineCity(name: string): { mianownik: string; dopelniacz: string; celownik: string; biernik: string; narzednik: string; miejscownik: string } {
+export function getHighways(): Highway[] {
+  // Use the data from the highways.ts file
+  const { highways } = require('./highways');
+  return highways;
+}
+
+export function declineCity(name: string, city?: City): { mianownik: string; dopelniacz: string; celownik: string; biernik: string; narzednik: string; miejscownik: string } {
+  // Jeśli mamy obiekt miasta z gotowymi odmianami, używamy ich
+  if (city && city.miejscownik && city.dopelniacz) {
+    return {
+      mianownik: city.name,
+      dopelniacz: city.dopelniacz,
+      celownik: name, // Fallback dla celownika
+      biernik: name,
+      narzednik: name,
+      miejscownik: city.miejscownik
+    };
+  }
+
   let mianownik = name;
   let dopelniacz = name;
   let celownik = name;
@@ -95,6 +123,22 @@ export function declineCity(name: string): { mianownik: string; dopelniacz: stri
     biernik = name.slice(0, -1) + 'ę';
     narzednik = name.slice(0, -1) + 'ą';
     miejscownik = name.slice(0, -1) + 'ie';
+  } else if (nameLower.endsWith('a') && !nameLower.endsWith('ia')) {
+    dopelniacz = name.slice(0, -1) + 'y';
+    biernik = name.slice(0, -1) + 'ę';
+    narzednik = name.slice(0, -1) + 'ą';
+    
+    // Specjalna obsługa spółgłosek przed 'a'
+    if (nameLower.endsWith('ga')) {
+      celownik = name.slice(0, -2) + 'dze';
+      miejscownik = name.slice(0, -2) + 'dze';
+    } else if (nameLower.endsWith('ka')) {
+      celownik = name.slice(0, -2) + 'ce';
+      miejscownik = name.slice(0, -2) + 'ce';
+    } else {
+      celownik = name.slice(0, -1) + 'ie';
+      miejscownik = name.slice(0, -1) + 'ie';
+    }
   } else if (nameLower.endsWith('in') || nameLower.endsWith('yn')) {
     dopelniacz = name + 'a';
     celownik = name + 'owi';

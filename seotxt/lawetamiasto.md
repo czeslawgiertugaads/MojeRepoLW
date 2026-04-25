@@ -4,7 +4,7 @@ Wyobraź sobie taką sytuację: jedziesz przez [Biernik] w kierunku pracy, ważn
 
 Właśnie temu służy firma laweciarz.pro – specjalistyczny serwis lawetowania pojazdów działający na terenie [Miasta] i całego powiatu. Nasze usługi to coś więcej niż zwykły transport auta z punktu A do punktu B. To kompleksowe rozwiązanie problemu, które zaczyna się w chwili, gdy odbieramy Twój telefon, a kończy dopiero wtedy, gdy Twój pojazd bezpiecznie stoi w wybranym przez Ciebie miejscu – pod warsztatem, serwisem, domem lub na parkingu. Laweta w [Mieście] od laweciarz.pro to synonim spokoju, sprawności i profesjonalizmu.
 
-Działamy całą dobę, przez cały rok. Nie ma dla nas godzin szczytu, trudnych warunków pogodowych ani dni, w które nie przyjmujemy zleceń. Nasz dyspozytor czuwa przy telefonie każdego dnia – w środku tygodnia, w weekendy, w święta i w Sylwestra. Jeśli potrzebujesz lawety w [Mieście], wystarczy jeden telefon pod numer [TWÓJ NUMER TELEFONU], a my zajmiemy się całą resztą.
+Działamy całą dobę, przez cały rok. Nie ma dla nas godzin szczytu, trudnych warunków pogodowych ani dni, w które nie przyjmujemy zleceń. Nasz dyspozytor czuwa przy telefonie każdego dnia – w środku tygodnia, w weekendy, w święta i w Sylwestra. Jeśli potrzebujesz lawety w [Mieście], wystarczy jeden telefon pod numer 572 272 930, a my zajmiemy się całą resztą.
 
 Nie ryzykuj dalszej jazdy uszkodzonym pojazdem. Nie próbuj holować auta samodzielnie za pomocą liny – to niebezpieczne i niezgodne z przepisami. Zaufaj profesjonalistom, którzy dysponują właściwym sprzętem, odpowiednimi uprawnieniami i wieloletnim doświadczeniem na drogach [Miasta] i okolic.
 
@@ -37,7 +37,7 @@ Zjechanie do rowu, utknięcie w zaspie śnieżnej, wjechanie w głęboki błot n
 **Zakup pojazdu używanego:**
 Coraz częściej usługi lawety w [Mieście] zamawiane są nie przez kierowców w awaryjnej sytuacji, ale przez osoby, które właśnie nabyły samochód. Transport zakupionego auta lawetą zamiast jazdy na własnych kołach to sposób na uniknięcie nieprzewidzianych problemów technicznych w trasie, gdy świeżo kupiony pojazd nie był jeszcze poddany przeglądowi.
 
-Pamiętaj – w każdej z powyższych sytuacji numer [TWÓJ NUMER TELEFONU] łączy Cię bezpośrednio z dyspozytorem laweciarz.pro, który natychmiast przyjmie zgłoszenie i przekaże zlecenie do najbliżej dysponowanej lawety w [Mieście].
+Pamiętaj – w każdej z powyższych sytuacji numer 572 272 930 łączy Cię bezpośrednio z dyspozytorem laweciarz.pro, który natychmiast przyjmie zgłoszenie i przekaże zlecenie do najbliżej dysponowanej lawety w [Mieście].
 
 ---
 
@@ -112,7 +112,7 @@ Nasze lawety są wyposażone w zestawy bezpieczeństwa, kamizelki odblaskowe ora
 
 ## [H2] Ile trwa dojazd lawety do klienta w [Mieście]?
 
-To jedno z pierwszych pytań, jakie zadają kierowcy dzwoniący pod numer [TWÓJ NUMER TELEFONU] w sytuacji awaryjnej. Odpowiedź zależy od kilku czynników, ale naszym standardem i celem, do którego dążymy przy każdym zleceniu, jest dojazd w ciągu 20–35 minut od odebrania zgłoszenia.
+To jedno z pierwszych pytań, jakie zadają kierowcy dzwoniący pod numer 572 272 930 w sytuacji awaryjnej. Odpowiedź zależy od kilku czynników, ale naszym standardem i celem, do którego dążymy przy każdym zleceniu, jest dojazd w ciągu 20–35 minut od odebrania zgłoszenia.
 
 Co wpływa na czas dojazdu naszej lawety w [Mieście]?
 
@@ -140,7 +140,7 @@ Jedyną bezpieczną metodą transportu uszkodzonego samochodu elektrycznego w [M
 
 ## [H2] Laweta w [Mieście] – cennik i czynniki wpływające na koszt usługi
 
-Transparentność cenowa to jeden z filarów, na których opiera się działalność laweciarz.pro. Chcemy, aby każdy klient dzwoniący pod [TWÓJ NUMER TELEFONU] wiedział, za co płaci i czego może oczekiwać.
+Transparentność cenowa to jeden z filarów, na których opiera się działalność laweciarz.pro. Chcemy, aby każdy klient dzwoniący pod 572 272 930 wiedział, za co płaci i czego może oczekiwać.
 
 Na całkowity koszt lawety w [Mieście] wpływ mają:
 
@@ -168,7 +168,7 @@ Jedną z największych zalet usług laweciarz.pro jest wszechstronność. Nasza 
 
 ## [H2] Jak wezwać lawetę w [Mieście]? Krok po kroku
 
-1.  **Zadzwoń pod numer [TWÓJ NUMER TELEFONU]**: O każdej porze, 24/7.
+1.  **Zadzwoń pod numer 572 272 930**: O każdej porze, 24/7.
 2.  **Podaj lokalizację**: Ulica, kilometr drogi, numer zjazdu lub charakterystyczny punkt orientacyjny w [Mieście].
 3.  **Opisz sytuację**: Marka pojazdu, rodzaj uszkodzenia (jeśli znasz), czy auto się toczy.
 4.  **Uzyskaj wycenę i czas dojazdu**: Dyspozytor poda Ci szacunkowy koszt i poinformuje, jak szybko laweta będzie u Ciebie.
@@ -194,10 +194,10 @@ Tak, transport na platformie lawety jest najbezpieczniejszą i jedyną polecaną
 
 ## [H2] Laweta w [Mieście] – Skontaktuj się z nami
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dostępność: 24h / 7 dni w tygodniu / 365 dni w roku**
 
 ---
 
-*laweciarz.pro – profesjonalna laweta w [Mieście]. Transport pojazdów osobowych, dostawczych, powypadkowych i elektrycznych. Holowanie lawetą, autolaweta, przewóz aut zakupionych w kraju i za granicą. Zadzwoń: [TWÓJ NUMER TELEFONU]. Wszelkie prawa zastrzeżone. Kopiowanie treści bez zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – profesjonalna laweta w [Mieście]. Transport pojazdów osobowych, dostawczych, powypadkowych i elektrycznych. Holowanie lawetą, autolaweta, przewóz aut zakupionych w kraju i za granicą. Zadzwoń: 572 272 930. Wszelkie prawa zastrzeżone. Kopiowanie treści bez zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*

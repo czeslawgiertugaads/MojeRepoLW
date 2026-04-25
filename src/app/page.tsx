@@ -1,4 +1,11 @@
 export const revalidate = 86400; // 24 hours
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 import React from 'react';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  alternates: {
+    canonical: "/polityka-prywatnosci",
+  },
 };
 
 export default function PolitykaPage() {

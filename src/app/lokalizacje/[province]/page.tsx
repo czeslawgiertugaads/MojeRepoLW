@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: { params: Promise<{ province:
   return {
     title: `Pomoc Drogowa Województwo ${provinceName} - laweciarz.pro`,
     description: `Spis wszystkich miejscowości w województwie ${provinceName}. Najszybsza laweta i pomoc drogowa 24/7. Dojazd w 15 minut.`,
+    alternates: {
+      canonical: `/lokalizacje/${provinceSlug}`,
+    },
   };
 }
 

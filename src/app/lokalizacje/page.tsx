@@ -5,6 +5,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lokalizacje Pomocy Drogowej - LAWECIARZ.PRO",
   description: "Wybierz województwo, aby znaleźć pomoc drogową w Twojej okolicy. Obsługujemy całą Polskę 24/7.",
+  alternates: {
+    canonical: "/lokalizacje",
+  },
 };
 
 export default function LokalizacjePage() {

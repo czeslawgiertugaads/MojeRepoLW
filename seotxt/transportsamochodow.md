@@ -6,7 +6,7 @@ To, co odróżnia profesjonalny transport samochodów w [Mieście] od zwykłego 
 
 laweciarz.pro realizuje transport samochodów z [Miasta] na terenie całej Polski. Dysponujemy flotą lawet i autolawet przygotowanych do realizacji zarówno krótkich zleceń miejskich, jak i wielosetkilometrowych tras z pełnym zabezpieczeniem ładunku i dokumentacją.
 
-Zadzwoń pod numer [TWÓJ NUMER TELEFONU] i opisz nam swoje potrzeby. Dyspozytor przygotuje ofertę transportu samochodów z [Miasta] dopasowaną do Twojej konkretnej sytuacji – rodzaju pojazdu, odległości, terminu i wymaganego standardu obsługi.
+Zadzwoń pod numer 572 272 930 i opisz nam swoje potrzeby. Dyspozytor przygotuje ofertę transportu samochodów z [Miasta] dopasowaną do Twojej konkretnej sytuacji – rodzaju pojazdu, odległości, terminu i wymaganego standardu obsługi.
 
 ---
 
@@ -178,7 +178,7 @@ Transport w standardowym terminie jest tańszy niż transport ekspresowy „na j
 ## [H2] Transport samochodów w [Mieście] – najczęściej zadawane pytania
 
 **Jak zamówić transport samochodu w [Mieście]?**
-Zadzwoń pod numer [TWÓJ NUMER TELEFONU]. Dyspozytor omówi z Tobą szczegóły zlecenia, przygotuje wycenę i ustali termin realizacji.
+Zadzwoń pod numer 572 272 930. Dyspozytor omówi z Tobą szczegóły zlecenia, przygotuje wycenę i ustali termin realizacji.
 
 **Czy mogę zamówić transport samochodu z kilkudniowym wyprzedzeniem?**
 Tak – i wręcz zachęcamy do planowania z wyprzedzeniem przy zleceniach transportu samochodów w [Mieście] na dłuższych trasach. Pozwala to na dokładniejsze zaplanowanie logistyki.
@@ -198,7 +198,7 @@ Standardowa cena obejmuje ubezpieczenie OC przewoźnika. Dodatkowe ubezpieczenie
 
 Niezależnie od tego, czy planujesz transport samochodu w obrębie [Miasta] czy w dowolne miejsce w kraju – laweciarz.pro to partner, który sprosta Twoim oczekiwaniom. Profesjonalizm, ubezpieczony ładunek, przejrzyste ceny i możliwość realizacji door-to-door – to wszystko w jednym miejscu.
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dostępność: 24h / 7 dni w tygodniu / 365 dni w roku**
 🗺️ **Zasięg: Cała Polska**
@@ -207,4 +207,4 @@ Zadzwoń i zamów bezpłatną wycenę transportu samochodu – bez zobowiązań,
 
 ---
 
-*laweciarz.pro – profesjonalny transport samochodów w [Mieście]. Transport aut luksusowych, zabytkowych, powypadkowych i elektrycznych. Usługa door-to-door, ubezpieczony ładunek, pełna dokumentacja. Zadzwoń: [TWÓJ NUMER TELEFONU]. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – profesjonalny transport samochodów w [Mieście]. Transport aut luksusowych, zabytkowych, powypadkowych i elektrycznych. Usługa door-to-door, ubezpieczony ładunek, pełna dokumentacja. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*

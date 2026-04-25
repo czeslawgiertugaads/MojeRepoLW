@@ -6,7 +6,7 @@ Mocnyhol.pl świadczy usługi lawety wyłącznie na pełnej platformie. To wybó
 
 Nasza laweta działa całą dobę, przez 365 dni w roku. Cena ustalana jest telefonicznie przed wyjazdem i jest wiążąca. Czas dojazdu standardowo 15–30 minut.
 
-Zadzwoń teraz: [TWÓJ NUMER TELEFONU].
+Zadzwoń teraz: 572 272 930.
 
 ---
 
@@ -24,7 +24,7 @@ Laweta z pełną platformą załadowczą i holowanie pojazdu na linie lub za pom
 
 **Minimalizacja dodatkowych uszkodzeń karoseryjnych:** Holowanie na linie generuje dodatkowe naprężenia w punktach zaczepienia haka holowniczego. Przy uszkodzonej karoserii ryzyko powiększenia szkody jest realne. Na platformie – pojazd leży stabilnie, żadnych dodatkowych naprężeń.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -40,7 +40,7 @@ Pełna platforma hydrauliczna to serce każdej naszej lawety obsługującej poja
 
 **Systemowy regulator prędkości windy:** Wyciągarka działa płynnie bez gwałtownych szarpnięć, które mogłyby zwiększyć ryzyko uszkodzeń przy załadunku pojazdów po kolizji lub z luźnymi elementami karoserii.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -57,7 +57,7 @@ Nasza flota lawet dobrana jest do obsługi szerokiego spektrum pojazdów – od 
 - **Pojazdy zabytkowe:** Miękkie nakładki, powolny załadunek, dokumentacja fotograficzna.
 - **Maszyny rolnicze i budowlane:** Indywidualna wycena i dobór pojazdu.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -71,7 +71,7 @@ Nocna laweta ma szczególne zastosowanie przy: awariach uniemożliwiających poz
 
 **Dopłata nocna:** Przy zleceniach nocnych może obowiązywać niewielka dopłata wynikająca z wyższych kosztów operacyjnych nocnego dyżuru. Zawsze informujemy o dopłacie telefonicznie przed wyjazdem lawety – klient nigdy nie dowiaduje się o niej po fakcie.
 
-Zadzwoń o każdej porze: [TWÓJ NUMER TELEFONU].
+Zadzwoń o każdej porze: 572 272 930.
 
 ---
 
@@ -85,7 +85,7 @@ Samochody elektryczne zrewolucjonizowały rynek motoryzacyjny – ale jednocześ
 
 **Obsługiwane modele EV:** Tesla Model 3, Model Y, Model S, Model X; BMW i3, i4, iX3, iX; Mercedes EQA, EQB, EQC, EQS; Audi Q4 e-tron, e-tron; Volkswagen ID.3, ID.4, ID.5; Hyundai Ioniq 5, Ioniq 6; Kia EV6, EV9; Peugeot e-208, e-2008; Opel Corsa-e; Renault Zoe, Megane E-Tech; Porsche Taycan; Volvo XC40 Recharge; Skoda Enyaq; Toyota bZ4X; Nissan Leaf i inne.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -97,7 +97,7 @@ U nas stosujemy pełną transparentność: cena przed wyjazdem, brak ukrytych sk
 
 **Czynniki wpływające na cenę:** Odległość trasy, masa i typ pojazdu, stopień trudności załadunku, pora doby.
 
-Zadzwoń po bezpłatną wycenę: [TWÓJ NUMER TELEFONU].
+Zadzwoń po bezpłatną wycenę: 572 272 930.
 
 ---
 
@@ -109,7 +109,7 @@ Samochody sportowe wymagają szczególnego podejścia ze względu na niskie zawi
 
 **Nasze rozwiązanie:** Hydraulicznie regulowana platforma ustawiana na minimalny kąt (3–5 stopni), aluminiowe listwy przejściowe, powolne i kontrolowane wciąganie. Przy autach z air ride – podniesienie zawieszenia przed załadunkiem.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -130,7 +130,7 @@ Klasyczne automaty, CVT, DSG czy PDK wymagają holowania na pełnej platformie. 
 7. **Kontrola:** Przy dłuższszych trasach ponowne sprawdzenie naciągu pasów.
 8. **Rozładunek:** Równie staranny jak załadunek, przekazanie pojazdu.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -144,7 +144,7 @@ Pojazd po wypadku często ma zablokowane koła lub uszkodzone punkty holownicze.
 
 Tak. Oferujemy konkurencyjne ceny, bo dbamy o efektywną logistykę i pracujemy na wolumenie zleceń, nie rezygnując z ubezpieczenia ładunku czy jakości sprzętu. Każdy transport jest ubezpieczony, a kierowcy posiadają niezbędne kwalifikacje i doświadczenie.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -200,7 +200,7 @@ Posiadamy pełne ubezpieczenie OC przewoźnika i ubezpieczenie ładunku. Używam
 
 Dzięki systemowi GPS i strategicznemu rozmieszczeniu floty, dojeżdżamy do klientów w 15–30 minut. Kierowca wyjeżdża zazwyczaj w ciągu 5 minut od Twojego telefonu.
 
-Zadzwoń teraz: [TWÓJ NUMER TELEFONU].
+Zadzwoń teraz: 572 272 930.
 
 ---
 
@@ -220,4 +220,4 @@ Zimą nasza flota pracuje na oponach zimowych, dysponuje łańcuchami i specjaln
 
 Wybierz profesjonalny transport na pełnej platformie. Szybko, bezpiecznie i w uczciwej cenie. Jesteśmy do Twojej dyspozycji 24h na dobę, 7 dni w tygodniu.
 
-Zadzwoń pod numer: [TWÓJ NUMER TELEFONU] – pomoc jest już w drodze!
+Zadzwoń pod numer: 572 272 930 – pomoc jest już w drodze!

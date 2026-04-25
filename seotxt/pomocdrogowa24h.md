@@ -2,7 +2,7 @@
 
 Jest godzina 2:47 w nocy. Wracasz z długiej trasy, kilkanaście kilometrów od domu. Nagle opona głośno pęka, samochód szarpie w prawo, zjeżdżasz na pobocze. Ciemno, zimno, w okolicy ani jednego warsztatu, ani jednego znajomego mechanika. Większość firm pomocy drogowej nie odbiera telefonów o tej porze. Co robisz?
 
-Dzwonisz pod numer [TWÓJ NUMER TELEFONU] do laweciarz.pro – i w ciągu kilkunastu minut masz przy sobie profesjonalną pomoc drogową w [Mieście] 24h, gotową rozwiązać problem niezależnie od godziny, dnia tygodnia czy warunków pogodowych.
+Dzwonisz pod numer 572 272 930 do laweciarz.pro – i w ciągu kilkunastu minut masz przy sobie profesjonalną pomoc drogową w [Mieście] 24h, gotową rozwiązać problem niezależnie od godziny, dnia tygodnia czy warunków pogodowych.
 
 To nie jest marketing. To codzienność ekipy laweciarz.pro, która dyżuruje przy telefonach i pojazdach przez całą dobę, przez 365 dni w roku – bez wyjątków, bez dni wolnych, bez wyłączeń w weekendy i święta. Pomoc drogowa w [Mieście] 24h to nasza specjalizacja i nasze zobowiązanie wobec każdego kierowcy, który może znaleźć się w potrzebie o dowolnej porze.
 
@@ -10,7 +10,7 @@ W Polsce awarie samochodów nie respektują kalendarza. Statystyki jednoznacznie
 
 Nie ma dla nas „złej pory" na przyjazd. Nie ma „trudnego dnia". Każde zgłoszenie – o 8:00 rano w środę i o 4:30 w nocy w Boże Narodzenie – traktujemy z identyczną powagą, pełnym zaangażowaniem i natychmiastową reakcją. Bo wiemy, że za każdym telefonem stoi człowiek, który potrzebuje pomocy tu i teraz.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU] – całodobowa pomoc drogowa w [Mieście] 24h. Jesteśmy.
+Zadzwoń: 572 272 930 – całodobowa pomoc drogowa w [Mieście] 24h. Jesteśmy.
 
 ---
 
@@ -77,7 +77,7 @@ W przypadku wzmożonego zapotrzebowania – podczas opadów śniegu, gołoledzi 
 laweciarz.pro działa inaczej. Oto co konkretnie oznacza nasza całodobowa dostępność:
 
 **Telefon odbierany przez żywego człowieka – zawsze:**
-Pod numer [TWÓJ NUMER TELEFONU] nie odpowie automat, nie odtworzy się nagrana wiadomość i nie pojawi się komunikat „zadzwoń w godzinach pracy". O każdej porze – w dzień i w nocy – odbiera dyspozytor, który wysłucha Cię, ustali szczegóły i uruchomi pomoc.
+Pod numer 572 272 930 nie odpowie automat, nie odtworzy się nagrana wiadomość i nie pojawi się komunikat „zadzwoń w godzinach pracy". O każdej porze – w dzień i w nocy – odbiera dyspozytor, który wysłucha Cię, ustali szczegóły i uruchomi pomoc.
 
 **Dyżur przez całą dobę, 365 dni w roku:**
 Nasz dyżur nie ma przerw. Nie ma tygodnia, miesiąca ani roku, w którym laweciarz.pro zawiesiłoby działalność lub ograniczyło dostępność. Sylwester, Wielkanoc, sierpniowy długi weekend, mroźna lutowa noc – w każdym z tych momentów jesteśmy pod telefonem i gotowi do wyjazdu.
@@ -165,11 +165,11 @@ laweciarz.pro wystawia pełną dokumentację każdego zlecenia: fakturę VAT, pr
 
 **Zaleta 5: Wsparcie dla całej rodziny**
 
-Numer [TWÓJ NUMER TELEFONU] możesz przekazać swoim bliskim – małżonkowi, dzieciom, rodzicom. Całodobowa pomoc drogowa w [Mieście] 24h od laweciarz.pro to nie tylko Twoje zabezpieczenie, ale też spokój o bezpieczeństwo wszystkich, którzy prowadzą samochód w [Mieście] i okolicach.
+Numer 572 272 930 możesz przekazać swoim bliskim – małżonkowi, dzieciom, rodzicom. Całodobowa pomoc drogowa w [Mieście] 24h od laweciarz.pro to nie tylko Twoje zabezpieczenie, ale też spokój o bezpieczeństwo wszystkich, którzy prowadzą samochód w [Mieście] i okolicach.
 
 **Zaleta 6: Jeden numer na każdą sytuację**
 
-Nie musisz pamiętać osobnego numeru do holowania, osobnego do wymiany opony, osobnego do dowozu paliwa i osobnego do wyciągania z rowu. Jeden numer [TWÓJ NUMER TELEFONU] to dostęp do całego spektrum usług laweciarz.pro – całą dobę, przez cały rok.
+Nie musisz pamiętać osobnego numeru do holowania, osobnego do wymiany opony, osobnego do dowozu paliwa i osobnego do wyciągania z rowu. Jeden numer 572 272 930 to dostęp do całego spektrum usług laweciarz.pro – całą dobę, przez cały rok.
 
 ---
 
@@ -224,7 +224,7 @@ Wypadek w nocy wymaga natychmiastowego zabezpieczenia pojazdu i miejsca zdarzeni
 ## [H2] FAQ – Całodobowa pomoc drogowa w [Mieście] 24h
 
 **Czy laweciarz.pro naprawdę działa całą dobę – bez wyjątków?**
-Tak. Pod numer [TWÓJ NUMER TELEFONU] możesz dzwonić o każdej porze dnia i nocy, przez 365 dni w roku – również w Boże Narodzenie, Wielkanoc, Nowy Rok i wszystkie inne dni świąteczne. Zawsze odbierze żywy dyspozytor, nie automat.
+Tak. Pod numer 572 272 930 możesz dzwonić o każdej porze dnia i nocy, przez 365 dni w roku – również w Boże Narodzenie, Wielkanoc, Nowy Rok i wszystkie inne dni świąteczne. Zawsze odbierze żywy dyspozytor, nie automat.
 
 **Co jeśli zadzwonię o 3:00 w nocy?**
 Zostaniesz obsłużony dokładnie tak samo, jak o 10:00 rano. Ten sam standard, ta sama szybkość reakcji, ta sama jakość usługi. Noc nie jest dla nas pretekstem do obniżenia poziomu obsługi.
@@ -236,7 +236,7 @@ Zlecenia nocne mogą być objęte niewielką dopłatą nocną, która jednak zaw
 W godzinach nocnych, przy mniejszym natężeniu ruchu, czas dojazdu jest często krótszy niż w ciągu dnia – zazwyczaj 15–25 minut na terenie [Miasta]. Dokładny szacunek podajemy podczas rozmowy telefonicznej.
 
 **Czy pomoc drogowa 24h obejmuje autostrady w okolicach [Miasta]?**
-Tak. Obsługujemy zdarzenia na drogach ekspresowych i autostradach w okolicach [Miasta]. Jeśli awaria wydarzyła się na pobliskim odcinku drogi szybkiego ruchu – zadzwoń pod [TWÓJ NUMER TELEFONU], a poinformujemy Cię o możliwościach i czasie dojazdu.
+Tak. Obsługujemy zdarzenia na drogach ekspresowych i autostradach w okolicach [Miasta]. Jeśli awaria wydarzyła się na pobliskim odcinku drogi szybkiego ruchu – zadzwoń pod 572 272 930, a poinformujemy Cię o możliwościach i czasie dojazdu.
 
 **Co zrobić, jeśli nie znam dokładnej lokalizacji swojej awarii?**
 Nie martw się – nasz dyspozytor pomoże Ci ustalić lokalizację. Opisz otoczenie, znajdź numer drogi lub pobliski zjazd, włącz lokalizację GPS w telefonie i udostępnij ją dyspozytorowi. Poradzimy sobie nawet bez precyzyjnego adresu.
@@ -245,7 +245,7 @@ Nie martw się – nasz dyspozytor pomoże Ci ustalić lokalizację. Opisz otocz
 Tak, ale z ważnym zastrzeżeniem: pojazdy elektryczne nie mogą być holowane tradycyjnymi metodami – muszą być przewożone wyłącznie na pełnej platformie lawety. Nasza flota jest do tego w pełni przygotowana.
 
 **Jak zapamiętać numer do pomocy drogowej 24h?**
-Najprościej – zapisz numer [TWÓJ NUMER TELEFONU] w kontaktach swojego telefonu pod hasłem „Pomoc drogowa 24h" już teraz, zanim cokolwiek się wydarzy. W chwili awarii nie będziesz musiał szukać numeru w pośpiechu.
+Najprościej – zapisz numer 572 272 930 w kontaktach swojego telefonu pod hasłem „Pomoc drogowa 24h" już teraz, zanim cokolwiek się wydarzy. W chwili awarii nie będziesz musiał szukać numeru w pośpiechu.
 
 ---
 
@@ -253,7 +253,7 @@ Najprościej – zapisz numer [TWÓJ NUMER TELEFONU] w kontaktach swojego telefo
 
 Nie czekaj z awarią na poranek. Nie szukaj numeru w stresie, stojąc na poboczu o 2:00 w nocy. Zapisz nasz numer i miej pewność, że cokolwiek się wydarzy – na każdej ulicy [Miasta], na każdej drodze w okolicy, o każdej porze – profesjonalna pomoc drogowa w [Mieście] 24h jest zawsze w odległości jednego telefonu.
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dostępność: 24 godziny / 7 dni w tygodniu / 365 dni w roku**
 🚨 **Czas dojazdu: 15–25 minut na terenie [Miasta]**
@@ -262,4 +262,4 @@ laweciarz.pro – całodobowa pomoc drogowa w [Mieście] 24h. Bo awarie nie maj�
 
 ---
 
-*laweciarz.pro – całodobowa pomoc drogowa w [Mieście] 24h. Holowanie, laweta, wyciąganie z rowu, dowóz paliwa, wymiana koła, awaryjne uruchamianie – dostępne przez 24 godziny na dobę, 7 dni w tygodniu, 365 dni w roku, również w święta i weekendy. Zadzwoń: [TWÓJ NUMER TELEFONU]. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – całodobowa pomoc drogowa w [Mieście] 24h. Holowanie, laweta, wyciąganie z rowu, dowóz paliwa, wymiana koła, awaryjne uruchamianie – dostępne przez 24 godziny na dobę, 7 dni w tygodniu, 365 dni w roku, również w święta i weekendy. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*

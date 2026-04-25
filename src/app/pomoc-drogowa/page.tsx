@@ -15,7 +15,10 @@ const StarIcon = ({ size = 24 }: { size?: number }) => (
 
 export const metadata: Metadata = {
   title: "Pomoc Drogowa i Holowanie 24/7 - LAWECIARZ.PRO",
-  description: `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. laweciarz.pro to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
+  description: `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. laweciarz.pro to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd in 15 minut!`,
+  alternates: {
+    canonical: "/pomoc-drogowa",
+  },
 };
 
 const PhoneIcon = ({ size = 24 }: { size?: number }) => (

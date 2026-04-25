@@ -6,7 +6,7 @@ Mocnyhol.pl świadczy usługi holowania z jedną nadrzędną zasadą: pojazd kli
 
 Zasada cenowa jest prosta i nie ma wyjątków: cena holowania jest podawana telefonicznie przed wyjazdem pojazdu. To co usłyszysz przez telefon – to zapłacisz. Bez dopłat na miejscu, bez różnic na fakturze.
 
-Zadzwoń teraz: [TWÓJ NUMER TELEFONU]. Holowanie jest już w drodze.
+Zadzwoń teraz: 572 272 930. Holowanie jest już w drodze.
 
 ---
 
@@ -20,7 +20,7 @@ Usługa holowania realizowana przez nas to wyłącznie transport na pełnej plat
 
 **Pełna platforma (Nasz standard):** Wszystkie cztery koła pojazdu uniesione nad nawierzchnią. Brak jakiegokolwiek kontaktu kół z jezdnią. Bezpieczna dla automatów, bezpieczna dla EV, bezpieczna dla 4x4, bezpieczna dla pojazdu po poważnej kolizji z zablokowanymi kołami. Jedyna metoda bez kompromisów.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -36,7 +36,7 @@ Holowanie po awarii silnika to sytuacja, w której czas i metoda transportu maj�
 
 **Awaria skrzyni biegów:** Samochód, który nagle nie wchodzi w żaden bieg lub w którym skrzynia trzeszczy i szarpie – wymaga natychmiastowego holowania. Dalsza jazda przy uszkodzonej skrzyni może całkowicie ją zniszczyć. Transport na pełnej platformie – bez toczenia kół napędowych przy uszkodzonej skrzyni.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -55,7 +55,7 @@ Holowanie po kolizji to jedno z najważniejszych zleceń z perspektywy bezpiecze
 
 **Dla klientów rozliczających z OC sprawcy:** Wystawiamy fakturę VAT z pełnym opisem usługi holowania, protokół i dokumentację fotograficzną. Na życzenie klienta przygotowujemy pismo do ubezpieczyciela sprawcy. Koszty holowania po kolizji z winy innego kierowcy są w całości pokrywane przez OC sprawcy.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -67,7 +67,7 @@ Nocne holowanie to usługa, przy której mamy szczególną przewagę dzięki rze
 
 **Procedury bezpieczeństwa nocą:** Praca przy jezdni w nocy wymaga intensywniejszego oświetlenia miejsca załadunku – reflektory robocze LED zamontowane na pojeździe holowniczym, dodatkowe lampy ostrzegawcze, kamizelki odblaskowe klasy 3 dla wszystkich pracowników. Widoczność miejsca pracy dla nadjeżdżających pojazdów to kwestia życia i zdrowia.
 
-Zadzwoń o każdej nocnej porze: [TWÓJ NUMER TELEFONU].
+Zadzwoń o każdej nocnej porze: 572 272 930.
 
 ---
 
@@ -79,7 +79,7 @@ Holowanie samochodów elektrycznych to jedna z najważniejszych naszych specjali
 
 **Tryb transportowy (Transport Mode):** Nasi kierowcy znają procedury aktywacji trybu transportowego dla wszystkich popularnych modeli (Tesla, BMW, Audi, VW itp.), co umożliwia bezpieczne i płynne wciągnięcie pojazdu na platformę.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU].
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -87,7 +87,7 @@ Zadzwoń: [TWÓJ NUMER TELEFONU].
 
 Koszt holowania po kolizji z winy innego kierowcy wchodzi w zakres szkody majątkowej pokrywanej przez ubezpieczyciela sprawcy. Pomagamy w realizacji tego prawa.
 
-1. **Na miejscu kolizji:** Zbierz dane sprawcy i jego polisy OC. Zrób zdjęcia miejsca zdarzenia. Zadzwoń do nas: [TWÓJ NUMER TELEFONU].
+1. **Na miejscu kolizji:** Zbierz dane sprawcy i jego polisy OC. Zrób zdjęcia miejsca zdarzenia. Zadzwoń do nas: 572 272 930.
 2. **Transport:** Przewozimy pojazd do wskazanego przez Ciebie warsztatu na pełnej platformie.
 3. **Dokumenty:** Otrzymujesz fakturę VAT i protokół, które są podstawą do zwrotu kosztów od ubezpieczyciela.
 4. **Refundacja:** Przy kompletnej dokumentacji koszty holowania refundowane są w pełnej wysokości bez Twojego wkładu własnego.
@@ -105,7 +105,7 @@ U nas cena jest ustalana na podstawie jasnych czynników i podawana podczas rozm
 
 **Jedna kwota – wszystko w niej zawarte.** Bez dopłat za załadunek, rozładunek czy wystawienie faktury.
 
-Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
+Bezpłatna wycena: 572 272 930.
 
 ---
 
@@ -137,7 +137,7 @@ Wzywaj holowanie natychmiast, gdy:
 - Doszło do wycieku paliwa (ryzyko pożaru).
 - Samochód uczestniczył w kolizji i ma uszkodzone zawieszenie.
 
-Twoje bezpieczeństwo i stan techniczny auta są ważniejsze niż próba dojazdu do warsztatu "na siłę". Zadzwoń: [TWÓJ NUMER TELEFONU].
+Twoje bezpieczeństwo i stan techniczny auta są ważniejsze niż próba dojazdu do warsztatu "na siłę". Zadzwoń: 572 272 930.
 
 ---
 
@@ -151,7 +151,7 @@ Oferujemy dedykowane warunki dla firm: stałe stawki, priorytetową obsługę zg
 
 Łączymy szybkość, bezpieczeństwo i uczciwą cenę w jedną spójną usługę. Niezależnie od tego, czy potrzebujesz holowania w środku dnia, czy w mroźną zimową noc – jesteśmy gotowi.
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona: laweciarz.pro**
 ⏰ **24h / 7 dni / 365 dni w roku – zawsze dostępni**
 🚗 **Każdy pojazd na pełnej platformie – transport bez kompromisów**

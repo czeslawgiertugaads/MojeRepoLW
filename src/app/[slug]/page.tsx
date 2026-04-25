@@ -1,6 +1,6 @@
 export const revalidate = 63072000; // 2 years
 import React from "react";
-import { getCities, getServices, replaceSEOTemplate, getSEOContent, City, Service, slugify, declineCity } from "@/lib/seo-utils";
+import { getCities, getServices, getHighways, replaceSEOTemplate, getSEOContent, City, Service, Highway, slugify, declineCity } from "@/lib/seo-utils";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -82,6 +82,15 @@ async function getPageData(slug: string) {
     }
   }
 
+  const matchedHighway = getHighways().find(h => h.slug === slug);
+  if (matchedHighway) {
+    matchedCity = { name: matchedHighway.name, slug: matchedHighway.id, province: matchedHighway.description } as City;
+    // Use [Miasto] placeholder so the existing logic correctly constructs titles for metadata
+    // while the H1 logic (which removes [Miasto]) stays clean.
+    const serviceBase = matchedHighway.title.replace(new RegExp(matchedHighway.name, 'i'), '').trim();
+    matchedService = { template: `${serviceBase} [Miasto]`, slug: slugify(matchedHighway.title) };
+  }
+
   if (!matchedCity || !matchedService) return null;
 
   const city = matchedCity;
@@ -89,8 +98,13 @@ async function getPageData(slug: string) {
   const serviceSlug = service.slug;
 
   let content = "";
-  if (serviceSlug.includes('24h')) {
-    content = getSEOContent('pomocdrogowa24h.md');
+  if (matchedHighway) {
+    content = getSEOContent(`${matchedHighway.id}.md`);
+  }
+
+  if (!content) {
+    if (serviceSlug.includes('24h')) {
+      content = getSEOContent('pomocdrogowa24h.md');
   } else if (serviceSlug.includes('tania-laweta')) {
     content = getSEOContent('tanialaweta.md');
   } else if (serviceSlug.includes('holowanie-samochodu')) {
@@ -139,8 +153,9 @@ async function getPageData(slug: string) {
     }
   } else if (serviceSlug.includes('najtansza-pomoc-drogowa') || serviceSlug.includes('tania-pomoc-drogowa')) {
     content = getSEOContent('najtanszapomocdrogowa.md');
-  } else {
-    content = getSEOContent('pomocdrogowamiasto.md');
+    } else {
+      content = getSEOContent('pomocdrogowamiasto.md');
+    }
   }
 
   const serviceTitle = service.template.replace(/\[Miasto\]/g, city.name);
@@ -200,11 +215,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const data = await getPageData(slug);
   if (!data) return { title: "Nie znaleziono - laweciarz.pro" };
 
-  const { miejscownik } = declineCity(data.city.name);
+  const { miejscownik } = declineCity(data.city.name, data.city);
 
   return {
     title: `${data.serviceTitle} 24/7 - laweciarz.pro`.toUpperCase(),
     description: `${data.serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`,
+    alternates: {
+      canonical: `https://laweciarz.pro.pl/${slug}`,
+    },
   };
 }
 
@@ -214,7 +232,7 @@ export default async function DynamicPage({ params }: PageProps) {
   if (!data) notFound();
 
   const { city, service, serviceTitle, dynamicLawetaText, contentChunks, nearbyCities, services } = data;
-  const { miejscownik } = declineCity(city.name);
+  const { miejscownik } = declineCity(city.name, city);
 
   // ─── City-tier logic for dynamic effects
   const MAJOR_CITIES = ['warszawa', 'krakow', 'lodz', 'wroclaw', 'poznan', 'gdansk', 'szczecin', 'bydgoszcz', 'lublin', 'katowice', 'rzeszow', 'bialystok'];
@@ -513,5 +531,12 @@ export async function generateStaticParams() {
       params.push({ slug: `${service.slug}-${citySlug}` });
     }
   }
+
+  // Add highway params
+  const highways = getHighways();
+  for (const highway of highways) {
+    params.push({ slug: highway.slug });
+  }
+
   return params;
 }

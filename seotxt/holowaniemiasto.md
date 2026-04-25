@@ -6,7 +6,7 @@ Firma laweciarz.pro od lat specjalizuje się w holowaniu pojazdów na terenie [M
 
 Nasze holowanie w [Mieście] realizujemy wyłącznie z użyciem profesjonalnych lawet i autolawet – nie stosujemy przestarzałej i niebezpiecznej metody holowania „na linie" ani „na sztywno" za pomocą drążka. Każdy pojazd trafia na platformę, zostaje solidnie zamocowany atestowanymi pasami transportowymi i dojeżdża do celu bez kontaktu kół z nawierzchnią drogi. To najwyższy dostępny standard bezpiecznego holowania pojazdów w [Mieście].
 
-Zadzwoń pod numer [TWÓJ NUMER TELEFONU] – nasz dyspozytor odbierze telefon natychmiast, przyjmie zgłoszenie i wyśle najbliżej dysponowany pojazd prosto do Ciebie. Holowanie w [Mieście] od laweciarz.pro to jeden telefon i pełne rozwiązanie problemu.
+Zadzwoń pod numer 572 272 930 – nasz dyspozytor odbierze telefon natychmiast, przyjmie zgłoszenie i wyśle najbliżej dysponowany pojazd prosto do Ciebie. Holowanie w [Mieście] od laweciarz.pro to jeden telefon i pełne rozwiązanie problemu.
 
 ---
 
@@ -30,7 +30,7 @@ Na życzenie klienta – lub z własnej inicjatywy w przypadku pojazdów powypad
 Nasi kierowcy prowadzą pojazdy zgodnie z przepisami kodeksu drogowego, dostosowując prędkość i styl jazdy do ładunku. Holowany pojazd zwiększa masę całkowitą zestawu i wpływa na jego zachowanie dynamiczne – jest to uwzględniane na każdym etapie trasy.
 
 **Zasięg holowania:**
-Nasza firma realizuje holowanie w [Mieście] oraz w promieniu kilkudziesięciu kilometrów od jego granic administracyjnych. Obsługujemy pobliskie miejscowości, drogi powiatowe, drogi krajowe i autostrady. Jeśli masz wątpliwości, czy Twoje miejsce awarii mieści się w naszym zasięgu – zadzwoń pod [TWÓJ NUMER TELEFONU]. Odpowiemy w ciągu kilku sekund.
+Nasza firma realizuje holowanie w [Mieście] oraz w promieniu kilkudziesięciu kilometrów od jego granic administracyjnych. Obsługujemy pobliskie miejscowości, drogi powiatowe, drogi krajowe i autostrady. Jeśli masz wątpliwości, czy Twoje miejsce awarii mieści się w naszym zasięgu – zadzwoń pod 572 272 930. Odpowiemy w ciągu kilku sekund.
 
 ---
 
@@ -158,7 +158,7 @@ Holowanie przez osoby prywatne jest prawnie dopuszczone jedynie na krótkich dys
 
 **Holowanie na autostradzie – bezwzględny zakaz metody linowej:**
 
-Autostrady i drogi ekspresowe to miejsca, gdzie holowanie pojazdu silnikowego przez inny pojazd jest całkowicie zabronione. W przypadku awarii na autostradzie jedynym legalnym rozwiązaniem jest wezwanie profesjonalnej pomocy drogowej i lawety. laweciarz.pro w [Mieście] obsługuje zdarzenia na drogach szybkiego ruchu w okolicach miasta – wystarczy zadzwonić pod [TWÓJ NUMER TELEFONU].
+Autostrady i drogi ekspresowe to miejsca, gdzie holowanie pojazdu silnikowego przez inny pojazd jest całkowicie zabronione. W przypadku awarii na autostradzie jedynym legalnym rozwiązaniem jest wezwanie profesjonalnej pomocy drogowej i lawety. laweciarz.pro w [Mieście] obsługuje zdarzenia na drogach szybkiego ruchu w okolicach miasta – wystarczy zadzwonić pod 572 272 930.
 
 **Co grozi za nieprawidłowe holowanie?**
 
@@ -229,16 +229,16 @@ laweciarz.pro ponosi odpowiedzialność za pojazd od momentu jego przyjęcia do 
 Tak. Nasze lawety wyposażone są w hydrauliczne platformy załadowcze, które można dostosować do bardzo małego kąta najazdu. Dzięki temu możliwe jest bezpieczne załadowanie aut sportowych, samochodów tunningowych i innych pojazdów z obniżonym zawieszeniem.
 
 **Ile kosztuje holowanie w [Mieście]?**
-Cena ustalana jest indywidualnie, w zależności od rodzaju pojazdu, odległości transportu i trudności załadunku. Zawsze podajemy cenę przed realizacją usługi – zadzwoń pod [TWÓJ NUMER TELEFONU] i zapytaj o wycenę. To nic Cię nie kosztuje.
+Cena ustalana jest indywidualnie, w zależności od rodzaju pojazdu, odległości transportu i trudności załadunku. Zawsze podajemy cenę przed realizacją usługi – zadzwoń pod 572 272 930 i zapytaj o wycenę. To nic Cię nie kosztuje.
 
 ---
 
 ## [H2] Skontaktuj się z laweciarz.pro – holowanie w [Mieście] zawsze pod ręką
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dyspozytornia: 24h / 365 dni w roku**
 
 ---
 
-*laweciarz.pro – profesjonalne holowanie w [Mieście] i okolicach. Holowanie po kolizji, holowanie pojazdów elektrycznych, holowanie po awarii silnika, holowanie aut z automatyczną skrzynią biegów, holowanie 24h. Obsługujemy drogi krajowe, autostrady i drogi ekspresowe w okolicach [Miasta]. Zadzwoń: [TWÓJ NUMER TELEFONU]. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – profesjonalne holowanie w [Mieście] i okolicach. Holowanie po kolizji, holowanie pojazdów elektrycznych, holowanie po awarii silnika, holowanie aut z automatyczną skrzynią biegów, holowanie 24h. Obsługujemy drogi krajowe, autostrady i drogi ekspresowe w okolicach [Miasta]. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*

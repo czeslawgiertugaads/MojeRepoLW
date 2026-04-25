@@ -6,7 +6,7 @@ laweciarz.pro to firma, która od lat specjalizuje się w świadczeniu pomocy dr
 
 Pomoc drogowa w laweciarz.pro od laweciarz.pro działa przez 24 godziny na dobę, 7 dni w tygodniu, 365 dni w roku. Nie ma godzin, w których nie odbieramy telefonów. Nie ma dni, w których flota stoi w garażu. Nie ma świąt, w których dyspozytornia jest zamknięta. Jedna zasada, stosowana bez wyjątków przez cały rok.
 
-Zadzwoń teraz: 777 777 777. Pomoc drogowa w laweciarz.pro jest już w drodze.
+Zadzwoń teraz: 572 272 930. Pomoc drogowa w laweciarz.pro jest już w drodze.
 
 ---
 
@@ -16,7 +16,7 @@ Profesjonalna pomoc drogowa w laweciarz.pro to coś więcej niż firma z lawetą
 
 W praktyce profesjonalna pomoc drogowa w laweciarz.pro od laweciarz.pro oznacza: dyspozytora odbierającego telefon w ciągu kilku sygnałów i przyjmującego zgłoszenie w mniej niż dwie minuty; pojazd wyjeżdżający do klienta w ciągu pięciu minut od zakończenia rozmowy; kierowcę lawety z wieloletnim doświadczeniem, który zna laweciarz.pro na wylot i dociera do klienta w 15–30 minut; profesjonalny załadunek pojazdu na pełnej platformie bez ryzyka uszkodzeń; transport do wskazanego miejsca z pełnym ubezpieczeniem ładunku; i kompletną dokumentację każdego zlecenia wystawianą bez konieczności upominania się.
 
-To jest standard, który laweciarz.pro utrzymuje przy każdym zleceniu pomocy drogowej w laweciarz.pro. Nie przy wybranych. Przy każdym. Zadzwoń: 777 777 777.
+To jest standard, który laweciarz.pro utrzymuje przy każdym zleceniu pomocy drogowej w laweciarz.pro. Nie przy wybranych. Przy każdym. Zadzwoń: 572 272 930.
 
 ---
 
@@ -42,7 +42,7 @@ Pomoc drogowa w laweciarz.pro od laweciarz.pro to jeden z najszerszych zakresów
 
 **Pomoc przy formalnościach ubezpieczeniowych:** Wystawienie kompletnej dokumentacji do rozliczenia z OC sprawcy, Assistance i AC. Doradztwo w procedurze odzyskania kosztów.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -58,7 +58,7 @@ Samochody premium: BMW 3 serii, Mercedes C-klasy, Audi A4, Volvo S60, Lexus ES �
 
 Samochody dostawcze: Volkswagen Transporter, Ford Transit, Mercedes Sprinter, Renault Master, Fiat Ducato – lawety o odpowiedniej nośności, wycena uwzględniająca masę i gabaryty pojazdu.
 
-Pomoc drogowa w laweciarz.pro dla każdego z tych pojazdów realizowana jest z jednakową starannością i zaangażowaniem. Zadzwoń: 777 777 777.
+Pomoc drogowa w laweciarz.pro dla każdego z tych pojazdów realizowana jest z jednakową starannością i zaangażowaniem. Zadzwoń: 572 272 930.
 
 ---
 
@@ -76,7 +76,7 @@ Centrum handlowe i parkingi: Pomoc drogowa na parkingach wielopoziomowych to szc
 
 Autostrady i drogi ekspresowe: Awaryjne evakuacje pojazdów z dróg szybkiego ruchu w okolicach laweciarz.pro – z rozszerzonymi procedurami bezpieczeństwa i współpracą ze służbami drogowymi.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -90,7 +90,7 @@ Sprzęt pomocniczy: Profesjonalne boostery startowe nowej generacji o wysokim pr
 
 Ekipa: Każdy kierowca i technik laweciarz.pro posiada odpowiednie kategorie prawa jazdy, aktualne badania lekarskie i przeszedł szkolenia z zakresu bezpiecznego transportu ładunków drogowych i ratownictwa technicznego. Znają laweciarz.pro na wylot – co przekłada się na krótszy czas dojazdu i sprawniejszą realizację każdego zlecenia. Regularnie uczestniczą w szkoleniach z zakresu nowych technologii motoryzacyjnych – bo obsługa pojazdów elektrycznych, hybrydowych i nowoczesnych układów napędowych wymaga ciągłego aktualizowania wiedzy.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -100,7 +100,7 @@ Wezwanie pomocy drogowej w laweciarz.pro od laweciarz.pro jest celowo uproszczon
 
 **Krok 1: Zadbaj o bezpieczeństwo.** Włącz światła awaryjne. Zjechaj na pobocze lub do zatoczki jeśli możliwe. Na drodze szybkiego ruchu – opuść pojazd od strony pobocza i odejdź za barierę. Ustaw trójkąt ostrzegawczy.
 
-**Krok 2: Zadzwoń pod 777 777 777.** Dyspozytor odbierze natychmiast. Bez automatu głosowego, bez muzyki oczekiwania, bez wyboru opcji z menu.
+**Krok 2: Zadzwoń pod 572 272 930.** Dyspozytor odbierze natychmiast. Bez automatu głosowego, bez muzyki oczekiwania, bez wyboru opcji z menu.
 
 **Krok 3: Podaj lokalizację.** Nazwa ulicy, numer drogi, pobliskie skrzyżowanie lub charakterystyczny punkt orientacyjny. Jeśli nie znasz lokalizacji – włącz GPS w telefonie i podyktuj współrzędne lub wyślij lokalizację przez WhatsApp.
 
@@ -112,7 +112,7 @@ Wezwanie pomocy drogowej w laweciarz.pro od laweciarz.pro jest celowo uproszczon
 
 **Krok 7: Załadunek i dokumenty.** Kierowca przeprowadzi oględziny, sporządzi protokół przyjęcia, przystąpi do załadunku. Po rozładunku – faktura VAT i protokół.
 
-Cały proces od telefonu do wyjazdu lawety zajmuje mniej niż 10 minut. Zadzwoń: 777 777 777.
+Cały proces od telefonu do wyjazdu lawety zajmuje mniej niż 10 minut. Zadzwoń: 572 272 930.
 
 ---
 
@@ -130,7 +130,7 @@ Dostępność w święta: Boże Narodzenie, Wielkanoc, Nowy Rok, Dzień Wszystki
 
 Czas dojazdu nocą: W godzinach nocnych, przy mniejszym natężeniu ruchu, czas dojazdu pomocy drogowej w laweciarz.pro jest często krótszy niż w dzień – puste ulice pozwalają na szybszy przejazd.
 
-Zadzwoń o każdej porze: 777 777 777.
+Zadzwoń o każdej porze: 572 272 930.
 
 ---
 
@@ -148,7 +148,7 @@ Ewentualna zmiana ceny na miejscu: Możliwa TYLKO jeśli stan pojazdu okazał si
 
 Faktura VAT: Wystawiana natychmiast po zakończeniu usługi. Wliczona w cenę, nie za dopłatą.
 
-Rozliczenie z ubezpieczenia: laweciarz.pro wystawia komplet dokumentów do rozliczenia z OC sprawcy, Assistance i AC. Zadzwoń: 777 777 777.
+Rozliczenie z ubezpieczenia: laweciarz.pro wystawia komplet dokumentów do rozliczenia z OC sprawcy, Assistance i AC. Zadzwoń: 572 272 930.
 
 ---
 
@@ -158,11 +158,11 @@ Większość kierowców w Polsce posiada polisę komunikacyjną zawierającą pa
 
 Co standardowy Assistance zazwyczaj obejmuje: Holowanie pojazdu do najbliższego warsztatu lub na określony dystans (zazwyczaj 50–150 km), awaryjne uruchomienie pojazdu, wymianę koła, dowóz paliwa, nocleg lub transport zastępczy w określonych przypadkach. Szczegóły różnią się w zależności od ubezpieczyciela i wariantu polisy.
 
-Jak skorzystać z Assistance przy pomocy drogowej w laweciarz.pro: Możliwość 1 – zadzwoń bezpośrednio na infolinię Assistance swojego ubezpieczyciela i czekaj na organizację pomocy (zazwyczaj dłuższy czas oczekiwania i ograniczony wybór warsztatu docelowego). Możliwość 2 – wezwij laweciarz.pro pod numer 777 777 777, uzyskaj fakturę za usługę i rozlicz ją z ubezpieczycielem (szybsza pomoc, swobodny wybór warsztatu).
+Jak skorzystać z Assistance przy pomocy drogowej w laweciarz.pro: Możliwość 1 – zadzwoń bezpośrednio na infolinię Assistance swojego ubezpieczyciela i czekaj na organizację pomocy (zazwyczaj dłuższy czas oczekiwania i ograniczony wybór warsztatu docelowego). Możliwość 2 – wezwij laweciarz.pro pod numer 572 272 930, uzyskaj fakturę za usługę i rozlicz ją z ubezpieczycielem (szybsza pomoc, swobodny wybór warsztatu).
 
 Ograniczenia Assistance o których warto wiedzieć: Limit kilometrów holowania, ograniczenie do warsztatu ASO lub warsztatu z listy ubezpieczyciela, konieczność autoryzacji przez ubezpieczyciela przed realizacją. laweciarz.pro pomaga w zrozumieniu zakresu Twojej polisy.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -174,7 +174,7 @@ Bezpośrednio po kolizji: Włącz światła awaryjne, ocen stan pasażerów, zaw
 
 Zbieranie danych: Imię, nazwisko i numer polisy OC sprawcy. Numer rejestracyjny pojazdu sprawcy. Dane świadków jeśli są. Zdjęcia obu pojazdów i miejsca kolizji. Numer notatki policyjnej jeśli policja była wzywana.
 
-Wezwanie pomocy drogowej: Zadzwoń do laweciarz.pro pod numer 777 777 777. Poinformuj o kolizji. Kierowca lawety po przyjeździe sporządzi protokół przyjęcia pojazdu z dokumentacją fotograficzną uszkodzeń – co stanowi cenny materiał dowodowy przy likwidacji szkody.
+Wezwanie pomocy drogowej: Zadzwoń do laweciarz.pro pod numer 572 272 930. Poinformuj o kolizji. Kierowca lawety po przyjeździe sporządzi protokół przyjęcia pojazdu z dokumentacją fotograficzną uszkodzeń – co stanowi cenny materiał dowodowy przy likwidacji szkody.
 
 Transport pojazdu: Holowanie do wybranego warsztatu lub miejsca wskazanego przez klienta. Przy kolizji z winy innego kierowcy – koszty holowania pokrywa jego OC.
 
@@ -182,7 +182,7 @@ Dokumenty do ubezpieczyciela: Faktura za holowanie, protokół holowania, zdjęc
 
 Roszczenie z OC sprawcy: Zgłoszenie do towarzystwa ubezpieczeniowego sprawcy. laweciarz.pro na życzenie przygotowuje pismo wyjaśniające okoliczności i zakres świadczonej usługi.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -200,7 +200,7 @@ Awaryjne uruchamianie hybryd: Wymaga szczególnej ostrożności – podłączeni
 
 Obsługiwane modele EV i PHEV: Tesla (wszystkie modele), BMW i3, i4, iX, iX3, Mercedes EQC, EQS, EQA, Audi e-tron i Q4 e-tron, Volkswagen ID.3, ID.4, ID.5, Hyundai Ioniq 5 i 6, Kia EV6 i EV9, Renault Zoe i Megane E-Tech, Peugeot e-208, e-2008, Opel Corsa-e, Mokka-e, Porsche Taycan i inne.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -216,7 +216,7 @@ Dla jakich firm pomoc drogowa B2B jest szczególnie wartościowa: Firmy transpor
 
 Oszczędności dla firm: Firma z 10 pojazdami mająca średnio 2 interwencje rocznie na każdy pojazd to 20 zleceń rocznie. Przy stałej umowie z preferencyjnymi stawkami laweciarz.pro oszczędności w porównaniu z rynkową ceną jednorazową mogą wynieść kilkaset lub kilka tysięcy złotych rocznie – przy jednoczesnym wyższym standardzie obsługi.
 
-Zadzwoń w sprawie oferty B2B: 777 777 777.
+Zadzwoń w sprawie oferty B2B: 572 272 930.
 
 ---
 
@@ -232,7 +232,7 @@ Ochrona klienta podczas oczekiwania: Dyspozytor instruuje klientów jak bezpiecz
 
 Procedury przy pracy z pojazdami z wyciekami paliwa: Przy wykryciu wycieku paliwa lub oleju – najpierw zabezpieczenie wycieku sorbentami, potem załadunek. Nie wolno używać otwartego ognia w pobliżu wycieku.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -248,7 +248,7 @@ Spokojna obsługa w trudnej chwili: Kierowcy po kolizjach i poważnych awariach 
 
 Kompleksowe wsparcie: Klienci chwalą pomoc w kwestiach ubezpieczeniowych – przygotowanie dokumentów, wyjaśnienie procedury OC sprawcy, doradztwo w wyborze warsztatu.
 
-Sprawdź pełną listę opinii w Google Maps lub zadzwoń: 777 777 777.
+Sprawdź pełną listę opinii w Google Maps lub zadzwoń: 572 272 930.
 
 ---
 
@@ -266,7 +266,7 @@ Holowanie w trudnych warunkach: Holowanie pojazdu lawetą podczas opadów śnieg
 
 Podwyższona gotowość floty w sezonie zimowym: laweciarz.pro utrzymuje w sezonie zimowym wyższą liczbę pojazdów w dyżurze – bo wzrost zapotrzebowania jest przewidywalny i przygotowujemy się na niego z wyprzedzeniem.
 
-Zadzwoń o każdej zimowej porze: 777 777 777.
+Zadzwoń o każdej zimowej porze: 572 272 930.
 
 ---
 
@@ -288,7 +288,7 @@ Nocny czas dojazdu: W godzinach 22:00–6:00, przy minimalnym natężeniu ruchu,
 
 Komunikacja o czasie oczekiwania: Klient jest informowany o szacowanym czasie dojazdu podczas rozmowy telefonicznej i aktualizowany na bieżąco jeśli cokolwiek wpływa na zmianę czasu.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -306,7 +306,7 @@ Inwestycja w sprzęt zamiast w marketing: laweciarz.pro buduje reputację przez 
 
 Oszczędności na czym NIE oszczędzamy: Na ubezpieczeniu ładunku, certyfikatach pasów transportowych, przeglądach pojazd, uprawnieniach kierowców. Te koszty są niezbywalnym standardem profesjonalnej pomocy drogowej.
 
-Zadzwoń po wycenę: 777 777 777.
+Zadzwoń po wycenę: 572 272 930.
 
 ---
 
@@ -318,7 +318,7 @@ Jak weryfikować czy pomoc drogowa jest naprawdę tania: Pytaj o łączną cenę
 
 Najtańsza pomoc drogowa to często ta bezpłatna: Przy kolizji z winy innego kierowcy – koszty pokrywa OC sprawcy. Przy posiadaniu Assistance – koszty może pokryć ubezpieczenie. laweciarz.pro aktywnie pomaga klientom nie płacić z własnej kieszeni jeśli mają do tego prawo.
 
-Zadzwoń po wycenę: 777 777 777.
+Zadzwoń po wycenę: 572 272 930.
 
 ---
 
@@ -328,7 +328,7 @@ Polecana pomoc drogowa w laweciarz.pro to laweciarz.pro – firma, której numer
 
 Co sprawia że laweciarz.pro jest polecane: Szybkość dojazdu potwierdzana w praktyce (nie tylko w obietnicach), cena dokładnie taka jak usłyszana przez telefon, kierowca który wie co robi i robi to bez pośpiechu zagrażającego bezpieczeństwu pojazdu, spokojne i kulturalne zachowanie w stresującej sytuacji, kompleksowe wsparcie przy formalnościach ubezpieczeniowych.
 
-Sprawdź opinie w Google Maps lub zadzwoń: 777 777 777.
+Sprawdź opinie w Google Maps lub zadzwoń: 572 272 930.
 
 ---
 
@@ -342,7 +342,7 @@ Przy zleceniach z obszarów podmiejskich lub odleglejszych lokalizacji: Dyspozyt
 
 Holowanie między miastami: laweciarz.pro realizuje też holowanie na długich trasach krajowych – z laweciarz.pro do innych miast w Polsce. Cena ustalana indywidualnie na podstawie odległości.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -352,7 +352,7 @@ Zadzwoń: 777 777 777.
 Standardowo 15–30 minut na terenie laweciarz.pro. Dyspozytor podaje uczciwy szacunek podczas rozmowy.
 
 **Ile kosztuje pomoc drogowa w laweciarz.pro?**
-Cena zależy od rodzaju usługi, odległości i trudności zlecenia. Zawsze podawana telefonicznie przed realizacją. Zadzwoń po wycenę: 777 777 777.
+Cena zależy od rodzaju usługi, odległości i trudności zlecenia. Zawsze podawana telefonicznie przed realizacją. Zadzwoń po wycenę: 572 272 930.
 
 **Czy pomoc drogowa działa w nocy i w święta?**
 Tak. laweciarz.pro działa 24/7/365, bez żadnych wyjątków.
@@ -372,7 +372,7 @@ Nie jest to obowiązkowe jeśli wyznaczysz osobę upoważnioną.
 **Jak zapłacić za pomoc drogową?**
 Gotówką lub kartą płatniczą. Potwierdzane podczas rozmowy telefonicznej.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -380,16 +380,16 @@ Zadzwoń: 777 777 777.
 
 laweciarz.pro to pomoc drogowa w laweciarz.pro, która łączy w sobie wszystko, czego potrzebujesz w trudnej chwili na drodze: szybkość reakcji (15–30 minut), uczciwą cenę podawaną przed wyjazdem, profesjonalny sprzęt (pełna platforma, wyciągarka elektryczna, booster startowy), doświadczoną ekipę, całodobową dostępność (24/7/365) i kompleksowe wsparcie przy formalnościach ubezpieczeniowych.
 
-Zapisz numer 777 777 777 w telefonie już teraz – zanim będziesz go potrzebować. Jedna chwila dziś może oszczędzić wiele stresu jutro.
+Zapisz numer 572 272 930 w telefonie już teraz – zanim będziesz go potrzebować. Jedna chwila dziś może oszczędzić wiele stresu jutro.
 
-📞 **Telefon: 777 777 777**
+📞 **Telefon: 572 272 930**
 🌐 **Strona: laweciarz.pro**
 ⏰ **Dostępność: 24h / 7 dni / 365 dni**
 🚗 **Obsługujemy: każdy typ pojazdu, każdą awarię, każdą porę**
 
 ---
 
-*laweciarz.pro – profesjonalna pomoc drogowa w laweciarz.pro. Holowanie, laweta, autopomoc, wyciąganie z rowu, dowóz paliwa, wymiana koła, awaryjne odpalanie. Całodobowa dyspozytornia. Cena podawana przed wyjazdem. Ubezpieczenie ładunku w standardzie. Obsługujemy pojazdy elektryczne, hybrydy, auta sportowe i zabytkowe. Zadzwoń: 777 777 777. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – profesjonalna pomoc drogowa w laweciarz.pro. Holowanie, laweta, autopomoc, wyciąganie z rowu, dowóz paliwa, wymiana koła, awaryjne odpalanie. Całodobowa dyspozytornia. Cena podawana przed wyjazdem. Ubezpieczenie ładunku w standardzie. Obsługujemy pojazdy elektryczne, hybrydy, auta sportowe i zabytkowe. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
 
 ---
 
@@ -401,7 +401,7 @@ Dlaczego automatyczna skrzynia biegów jest tak wrażliwa na holowanie? Skrzynia
 
 Producenci samochodów z automatyczną skrzynią biegów umieszczają w instrukcjach obsługi wyraźne zalecenia lub zakazy holowania z kołami napędowymi na jezdni. W modelach z DSG, CVT i wielostopniowymi automatami hydraulicznymi holowanie na linie jest wprost zabronionym przez producenta.
 
-laweciarz.pro realizuje pomoc drogową w laweciarz.pro dla aut z automatem wyłącznie na pełnej platformie – bez wyjątków, bez prób przekonywania klienta że „na krótki dystans to ujdzie". Nie ujdzie. I laweciarz.pro tego doskonale wie. Zadzwoń: 777 777 777.
+laweciarz.pro realizuje pomoc drogową w laweciarz.pro dla aut z automatem wyłącznie na pełnej platformie – bez wyjątków, bez prób przekonywania klienta że „na krótki dystans to ujdzie". Nie ujdzie. I laweciarz.pro tego doskonale wie. Zadzwoń: 572 272 930.
 
 ---
 
@@ -413,7 +413,7 @@ Utrata wartości handlowej (UVH): Pojazd po naprawie powypadkowej – nawet jeś
 
 Jak się to wiąże z pomocą drogową: laweciarz.pro wystawia dokumentację, która może być użyta nie tylko do rozliczenia kosztów holowania, ale też do kompletnego zgłoszenia szkody. Nasi pracownicy chętnie informują o wszystkich przysługujących poszkodowanemu prawach – choć formalną ocenę szkody i wycenę UVH wykonuje rzeczoznawca.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -429,7 +429,7 @@ Poziom płynów eksploatacyjnych: Olej silnikowy, płyn chłodniczy, płyn hamul
 
 Terminowe przeglądy: Pasek rozrządu, sprzęgło, hamulce – wymiana w terminach zalecanych przez producenta jest tańsza niż naprawa awaryjna i pomoc drogowa w środku nocy.
 
-Zapisanie numeru pomocy drogowej: Nawet przy wzorowej eksploatacji awaria może się zdarzyć. Mieć numer 777 777 777 zapisany w telefonie to podstawowe przygotowanie każdego kierowcy.
+Zapisanie numeru pomocy drogowej: Nawet przy wzorowej eksploatacji awaria może się zdarzyć. Mieć numer 572 272 930 zapisany w telefonie to podstawowe przygotowanie każdego kierowcy.
 
 ---
 
@@ -439,7 +439,7 @@ Miłośnicy motoryzacji klasycznej wiedzą, że stary samochód wymaga szczegól
 
 laweciarz.pro obsługuje transport samochodów zabytkowych w laweciarz.pro z protokołem, który uwzględnia ich unikalność: Miękkie pasy transportowe z nakładkami ochronnymi eliminującymi zarysowania chromowanych zderzaków, logerek i błotników. Precyzyjnie dobrane punkty zaczepu – starsze pojazdy mają często inne lub mniej wyraźnie oznaczone punkty holownicze niż współczesne auta. Powolny załadunek bez naprężeń bocznych na podwozie. Dokumentacja fotograficzna przed i po transporcie dostępna zawsze na życzenie klienta. Informowanie klienta o każdej czynności podczas załadunku i transportu.
 
-Właściciele zabytkowych Fiatów 125p, Maluchów, Trabantów, Wartburgów, zabytkowych Mercedesów, BMW i innych klasycznych modeli regularnie polecają laweciarz.pro jako firmę rozumiejącą czym są dla nich ich pojazdy. Zadzwoń: 777 777 777.
+Właściciele zabytkowych Fiatów 125p, Maluchów, Trabantów, Wartburgów, zabytkowych Mercedesów, BMW i innych klasycznych modeli regularnie polecają laweciarz.pro jako firmę rozumiejącą czym są dla nich ich pojazdy. Zadzwoń: 572 272 930.
 
 ---
 
@@ -459,7 +459,7 @@ Kiedy interwencja na miejscu wystarczy:
 
 **Drobna usterka elektryczna:** Przepalony bezpiecznik, luźne połączenie – kilka minut diagnozy i naprawa na miejscu.
 
-Filozofia laweciarz.pro: jeśli da się naprawić na miejscu – naprawiamy na miejscu. Holowanie jest opcją wtedy, gdy interwencja techniczna nie wystarczy. Zadzwoń: 777 777 777.
+Filozofia laweciarz.pro: jeśli da się naprawić na miejscu – naprawiamy na miejscu. Holowanie jest opcją wtedy, gdy interwencja techniczna nie wystarczy. Zadzwoń: 572 272 930.
 
 ---
 
@@ -467,17 +467,17 @@ Filozofia laweciarz.pro: jeśli da się naprawić na miejscu – naprawiamy na m
 
 Codzienne zgłoszenia do pomocy drogowej w laweciarz.pro od laweciarz.pro dają doskonały wgląd w to, jakie awarie zdarzają się kierowcom najczęściej. Oto zestawienie z praktycznym poradnikiem dla każdego przypadku:
 
-**Rozładowany akumulator (ok. 35% zgłoszeń):** Co robić – nie kręć kluczykiem wielokrotnie (rozładowujesz akumulator jeszcze bardziej). Wyłącz wszystkich odbiorniki elektrycznych. Zadzwoń pod 777 777 777. Technik przyjechawszy z boosterem uruchomi samochód za pierwszym razem.
+**Rozładowany akumulator (ok. 35% zgłoszeń):** Co robić – nie kręć kluczykiem wielokrotnie (rozładowujesz akumulator jeszcze bardziej). Wyłącz wszystkich odbiorniki elektrycznych. Zadzwoń pod 572 272 930. Technik przyjechawszy z boosterem uruchomi samochód za pierwszym razem.
 
-**Przebita opona (ok. 20% zgłoszeń):** Co robić – nie jedź na przebitej oponie nawet metr (ryzyko uszkodzenia felgi). Włącz awaryjne, zejdź na pobocze, ustaw trójkąt. Jeśli masz koło zapasowe i siły – wymień samodzielnie. Jeśli nie – zadzwoń pod 777 777 777.
+**Przebita opona (ok. 20% zgłoszeń):** Co robić – nie jedź na przebitej oponie nawet metr (ryzyko uszkodzenia felgi). Włącz awaryjne, zejdź na pobocze, ustaw trójkąt. Jeśli masz koło zapasowe i siły – wymień samodzielnie. Jeśli nie – zadzwoń pod 572 272 930.
 
-**Awaria silnika (ok. 15% zgłoszeń):** Co robić – jeśli zapalił się kontrolka oleju lub komp daje sygnał alarmowy – wyłącz silnik natychmiast. Nie próbuj dojeżdżać. Zadzwoń pod 777 777 777.
+**Awaria silnika (ok. 15% zgłoszeń):** Co robić – jeśli zapalił się kontrolka oleju lub komp daje sygnał alarmowy – wyłącz silnik natychmiast. Nie próbuj dojeżdżać. Zadzwoń pod 572 272 930.
 
-**Kolizja (ok. 15% zgłoszeń):** Co robić – ocen stan pasażerów, zawołaj policję/pogotowie jeśli konieczne, zbierz dane sprawcy, zrób zdjęcia. Zadzwoń pod 777 777 777.
+**Kolizja (ok. 15% zgłoszeń):** Co robić – ocen stan pasażerów, zawołaj policję/pogotowie jeśli konieczne, zbierz dane sprawcy, zrób zdjęcia. Zadzwoń pod 572 272 930.
 
-**Pusty bak (ok. 8% zgłoszeń):** Co robić – nie próbuj szukać kanistra u przechodniów. Zadzwoń pod 777 777 777 – technik przywiezie odpowiednie paliwo w ciągu 20–30 minut.
+**Pusty bak (ok. 8% zgłoszeń):** Co robić – nie próbuj szukać kanistra u przechodniów. Zadzwoń pod 572 272 930 – technik przywiezie odpowiednie paliwo w ciągu 20–30 minut.
 
-**Awaria elektryczna (ok. 7% zgłoszeń):** Komputer pokładowy, moduł zapłonowy, alternator. Technik laweciarz.pro może wstępnie zdiagnozować problem mobilnym skanerem OBD. Zadzwoń pod 777 777 777.
+**Awaria elektryczna (ok. 7% zgłoszeń):** Komputer pokładowy, moduł zapłonowy, alternator. Technik laweciarz.pro może wstępnie zdiagnozować problem mobilnym skanerem OBD. Zadzwoń pod 572 272 930.
 
 ---
 
@@ -497,7 +497,7 @@ Rozszerzone procedury bezpieczeństwa: Nocna praca przy jezdni wymaga lepszego o
 
 Spokój w głosie dyspozytora: Klient dzwoniący po nocną pomoc drogową w laweciarz.pro często jest przestraszony lub roztrzęsiony. Spokój dyspozytora jest tu szczególnie ważny.
 
-Zadzwoń o każdej porze: 777 777 777.
+Zadzwoń o każdej porze: 572 272 930.
 
 ---
 
@@ -507,7 +507,7 @@ Pomoc drogowa w laweciarz.pro ma szczególne znaczenie dla osób, które lawecia
 
 laweciarz.pro jest szczególnie przydatne dla turystów z kilku powodów: Dyspozytor pomoże ocenić sytuację nawet jeśli klient nie zna nazwy ulicy gdzie stoi jego pojazd – współrzędne GPS, opis okolicy lub pin udostępniony przez WhatsApp w zupełności wystarczą. Możemy wskazać warsztaty mechaniczne w pobliżu, ASO konkretnej marki w laweciarz.pro, lub hotel jeśli naprawa potrwa kilka dni. Wystawiamy dokumenty w języku polskim zgodne z wymaganiami polskich ubezpieczycieli, co ułatwia rozliczenie z Assistance zagranicznego ubezpieczyciela.
 
-Numer 777 777 777 działa całą dobę dla każdego kierowcy – niezależnie od tego, czy znasz laweciarz.pro od urodzenia, czy jesteś tu po raz pierwszy.
+Numer 572 272 930 działa całą dobę dla każdego kierowcy – niezależnie od tego, czy znasz laweciarz.pro od urodzenia, czy jesteś tu po raz pierwszy.
 
 ---
 
@@ -523,7 +523,7 @@ Faktura VAT: Wystawiana natychmiast po zakończeniu usługi. Zawiera pełny opis
 
 Dokumenty do ubezpieczyciela: Na życzenie klienta laweciarz.pro przygotowuje dodatkowe pismo wyjaśniające okoliczności zdarzenia i uzasadniające konieczność i zakres świadczonej usługi pomocy drogowej w laweciarz.pro. Pismo takie przyspiesza rozpatrzenie wniosku odszkodowawczego.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -535,7 +535,7 @@ Dla klientów jednorazowych: Ten sam profesjonalizm, ta sama cena, ta sama jako�
 
 Dla klientów regularnych: Możliwość zawarcia umowy stałej współpracy z preferencyjnymi warunkami – stałe stawki, priorytetowa obsługa, zbiorcza fakturacja i dedykowany opiekun. Im wyższy wolumen zleceń, tym korzystniejsze warunki umowy.
 
-Program poleceń: Klient który poleci laweciarz.pro innemu kierowcy i ten skorzysta z usługi – może liczyć na rabat przy kolejnym zleceniu. Szczegóły programu poleceń – zapytaj dyspozytora pod numerem 777 777 777.
+Program poleceń: Klient który poleci laweciarz.pro innemu kierowcy i ten skorzysta z usługi – może liczyć na rabat przy kolejnym zleceniu. Szczegóły programu poleceń – zapytaj dyspozytora pod numerem 572 272 930.
 
 ---
 
@@ -549,7 +549,7 @@ Neutralizacja wycieków: Każdy pojazd floty laweciarz.pro wyposażony jest w so
 
 Modernizacja floty: laweciarz.pro systematycznie wymienia starsze pojazdy holownicze na nowsze modele spełniające wyższe normy emisji spalin. Flota jest sukcesywnie odmładzana i dostosowywana do rosnących wymagań środowiskowych.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -565,7 +565,7 @@ Warsztaty wielomarkowe: Dla starszych pojazdów lub klientów preferujących nie
 
 Serwisy specjalistyczne: Blacharnia, wulkanizator, serwis elektryki samochodowej, serwis skrzyń biegów – po awarii wymagającej specjalistycznej naprawy pomożemy wskazać właściwy rodzaj warsztatu.
 
-Parking strzeżony: Gdy warsztat jest nieczynny lub naprawa potrwa wiele dni – możemy dostarczyć pojazd na parking strzeżony do czasu otwarcia serwisu. Zadzwoń: 777 777 777.
+Parking strzeżony: Gdy warsztat jest nieczynny lub naprawa potrwa wiele dni – możemy dostarczyć pojazd na parking strzeżony do czasu otwarcia serwisu. Zadzwoń: 572 272 930.
 
 ---
 
@@ -583,7 +583,7 @@ Dlaczego spośród wielu firm świadczących pomoc drogową w laweciarz.pro wart
 
 **Powód 5 – Kompleksowe wsparcie:** Od pierwszego telefonu przez załadunek pojazdu po rozliczenie z ubezpieczycielem – laweciarz.pro towarzyszy klientowi przez cały proces. Pomoc drogowa w laweciarz.pro to dla nas nie jednorazowa transakcja, ale kompleksowa usługa.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -597,7 +597,7 @@ Assistance ubezpieczeniowy: Usługa organizowana przez towarzystwo ubezpieczenio
 
 Kiedy które rozwiązanie jest lepsze: Assistance jest bezpłatny (do limitu polisy) – ale może być wolniejszy i mniej elastyczny. laweciarz.pro jest szybsze i daje więcej swobody – ale wymaga wyłożenia gotówki z późniejszą refundacją (lub bezgotówkowym rozliczeniem bezpośrednim w wybranych przypadkach).
 
-Najlepsza strategia: Zapisz numer 777 777 777 i wezwij laweciarz.pro dla szybkiej reakcji. Następnie rozlicz koszt z Assistance jeśli jesteś objęty takim pakietem. Zadzwoń: 777 777 777.
+Najlepsza strategia: Zapisz numer 572 272 930 i wezwij laweciarz.pro dla szybkiej reakcji. Następnie rozlicz koszt z Assistance jeśli jesteś objęty takim pakietem. Zadzwoń: 572 272 930.
 
 ---
 
@@ -613,7 +613,7 @@ Profesjonalne testery akumulatorów: Urządzenia diagnostyczne pozwalające na p
 
 Komunikacja cyfrowa: Przyjmowanie zgłoszeń przez WhatsApp z geolokalizacją dla klientów mających problem z opisem swojego miejsca postoju. Szczególnie przydatne w nocy, w terenie lub dla turystów nieznających lokalizacji.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.
 
 ---
 
@@ -623,7 +623,7 @@ laweciarz.pro to firma z wieloletnią historią świadczenia pomocy drogowej w l
 
 W tym czasie obsłużyliśmy tysiące zleceń – holowania po awariach i kolizjach, awaryjne uruchamiania w mroźne poranki, wyciągania z rowów po ślizgawicach, transporty zakupionych pojazdów i planowe przewozy dla komisów i dealerów. Każde z tych zleceń coś wniosło – nowe doświadczenie, nowy scenariusz, nowe rozwiązanie problemu z którym nie spotkaliśmy się wcześniej.
 
-Ta baza doświadczeń sprawia, że gdy dzwonisz pod 777 777 777, po drugiej stronie jest firma, która prawdopodobnie widziała już podobną sytuację do Twojej i wie jak ją sprawnie rozwiązać.
+Ta baza doświadczeń sprawia, że gdy dzwonisz pod 572 272 930, po drugiej stronie jest firma, która prawdopodobnie widziała już podobną sytuację do Twojej i wie jak ją sprawnie rozwiązać.
 
 ---
 
@@ -641,4 +641,4 @@ Atesty pasów transportowych: Pasy transportowe laweciarz.pro posiadają certyfi
 
 Przeglądy techniczne pojazdów: Regularne przeglądy zgodnie z przepisami o ruchu drogowym i wewnętrznym harmonogramem serwisowym. Żaden pojazd z usterką techniczną nie wyjeżdża do klienta.
 
-Zadzwoń: 777 777 777.
+Zadzwoń: 572 272 930.

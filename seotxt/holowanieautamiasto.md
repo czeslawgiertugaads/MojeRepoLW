@@ -6,7 +6,7 @@ Kluczowe pytanie, które kierowcy zadają sobie w chwili awarii, brzmi: komu pow
 
 Holowanie auta w [Mieście] od laweciarz.pro realizujemy wyłącznie na platformie lawety – bez ciągnięcia na linie, bez unoszenia jednej osi wysięgnikiem. Pełna platforma to jedyna bezpieczna metoda transportu dla aut z automatyczną skrzynią biegów, pojazdów elektrycznych i każdego samochodu, przy którym producent zabrania holowania tradycyjnymi metodami. Nasi kierowcy znają te wymagania i stosują je bez wyjątków.
 
-Zadzwoń pod numer [TWÓJ NUMER TELEFONU] i zamów holowanie auta w [Mieście] – cena podawana jest telefonicznie przed wyjazdem, czas dojazdu to standardowo 15–30 minut na terenie [Miasta].
+Zadzwoń pod numer 572 272 930 i zamów holowanie auta w [Mieście] – cena podawana jest telefonicznie przed wyjazdem, czas dojazdu to standardowo 15–30 minut na terenie [Miasta].
 
 ---
 
@@ -28,7 +28,7 @@ Pojazd elektryczny po awarii systemu trakcyjnego: Auta EV z awarią układu elek
 
 Pojazd po poważnej kolizji: Auto z uszkodzonym podwoziem, zablokowanymi kołami lub niezdolne do toczenia się wymaga załadunku na pełną platformę autolawety.
 
-W żadnej z powyższych sytuacji nie warto ryzykować. Holowanie auta w [Mieście] od laweciarz.pro to szybka i bezpieczna alternatywa dla kosztownej eskalacji uszkodzeń. Zadzwoń: [TWÓJ NUMER TELEFONU].
+W żadnej z powyższych sytuacji nie warto ryzykować. Holowanie auta w [Mieście] od laweciarz.pro to szybka i bezpieczna alternatywa dla kosztownej eskalacji uszkodzeń. Zadzwoń: 572 272 930.
 
 ---
 
@@ -40,7 +40,7 @@ Dlaczego skrzynia automatyczna jest wrażliwa na holowanie? Automatyczna przekł
 
 Producenci samochodów z automatycznymi skrzyniami biegów umieszczają w instrukcjach obsługi wyraźne zalecenia lub zakazy dotyczące holowania. W wielu modelach holowanie z napędowymi kołami na jezdni jest wprost zakazane nawet na krótkich dystansach. Jedyną bezpieczną metodą jest pełna platforma autolawety.
 
-laweciarz.pro realizuje holowanie auta z automatyczną skrzynią biegów w [Mieście] wyłącznie na platformie – bez wyjątków, bez żadnej próby przekonywania klienta, że „na krótki dystans to da się na linie". Nasi kierowcy znają wymagania i stosują je przy każdym aucie z automatem. Zadzwoń: [TWÓJ NUMER TELEFONU].
+laweciarz.pro realizuje holowanie auta z automatyczną skrzynią biegów w [Mieście] wyłącznie na platformie – bez wyjątków, bez żadnej próby przekonywania klienta, że „na krótki dystans to da się na linie". Nasi kierowcy znają wymagania i stosują je przy każdym aucie z automatem. Zadzwoń: 572 272 930.
 
 ---
 
@@ -60,7 +60,7 @@ Oświetlenie ostrzegawcze LED: Belki świetlne widoczne z ponad 300 metrów oraz
 
 System GPS i łączność z dyspozytornią: Monitorowanie lokalizacji pojazdu w czasie rzeczywistym, optymalizacja trasy i stała komunikacja z dyspozytornią.
 
-Cały ten sprzęt to standard w flocie laweciarz.pro – nie opcja dostępna za dopłatą przy wybranych zleceniach. Holowanie auta w [Mieście] od laweciarz.pro zawsze oznacza pełen pakiet sprzętowy. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Cały ten sprzęt to standard w flocie laweciarz.pro – nie opcja dostępna za dopłatą przy wybranych zleceniach. Holowanie auta w [Mieście] od laweciarz.pro zawsze oznacza pełen pakiet sprzętowy. Zadzwoń: 572 272 930.
 
 ---
 
@@ -68,7 +68,7 @@ Cały ten sprzęt to standard w flocie laweciarz.pro – nie opcja dostępna za 
 
 laweciarz.pro obsługuje holowanie auta na terenie [Miasta] oraz w jego bezpośrednim otoczeniu. Nasz zasięg obejmuje wszystkie dzielnice i osiedla [Miasta], strefy przemysłowe, tereny podmiejskie oraz drogi krajowe, ekspresowe i autostrady przebiegające w okolicach [Miasta].
 
-Holowanie auta w [Mieście] i najbliższych miejscowościach: Obsługujemy zlecenia z pobliskich gmin i miejscowości w promieniu kilkudziesięciu kilometrów od centrum [Miasta]. Jeśli masz wątpliwości czy Twoje miejsce awarii leży w naszym zasięgu – zadzwoń pod [TWÓJ NUMER TELEFONU]. Dyspozytor oceni możliwości dojazdu w ciągu kilku sekund.
+Holowanie auta w [Mieście] i najbliższych miejscowościach: Obsługujemy zlecenia z pobliskich gmin i miejscowości w promieniu kilkudziesięciu kilometrów od centrum [Miasta]. Jeśli masz wątpliwości czy Twoje miejsce awarii leży w naszym zasięgu – zadzwoń pod 572 272 930. Dyspozytor oceni możliwości dojazdu w ciągu kilku sekund.
 
 Holowanie auta na autostradzie: Obsługujemy zdarzenia na odcinkach autostrad i dróg ekspresowych w okolicach [Miasta]. Pamiętaj, że na autostradzie po zatrzymaniu pojazdu należy natychmiast włączyć światła awaryjne, założyć kamizelkę odblaskową i opuścić pojazd za barierę energochłonną.
 
@@ -90,7 +90,7 @@ Poinformuj kierowcę o specyfice pojazdu: Automatyczna skrzynia biegów, napęd 
 
 Miej przy sobie dokumenty pojazdu: Dowód rejestracyjny może być potrzebny przy odwozie do warsztatu lub przy rozliczeniu z ubezpieczycielem.
 
-Przygotowanie zajmuje kilka minut i sprawia, że holowanie auta w [Mieście] przebiega sprawniej i bez zbędnych opóźnień. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Przygotowanie zajmuje kilka minut i sprawia, że holowanie auta w [Mieście] przebiega sprawniej i bez zbędnych opóźnień. Zadzwoń: 572 272 930.
 
 ---
 
@@ -106,7 +106,7 @@ Holowanie auta w [Mieście] z Assistance: Większość polis komunikacyjnych zaw
 
 Holowanie auta w [Mieście] z AC: Jeśli posiadasz polisę AC obejmującej dane zdarzenie, koszty holowania mogą być refundowane w ramach likwidacji szkody.
 
-Zadzwoń: [TWÓJ NUMER TELEFONU] i zapytaj o cenę – wycena jest bezpłatna i niezobowiązująca.
+Zadzwoń: 572 272 930 i zapytaj o cenę – wycena jest bezpłatna i niezobowiązująca.
 
 ---
 
@@ -114,7 +114,7 @@ Zadzwoń: [TWÓJ NUMER TELEFONU] i zapytaj o cenę – wycena jest bezpłatna i 
 
 Holowanie auta w [Mieście] 24h to standard laweciarz.pro – nie wyjątek na specjalne okazje. Dyspozytornia pracuje non-stop, flota jest gotowa do wyjazdu o każdej porze, a system rotacyjnych dyżurów kierowców gwarantuje pełną obsadę przez całą dobę i przez 365 dni w roku. Niezależnie od tego, czy dzwonisz o 9:00 rano w środę czy o 3:30 w nocy w Niedzielę Wielkanocną – usłyszysz to samo: odbierający natychmiast dyspozytor i pojazd wyjeżdżający do Ciebie w ciągu kilku minut.
 
-Czas dojazdu przy holowaniu auta w [Mieście] w nocy jest często krótszy niż w dzień – bo natężenie ruchu jest mniejsze, a trasy przejazdu wolne od korków. W godzinach nocnych standardowo docieramy do klienta w 15–25 minut na terenie [Miasta]. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Czas dojazdu przy holowaniu auta w [Mieście] w nocy jest często krótszy niż w dzień – bo natężenie ruchu jest mniejsze, a trasy przejazdu wolne od korków. W godzinach nocnych standardowo docieramy do klienta w 15–25 minut na terenie [Miasta]. Zadzwoń: 572 272 930.
 
 ---
 
@@ -139,7 +139,7 @@ W wielu przypadkach tak – zależnie od posiadanej polisy (OC sprawcy, Assistan
 Tak, ale wyłącznie na pełnej platformie lawety – co jest jedyną bezpieczną metodą. Nasze lawety są do tego w pełni przystosowane.
 
 **Jak wyceniane jest holowanie auta w [Mieście]?**
-Wycena podawana jest telefonicznie przed wyjazdem pojazdu na podstawie odległości, typu auta i trudności załadunku. Zadzwoń: [TWÓJ NUMER TELEFONU] – wycena jest bezpłatna.
+Wycena podawana jest telefonicznie przed wyjazdem pojazdu na podstawie odległości, typu auta i trudności załadunku. Zadzwoń: 572 272 930 – wycena jest bezpłatna.
 
 ---
 
@@ -149,9 +149,9 @@ Awaria samochodu to niekomfortowa sytuacja – ale z laweciarz.pro wiesz, że je
 
 Niezależnie od tego, czy Twoje auto jest nowe czy stare, drogie czy tanie, elektryczne czy spalinowe – holowanie auta w [Mieście] od laweciarz.pro zapewnia ten sam standard bezpieczeństwa i profesjonalizmu. Każdy pojazd traktujemy z równą starannością, bo dla właściciela jego samochód jest zawsze ważny – niezależnie od wartości rynkowej. To podejście jest fundamentem naszej działalności i głównym powodem, dla którego kierowcy z [Miasta] polecają nas innym.
 
-Zapisz numer [TWÓJ NUMER TELEFONU] w kontaktach telefonu już teraz – zanim będziesz go potrzebować.
+Zapisz numer 572 272 930 w kontaktach telefonu już teraz – zanim będziesz go potrzebować.
 
-📞 **Telefon: [TWÓJ NUMER TELEFONU]**
+📞 **Telefon: 572 272 930**
 🌐 **Strona internetowa: laweciarz.pro**
 ⏰ **Dostępność: 24h / 365 dni w roku**
 🚗 **Holowanie aut osobowych, dostawczych, elektrycznych, zabytkowych i po kolizjach**
@@ -180,7 +180,7 @@ Holowanie motocykli: Specjalne stojaki, rynienki do kół i pasy dostosowane do 
 
 Rozliczenie kosztów holowania auta w [Mieście] z ubezpieczenia to temat, który często sprawia trudności kierowcom po raz pierwszy stykającym się z tą procedurą. laweciarz.pro pomaga przejść przez nią sprawnie.
 
-Krok 1 – Wezwij holowanie: Zadzwoń pod [TWÓJ NUMER TELEFONU]. Podaj dane zdarzenia i lokalizację.
+Krok 1 – Wezwij holowanie: Zadzwoń pod 572 272 930. Podaj dane zdarzenia i lokalizację.
 
 Krok 2 – Zbierz dokumenty z miejsca zdarzenia: Dane sprawcy kolizji (imię, nazwisko, numer polisy OC, firma ubezpieczeniowa), numer notatki policyjnej jeśli była wzywana, zdjęcia z miejsca zdarzenia.
 
@@ -190,22 +190,22 @@ Krok 4 – Zgłoś szkodę do ubezpieczyciela: W przypadku OC sprawcy – dzwoń
 
 Krok 5 – Dostarcz dokumenty: Faktura od laweciarz.pro plus dokumenty z miejsca zdarzenia. Ubezpieczyciel ma zazwyczaj 30 dni na wydanie decyzji.
 
-laweciarz.pro na życzenie klienta przygotowuje dodatkowe pismo do ubezpieczyciela opisujące okoliczności holowania i uzasadniające konieczność skorzystania z usługi. Zadzwoń: [TWÓJ NUMER TELEFONU].
+laweciarz.pro na życzenie klienta przygotowuje dodatkowe pismo do ubezpieczyciela opisujące okoliczności holowania i uzasadniające konieczność skorzystania z usługi. Zadzwoń: 572 272 930.
 
 ---
 
-*laweciarz.pro – holowanie auta w [Mieście]. Transport pojazdów osobowych i dostawczych na lawecie platformowej. Holowanie aut z automatyczną skrzynią biegów, holowanie EV, holowanie po kolizji. Cena telefonicznie przed wyjazdem. Zadzwoń: [TWÓJ NUMER TELEFONU]. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – holowanie auta w [Mieście]. Transport pojazdów osobowych i dostawczych na lawecie platformowej. Holowanie aut z automatyczną skrzynią biegów, holowanie EV, holowanie po kolizji. Cena telefonicznie przed wyjazdem. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione. Tekst zoptymalizowany pod algorytmy Google 2026.*
 
 ---
 
 ## [H2] Tanie holowanie auta w [Mieście]
 
-Tanie holowanie auta w [Mieście] to usługa, którą laweciarz.pro oferuje bez kompromisu jakościowego. Niska cena wynika z efektywnej organizacji pracy i lokalnej obecności – nie z oszczędzania na atestach pasów czy ubezpieczeniu ładunku. Cena ustalana zawsze telefonicznie przed wyjazdem, załadunek i rozładunek wliczone, faktura VAT w standardzie. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Tanie holowanie auta w [Mieście] to usługa, którą laweciarz.pro oferuje bez kompromisu jakościowego. Niska cena wynika z efektywnej organizacji pracy i lokalnej obecności – nie z oszczędzania na atestach pasów czy ubezpieczeniu ładunku. Cena ustalana zawsze telefonicznie przed wyjazdem, załadunek i rozładunek wliczone, faktura VAT w standardzie. Zadzwoń: 572 272 930.
 
 ## [H2] Profesjonalne holowanie auta w [Mieście]
 
-Profesjonalne holowanie auta w [Mieście] od laweciarz.pro to certyfikowany sprzęt, przeszkoleni kierowcy z wieloletnim doświadczeniem i pełna odpowiedzialność za powierzony pojazd od załadunku do rozładunku. Protokół przyjęcia pojazdu, ubezpieczenie ładunku i faktura VAT – każdorazowo. Zadzwoń: [TWÓJ NUMER TELEFONU].
+Profesjonalne holowanie auta w [Mieście] od laweciarz.pro to certyfikowany sprzęt, przeszkoleni kierowcy z wieloletnim doświadczeniem i pełna odpowiedzialność za powierzony pojazd od załadunku do rozładunku. Protokół przyjęcia pojazdu, ubezpieczenie ładunku i faktura VAT – każdorazowo. Zadzwoń: 572 272 930.
 
 ## [H2] Szybkie holowanie auta w [Mieście]
 
-Szybkie holowanie auta w [Mieście] od laweciarz.pro – standardowy czas dojazdu 15–30 minut na terenie [Miasta]. Flota rozmieszczona strategicznie w kluczowych punktach [Miasta], system GPS w czasie rzeczywistym, doświadczeni kierowcy znający lokalne trasy. Jeden telefon pod [TWÓJ NUMER TELEFONU] i jesteśmy w drodze do Ciebie.
+Szybkie holowanie auta w [Mieście] od laweciarz.pro – standardowy czas dojazdu 15–30 minut na terenie [Miasta]. Flota rozmieszczona strategicznie w kluczowych punktach [Miasta], system GPS w czasie rzeczywistym, doświadczeni kierowcy znający lokalne trasy. Jeden telefon pod 572 272 930 i jesteśmy w drodze do Ciebie.
