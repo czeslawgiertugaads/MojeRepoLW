@@ -1,7 +1,7 @@
-import { Metadata } from 'next';
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Admin - laweciarz.pro',
+  title: 'Panel Administracyjny | laweciarz.pro',
   robots: {
     index: false,
     follow: false,
@@ -9,14 +9,19 @@ export const metadata: Metadata = {
     googleBot: {
       index: false,
       follow: false,
+      noimageindex: true,
     },
   },
-};
+}
 
 export default function AdminLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+    </>
+  )
 }
