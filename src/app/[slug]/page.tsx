@@ -205,11 +205,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const data = await getPageData(slug);
   if (!data) return { title: "Nie znaleziono - LAWECIARZ.PRO" };
 
-  const { miejscownik } = declineCity(data.city.name, data.city);
+  // Budujemy tytuł: Usługa + Miasto + SEO + Marka
+  // Używamy data.serviceTitle, który bierze format z services.json
+
 
   return {
-    title: `${data.serviceTitle} 24/7 - LAWECIARZ.PRO`,
-    description: `${data.serviceTitle} ☎️ 572 272 930 |Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO ⭐ 5.0`,
+    title: `${data.serviceTitle} 24/7 | ${data.dynamicLawetaText} Holowanie - LAWECIARZ.PRO`,
+    description: `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO ⭐ 5.0 – działamy natychmiast! `,
     alternates: {
       canonical: `https://laweciarz.pro.pl/${slug}`,
     },
