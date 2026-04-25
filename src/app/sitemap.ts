@@ -31,7 +31,6 @@ export default async function sitemap({ id }: { id: number }): Promise<MetadataR
       '/holowanie',
       '/laweta',
       '/lokalizacje',
-      '/polityka-prywatnosci',
     ];
 
     staticPages.forEach(page => {

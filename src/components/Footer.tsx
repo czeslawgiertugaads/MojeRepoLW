@@ -57,6 +57,12 @@ export default function Footer({ currentCity }: FooterProps) {
                <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#22c55e', boxShadow: '0 0 10px #22c55e' }}></div>
                <span style={{ fontSize: '13px', fontWeight: 900, letterSpacing: '1px' }}>PRZYJMUJEMY ZLECENIA</span>
             </div>
+            <div style={{ marginTop: '40px' }}>
+              <div style={{ fontWeight: 950, marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '14px', color: 'var(--primary)' }}>SZYBKIE LINKI</div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <li><Link href="/laweta-cennik" style={{ color: 'white', opacity: 0.6, textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>Cennik Usług</Link></li>
+              </ul>
+            </div>
           </div>
 
           <div>

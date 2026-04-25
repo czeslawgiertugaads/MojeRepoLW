@@ -70,7 +70,7 @@ export default function LawetaPage() {
     .replace(/\[Miasta\]/gi, 'całego regionu')
     .replace(/\[Biernik\]/gi, 'Twój pojazd')
     .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
-    .replace(/laweciarz\.Expert|Mocnyhol\.pl/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
+    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
 
   content = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${content}</p>`;
   const contentChunks = content.split('<h2');
