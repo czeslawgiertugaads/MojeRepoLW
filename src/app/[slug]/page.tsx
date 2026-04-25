@@ -105,54 +105,54 @@ async function getPageData(slug: string) {
   if (!content) {
     if (serviceSlug.includes('24h')) {
       content = getSEOContent('pomocdrogowa24h.md');
-  } else if (serviceSlug.includes('tania-laweta')) {
-    content = getSEOContent('tanialaweta.md');
-  } else if (serviceSlug.includes('holowanie-samochodu')) {
-    content = getSEOContent('holowaniesamochodumiasto.md');
-  } else if (serviceSlug.includes('holowanie-auta') || serviceSlug.includes('holowanie-auto')) {
-    content = getSEOContent('holowanieautamiasto.md');
-  } else if (serviceSlug.includes('holowanie')) {
-    content = getSEOContent('holowaniemiasto.md');
-  } else if (serviceSlug.includes('pomoc-drogowa-cennik')) {
-    content = getSEOContent('pomocdrogowacennik.md');
-  } else if (serviceSlug.includes('laweta-cena-za-km')) {
-    content = getSEOContent('lawetacenazakm.md');
-  } else if (serviceSlug.includes('laweta-calodobowa')) {
-    content = getSEOContent('lawetacalodobowamiasto.md');
-  } else if (serviceSlug.includes('holowanie-z-oc-sprawcy')) {
-    content = getSEOContent('holowaniezocsprawcymiasto.md');
-  } else if (serviceSlug.includes('laweta')) {
-    content = getSEOContent('lawetamiasto.md');
-  } else if (serviceSlug.includes('szybka-pomoc-drogowa')) {
-    content = getSEOContent('szybkapomocdrogowamiasto.md');
-  } else if (serviceSlug.includes('transport-samochodow')) {
-    content = getSEOContent('transportsamochodow.md');
-  } else if (serviceSlug.includes('wyciaganie-z-rowu')) {
-    content = getSEOContent('wyciaganiezrowu.md');
-  } else if (serviceSlug.includes('mobilny-serwis-opon')) {
-    content = getSEOContent('mobilnyserwisoponmiasto.md');
-  } else if (serviceSlug.includes('awaryjne-odpalanie-auta')) {
-    content = getSEOContent('awaryjneodpalenieautamiasto.md');
-  } else if (serviceSlug.includes('tanie-holowanie')) {
-    content = getSEOContent('tanieholowanie.md');
-  } else if (serviceSlug.includes('polecana') || serviceSlug.includes('polecane')) {
-    if (serviceSlug.includes('autoholowanie')) {
-      content = getSEOContent('polecaneautoholowanie.md');
+    } else if (serviceSlug.includes('tania-laweta')) {
+      content = getSEOContent('tanialaweta.md');
+    } else if (serviceSlug.includes('holowanie-samochodu')) {
+      content = getSEOContent('holowaniesamochodumiasto.md');
+    } else if (serviceSlug.includes('holowanie-auta') || serviceSlug.includes('holowanie-auto')) {
+      content = getSEOContent('holowanieautamiasto.md');
     } else if (serviceSlug.includes('holowanie')) {
-      content = getSEOContent('polecaneholowanie.md');
-    } else if (serviceSlug.includes('autolaweta')) {
-      content = getSEOContent('polecanaautolaweta.md');
+      content = getSEOContent('holowaniemiasto.md');
+    } else if (serviceSlug.includes('pomoc-drogowa-cennik')) {
+      content = getSEOContent('pomocdrogowacennik.md');
+    } else if (serviceSlug.includes('laweta-cena-za-km')) {
+      content = getSEOContent('lawetacenazakm.md');
+    } else if (serviceSlug.includes('laweta-calodobowa')) {
+      content = getSEOContent('lawetacalodobowamiasto.md');
+    } else if (serviceSlug.includes('holowanie-z-oc-sprawcy')) {
+      content = getSEOContent('holowaniezocsprawcymiasto.md');
     } else if (serviceSlug.includes('laweta')) {
-      content = getSEOContent('polecanalaweta.md');
-    } else if (serviceSlug.includes('auto-pomoc')) {
-      content = getSEOContent('polecanaautopomoc_v2.md');
-    } else if (serviceSlug.includes('autopomoc')) {
-      content = getSEOContent('polecanaautopomoc.md');
-    } else {
-      content = getSEOContent('polecanapomoc.md');
-    }
-  } else if (serviceSlug.includes('najtansza-pomoc-drogowa') || serviceSlug.includes('tania-pomoc-drogowa')) {
-    content = getSEOContent('najtanszapomocdrogowa.md');
+      content = getSEOContent('lawetamiasto.md');
+    } else if (serviceSlug.includes('szybka-pomoc-drogowa')) {
+      content = getSEOContent('szybkapomocdrogowamiasto.md');
+    } else if (serviceSlug.includes('transport-samochodow')) {
+      content = getSEOContent('transportsamochodow.md');
+    } else if (serviceSlug.includes('wyciaganie-z-rowu')) {
+      content = getSEOContent('wyciaganiezrowu.md');
+    } else if (serviceSlug.includes('mobilny-serwis-opon')) {
+      content = getSEOContent('mobilnyserwisoponmiasto.md');
+    } else if (serviceSlug.includes('awaryjne-odpalanie-auta')) {
+      content = getSEOContent('awaryjneodpalenieautamiasto.md');
+    } else if (serviceSlug.includes('tanie-holowanie')) {
+      content = getSEOContent('tanieholowanie.md');
+    } else if (serviceSlug.includes('polecana') || serviceSlug.includes('polecane')) {
+      if (serviceSlug.includes('autoholowanie')) {
+        content = getSEOContent('polecaneautoholowanie.md');
+      } else if (serviceSlug.includes('holowanie')) {
+        content = getSEOContent('polecaneholowanie.md');
+      } else if (serviceSlug.includes('autolaweta')) {
+        content = getSEOContent('polecanaautolaweta.md');
+      } else if (serviceSlug.includes('laweta')) {
+        content = getSEOContent('polecanalaweta.md');
+      } else if (serviceSlug.includes('auto-pomoc')) {
+        content = getSEOContent('polecanaautopomoc_v2.md');
+      } else if (serviceSlug.includes('autopomoc')) {
+        content = getSEOContent('polecanaautopomoc.md');
+      } else {
+        content = getSEOContent('polecanapomoc.md');
+      }
+    } else if (serviceSlug.includes('najtansza-pomoc-drogowa') || serviceSlug.includes('tania-pomoc-drogowa')) {
+      content = getSEOContent('najtanszapomocdrogowa.md');
     } else {
       content = getSEOContent('pomocdrogowamiasto.md');
     }
@@ -160,7 +160,7 @@ async function getPageData(slug: string) {
 
   const serviceTitle = replaceSEOTemplate(service.template, city, "").trim();
   let rawContent = content || "";
-  
+
 
 
   let seoContent = replaceSEOTemplate(rawContent, city, '572 272 930');
@@ -203,13 +203,13 @@ async function getPageData(slug: string) {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const data = await getPageData(slug);
-  if (!data) return { title: "Nie znaleziono - laweciarz.pro" };
+  if (!data) return { title: "Nie znaleziono - LAWECIARZ.PRO" };
 
   const { miejscownik } = declineCity(data.city.name, data.city);
 
   return {
-    title: `${data.serviceTitle} 24/7 - laweciarz.pro`.toUpperCase(),
-    description: `${data.serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`,
+    title: `${data.serviceTitle} 24/7 - LAWECIARZ.PRO`,
+    description: `${data.serviceTitle} ☎️ 572 272 930 |Ekspresowa ${data.dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO ⭐ 5.0`,
     alternates: {
       canonical: `https://laweciarz.pro.pl/${slug}`,
     },
@@ -239,21 +239,30 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
 
-  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 ⭐⭐⭐⭐⭐ Ekspresowa ${dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
+  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 ⭐ 5.0 ✅ Ekspresowa ${dynamicLawetaText} i Holowanie 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": `${serviceTitle} - laweciarz.pro`,
+    "@type": "LocalBusiness",
+    "name": `${serviceTitle} - LAWECIARZ.PRO`,
     "image": `https://laweciarz.pro${heroImages[0]}`,
     "description": descriptionTemplate,
+    "telephone": "572 272 930",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": city.name,
+      "addressCountry": "PL"
+    },
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
       "reviewCount": "5364"
     }
   };
@@ -290,7 +299,7 @@ export default async function DynamicPage({ params }: PageProps) {
               let cityFontSize = 'clamp(3.2rem, 10vw, 7.8rem)';
               if (nameLen > 15) cityFontSize = 'clamp(2.2rem, 7vw, 4.8rem)';
               else if (nameLen > 10) cityFontSize = 'clamp(2.8rem, 8vw, 6.2rem)';
-              
+
               return (
                 <h1 style={{
                   display: 'flex',
@@ -431,29 +440,29 @@ export default async function DynamicPage({ params }: PageProps) {
               .sort(() => 0.5 - Math.random()) // Shuffle
               .slice(0, 8) // Limit to 8 to hide full strategy and keep it clean
               .map((s, idx) => (
-              <Link 
-                key={`${s.slug}-${idx}`} // Added index to ensure uniqueness if data has duplicates
-                href={`/${s.slug}-${city.slug}`}
-                style={{ 
-                  padding: '16px 20px', 
-                  background: 'white', 
-                  borderRadius: '16px', 
-                  color: 'black', 
-                  textDecoration: 'none', 
-                  fontSize: '0.85rem', 
-                  fontWeight: 900,
-                  transition: 'all 0.2s',
-                  border: '2px solid #eee',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px'
-                }}
-                className="service-link"
-              >
-                <div style={{ width: '8px', height: '8px', background: 'var(--primary)', borderRadius: '50%' }} />
-                {s.template.replace('[Miasto]', city.name)}
-              </Link>
-            ))}
+                <Link
+                  key={`${s.slug}-${idx}`} // Added index to ensure uniqueness if data has duplicates
+                  href={`/${s.slug}-${city.slug}`}
+                  style={{
+                    padding: '16px 20px',
+                    background: 'white',
+                    borderRadius: '16px',
+                    color: 'black',
+                    textDecoration: 'none',
+                    fontSize: '0.85rem',
+                    fontWeight: 900,
+                    transition: 'all 0.2s',
+                    border: '2px solid #eee',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px'
+                  }}
+                  className="service-link"
+                >
+                  <div style={{ width: '8px', height: '8px', background: 'var(--primary)', borderRadius: '50%' }} />
+                  {s.template.replace('[Miasto]', city.name)}
+                </Link>
+              ))}
           </div>
         </div>
       </section>
@@ -466,16 +475,16 @@ export default async function DynamicPage({ params }: PageProps) {
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '15px' }}>
               {nearbyCities.map((nc) => (
-                <Link 
-                  key={nc.slug} 
+                <Link
+                  key={nc.slug}
                   href={`/pomoc-drogowa-${nc.slug}`}
-                  style={{ 
-                    padding: '12px 16px', 
-                    background: '#f8f8f8', 
-                    borderRadius: '12px', 
-                    color: '#444', 
-                    textDecoration: 'none', 
-                    fontSize: '0.9rem', 
+                  style={{
+                    padding: '12px 16px',
+                    background: '#f8f8f8',
+                    borderRadius: '12px',
+                    color: '#444',
+                    textDecoration: 'none',
+                    fontSize: '0.9rem',
                     fontWeight: 700,
                     transition: 'all 0.2s',
                     border: '1px solid #eee'

@@ -15,7 +15,7 @@ const StarIcon = ({ size = 24 }: { size?: number }) => (
 
 export const metadata: Metadata = {
   title: "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
-  description: `Laweta na pełnej platformie ⭐⭐⭐⭐⭐ 📞 572 272 930. Bezpieczny transport aut osobowych, elektrycznych, sportowych i dostawczych. Całodobowa laweta i holowanie 24h. Dojazd w 15 minut!`,
+  description: `Laweta na pełnej platformie ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO ⭐ 5.0`,
   alternates: {
     canonical: "/laweta",
   },
@@ -77,17 +77,26 @@ export default function LawetaPage() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "LocalBusiness",
     "name": "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Laweta na pełnej platformie ⭐⭐⭐⭐⭐ 📞 572 272 930. Bezpieczny transport aut osobowych, elektrycznych, sportowych i dostawczych. Całodobowa laweta i holowanie 24h. Dojazd w 15 minut!`,
+    "description": `Laweta na pełnej platformie ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO ⭐ 5.0`,
+    "telephone": "572 272 930",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Polska",
+      "addressCountry": "PL"
+    },
     "brand": {
       "@type": "Brand",
-      "name": "lAWECIARZ.PRO "
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
       "reviewCount": "5364"
     }
   };
