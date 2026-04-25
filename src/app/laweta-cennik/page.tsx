@@ -5,8 +5,8 @@ import FloatingCTA from '@/components/FloatingCTA';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cennik Pomocy Drogowej 24/7 | LAWECIARZ.PRO',
-  description: 'Sprawdź aktualny cennik usług pomocy drogowej i holowania. Usługi lawetą 24h na dobę. Zadzwoń: 572 272 930.',
+  title: 'Laweta Cennik - Pomoc Drogowa Cena | LAWECIARZ.PRO',
+  description: 'Sprawdź aktualny cennik usług lawetą, pomocy drogowej i holowania. Laweta cena. Usługi lawetą 24h na dobę. Zadzwoń: 572 272 930.',
   alternates: {
     canonical: "/laweta-cennik",
   },
@@ -19,9 +19,9 @@ const PhoneIcon = ({ size = 24 }: { size?: number }) => (
 );
 
 const PriceTable = ({ title, rows }: { title: string, rows: { service: string, price: string }[] }) => (
-  <div style={{ 
-    background: '#fff', 
-    borderRadius: '12px', 
+  <div style={{
+    background: '#fff',
+    borderRadius: '12px',
     overflow: 'hidden',
     marginBottom: '30px',
     border: '1px solid #e2e8f0'
@@ -33,7 +33,7 @@ const PriceTable = ({ title, rows }: { title: string, rows: { service: string, p
       <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
         <tbody>
           {rows.map((row, idx) => (
-            <tr key={idx} style={{ 
+            <tr key={idx} style={{
               borderBottom: idx === rows.length - 1 ? 'none' : '1px solid #f1f5f9'
             }}>
               <td style={{ padding: '15px 25px', fontWeight: 600, color: '#334155', fontSize: '0.95rem' }}>{row.service}</td>
@@ -106,7 +106,8 @@ export default function PricingPage() {
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc' }}>
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @media (max-width: 640px) {
           .cennik-container { padding: 0 10px !important; }
           .hero-cennik { padding: 60px 20px 40px !important; }
@@ -114,19 +115,19 @@ export default function PricingPage() {
         }
       `}} />
       <Navigation />
-      
+
       {/* Hero Section */}
-      <section className="hero-cennik" style={{ 
-        background: 'var(--secondary)', 
-        color: 'white', 
+      <section className="hero-cennik" style={{
+        background: 'var(--secondary)',
+        color: 'white',
         padding: '100px 20px 60px',
         textAlign: 'center'
       }}>
         <div className="container">
-          <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 4rem)', 
-            fontWeight: 950, 
-            textTransform: 'uppercase', 
+          <h1 style={{
+            fontSize: 'clamp(2.5rem, 6vw, 4rem)',
+            fontWeight: 950,
+            textTransform: 'uppercase',
             marginBottom: '10px'
           }}>
             CENNIK <span style={{ color: 'var(--primary)' }}>USŁUG</span>
@@ -138,7 +139,7 @@ export default function PricingPage() {
       {/* Main Content - Price Tables */}
       <section className="table-section" style={{ padding: '60px 20px 60px' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          
+
           {tables.map((table, i) => (
             <div key={i} style={{ marginBottom: '40px' }}>
               {table.info && (
@@ -152,10 +153,10 @@ export default function PricingPage() {
 
           {/* Contact CTA */}
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-             <a href="tel:+48572272930" className="btn-power" style={{ padding: '20px 40px', fontSize: '1.4rem', gap: '15px' }}>
-                <PhoneIcon size={32} />
-                572 272 930
-             </a>
+            <a href="tel:+48572272930" className="btn-power" style={{ padding: '20px 40px', fontSize: '1.4rem', gap: '15px' }}>
+              <PhoneIcon size={32} />
+              572 272 930
+            </a>
           </div>
         </div>
       </section>
@@ -165,7 +166,7 @@ export default function PricingPage() {
         <div className="container" style={{ maxWidth: '800px' }}>
           <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '40px' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '30px', textTransform: 'uppercase' }}>Szczegóły <span style={{ color: 'var(--primary)' }}>usług</span></h2>
-            
+
             <div style={{ display: 'grid', gap: '30px' }}>
               <div>
                 <h4 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '10px' }}>Holowanie i transport pojazdów</h4>
