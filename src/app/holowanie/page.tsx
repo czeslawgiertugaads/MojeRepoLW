@@ -15,7 +15,7 @@ const StarIcon = ({ size = 24 }: { size?: number }) => (
 
 export const metadata: Metadata = {
   title: "Holowanie Samochodów i Pomoc Drogowa 24/7 - LAWECIARZ.PRO",
-  description: `Profesjonalne holowanie 24h na pełnej platformie ⭐⭐⭐⭐⭐ 📞 572 272 930. Bezpieczny transport aut powypadkowych, uszkodzonych i elektrycznych. Najszybsza pomoc drogowa 24/7. Dojazd w 15 minut!`,
+  description: `Profesjonalne Holowanie ☎️ 572 272 930. Bezpieczny transport aut powypadkowych, uszkodzonych i elektrycznych. Najszybsza pomoc drogowa 24/7. Dojazd w 15 minut!`,
   alternates: {
     canonical: "/holowanie",
   },
@@ -80,7 +80,7 @@ export default function HolowaniePage() {
     "@type": "Product",
     "name": "Holowanie Samochodów i Pomoc Drogowa 24/7 - LAWECIARZ.PRO",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Profesjonalne holowanie 24h na pełnej platformie ⭐⭐⭐⭐⭐ 📞 572 272 930. Bezpieczny transport aut powypadkowych, uszkodzonych i elektrycznych. Najszybsza pomoc drogowa 24/7. Dojazd w 15 minut!`,
+    "description": `Profesjonalne holowanie 24/7 ☎️ 572 272 930. Bezpieczny transport aut powypadkowych, uszkodzonych i elektrycznych. Najszybsza pomoc drogowa 24/7. Dojazd w 15 minut!`,
     "brand": {
       "@type": "Brand",
       "name": "LAWECIARZ.PRO"

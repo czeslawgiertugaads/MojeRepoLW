@@ -19,10 +19,9 @@ export default function PolitykaPage() {
     <main style={{ minHeight: '100vh', background: '#fcfcfc', color: '#111' }}>
       <Navigation locationText="POLITYKA" />
       
-      <div className="container" style={{ padding: 'clamp(60px, 10vw, 120px) 15px', maxWidth: '900px' }}>
-        <div style={{ marginBottom: '60px' }}>
-          <div className="badge-accent" style={{ marginBottom: '16px' }}>DOKUMENT OFICJALNY</div>
-          <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 950, marginBottom: '20px', letterSpacing: '-1.5px', lineHeight: 1.1 }}>
+      <div className="container" style={{ padding: 'clamp(20px, 6vw, 40px) 15px', maxWidth: '900px' }}>
+        <div style={{ marginBottom: 'clamp(30px, 8vw, 60px)' }}>
+          <h1 style={{ fontSize: 'clamp(1.6rem, 7vw, 3rem)', fontWeight: 950, marginBottom: '16px', letterSpacing: '-1.5px', lineHeight: 1.1 }}>
             POLITYKA PRYWATNOŚCI <br/>
             <span style={{ color: 'var(--primary)' }}>I PLIKÓW COOKIE</span>
           </h1>
@@ -31,11 +30,11 @@ export default function PolitykaPage() {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(30px, 8vw, 48px)' }}>
           
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>01.</span> ADMINISTRATOR DANYCH OSOBOWYCH
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              ADMINISTRATOR DANYCH OSOBOWYCH
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333' }}>
               Podmiotem odpowiedzialnym za przetwarzanie Twoich danych jest <strong>Dev Sp. z o.o.</strong> z siedzibą w Łodzi. Administrator zapewnia, że dane są przetwarzane w sposób bezpieczny i zgodny z Rozporządzeniem (UE) 2016/679 (RODO).
@@ -43,8 +42,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>02.</span> ZAKRES I CHARAKTER PRZETWARZANIA
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              ZAKRES I CHARAKTER PRZETWARZANIA
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333', marginBottom: '20px' }}>
               Głównym celem gromadzenia danych jest umożliwienie sprawnej komunikacji w sytuacjach awaryjnych na drodze.
@@ -81,8 +80,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>03.</span> CELE OPERACYJNE
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              CELE OPERACYJNE
             </h2>
             <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {[
@@ -100,8 +99,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>04.</span> PODSTAWA PRAWNA
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              PODSTAWA PRAWNA
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <div style={{ padding: '16px', borderLeft: '4px solid var(--primary)', background: '#fff', borderRadius: '0 12px 12px 0', border: '1px solid #eee', borderLeftWidth: '4px' }}>
@@ -114,8 +113,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>05.</span> TRANSFER I UDOSTĘPNIANIE DANYCH
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              TRANSFER I UDOSTĘPNIANIE DANYCH
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333' }}>
               Dane mogą być przekazywane wyłącznie zaufanym partnerom technicznym: Infrastruktura serwerowa i Cloud oraz Narzędzia analityczne (np. Google Analytics).
@@ -126,8 +125,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>06.</span> TERMINY PRZECHOWYWANIA
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              TERMINY PRZECHOWYWANIA
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333' }}>
               Dane kontaktowe są przechowywane przez okres niezbędny do realizacji usługi, a następnie archiwizowane w celu ochrony przed roszczeniami lub zgodnie z przepisami podatkowo-księgowymi.
@@ -135,8 +134,8 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>07.</span> TWOJE UPRAWNIENIA
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              TWOJE UPRAWNIENIA
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333', marginBottom: '16px' }}>
               Zgodnie z RODO przysługuje Ci prawo do:
@@ -152,17 +151,17 @@ export default function PolitykaPage() {
           </section>
 
           <section>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>08.</span> PLIKI COOKIES I MONITORING
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              PLIKI COOKIES I MONITORING
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#333' }}>
               Serwis wykorzystuje pliki cookies w celu optymalizacji wydajności. Prowadzimy monitoring ruchu w celu zapobiegania aktywnościom niepożądanym (np. scraping danych). Możesz zarządzać plikami cookies w ustawieniach swojej przeglądarki.
             </p>
           </section>
 
-          <section style={{ padding: '40px', background: 'var(--secondary)', borderRadius: '24px', color: 'white' }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <span style={{ color: 'var(--primary)', fontSize: '1.2rem' }}>09.</span> INSPEKTOR OCHRONY DANYCH
+          <section style={{ padding: 'clamp(20px, 5vw, 40px)', background: 'var(--secondary)', borderRadius: '24px', color: 'white' }}>
+            <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', fontWeight: 900, marginBottom: '16px' }}>
+              INSPEKTOR OCHRONY DANYCH
             </h2>
             <p style={{ lineHeight: 1.7, fontSize: '1.05rem', color: '#aaa', marginBottom: '0' }}>
               W firmie <strong>Dev Sp. z o.o.</strong> nadzór nad bezpieczeństwem informacji sprawuje wyznaczona osoba kontaktowa. W sprawach związanych z Twoją prywatnością oraz przetwarzaniem numeru telefonu, możesz skontaktować się z nami bezpośrednio pod adresem e-mail wskazanym w punkcie VII.
