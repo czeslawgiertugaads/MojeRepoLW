@@ -96,7 +96,34 @@ export default function HolowaniePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje holowanie samochodu?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cena holowania zależy od odległości i rodzaju pojazdu. Zadzwoń na 572 272 930, aby otrzymać bezpłatną wycenę." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak szybko przyjedzie pomoc drogowa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nasz średni czas dojazdu wynosi 15 minut. Działamy 24/7 przez 365 dni w roku." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy holujecie samochody elektryczne i hybrydowe?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tak, specjalizujemy się w holowaniu aut elektrycznych, hybrydowych i powypadkowych. Dysponujemy odpowiednim sprzętem do bezpiecznego transportu." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy usługa holowania dostępna jest całą dobę?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tak, LAWECIARZ.PRO świadczy usługi holowania 24 godziny na dobę, 7 dni w tygodniu, przez cały rok – również w święta." }
+      }
+    ]
   };
 
   return (
@@ -108,6 +135,10 @@ export default function HolowaniePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <Navigation locationText="TWOJA OKOLICA" />
 

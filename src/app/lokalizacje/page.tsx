@@ -33,11 +33,24 @@ export default function LokalizacjePage() {
     }
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://laweciarz.pro" },
+      { "@type": "ListItem", "position": 2, "name": "Lokalizacje", "item": "https://laweciarz.pro/lokalizacje" }
+    ]
+  };
+
   return (
     <main style={{ padding: '80px 20px', background: '#f8fafc', minHeight: '100vh' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>

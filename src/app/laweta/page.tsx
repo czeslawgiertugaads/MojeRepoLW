@@ -15,7 +15,7 @@ const StarIcon = ({ size = 24 }: { size?: number }) => (
 
 export const metadata: Metadata = {
   title: "Laweta i Transport Pojazdów 24/7 - LAWECIARZ.PRO",
-  description: `Laweta 24/7 ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO ⭐ 5.0`,
+  description: `Laweta 24/7 ☎️ 572 272 930 | Bezpieczny transport aut osobowych, elektrycznych i dostawczych. Całodobowa laweta i holowanie 24h. LAWECIARZ.PRO 5.0`,
   alternates: {
     canonical: "/laweta",
   },
@@ -105,7 +105,34 @@ export default function LawetaPage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje transport lawetą?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cena transportu lawetą zależy od trasy i rodzaju pojazdu. Zadzwoń na 572 272 930, aby otrzymać bezpłatną wycenę." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak szybko przyjedzie laweta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nasz średni czas dojazdu wynosi 15 minut. Laweta dostępna jest całą dobę, 7 dni w tygodniu." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jakie pojazdy może transportować laweta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Transportujemy wszystkie typy pojazdów: osobowe, elektryczne, hybrydowe, dostawcze, motocykle oraz auta powypadkowe i uszkodzone." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy laweta działa całą dobę?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tak, LAWECIARZ.PRO świadczy usługi lawety 24 godziny na dobę, 7 dni w tygodniu, przez cały rok – również w święta." }
+      }
+    ]
   };
 
   return (
@@ -117,6 +144,10 @@ export default function LawetaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <Navigation locationText="TWOJA OKOLICA" />
 

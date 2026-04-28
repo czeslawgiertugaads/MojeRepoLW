@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
   };
 
   return (

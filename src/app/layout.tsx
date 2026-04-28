@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://laweciarz.pro.pl"),
+  metadataBase: new URL("https://laweciarz.pro"),
   title: "Profesjonalna Pomoc Drogowa, Laweta i Holowanie 24/7 - LAWECIARZ.PRO",
   description: `Pomoc Drogowa, Laweta i Holowanie ☎️ 572 272 930 | Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Profesjonalna obsługa, dojazd 15 minut! LAWECIARZ.PRO ⭐ 5.0`,
   alternates: {

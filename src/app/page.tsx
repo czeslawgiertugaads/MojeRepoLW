@@ -124,7 +124,7 @@ export default async function HomePage() {
     "@type": "Product",
     "name": "Pomoc Drogowa i Holowanie 24/7 - laweciarz.pro",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Mocny sprzęt, profesjonalna obsługa, dojazd 15 minut!`,
+    "description": `Pomoc Drogowa i Holowanie 📞 572 272 930. Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Mocny sprzęt, profesjonalna obsługa, dojazd 15 minut!`,
     "brand": {
       "@type": "Brand",
       "name": "laweciarz.pro"
@@ -140,7 +140,7 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
   };
 
   return (

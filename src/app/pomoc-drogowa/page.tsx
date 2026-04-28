@@ -80,7 +80,7 @@ export default function PomocDrogowaPage() {
     "@type": "Product",
     "name": "Pomoc Drogowa i Holowanie 24/7 - laweciarz.pro",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Pomoc Drogowa i Holowanie ⭐⭐⭐⭐⭐ 📞 572 272 930. LAWECIARZ.PRO to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
+    "description": `Pomoc Drogowa i Holowanie 📞 572 272 930. LAWECIARZ.PRO to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
     "brand": {
       "@type": "Brand",
       "name": "laweciarz.pro"
@@ -96,7 +96,34 @@ export default function PomocDrogowaPage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co obejmuje pomoc drogowa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pomoc drogowa obejmuje: holowanie i transport lawetą, uruchomienie rozładowanego akumulatora, wymianę koła, otwarcie samochodu przy blokadzie drzwi, dostarczenie paliwa oraz inne usługi awaryjne." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak szybko przyjedzie pomoc drogowa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nasz średni czas dojazdu wynosi 15 minut. Działamy 24/7 przez 365 dni w roku w całej Polsce." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje pomoc drogowa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Koszt zależy od rodzaju usługi i lokalizacji. Zadzwoń na 572 272 930, aby otrzymać bezpłatną wycenę przed przyjazdem." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy świadczycie pomoc drogową w całej Polsce?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tak, obsługujemy całą Polskę. Nasza sieć obejmuje ponad 10 000 miejscowości, a dojazd wynosi średnio 15 minut." }
+      }
+    ]
   };
 
   return (
@@ -108,6 +135,10 @@ export default function PomocDrogowaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <Navigation locationText="TWOJA OKOLICA" />
 

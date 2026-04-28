@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getCities, getServices, getHighways, slugify } from '@/lib/seo-utils';
 import { articles } from '@/lib/articles';
 
-const BASE_URL = 'https://laweciarz.pro.pl';
+const BASE_URL = 'https://laweciarz.pro';
 const CHUNK_SIZE = 45000;
 
 export async function generateSitemaps() {

@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://laweciarz.pro.pl/sitemap.xml',
+    sitemap: 'https://laweciarz.pro/sitemap.xml',
   };
 }

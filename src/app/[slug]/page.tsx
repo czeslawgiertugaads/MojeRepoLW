@@ -215,11 +215,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Używamy data.serviceTitle, który bierze format z services.json
 
 
+  const title = `${data.serviceTitle} 24/7 | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
+  const description = `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
+
   return {
-    title: `${data.serviceTitle} 24/7 | ${data.secondaryKeywords} - LAWECIARZ.PRO`,
-    description: `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO ⭐ 5.0 – działamy natychmiast! `,
+    title,
+    description,
     alternates: {
-      canonical: `https://laweciarz.pro.pl/${slug}`,
+      canonical: `https://laweciarz.pro/${slug}`,
+    },
+    openGraph: {
+      type: 'website',
+      url: `https://laweciarz.pro/${slug}`,
+      title,
+      description,
+      siteName: 'LAWECIARZ.PRO',
+      images: [
+        {
+          url: 'https://laweciarz.pro/images/hero-main.webp',
+          width: 1200,
+          height: 630,
+          alt: `${data.serviceTitle} - LAWECIARZ.PRO`,
+        },
+      ],
     },
   };
 }
@@ -247,7 +265,7 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
 
-  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 ⭐ 5.0 ✅ Ekspresowa ${secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
+  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 | Ekspresowa ${secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -279,7 +297,34 @@ export default async function DynamicPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro.pl/"
+    "url": "https://laweciarz.pro/"
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `Jak szybko dotrze ${serviceTitle} do ${city.name}?`,
+        "acceptedAnswer": { "@type": "Answer", "text": `Nasz średni czas dojazdu w ${city.name} wynosi 15 minut. Działamy 24/7 przez 365 dni w roku.` }
+      },
+      {
+        "@type": "Question",
+        "name": `Ile kosztuje ${serviceTitle} w ${city.name}?`,
+        "acceptedAnswer": { "@type": "Answer", "text": `Koszt zależy od zakresu usługi i lokalizacji w ${city.name}. Zadzwoń na 572 272 930, aby otrzymać bezpłatną wycenę.` }
+      },
+      {
+        "@type": "Question",
+        "name": `Czy ${serviceTitle} dostępny jest całą dobę w ${city.name}?`,
+        "acceptedAnswer": { "@type": "Answer", "text": `Tak, świadczymy usługi w ${city.name} 24 godziny na dobę, 7 dni w tygodniu, przez cały rok – również w święta.` }
+      },
+      {
+        "@type": "Question",
+        "name": `Jaki obszar obsługujecie w ${city.name}?`,
+        "acceptedAnswer": { "@type": "Answer", "text": `Obsługujemy ${city.name} oraz okoliczne miejscowości. Dojazd w 15 minut – zadzwoń na 572 272 930.` }
+      }
+    ]
   };
 
   return (
@@ -291,6 +336,10 @@ export default async function DynamicPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <Navigation locationText={city.name.toUpperCase()} />
 
