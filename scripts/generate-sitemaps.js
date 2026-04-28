@@ -38,7 +38,8 @@ if (!fs.existsSync(scriptsDir)) {
 }
 
 console.log('Loading data...');
-const cities = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'cities.json'), 'utf8'));
+const rawCities = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'cities.json'), 'utf8'));
+const cities = rawCities.filter(c => !c.slug.startsWith('wojewodztwo-'));
 const services = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'services.json'), 'utf8'));
 
 // Highways and Articles
