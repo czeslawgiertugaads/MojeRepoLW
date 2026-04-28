@@ -380,6 +380,14 @@ export default async function DynamicPage({ params }: PageProps) {
 
               const [h1Before, h1After = ''] = service.template.split(/\[Miasto\]|\[Mieście\]|\[Miasta\]/i);
               const h1BeforeTrimmed = h1Before.replace(/\s+w\s*$/i, '').trim();
+              const h1AfterTrimmed = h1After.trim();
+
+              const getServiceFontSize = (text: string) => {
+                const len = text.length;
+                if (len > 15) return 'clamp(2.2rem, 7vw, 4.8rem)';
+                if (len > 10) return 'clamp(2.8rem, 8vw, 6.2rem)';
+                return 'clamp(3.5rem, 10vw, 7.8rem)';
+              };
 
               return (
                 <h1 style={{
@@ -390,9 +398,9 @@ export default async function DynamicPage({ params }: PageProps) {
                   marginBottom: '24px',
                   gap: '8px'
                 }}>
-                  {h1BeforeTrimmed && <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}</span>}
+                  {h1BeforeTrimmed && <span style={{ fontSize: getServiceFontSize(h1BeforeTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}</span>}
                   <span style={{ fontSize: cityFontSize, fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>{city.name.toUpperCase()}</span>
-                  {h1After.trim() && <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1After.trim().toUpperCase()}</span>}
+                  {h1AfterTrimmed && <span style={{ fontSize: getServiceFontSize(h1AfterTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1AfterTrimmed.toUpperCase()}</span>}
                 </h1>
               );
             })()}
