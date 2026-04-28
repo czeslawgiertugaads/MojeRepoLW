@@ -96,7 +96,7 @@ Przygotowanie zajmuje kilka minut i sprawia, że holowanie auta w [Mieście] prz
 
 ## [H2] Holowanie auta w [Mieście] – cena i rozliczenie z ubezpieczenia
 
-Cena holowania auta w [Mieście] od laweciarz.pro jest zawsze podawana telefonicznie przed wyjazdem pojazdu. Dyspozytor pyta o kluczowe parametry zlecenia – lokalizację, odległość do miejsca docelowego, typ i masę pojazdu oraz ewentualne trudności przy załadunku – i na tej podstawie wylicza łączny koszt usługi. Cena jest wiążąca.
+Cena holowania auta w [Mieście] od laweciarz.pro jest zawsze podawana telefonicznie przed wyjazdem pojazdu. Dyspozytor pyta o kluczowe parametry zlecenia – lokalizację, odległość do miejsca docelowego, typ i masę pojazdu oraz ewentualne trudności przy załadunku – i na tej podstawie wylicza łączny koszt usługi. Cena jest ustalana przed realizacją.
 
 Czynniki wpływające na cenę holowania auta w [Mieście]: odległość od miejsca awarii do miejsca docelowego, typ pojazdu (osobowy, dostawczy, elektryczny, motocykl), stopień trudności załadunku (pojazd stojący na równej nawierzchni vs. auto w rowie z zablokowanymi kołami), pora doby (zlecenia nocne mogą być objęte niewielką dopłatą, zawsze komunikowaną z góry).
 

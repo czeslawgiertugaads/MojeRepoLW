@@ -34,7 +34,7 @@ Zadzwoń: 572 272 930.
 
 Polecana tania auto pomoc w [Mieście] to temat, który laweciarz.pro traktuje z pełną powagą. Cena usługi ma znaczenie – szczególnie dla kierowcy, który właśnie przeżył stres kolizji lub niespodziewanej awarii i nie chce do tego stresu dokładać obciążenia finansowego powyżej oczekiwań.
 
-Zasada wyceny jest u nas prosta i nieodstępna: cena podawana jest telefonicznie przez dyspozytora przed wyjazdem pojazdu. Ta cena jest wiążąca – nie zmienia się na miejscu zdarzenia bez wyraźnej przyczyny, którą kierowca byłby wcześniej poinformowany. Załadunek i rozładunek pojazdu są wliczone w cenę – nie są osobnymi pozycjami w rachunku. Faktura VAT wystawiana jest w standardzie, bez dodatkowych opłat za jej wystawienie.
+Zasada wyceny jest u nas prosta i nieodstępna: cena podawana jest telefonicznie przez dyspozytora przed wyjazdem pojazdu. Ta cena jest ustalana przed realizacją – nie zmienia się na miejscu zdarzenia bez wyraźnej przyczyny, którą kierowca byłby wcześniej poinformowany. Załadunek i rozładunek pojazdu są wliczone w cenę – nie są osobnymi pozycjami w rachunku. Faktura VAT wystawiana jest w standardzie, bez dodatkowych opłat za jej wystawienie.
 
 Tania auto pomoc w [Mieście] to też firma, która aktywnie pomaga klientom nie płacić za usługę z własnej kieszeni, gdy mają do tego prawo:
 

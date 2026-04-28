@@ -14,7 +14,17 @@ export interface City {
 
 export interface Service {
   template: string;
-  slug: string;
+  slug: string;       // service slug without city (for content matching)
+  slugBefore: string; // slug part before [Miasto]
+  slugAfter: string;  // slug part after [Miasto]
+}
+
+/** Builds the full page slug by inserting citySlug in the correct position. */
+export function buildCitySlug(service: Service, citySlug: string): string {
+  if (service.slugAfter) {
+    return `${service.slugBefore}-${citySlug}-${service.slugAfter}`;
+  }
+  return `${service.slugBefore}-${citySlug}`;
 }
 
 export interface Highway {
@@ -47,10 +57,17 @@ export function getServices(): Service[] {
   const filePath = path.join(process.cwd(), 'services.json');
   const templates: string[] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   
-  cachedServices = templates.map(template => ({
-    template,
-    slug: slugify(template.replace(/\[Miasto\]|\[Mieście\]|\[Miasta\]/g, '').replace(/\s+w\s*$/g, '').trim())
-  }));
+  cachedServices = templates.map(template => {
+    const parts = template.split(/\[Miasto\]|\[Mieście\]|\[Miasta\]/);
+    const before = parts[0].replace(/\s+w\s*$/g, '').trim();
+    const after = parts.length > 1 ? parts[1].trim() : '';
+    return {
+      template,
+      slug: slugify(template.replace(/\[Miasto\]|\[Mieście\]|\[Miasta\]/g, '').replace(/\s+w\s*$/g, '').trim()),
+      slugBefore: slugify(before),
+      slugAfter: after ? slugify(after) : '',
+    };
+  });
   return cachedServices;
 }
 

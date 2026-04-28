@@ -94,7 +94,7 @@ Wzywanie polecanej autolawety w [Mieście] od laweciarz.pro przebiega sprawnie i
 
 Telefon i przyjęcie zgłoszenia: Dzwonisz pod numer 572 272 930. Dyspozytor pyta o lokalizację, markę i model pojazdu oraz charakter problemu. Informacja o modelu jest przy autolawecie szczególnie ważna – pozwala przygotować właściwy sprzęt dodatkowy (nakładki na pasy, listwy przejściowe, stojaki pod motocykl) jeszcze przed wyjazdem.
 
-Wycena i czas dojazdu: Dyspozytor podaje cenę usługi i szacowany czas dojazdu. Cena jest wiążąca – kierowca nie zmienia jej na miejscu bez uzasadnionej przyczyny.
+Wycena i czas dojazdu: Dyspozytor podaje cenę usługi i szacowany czas dojazdu. Cena jest ustalana przed realizacją – kierowca nie zmienia jej na miejscu bez uzasadnionej przyczyny.
 
 Dojazd autolawety: Kierowca kontaktuje się telefonicznie na kilka minut przed dotarciem. Jeśli miejsce załadunku jest trudno dostępne – pyta o szczegóły, żeby optymalnie ustawić pojazd przed przystąpieniem do załadunku.
 

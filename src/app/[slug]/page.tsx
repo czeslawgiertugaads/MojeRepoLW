@@ -1,6 +1,6 @@
 export const revalidate = 63072000; // 2 years
 import React from "react";
-import { getCities, getServices, getHighways, replaceSEOTemplate, getSEOContent, City, Service, Highway, slugify, declineCity } from "@/lib/seo-utils";
+import { getCities, getServices, getHighways, replaceSEOTemplate, getSEOContent, City, Service, Highway, slugify, declineCity, buildCitySlug } from "@/lib/seo-utils";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -63,22 +63,31 @@ async function getPageData(slug: string) {
   const cities = getCities();
   const services = getServices();
 
-  // Sort services by length descending to match longest prefix first
-  const sortedServices = [...services].sort((a, b) => b.slug.length - a.slug.length);
+  // Sort services by total pattern length descending (longest/most-specific first)
+  const sortedServices = [...services].sort(
+    (a, b) => (b.slugBefore.length + b.slugAfter.length) - (a.slugBefore.length + a.slugAfter.length)
+  );
 
   let matchedService: Service | undefined;
   let matchedCity: City | undefined;
 
   for (const service of sortedServices) {
-    const prefix = service.slug + '-';
-    if (slug.startsWith(prefix)) {
-      const citySlug = slug.slice(prefix.length);
-      const city = cities.find(c => c.slug === citySlug);
-      if (city) {
-        matchedService = service;
-        matchedCity = city;
-        break;
-      }
+    const prefix = service.slugBefore + '-';
+    if (!slug.startsWith(prefix)) continue;
+    let citySlug: string;
+    if (service.slugAfter) {
+      const suffix = '-' + service.slugAfter;
+      if (!slug.endsWith(suffix)) continue;
+      citySlug = slug.slice(prefix.length, slug.length - suffix.length);
+    } else {
+      citySlug = slug.slice(prefix.length);
+    }
+    if (!citySlug) continue;
+    const city = cities.find(c => c.slug === citySlug);
+    if (city) {
+      matchedService = service;
+      matchedCity = city;
+      break;
     }
   }
 
@@ -88,7 +97,7 @@ async function getPageData(slug: string) {
     // Use [Miasto] placeholder so the existing logic correctly constructs titles for metadata
     // while the H1 logic (which removes [Miasto]) stays clean.
     const serviceBase = matchedHighway.title.replace(new RegExp(matchedHighway.name, 'i'), '').trim();
-    matchedService = { template: `${serviceBase} [Miasto]`, slug: slugify(matchedHighway.title) };
+    matchedService = { template: `${serviceBase} [Miasto]`, slug: slugify(matchedHighway.title), slugBefore: slugify(matchedHighway.title), slugAfter: '' };
   }
 
   if (!matchedCity || !matchedService) return null;
@@ -127,6 +136,14 @@ async function getPageData(slug: string) {
       content = getSEOContent('szybkapomocdrogowamiasto.md');
     } else if (serviceSlug.includes('transport-samochodow')) {
       content = getSEOContent('transportsamochodow.md');
+    } else if (serviceSlug.includes('transport-pojazdow')) {
+      content = getSEOContent('transportpojazdowmiasto.md');
+    } else if (serviceSlug.includes('transport-maszyn-rolniczych')) {
+      content = getSEOContent('transportmaszynrolniczychmiasto.md');
+    } else if (serviceSlug.includes('dowoz-paliwa')) {
+      content = getSEOContent('dowozpaliwamiasto.md');
+    } else if (serviceSlug.includes('transport-motocykli')) {
+      content = getSEOContent('transportmotocykli.md');
     } else if (serviceSlug.includes('wyciaganie-z-rowu')) {
       content = getSEOContent('wyciaganiezrowu.md');
     } else if (serviceSlug.includes('mobilny-serwis-opon')) {
@@ -153,8 +170,12 @@ async function getPageData(slug: string) {
       }
     } else if (serviceSlug.includes('najtansza-pomoc-drogowa') || serviceSlug.includes('tania-pomoc-drogowa')) {
       content = getSEOContent('najtanszapomocdrogowa.md');
-    } else {
+    } else if (serviceSlug === 'pomoc-drogowa') {
       content = getSEOContent('pomocdrogowamiasto.md');
+    } else if (serviceSlug === 'pomoc-drogowa-cena') {
+      content = getSEOContent('pomocdrogowamiastocena.md');
+    } else {
+      content = '';
     }
   }
 
@@ -357,6 +378,9 @@ export default async function DynamicPage({ params }: PageProps) {
               if (nameLen > 15) cityFontSize = 'clamp(2.2rem, 7vw, 4.8rem)';
               else if (nameLen > 10) cityFontSize = 'clamp(2.8rem, 8vw, 6.2rem)';
 
+              const [h1Before, h1After = ''] = service.template.split(/\[Miasto\]|\[Mieście\]|\[Miasta\]/i);
+              const h1BeforeTrimmed = h1Before.replace(/\s+w\s*$/i, '').trim();
+
               return (
                 <h1 style={{
                   display: 'flex',
@@ -366,8 +390,9 @@ export default async function DynamicPage({ params }: PageProps) {
                   marginBottom: '24px',
                   gap: '8px'
                 }}>
-                  <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{service.template.replace(/\[Miasto\]/gi, '').trim().toUpperCase()}</span>
+                  {h1BeforeTrimmed && <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}</span>}
                   <span style={{ fontSize: cityFontSize, fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>{city.name.toUpperCase()}</span>
+                  {h1After.trim() && <span style={{ fontSize: 'clamp(3.5rem, 10vw, 7.8rem)', fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1After.trim().toUpperCase()}</span>}
                 </h1>
               );
             })()}
@@ -499,7 +524,7 @@ export default async function DynamicPage({ params }: PageProps) {
               .map((s, idx) => (
                 <Link
                   key={`${s.slug}-${idx}`} // Added index to ensure uniqueness if data has duplicates
-                  href={`/${s.slug}-${city.slug}`}
+                  href={`/${buildCitySlug(s, city.slug)}`}
                   style={{
                     padding: '16px 20px',
                     background: 'white',
@@ -584,7 +609,7 @@ export async function generateStaticParams() {
   const params = [];
   for (const service of services.slice(0, 3)) {
     for (const citySlug of topCitySlugs) {
-      params.push({ slug: `${service.slug}-${citySlug}` });
+      params.push({ slug: buildCitySlug(service, citySlug) });
     }
   }
 

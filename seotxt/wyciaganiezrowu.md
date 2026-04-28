@@ -94,7 +94,7 @@ Zadzwoń o każdej porze i w każdych warunkach: 572 272 930.
 
 ## [H2] Wyciąganie z rowu w [Mieście] – cena i wycena
 
-Cena wyciągania z rowu w [Mieście] zależy od stopnia trudności wyciągania i jest ustalana telefonicznie przed wyjazdem pojazdu serwisowego. Czynniki wpływające na wycenę: głębokość i charakter rowu, stan podłoża (suche, podmokłe, zamrożone), masa i typ pojazdu, dostępność miejsca dla pojazdu serwisowego, ewentualna konieczność użycia bloczka przekierowującego lub dodatkowego osprzętu, pora doby. Cena jest wiążąca i nie zmienia się na miejscu bez uprzedzenia klienta. Bezpłatna wycena: 572 272 930.
+Cena wyciągania z rowu w [Mieście] zależy od stopnia trudności wyciągania i jest ustalana telefonicznie przed wyjazdem pojazdu serwisowego. Czynniki wpływające na wycenę: głębokość i charakter rowu, stan podłoża (suche, podmokłe, zamrożone), masa i typ pojazdu, dostępność miejsca dla pojazdu serwisowego, ewentualna konieczność użycia bloczka przekierowującego lub dodatkowego osprzętu, pora doby. Cena jest ustalana przed realizacją i nie zmienia się na miejscu bez uprzedzenia klienta. Bezpłatna wycena: 572 272 930.
 
 ---
 

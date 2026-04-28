@@ -82,7 +82,7 @@ Etap 1 – Jeden telefon pod numer 572 272 930: Dyspozytor odbiera natychmiast. 
 
 Etap 2 – Trzy pytania: Gdzie jesteś? Co to za pojazd? Co się stało? To wszystko, czego potrzebuje dyspozytor do uruchomienia procedury. Rozmowa trwa maksymalnie dwie minuty.
 
-Etap 3 – Cena i czas dojazdu: Zanim rozłączysz się z dyspozytorem, znasz cenę usługi i szacowany czas oczekiwania. Cena jest wiążąca – kierowca nie może jej zmienić na miejscu bez uzasadnionej przyczyny.
+Etap 3 – Cena i czas dojazdu: Zanim rozłączysz się z dyspozytorem, znasz cenę usługi i szacowany czas oczekiwania. Cena jest ustalana przed realizacją – kierowca nie może jej zmienić na miejscu bez uzasadnionej przyczyny.
 
 Etap 4 – Bezpieczne czekanie: Czekasz poza pojazdem, w miejscu widocznym ale bezpiecznym. Kierowca zadzwoni kilka minut przed dotarciem.
 

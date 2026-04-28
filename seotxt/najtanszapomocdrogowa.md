@@ -119,7 +119,7 @@ Zadzwoń o każdej porze: 572 272 930.
 
 ## [H2] Tania i najtańsza pomoc drogowa w [Mieście] – podsumowanie
 
-laweciarz.pro to najtańsza pomoc drogowa w [Mieście], która nie rezygnuje z jakości. Niskie ceny wynikają z efektywnej organizacji, a nie z cięcia standardów bezpieczeństwa. Cena zawsze podawana przed realizacją, wiążąca i pozbawiona ukrytych dopłat. Załadunek i rozładunek wliczone. Faktura VAT w standardzie. Ubezpieczenie ładunku w standardzie.
+laweciarz.pro to najtańsza pomoc drogowa w [Mieście], która nie rezygnuje z jakości. Niskie ceny wynikają z efektywnej organizacji, a nie z cięcia standardów bezpieczeństwa. Cena zawsze podawana przed realizacją i pozbawiona ukrytych dopłat. Załadunek i rozładunek wliczone. Faktura VAT w standardzie. Ubezpieczenie ładunku w standardzie.
 
 Zapisz numer 572 272 930 już teraz – i miej pewność, że w razie awarii zadzwonisz do najtańszej i zarazem profesjonalnej pomocy drogowej w [Mieście].
 

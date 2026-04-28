@@ -128,7 +128,7 @@ laweciarz.pro wystawia wszystkie dokumenty potrzebne do rozliczenia z ubezpieczy
 Tak. Zadzwoń pod 572 272 930 – dyspozytor poda cenę podczas rozmowy, bez żadnych opłat za samą wycenę.
 
 **Czy cena podana przez telefon może się zmienić?**
-Cena jest wiążąca. Może ulec zmianie tylko jeśli stan pojazdu okazał się znacznie inny niż opisany przez klienta (np. pojazd jest w rowie z zablokowanymi kołami, a nie na poboczu jak poinformowano) – i wyłącznie po uprzednim poinformowaniu klienta i uzyskaniu jego zgody.
+Cena jest ustalana przed realizacją. Może ulec zmianie tylko jeśli stan pojazdu okazał się znacznie inny niż opisany przez klienta (np. pojazd jest w rowie z zablokowanymi kołami, a nie na poboczu jak poinformowano) – i wyłącznie po uprzednim poinformowaniu klienta i uzyskaniu jego zgody.
 
 **Czy załadunek i rozładunek są osobno płatne?**
 Nie. Załadunek i rozładunek są wliczone w cenę holowania.
@@ -180,8 +180,8 @@ Szybka wycena cennika pomocy drogowej w [Mieście] od laweciarz.pro to kwestia j
 
 ## [H2] Profesjonalna pomoc drogowa cennik w [Mieście]
 
-Profesjonalna pomoc drogowa w [Mieście] z przejrzystym cennikiem to dokładnie to, co oferuje laweciarz.pro. Certyfikowany sprzęt, przeszkoleni kierowcy, pełna dokumentacja – i do tego cena podawana przed realizacją, wiążąca i pozbawiona ukrytych pozycji. Profesjonalizm nie musi kosztować więcej niż przypadkowa firma bez atestów i ubezpieczenia. laweciarz.pro udowadnia to każdego dnia w [Mieście]. Zadzwoń: 572 272 930.
+Profesjonalna pomoc drogowa w [Mieście] z przejrzystym cennikiem to dokładnie to, co oferuje laweciarz.pro. Certyfikowany sprzęt, przeszkoleni kierowcy, pełna dokumentacja – i do tego cena podawana przed realizacją i pozbawiona ukrytych pozycji. Profesjonalizm nie musi kosztować więcej niż przypadkowa firma bez atestów i ubezpieczenia. laweciarz.pro udowadnia to każdego dnia w [Mieście]. Zadzwoń: 572 272 930.
 
 ---
 
-*laweciarz.pro – pomoc drogowa cennik w [Mieście]. Transparentne stawki, brak ukrytych kosztów, wycena telefoniczna przed każdym zleceniem. Holowanie, laweta, autolaweta, autopomoc. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione. Tekst zoptymalizowany pod algorytmy Google 2026.*
+

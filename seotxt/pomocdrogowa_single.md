@@ -78,7 +78,7 @@ Wezwanie pomocy od laweciarz.pro jest maksymalnie uproszczone:
 2.  **Zadzwoń pod 572 272 930:** Dyspozytor odbierze natychmiast – bez kolejek i automatów głosowych.
 3.  **Podaj lokalizację:** Jeśli nie znasz dokładnego miejsca, możesz udostępnić nam lokalizację przez GPS lub opisać charakterystyczne punkty w Twojej okolicy.
 4.  **Opisz problem:** Powiedz nam, co się stało i jaki masz samochód. Pozwoli nam to wysłać odpowiednio przygotowany zespół.
-5.  **Poznaj cenę:** Kwotę za usługę usłyszysz już podczas rozmowy – jest ona wiążąca i przejrzysta.
+5.  **Poznaj cenę:** Kwotę za usługę usłyszysz już podczas rozmowy – jest ona ustalana przed realizacją i przejrzysta.
 6.  **Czekaj na pomoc:** Nasz kierowca skontaktuje się z Tobą bezpośrednio przed przyjazdem.
 
 Całość trwa zazwyczaj mniej niż 10 minut. Zadzwoń: 572 272 930.

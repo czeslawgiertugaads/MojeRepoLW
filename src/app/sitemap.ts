@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getCities, getServices, getHighways, slugify } from '@/lib/seo-utils';
+import { getCities, getServices, getHighways, slugify, buildCitySlug } from '@/lib/seo-utils';
 import { articles } from '@/lib/articles';
 
 const BASE_URL = 'https://laweciarz.pro';
@@ -69,7 +69,7 @@ export default async function sitemap({ id }: { id: number }): Promise<MetadataR
     for (const service of services) {
       if (currentCount >= start && currentCount < end) {
         allCombinations.push({
-          url: `${BASE_URL}/${service.slug}-${city.slug}`,
+          url: `${BASE_URL}/${buildCitySlug(service, city.slug)}`,
           lastModified: new Date(), // W produkcji można tu użyć daty z pliku miasta lub stałej
         });
       }
