@@ -3,11 +3,10 @@ import { getCities, getServices, getHighways, slugify, buildCitySlug } from '@/l
 import { articles } from '@/lib/articles';
 
 const BASE_URL = 'https://laweciarz.pro';
-const CHUNK_SIZE = 45000;
+const CHUNK_SIZE = 10000;
 
 export async function generateSitemaps() {
-  const allCities = getCities();
-  const cities = allCities.filter(c => c.province === 'mazowieckie');
+  const cities = getCities();
   const services = getServices();
   const totalUrls = cities.length * services.length;
   const numSitemaps = Math.ceil(totalUrls / CHUNK_SIZE);
@@ -16,8 +15,7 @@ export async function generateSitemaps() {
 }
 
 export default async function sitemap({ id }: { id: number }): Promise<MetadataRoute.Sitemap> {
-  const allCities = getCities();
-  const cities = allCities.filter(c => c.province === 'mazowieckie');
+  const cities = getCities();
   const services = getServices();
   const highways = getHighways();
   
