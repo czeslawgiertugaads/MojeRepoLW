@@ -37,7 +37,7 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-              <div style={{ position: 'relative', width: '45px', height: '45px' }}>
+              <div style={{ position: 'relative', width: '32px', height: '32px' }}>
                 <Image 
                   src="/images/logo-sm.png" 
                   alt="LAWECIARZ.PRO Logo" 
