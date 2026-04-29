@@ -42,6 +42,7 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
                   src="/images/logo-sm.png" 
                   alt="LAWECIARZ.PRO Logo" 
                   fill 
+                  sizes="32px"
                   style={{ objectFit: 'contain' }}
                 />
               </div>
