@@ -75,7 +75,7 @@ export default function ReviewPopup() {
     // Delay showing the popup (5.5 seconds)
     const showTimer = setTimeout(() => {
       setIsVisible(true);
-    }, 8500);
+    }, 11500);
 
     return () => clearTimeout(showTimer);
   }, []);
