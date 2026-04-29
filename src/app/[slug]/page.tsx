@@ -323,12 +323,6 @@ export default async function DynamicPage({ params }: PageProps) {
     }
   };
 
-  const siteNameLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "LAWECIARZ.PRO",
-    "url": "https://laweciarz.pro/"
-  };
 
   const faqLd = {
     "@context": "https://schema.org",
@@ -363,10 +357,6 @@ export default async function DynamicPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
       />
       <script
         type="application/ld+json"
