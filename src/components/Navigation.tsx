@@ -27,7 +27,7 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
       backdropFilter: 'blur(10px)',
       borderBottom: '6px solid var(--secondary)',
     }}>
-        <div className="container" style={{
+      <div className="container" style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -37,18 +37,18 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-              <div style={{ position: 'relative', width: '32px', height: '32px' }}>
-                <Image 
-                  src="/images/logo-sm.png" 
-                  alt="LAWECIARZ.PRO Logo" 
-                  fill 
-                  sizes="32px"
-                  style={{ objectFit: 'contain' }}
-                />
-              </div>
-              <div style={{ fontSize: '1.8rem', fontWeight: 950, letterSpacing: '-0.5px', color: 'var(--secondary)', textTransform: 'uppercase', display: 'flex', alignItems: 'flex-end' }}>
-                <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
-              </div>
+            <div style={{ position: 'relative', width: '32px', height: '32px' }}>
+              <Image
+                src="/images/logo-sm.png"
+                alt="LAWECIARZ.PRO Logo"
+                fill
+                sizes="32px"
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div style={{ fontSize: '1.8rem', fontWeight: 950, letterSpacing: '-0.5px', color: 'var(--secondary)', textTransform: 'uppercase', display: 'flex', alignItems: 'flex-end' }}>
+              <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
+            </div>
           </Link>
           <div className="nav-location" style={{ display: 'flex', flexDirection: 'column', fontWeight: 900, textTransform: 'uppercase', width: '120px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--primary)', fontSize: '15.5px', lineHeight: 1.1 }}>
@@ -61,14 +61,15 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
         </div>
 
         <a href="tel:+48572272930" className="btn-power btn-mobile-icon-only" style={{
-          gap: '12px',
-          fontSize: '1.2rem',
+          gap: '14px',
+          fontSize: '1.8rem',
+          fontWeight: 1000,
           justifyContent: 'center'
         }}>
           <div className="animate-pulse" style={{ display: 'flex' }}>
-            <PhoneIcon size={24} />
+            <PhoneIcon size={28} />
           </div>
-          <span className="nav-phone-label">572 272 930</span>
+          <span className="nav-phone-label" style={{ letterSpacing: '-1px', whiteSpace: 'nowrap' }}>572 272 930</span>
         </a>
       </div>
     </nav>

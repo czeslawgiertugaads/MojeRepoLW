@@ -419,11 +419,13 @@ export default async function DynamicPage({ params }: PageProps) {
               Potrzebujesz pomocy? Przyjedziemy błyskawicznie w ciągu <strong style={{ color: 'var(--primary)' }}>{cityMeta.eta} minut</strong>. Zapewniamy profesjonalne holowanie, lawetę i pomoc drogową 24H.
             </p>
 
-            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '22px 48px', gap: '20px', display: 'flex', alignItems: 'center', width: 'fit-content' }}>
-              <div className="animate-pulse"><PhoneIcon size={40} /></div>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1, textAlign: 'center' }}>
-                <span style={{ fontWeight: 950, fontSize: 'clamp(1.4rem, 4vw, 2.2rem)', letterSpacing: '-1px' }}>WEZWIJ POMOC</span>
-                <span style={{ fontWeight: 800, fontSize: 'clamp(1rem, 2.5vw, 1.4rem)', opacity: 0.9 }}>572 272 930</span>
+            <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '24px 40px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'fit-content' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1, textAlign: 'center' }}>
+                <span style={{ fontWeight: 800, fontSize: 'clamp(0.7rem, 2vw, 0.9rem)', opacity: 0.9, letterSpacing: '1.5px', marginBottom: '6px', textTransform: 'uppercase' }}>Wezwij pomoc 24h</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                  <div className="animate-pulse"><PhoneIcon size={40} /></div>
+                  <span style={{ fontWeight: 1000, fontSize: 'clamp(1.8rem, 10vw, 3.8rem)', letterSpacing: '-1.5px', lineHeight: 1, whiteSpace: 'nowrap' }}>572 272 930</span>
+                </div>
               </div>
             </a>
           </div>
