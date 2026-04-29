@@ -33,11 +33,17 @@ export default function Tracker() {
           }
         } catch (e) {}
 
+        // Get page-specific metadata (city and service)
+        const metadataEl = document.getElementById('page-metadata');
+        const pageCity = metadataEl?.getAttribute('data-city');
+        const pageService = metadataEl?.getAttribute('data-service');
+
         const data = {
           fingerprint,
           ip,
           path: pathname,
-          city: city,
+          city: pageCity || city,
+          service_name: pageService,
           referrer: document.referrer || 'direct',
           campaign_id: searchParams.get('campaign_id') || searchParams.get('gclid') || null,
           screen_resolution: `${window.screen.width}x${window.screen.height}`,
@@ -63,8 +69,14 @@ export default function Tracker() {
 
         const { createClient } = await import('@/lib/supabase');
         const supabase = createClient();
+        const metadataEl = document.getElementById('page-metadata');
+        const pageCity = metadataEl?.getAttribute('data-city');
+        const pageService = metadataEl?.getAttribute('data-service');
+
         await supabase.from('copy_events').insert([{
           path: pathname,
+          city: pageCity,
+          service_name: pageService,
           content_preview: selection.substring(0, 500),
           created_at: new Date().toISOString()
         }]);
@@ -97,9 +109,15 @@ export default function Tracker() {
           const result = await fp.get();
           const fingerprint = result.visitorId;
 
+          const metadataEl = document.getElementById('page-metadata');
+          const pageCity = metadataEl?.getAttribute('data-city');
+          const pageService = metadataEl?.getAttribute('data-service');
+
           await supabase.from('phone_clicks').insert([{
             path: pathname,
             phone: phone,
+            city: pageCity,
+            service_name: pageService,
             fingerprint: fingerprint,
             created_at: new Date().toISOString()
           }]);

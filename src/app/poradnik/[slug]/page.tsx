@@ -58,6 +58,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <main style={{ background: '#fff', minHeight: '100vh', paddingBottom: '120px' }}>
+      <div id="page-metadata" data-city="Polska" data-service={`Baza Wiedzy: ${article.title}`} style={{ display: 'none' }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

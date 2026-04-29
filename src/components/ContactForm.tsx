@@ -10,10 +10,16 @@ export default function ContactForm() {
         onSubmit={async (e) => {
           e.preventDefault();
           const target = e.target as any;
+          const metadataEl = document.getElementById('page-metadata');
+          const pageCity = metadataEl?.getAttribute('data-city');
+          const pageService = metadataEl?.getAttribute('data-service');
+
           const data = {
             name: 'Klient (Szybki Kontakt)',
             phone: target.phone.value,
             message: target.message.value,
+            city: pageCity,
+            service_name: pageService,
             created_at: new Date().toISOString()
           };
           

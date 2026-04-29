@@ -4,7 +4,7 @@ import { getCities, getServices, getHighways, replaceSEOTemplate, getSEOContent,
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import FloatingCTA from "@/components/FloatingCTA";
 import Navigation from "@/components/Navigation";
 import HeroSlider from "@/components/HeroSlider";
@@ -60,6 +60,7 @@ const StarIcon = ({ size = 24, ...props }: IconProps) => (
 );
 
 async function getPageData(slug: string) {
+  const normalizedSlug = slugify(slug);
   const cities = getCities();
   const services = getServices();
 
@@ -73,14 +74,14 @@ async function getPageData(slug: string) {
 
   for (const service of sortedServices) {
     const prefix = service.slugBefore + '-';
-    if (!slug.startsWith(prefix)) continue;
+    if (!normalizedSlug.startsWith(prefix)) continue;
     let citySlug: string;
     if (service.slugAfter) {
       const suffix = '-' + service.slugAfter;
-      if (!slug.endsWith(suffix)) continue;
-      citySlug = slug.slice(prefix.length, slug.length - suffix.length);
+      if (!normalizedSlug.endsWith(suffix)) continue;
+      citySlug = normalizedSlug.slice(prefix.length, normalizedSlug.length - suffix.length);
     } else {
-      citySlug = slug.slice(prefix.length);
+      citySlug = normalizedSlug.slice(prefix.length);
     }
     if (!citySlug) continue;
     const city = cities.find(c => c.slug === citySlug);
@@ -91,7 +92,7 @@ async function getPageData(slug: string) {
     }
   }
 
-  const matchedHighway = getHighways().find(h => h.slug === slug);
+  const matchedHighway = getHighways().find(h => h.slug === normalizedSlug);
   if (matchedHighway) {
     matchedCity = { name: matchedHighway.name, slug: matchedHighway.id, province: matchedHighway.description } as City;
     // Use [Miasto] placeholder so the existing logic correctly constructs titles for metadata
@@ -241,15 +242,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `${displayTitle} | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
   const description = `${displayTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
 
+  const normalizedSlug = slugify(decodeURIComponent(slug));
+
   return {
     title,
     description,
     alternates: {
-      canonical: `https://laweciarz.pro/${slug}`,
+      canonical: `https://laweciarz.pro/${normalizedSlug}`,
     },
     openGraph: {
       type: 'website',
-      url: `https://laweciarz.pro/${slug}`,
+      url: `https://laweciarz.pro/${normalizedSlug}`,
       title,
       description,
       siteName: 'LAWECIARZ.PRO',
@@ -267,7 +270,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function DynamicPage({ params }: PageProps) {
   const { slug } = await params;
-  const data = await getPageData(slug);
+
+  // Normalizacja adresu URL (obsługa dużych liter i polskich znaków wpisanych ręcznie)
+  const normalizedSlug = slugify(decodeURIComponent(slug));
+
+  if (slug !== normalizedSlug) {
+    redirect(`/${normalizedSlug}`);
+  }
+
+  const data = await getPageData(normalizedSlug);
   if (!data) notFound();
 
   const { city, service, serviceTitle, secondaryKeywords, contentChunks, nearbyCities, services } = data;
@@ -354,6 +365,7 @@ export default async function DynamicPage({ params }: PageProps) {
 
   return (
     <main style={{ minHeight: '100vh', background: 'var(--background)', overflowX: 'hidden' }}>
+      <div id="page-metadata" data-city={city.name} data-service={service.template} style={{ display: 'none' }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

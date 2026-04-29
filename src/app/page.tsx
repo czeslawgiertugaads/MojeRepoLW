@@ -145,6 +145,7 @@ export default async function HomePage() {
 
   return (
     <main style={{ minHeight: '100vh', background: '#fff', overflowX: 'hidden' }}>
+      <div id="page-metadata" data-city="Cała Polska" data-service="Strona Główna" style={{ display: 'none' }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
