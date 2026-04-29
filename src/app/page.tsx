@@ -144,6 +144,21 @@ export default async function HomePage() {
     "url": "https://laweciarz.pro/"
   };
 
+  const organizationLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LAWECIARZ.PRO",
+    "url": "https://laweciarz.pro",
+    "logo": "https://laweciarz.pro/images/logo-sm.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+48572272930",
+      "contactType": "emergency",
+      "areaServed": "PL",
+      "availableLanguage": "Polish"
+    }
+  };
+
   return (
     <main style={{ minHeight: '100vh', background: '#fff', overflowX: 'hidden' }}>
       <div id="page-metadata" data-city="Cała Polska" data-service="Strona Główna" style={{ display: 'none' }} />
@@ -154,6 +169,10 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
       />
       <Navigation />
 

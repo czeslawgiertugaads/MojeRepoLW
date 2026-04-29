@@ -38,20 +38,7 @@ export const metadata: Metadata = {
   manifest: '/images/site.webmanifest',
 };
 
-const organizationLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LAWECIARZ.PRO",
-  "url": "https://laweciarz.pro",
-  "logo": "https://laweciarz.pro/images/logo-sm.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+48572272930",
-    "contactType": "emergency",
-    "areaServed": "PL",
-    "availableLanguage": "Polish"
-  }
-};
+
 
 import { Suspense } from "react";
 import Tracker from "@/components/Tracker";
@@ -82,10 +69,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
-        />
+
         <Suspense fallback={null}>
           <Tracker />
         </Suspense>
