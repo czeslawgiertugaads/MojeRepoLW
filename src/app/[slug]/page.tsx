@@ -408,9 +408,9 @@ export default async function DynamicPage({ params }: PageProps) {
                   marginBottom: '24px',
                   gap: '8px'
                 }}>
-                  {h1BeforeTrimmed && <span style={{ fontSize: getServiceFontSize(h1BeforeTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}</span>}
+                  {h1BeforeTrimmed && <span style={{ fontSize: getServiceFontSize(h1BeforeTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}{' '}</span>}
                   <span style={{ fontSize: cityFontSize, fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>{city.name.toUpperCase()}</span>
-                  {h1AfterTrimmed && <span style={{ fontSize: getServiceFontSize(h1AfterTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1AfterTrimmed.toUpperCase()}</span>}
+                  {h1AfterTrimmed && <span style={{ fontSize: getServiceFontSize(h1AfterTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{' '}{h1AfterTrimmed.toUpperCase()}</span>}
                 </h1>
               );
             })()}
