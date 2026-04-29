@@ -210,7 +210,7 @@ async function getPageData(slug: string) {
 
   let secondaryKeywords = "Laweta i Holowanie";
   const lowerTitle = serviceTitle.toLowerCase();
-  
+
   if (lowerTitle.includes('holowanie')) {
     secondaryKeywords = "Laweta i Pomoc Drogowa";
   } else if (lowerTitle.includes('laweta')) {
@@ -236,8 +236,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Używamy data.serviceTitle, który bierze format z services.json
 
 
-  const title = `${data.serviceTitle} 24/7 | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
-  const description = `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
+  const title = `${data.serviceTitle} | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
+  const description = `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
 
   return {
     title,
@@ -286,7 +286,7 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
 
-  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 | Ekspresowa ${secondaryKeywords} 24h. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
+  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 | Ekspresowa ${secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
 
   const jsonLd = {
     "@context": "https://schema.org",

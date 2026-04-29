@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# indexing
+.indexed_urls
+service-account.json
+google_api_index/
