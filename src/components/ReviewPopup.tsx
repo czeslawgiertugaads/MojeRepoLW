@@ -54,7 +54,7 @@ export default function ReviewPopup() {
     const meta = document.getElementById('page-metadata');
     if (meta) {
       const city = meta.getAttribute('data-city');
-      if (city) {
+      if (city && city !== 'Cała Polska') {
         setDetectedCity(city);
       }
     }
