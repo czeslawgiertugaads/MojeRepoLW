@@ -12,6 +12,10 @@ export default function Tracker() {
 
   useEffect(() => {
     const trackVisit = async () => {
+      // Basic bot detection
+      const isBot = /bot|crawler|spider|googlebot|bingbot|yandexbot|slurp|duckduckbot|baiduspider|facebookexternalhit|lighthouse|headless/i.test(navigator.userAgent) || navigator.webdriver;
+      if (isBot) return;
+
       try {
         // Initialize fingerprinting
         const fpPromise = FingerprintJS.load()
