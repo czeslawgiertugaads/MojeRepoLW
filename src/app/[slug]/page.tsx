@@ -235,9 +235,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Budujemy tytuł: Usługa + Miasto + SEO + Marka
   // Używamy data.serviceTitle, który bierze format z services.json
 
+  const has24h = data.serviceTitle.toLowerCase().includes('24h');
+  const displayTitle = has24h ? data.serviceTitle : `${data.serviceTitle} 24H`;
 
-  const title = `${data.serviceTitle} | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
-  const description = `${data.serviceTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
+  const title = `${displayTitle} | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
+  const description = `${displayTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
 
   return {
     title,
@@ -286,12 +288,14 @@ export default async function DynamicPage({ params }: PageProps) {
     '/images/hero-4.webp', '/images/hero-5.webp', '/images/hero-6.webp'
   ];
 
-  const descriptionTemplate = `${serviceTitle} ☎️ 572 272 930 | Ekspresowa ${secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
+  const has24h = serviceTitle.toLowerCase().includes('24h');
+  const displayTitle = has24h ? serviceTitle : `${serviceTitle} 24H`;
+  const descriptionTemplate = `${displayTitle} ☎️ 572 272 930 | Ekspresowa ${secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO – działamy natychmiast!`;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `${serviceTitle} - LAWECIARZ.PRO`,
+    "name": `${displayTitle} - LAWECIARZ.PRO`,
     "image": `https://laweciarz.pro${heroImages[0]}`,
     "description": descriptionTemplate,
     "telephone": "572 272 930",
@@ -327,17 +331,17 @@ export default async function DynamicPage({ params }: PageProps) {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": `Jak szybko dotrze ${serviceTitle} do ${city.name}?`,
+        "name": `Jak szybko dotrze ${displayTitle} do ${city.name}?`,
         "acceptedAnswer": { "@type": "Answer", "text": `Nasz średni czas dojazdu w ${city.name} wynosi 15 minut. Działamy 24/7 przez 365 dni w roku.` }
       },
       {
         "@type": "Question",
-        "name": `Ile kosztuje ${serviceTitle} w ${city.name}?`,
+        "name": `Ile kosztuje ${displayTitle} w ${city.name}?`,
         "acceptedAnswer": { "@type": "Answer", "text": `Koszt zależy od zakresu usługi i lokalizacji w ${city.name}. Zadzwoń na 572 272 930, aby otrzymać bezpłatną wycenę.` }
       },
       {
         "@type": "Question",
-        "name": `Czy ${serviceTitle} dostępny jest całą dobę w ${city.name}?`,
+        "name": `Czy ${displayTitle} dostępny jest całą dobę w ${city.name}?`,
         "acceptedAnswer": { "@type": "Answer", "text": `Tak, świadczymy usługi w ${city.name} 24 godziny na dobę, 7 dni w tygodniu, przez cały rok – również w święta.` }
       },
       {
@@ -406,7 +410,7 @@ export default async function DynamicPage({ params }: PageProps) {
             })()}
 
             <p style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#555', marginBottom: '40px', maxWidth: '650px', fontWeight: 600, lineHeight: 1.5 }}>
-              Potrzebujesz pomocy? Przyjedziemy błyskawicznie w ciągu <strong style={{ color: 'var(--primary)' }}>{cityMeta.eta} minut</strong>. Zapewniamy profesjonalne holowanie, lawetę i pomoc drogową 24h.
+              Potrzebujesz pomocy? Przyjedziemy błyskawicznie w ciągu <strong style={{ color: 'var(--primary)' }}>{cityMeta.eta} minut</strong>. Zapewniamy profesjonalne holowanie, lawetę i pomoc drogową 24H.
             </p>
 
             <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '22px 48px', gap: '20px', display: 'flex', alignItems: 'center', width: 'fit-content' }}>
