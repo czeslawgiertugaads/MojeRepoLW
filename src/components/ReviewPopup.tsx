@@ -47,8 +47,23 @@ export default function ReviewPopup() {
   const [isDismissed, setIsDismissed] = useState(false);
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [detectedCity, setDetectedCity] = useState<string | null>(null);
 
   useEffect(() => {
+    // Check for detected city in DOM metadata (set in [slug]/page.tsx)
+    const meta = document.getElementById('page-metadata');
+    let cityFound = false;
+    if (meta) {
+      const city = meta.getAttribute('data-city');
+      if (city) {
+        setDetectedCity(city);
+        cityFound = true;
+      }
+    }
+
+    // If no city detected (e.g. on homepage), don't show the popup at all
+    if (!cityFound) return;
+
     // Check if already dismissed and if it has expired (7 days)
     const dismissedAt = localStorage.getItem('reviewPopupDismissedAt');
     if (dismissedAt) {
@@ -58,12 +73,11 @@ export default function ReviewPopup() {
         setIsDismissed(true);
         return;
       } else {
-        // Expiration passed, clear the item
         localStorage.removeItem('reviewPopupDismissedAt');
       }
     }
 
-    // Delay showing the popup (4-5 seconds)
+    // Delay showing the popup (5.5 seconds)
     const showTimer = setTimeout(() => {
       setIsVisible(true);
     }, 5500);
@@ -99,13 +113,14 @@ export default function ReviewPopup() {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    // As per user feedback, closing the modal also dismisses the pill
     handleDismissLogic();
   };
 
   if (isDismissed || !isVisible) return null;
 
   const currentReview = REVIEWS[currentReviewIndex];
+  // Use detected city if available, otherwise fallback to the one in the review object
+  const cityToShow = detectedCity || currentReview.city;
   const initials = currentReview.name.split(' ').map(n => n[0]).join('');
 
   return (
@@ -115,7 +130,7 @@ export default function ReviewPopup() {
         <div className="live-dot" />
         <div className="review-avatar">{initials}</div>
         <div className="review-info">
-          <span className="review-name">{currentReview.name} z {currentReview.city}</span>
+          <span className="review-name">{currentReview.name} z {cityToShow}</span>
           <span className="review-location">Właśnie wystawił opinię</span>
           <div className="review-stars">
             {[...Array(currentReview.rating)].map((_, i) => (
@@ -134,7 +149,7 @@ export default function ReviewPopup() {
             <div className="review-modal-content">
               <div className="review-modal-avatar">{initials}</div>
               <h4 className="review-modal-name">{currentReview.name}</h4>
-              <p className="review-modal-location">{currentReview.city}</p>
+              <p className="review-modal-location">{cityToShow}</p>
               <div className="review-stars" style={{ fontSize: '16px', gap: '4px' }}>
                 {[...Array(currentReview.rating)].map((_, i) => (
                   <span key={i}>★</span>
