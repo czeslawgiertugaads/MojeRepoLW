@@ -421,7 +421,7 @@ export default async function DynamicPage({ params }: PageProps) {
 
             <a href="tel:+48572272930" className="btn-power anim-slide-up anim-delay-4 hero-massive-btn" style={{ padding: '24px 40px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'fit-content' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1, textAlign: 'center' }}>
-                <span style={{ fontWeight: 800, fontSize: 'clamp(0.7rem, 2vw, 0.9rem)', opacity: 0.9, letterSpacing: '1.5px', marginBottom: '6px', textTransform: 'uppercase' }}>Wezwij pomoc 24h</span>
+                <span style={{ fontWeight: 800, fontSize: 'clamp(0.7rem, 2vw, 0.9rem)', opacity: 0.9, letterSpacing: '1.5px', marginBottom: '6px', textTransform: 'uppercase' }}>Wezwij pomoc 24h{' '}</span>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
                   <div className="animate-pulse"><PhoneIcon size={40} /></div>
                   <span style={{ fontWeight: 1000, fontSize: 'clamp(1.8rem, 10vw, 3.8rem)', letterSpacing: '-1.5px', lineHeight: 1, whiteSpace: 'nowrap' }}>572 272 930</span>
