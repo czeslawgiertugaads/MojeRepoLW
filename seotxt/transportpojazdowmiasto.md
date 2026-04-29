@@ -189,7 +189,7 @@ Laweciarz.pro to transport pojazdów w [Mieście] realizowany na pełnej platfor
 
 📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – transport pojazdów [Miasto]. Pełna platforma, door-to-door, ubezpieczenie ładunku, import z zagranicy. Zadzwoń: [TWÓJ NUMER TELEFONU]. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – transport pojazdów [Miasto]. Pełna platforma, door-to-door, ubezpieczenie ładunku, import z zagranicy. Zadzwoń: [TWÓJ NUMER TELEFONU].*
 
 ---
 

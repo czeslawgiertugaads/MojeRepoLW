@@ -125,7 +125,7 @@ Kolizja z winy innego kierowcy to wystarczająco stresujące doświadczenie. Nie
 
 📞 **572 272 930** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – holowanie z OC sprawcy w [Mieście]. Bezgotówkowa pomoc dla poszkodowanych, pełna dokumentacja, wsparcie przy likwidacji szkody. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – holowanie z OC sprawcy w [Mieście]. Bezgotówkowa pomoc dla poszkodowanych, pełna dokumentacja, wsparcie przy likwidacji szkody. Zadzwoń: 572 272 930.*
 
 ---
 

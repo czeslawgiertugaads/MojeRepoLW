@@ -163,7 +163,7 @@ Laweciarz.pro to transport maszyn rolniczych w [Mieście] i okolicach – ciągn
 
 📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – transport maszyn rolniczych [Miasto]. Ciągniki, kombajny, przyczepy rolnicze. Laweta, platforma, całą dobę. Zadzwoń: [TWÓJ NUMER TELEFONU]. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – transport maszyn rolniczych [Miasto]. Ciągniki, kombajny, przyczepy rolnicze. Laweta, platforma, całą dobę. Zadzwoń: [TWÓJ NUMER TELEFONU].*
 
 ---
 

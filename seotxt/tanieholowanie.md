@@ -112,7 +112,7 @@ laweciarz.pro oferuje tanie holowanie w [Mieście] które jest naprawdę tanie i
 
 📞 **572 272 930** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – tanie holowanie w [Mieście]. Najlepszy stosunek jakości do ceny, cena przed wyjazdem, brak ukrytych kosztów. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – tanie holowanie w [Mieście]. Najlepszy stosunek jakości do ceny, cena przed wyjazdem, brak ukrytych kosztów. Zadzwoń: 572 272 930.*
 
 ---
 

@@ -150,7 +150,7 @@ Chcesz wiedzieć ile kosztuje pomoc drogowa w [Mieście] w Twojej konkretnej syt
 ⏰ **Wycena: bezpłatna, telefonicznie, przed wyjazdem pojazdu**
 ⏰ **Dostępność: 24h / 365 dni w roku**
 
-*laweciarz.pro – pomoc drogowa cennik w [Mieście]. Transparentne stawki, brak ukrytych kosztów, wycena telefoniczna przed każdym zleceniem. Holowanie, laweta, autolaweta, autopomoc. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – pomoc drogowa cennik w [Mieście]. Transparentne stawki, brak ukrytych kosztów, wycena telefoniczna przed każdym zleceniem. Holowanie, laweta, autolaweta, autopomoc. Zadzwoń: 572 272 930.*
 
 ---
 

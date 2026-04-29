@@ -151,7 +151,7 @@ Laweciarz.pro to transport motocykli w [Mieście] z właściwym osprzętem – w
 
 📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – transport motocykli [Miasto]. Wheel chock, rynienkowe rampy, pasy do ramy. Sportowe, turystyczne, elektryczne, powypadkowe. Zadzwoń: [TWÓJ NUMER TELEFONU]. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – transport motocykli [Miasto]. Wheel chock, rynienkowe rampy, pasy do ramy. Sportowe, turystyczne, elektryczne, powypadkowe. Zadzwoń: [TWÓJ NUMER TELEFONU].*
 
 ---
 

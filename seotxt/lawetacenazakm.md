@@ -120,7 +120,7 @@ Tania cena za km lawety w [Mieście] od laweciarz.pro to stawka w czołówce naj
 
 ---
 
-*laweciarz.pro – laweta cena za km w [Mieście]. Transparentna wycena telefoniczna, stawka za km podawana przed wyjazdem, brak ukrytych kosztów. Holowanie aut osobowych, dostawczych i elektrycznych. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – laweta cena za km w [Mieście]. Transparentna wycena telefoniczna, stawka za km podawana przed wyjazdem, brak ukrytych kosztów. Holowanie aut osobowych, dostawczych i elektrycznych. Zadzwoń: 572 272 930.*
 
 ---
 

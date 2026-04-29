@@ -100,7 +100,7 @@ Mobilny serwis opon w [Mieście] od laweciarz.pro to szybka, profesjonalna i dos
 
 📞 **572 272 930** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – mobilny serwis opon w [Mieście]. Wymiana koła, naprawa opony na miejscu, transport do wulkanizatora. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – mobilny serwis opon w [Mieście]. Wymiana koła, naprawa opony na miejscu, transport do wulkanizatora. Zadzwoń: 572 272 930.*
 
 ---
 

@@ -305,17 +305,10 @@ export default async function DynamicPage({ params }: PageProps) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Product",
     "name": `${displayTitle} - LAWECIARZ.PRO`,
     "image": `https://laweciarz.pro${heroImages[0]}`,
     "description": descriptionTemplate,
-    "telephone": "572 272 930",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": city.name,
-      "addressCountry": "PL"
-    },
     "brand": {
       "@type": "Brand",
       "name": "LAWECIARZ.PRO"

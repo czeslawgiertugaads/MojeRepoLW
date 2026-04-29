@@ -200,4 +200,4 @@ Tak, transport na platformie lawety jest najbezpieczniejszą i jedyną polecaną
 
 ---
 
-*laweciarz.pro – profesjonalna laweta w [Mieście]. Transport pojazdów osobowych, dostawczych, powypadkowych i elektrycznych. Holowanie lawetą, autolaweta, przewóz aut zakupionych w kraju i za granicą. Zadzwoń: 572 272 930. Wszelkie prawa zastrzeżone. Kopiowanie treści bez zgody właściciela serwisu laweciarz.pro jest zabronione. Tekst zoptymalizowany pod kątem algorytmów wyszukiwarek Google 2026.*
+*laweciarz.pro – profesjonalna laweta w [Mieście]. Transport pojazdów osobowych, dostawczych, powypadkowych i elektrycznych. Holowanie lawetą, autolaweta, przewóz aut zakupionych w kraju i za granicą. Zadzwoń: 572 272 930. Wszelkie prawa zastrzeżone. Kopiowanie treści bez zgody właściciela serwisu laweciarz.pro jest zabronione.*

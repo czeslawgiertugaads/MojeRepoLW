@@ -166,7 +166,7 @@ Laweciarz.pro to dowóz paliwa w [Mieście] – benzyna Pb95/Pb98 i diesel w ate
 
 📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni** | ⛽ **Pb95, Pb98, diesel**
 
-*laweciarz.pro – dowóz paliwa [Miasto]. Benzyna i diesel dostarczone bezpośrednio do pojazdu całą dobę. Rozliczenie z Assistance. Zadzwoń: [TWÓJ NUMER TELEFONU]. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – dowóz paliwa [Miasto]. Benzyna i diesel dostarczone bezpośrednio do pojazdu całą dobę. Rozliczenie z Assistance. Zadzwoń: [TWÓJ NUMER TELEFONU].*
 
 ---
 

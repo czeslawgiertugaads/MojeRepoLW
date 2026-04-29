@@ -102,7 +102,7 @@ Zamówienie szybkiej pomocy drogowej w [Mieście] od laweciarz.pro to jeden krok
 
 📞 **572 272 930** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
 
-*laweciarz.pro – szybka pomoc drogowa w [Mieście]. Czas dojazdu 15–30 minut, GPS, całodobowa dyspozytornia. Holowanie, laweta, autopomoc. Zadzwoń: 572 272 930. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – szybka pomoc drogowa w [Mieście]. Czas dojazdu 15–30 minut, GPS, całodobowa dyspozytornia. Holowanie, laweta, autopomoc. Zadzwoń: 572 272 930.*
 
 ---
 

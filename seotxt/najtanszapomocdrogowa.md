@@ -130,7 +130,7 @@ Zapisz numer 572 272 930 już teraz – i miej pewność, że w razie awarii zad
 
 ---
 
-*laweciarz.pro – najtańsza pomoc drogowa w [Mieście]. Holowanie, laweta, autopomoc, wyciąganie z rowu, dowóz paliwa. Ceny podawane przed realizacją, brak ukrytych kosztów. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – najtańsza pomoc drogowa w [Mieście]. Holowanie, laweta, autopomoc, wyciąganie z rowu, dowóz paliwa. Ceny podawane przed realizacją, brak ukrytych kosztów. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione.*
 
 ---
 

@@ -194,7 +194,7 @@ laweciarz.pro na życzenie klienta przygotowuje dodatkowe pismo do ubezpieczycie
 
 ---
 
-*laweciarz.pro – holowanie auta w [Mieście]. Transport pojazdów osobowych i dostawczych na lawecie platformowej. Holowanie aut z automatyczną skrzynią biegów, holowanie EV, holowanie po kolizji. Cena telefonicznie przed wyjazdem. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione. Tekst zoptymalizowany pod algorytmy Google 2026.*
+*laweciarz.pro – holowanie auta w [Mieście]. Transport pojazdów osobowych i dostawczych na lawecie platformowej. Holowanie aut z automatyczną skrzynią biegów, holowanie EV, holowanie po kolizji. Cena telefonicznie przed wyjazdem. Zadzwoń: 572 272 930. Kopiowanie treści bez pisemnej zgody właściciela serwisu laweciarz.pro zabronione.*
 
 ---
 
