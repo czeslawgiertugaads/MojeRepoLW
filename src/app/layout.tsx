@@ -56,6 +56,7 @@ const organizationLd = {
 import { Suspense } from "react";
 import Tracker from "@/components/Tracker";
 import CookieConsent from "@/components/CookieConsent";
+import ReviewPopup from "@/components/ReviewPopup";
 import Script from 'next/script';
 
 export default function RootLayout({
@@ -89,6 +90,7 @@ export default function RootLayout({
           <Tracker />
         </Suspense>
         <CookieConsent />
+        <ReviewPopup />
         {children}
       </body>
     </html>
