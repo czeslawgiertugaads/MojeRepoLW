@@ -46,13 +46,13 @@ const ZapIcon = ({ size = 24 }: { size?: number }) => (
 
 const TruckIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><path d="M16 18h3a1 1 0 0 0 1-1v-3.05a1 1 0 0 0-.293-.707l-2.657-2.657A1 1 0 0 0 16.343 10H14"/><circle cx="18" cy="18" r="2"/>
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><path d="M16 18h3a1 1 0 0 0 1-1v-3.05a1 1 0 0 0-.293-.707l-2.657-2.657A1 1 0 0 0 16.343 10H14" /><circle cx="18" cy="18" r="2" />
   </svg>
 );
 
 const WalletIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
+    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" /><path d="M3 5v14a2 2 0 0 0 2 2h16v-5" /><path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
   </svg>
 );
 
@@ -74,24 +74,24 @@ async function getGoogleNews() {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
     const xml = await res.text();
-    
+
     // Simple RSS parsing via regex (safe for server-side trusted feed)
     const items = [];
     const itemRegex = /<item>([\s\S]*?)<\/item>/g;
     let match;
-    
+
     while ((match = itemRegex.exec(xml)) !== null && items.length < 3) {
       const content = match[1];
       const title = content.match(/<title>(.*?)<\/title>/)?.[1] || "Wiadomość drogowa";
       const link = content.match(/<link>(.*?)<\/link>/)?.[1] || "#";
       const pubDate = content.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || "";
-      
+
       // Clean title from source
       const cleanTitle = title.split(' - ')[0];
       const source = title.split(' - ')[1] || "Google News";
-      
+
       const dateObj = new Date(pubDate);
-      const formattedDate = !isNaN(dateObj.getTime()) 
+      const formattedDate = !isNaN(dateObj.getTime())
         ? `${dateObj.getDate()}.${dateObj.getMonth() + 1}.${dateObj.getFullYear()}`
         : "Dzisiaj";
 
@@ -122,12 +122,12 @@ export default async function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Pomoc Drogowa i Holowanie 24/7 - laweciarz.pro",
+    "name": "LAWECIARZ.PRO | Pomoc Drogowa i Holowanie 24/7",
     "image": "https://laweciarz.pro/images/hero-main.webp",
-    "description": `Pomoc Drogowa i Holowanie 📞 572 272 930. Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Mocny sprzęt, profesjonalna obsługa, dojazd 15 minut!`,
+    "description": `LAWECIARZ.PRO | Pomoc Drogowa i Holowanie 📞 572 272 930. Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Mocny sprzęt, profesjonalna obsługa, dojazd 15 minut!`,
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -369,12 +369,12 @@ export default async function HomePage() {
             {articles.slice(0, 3).map((art, i) => (
               <Link key={i} href={`/poradnik/${art.slug}`} className="card" style={{ display: 'block', textDecoration: 'none', color: 'inherit', padding: '0', overflow: 'hidden', border: 'none', boxShadow: '0 15px 45px rgba(0,0,0,0.05)' }}>
                 <div style={{ position: 'relative', height: '240px', background: '#eee' }}>
-                  <Image 
-                    src={art.image} 
-                    alt={art.title} 
-                    fill 
+                  <Image
+                    src={art.image}
+                    alt={art.title}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }} 
+                    style={{ objectFit: 'cover' }}
                   />
                 </div>
                 <div style={{ padding: '30px' }}>

@@ -239,8 +239,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const has24h = data.serviceTitle.toLowerCase().includes('24h');
   const displayTitle = has24h ? data.serviceTitle : `${data.serviceTitle} 24H`;
 
-  const title = `${displayTitle} | ${data.secondaryKeywords} - LAWECIARZ.PRO`;
-  const description = `${displayTitle} ☎️ 572 272 930 | Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut! LAWECIARZ.PRO 5.0 – działamy natychmiast! `;
+  const title = `${displayTitle} – ${data.secondaryKeywords} | Dojazd w 15 minut`;
+  const description = `${displayTitle} ☎️ 572 272 930 – Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut | LAWECIARZ.PRO – działamy natychmiast! `;
 
   const normalizedSlug = slugify(decodeURIComponent(slug));
 
