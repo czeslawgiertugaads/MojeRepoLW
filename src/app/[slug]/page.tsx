@@ -351,6 +351,25 @@ export default async function DynamicPage({ params }: PageProps) {
     ]
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Strona główna",
+        "item": "https://laweciarz.pro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": displayTitle,
+        "item": `https://laweciarz.pro/${normalizedSlug}`
+      }
+    ]
+  };
+
   return (
     <main style={{ minHeight: '100vh', background: 'var(--background)', overflowX: 'hidden' }}>
       <div id="page-metadata" data-city={city.name} data-service={service.template} style={{ display: 'none' }} />
@@ -361,6 +380,10 @@ export default async function DynamicPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <Navigation locationText={city.name.toUpperCase()} />
 
