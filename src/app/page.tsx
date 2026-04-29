@@ -127,7 +127,8 @@ export default async function HomePage() {
     "description": `LAWECIARZ.PRO | Pomoc Drogowa i Holowanie 📞 572 272 930. Najszybsza pomoc drogowa, laweta i holowanie 24/7 w Twojej okolicy. Mocny sprzęt, profesjonalna obsługa, dojazd 15 minut!`,
     "brand": {
       "@type": "Brand",
-      "name": "LAWECIARZ.PRO"
+      "name": "LAWECIARZ.PRO",
+      "logo": "https://laweciarz.pro/images/logo-sm.png"
     },
     "aggregateRating": {
       "@type": "AggregateRating",

@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Image from "next/image";
+
 interface NavigationProps {
   locationText?: string;
 }
@@ -34,8 +36,18 @@ export default function Navigation({ locationText = "TWOJA OKOLICA" }: Navigatio
         gap: '20px'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-          <Link href="/" style={{ fontSize: '1.8rem', fontWeight: 950, letterSpacing: '-0.5px', textDecoration: 'none', color: 'var(--secondary)', textTransform: 'uppercase', display: 'flex', alignItems: 'flex-end' }}>
-              <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <div style={{ position: 'relative', width: '45px', height: '45px' }}>
+                <Image 
+                  src="/images/logo-sm.png" 
+                  alt="LAWECIARZ.PRO Logo" 
+                  fill 
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+              <div style={{ fontSize: '1.8rem', fontWeight: 950, letterSpacing: '-0.5px', color: 'var(--secondary)', textTransform: 'uppercase', display: 'flex', alignItems: 'flex-end' }}>
+                <span style={{ background: 'var(--primary)', color: 'white', padding: '2px 8px', borderRadius: '4px', marginRight: '4px', fontSize: '26px', lineHeight: 1 }}>LAWECIARZ</span><span style={{ color: 'black', fontSize: '0.75em' }}>.PRO</span>
+              </div>
           </Link>
           <div className="nav-location" style={{ display: 'flex', flexDirection: 'column', fontWeight: 900, textTransform: 'uppercase', width: '120px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--primary)', fontSize: '15.5px', lineHeight: 1.1 }}>

@@ -311,7 +311,8 @@ export default async function DynamicPage({ params }: PageProps) {
     "description": descriptionTemplate,
     "brand": {
       "@type": "Brand",
-      "name": "LAWECIARZ.PRO"
+      "name": "LAWECIARZ.PRO",
+      "logo": "https://laweciarz.pro/images/logo-sm.png"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
