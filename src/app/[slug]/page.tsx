@@ -239,7 +239,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const has24h = data.serviceTitle.toLowerCase().includes('24h');
   const displayTitle = has24h ? data.serviceTitle : `${data.serviceTitle} 24H`;
 
-  const title = `${displayTitle} – ${data.secondaryKeywords} | Dojazd w 15 minut`;
+  const title = `${displayTitle} – Dojazd w 15 minut | ${data.secondaryKeywords}`;
   const description = `${displayTitle} ☎️ 572 272 930 – Ekspresowa ${data.secondaryKeywords}. Dojazd w 15 minut | LAWECIARZ.PRO – działamy natychmiast! `;
 
   const normalizedSlug = slugify(decodeURIComponent(slug));
