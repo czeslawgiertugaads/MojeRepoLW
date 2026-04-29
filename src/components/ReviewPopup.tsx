@@ -52,17 +52,12 @@ export default function ReviewPopup() {
   useEffect(() => {
     // Check for detected city in DOM metadata (set in [slug]/page.tsx)
     const meta = document.getElementById('page-metadata');
-    let cityFound = false;
     if (meta) {
       const city = meta.getAttribute('data-city');
       if (city) {
         setDetectedCity(city);
-        cityFound = true;
       }
     }
-
-    // If no city detected (e.g. on homepage), don't show the popup at all
-    if (!cityFound) return;
 
     // Check if already dismissed and if it has expired (7 days)
     const dismissedAt = localStorage.getItem('reviewPopupDismissedAt');
