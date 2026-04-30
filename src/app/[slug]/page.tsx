@@ -405,12 +405,15 @@ export default async function DynamicPage({ params }: PageProps) {
               const h1BeforeTrimmed = h1Before.replace(/\s+w\s*$/i, '').trim();
               const h1AfterTrimmed = h1After.trim();
 
-              const getServiceFontSize = (text: string) => {
-                const len = text.length;
+              const getServiceFontSize = (len: number) => {
                 if (len > 14) return 'clamp(2.2rem, 7vw, 4.8rem)';
                 if (len > 9) return 'clamp(2.8rem, 8vw, 6.2rem)';
                 return 'clamp(3.5rem, 10vw, 7.8rem)';
               };
+
+              // Use the longer part to determine font size so both rows are always the same size
+              const maxServiceLen = Math.max(h1BeforeTrimmed.length, h1AfterTrimmed.length);
+              const serviceFontSize = getServiceFontSize(maxServiceLen);
 
               return (
                 <h1 style={{
@@ -421,9 +424,9 @@ export default async function DynamicPage({ params }: PageProps) {
                   marginBottom: '24px',
                   gap: '8px'
                 }}>
-                  {h1BeforeTrimmed && <span style={{ fontSize: getServiceFontSize(h1BeforeTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}{' '}</span>}
+                  {h1BeforeTrimmed && <span style={{ fontSize: serviceFontSize, fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{h1BeforeTrimmed.toUpperCase()}{' '}</span>}
                   <span style={{ fontSize: cityFontSize, fontWeight: 950, color: 'var(--primary)', letterSpacing: '-3px' }}>{city.name.toUpperCase()}</span>
-                  {h1AfterTrimmed && <span style={{ fontSize: getServiceFontSize(h1AfterTrimmed), fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{' '}{h1AfterTrimmed.toUpperCase()}</span>}
+                  {h1AfterTrimmed && <span style={{ fontSize: serviceFontSize, fontWeight: 950, color: '#1a1a1a', letterSpacing: '-3px' }}>{' '}{h1AfterTrimmed.toUpperCase()}</span>}
                 </h1>
               );
             })()}
