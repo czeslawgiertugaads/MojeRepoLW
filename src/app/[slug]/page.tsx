@@ -398,8 +398,8 @@ export default async function DynamicPage({ params }: PageProps) {
             {(() => {
               const nameLen = city.name.length;
               let cityFontSize = 'clamp(3.2rem, 10vw, 7.8rem)';
-              if (nameLen > 15) cityFontSize = 'clamp(2.2rem, 7vw, 4.8rem)';
-              else if (nameLen > 10) cityFontSize = 'clamp(2.8rem, 8vw, 6.2rem)';
+              if (nameLen > 12) cityFontSize = 'clamp(2.2rem, 7vw, 4.8rem)';
+              else if (nameLen > 7) cityFontSize = 'clamp(2.8rem, 8vw, 6.2rem)';
 
               const [h1Before, h1After = ''] = service.template.split(/\[Miasto\]|\[Mieście\]|\[Miasta\]/i);
               const h1BeforeTrimmed = h1Before.replace(/\s+w\s*$/i, '').trim();
@@ -407,8 +407,8 @@ export default async function DynamicPage({ params }: PageProps) {
 
               const getServiceFontSize = (text: string) => {
                 const len = text.length;
-                if (len > 15) return 'clamp(2.2rem, 7vw, 4.8rem)';
-                if (len > 10) return 'clamp(2.8rem, 8vw, 6.2rem)';
+                if (len > 14) return 'clamp(2.2rem, 7vw, 4.8rem)';
+                if (len > 9) return 'clamp(2.8rem, 8vw, 6.2rem)';
                 return 'clamp(3.5rem, 10vw, 7.8rem)';
               };
 
