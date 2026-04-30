@@ -411,9 +411,9 @@ export default async function DynamicPage({ params }: PageProps) {
                 return 'clamp(3.5rem, 10vw, 7.8rem)';
               };
 
-              // Use the longer part to determine font size so both rows are always the same size
-              const maxServiceLen = Math.max(h1BeforeTrimmed.length, h1AfterTrimmed.length);
-              const serviceFontSize = getServiceFontSize(maxServiceLen);
+              // Use total combined length of both parts so the whole service name scales together
+              const totalServiceLen = h1BeforeTrimmed.length + h1AfterTrimmed.length;
+              const serviceFontSize = getServiceFontSize(totalServiceLen);
 
               return (
                 <h1 style={{
