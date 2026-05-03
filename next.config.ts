@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/polecana-autoholowanie-:path*',
-        destination: '/polecane-autoholowanie-:path*',
+        source: '/polecana-autoholowanie-:slug',
+        destination: '/polecane-autoholowanie-:slug',
         permanent: true,
       },
     ];
