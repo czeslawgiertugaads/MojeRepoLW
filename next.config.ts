@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: '/polecana-autoholowanie-:path*',
+        destination: '/polecane-autoholowanie-:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
