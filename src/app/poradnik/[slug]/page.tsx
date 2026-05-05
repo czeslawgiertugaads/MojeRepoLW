@@ -95,7 +95,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </nav>
 
       <div className="article-container" style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '60px', padding: '60px 20px' }}>
-        
+
         {/* Main Content */}
         <article className="article-main" style={{ flex: '2', minWidth: '320px' }}>
           <div style={{ marginBottom: '40px' }}>
@@ -113,25 +113,25 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
 
           <div className="article-image-container" style={{ position: 'relative', width: '100%', height: '500px', borderRadius: '32px', overflow: 'hidden', marginBottom: '60px', boxShadow: '20px 20px 0 #f8fafc' }}>
-             <Image 
-               src={article.image} 
-               alt={article.title} 
-               fill 
-               style={{ objectFit: 'cover' }} 
-               sizes="(max-width: 1200px) 100vw, 800px"
-               priority 
-             />
+            <Image
+              src={article.image}
+              alt={article.title}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 1200px) 100vw, 800px"
+              priority
+            />
           </div>
 
           <div className="article-body" style={{ fontSize: '1.2rem', lineHeight: 1.8, color: '#1a1a1a', fontWeight: 500 }}>
-             <div dangerouslySetInnerHTML={{ 
-               __html: article.content
-                 .replace(/\n\n/g, '<br/><br/>')
-                 .replace(/## (.*?)\n/g, '<h2 style="font-size: 2.2rem; font-weight: 950; margin-top: 60px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: -1px; border-bottom: 4px solid var(--primary); display: inline-block;">$1</h2>')
-                 .replace(/### (.*?)\n/g, '<h3 style="font-size: 1.6rem; font-weight: 900; margin-top: 40px; margin-bottom: 16px; color: var(--primary);">$1</h3>')
-                 .replace(/\*\*(.*?)\*\*/g, '<strong style="font-weight: 900; color: #000;">$1</strong>')
-                 .replace(/> (.*?)\n/g, '<blockquote style="background: #fdf2f2; border-radius: 16px; padding: 30px; margin: 40px 0; border-left: 8px solid var(--primary); font-style: italic; font-weight: 700;">$1</blockquote>')
-             }} />
+            <div dangerouslySetInnerHTML={{
+              __html: article.content
+                .replace(/\n\n/g, '<br/><br/>')
+                .replace(/## (.*?)\n/g, '<h2 style="font-size: 2.2rem; font-weight: 950; margin-top: 60px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: -1px; border-bottom: 4px solid var(--primary); display: inline-block;">$1</h2>')
+                .replace(/### (.*?)\n/g, '<h3 style="font-size: 1.6rem; font-weight: 900; margin-top: 40px; margin-bottom: 16px; color: var(--primary);">$1</h3>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong style="font-weight: 900; color: #000;">$1</strong>')
+                .replace(/> (.*?)\n/g, '<blockquote style="background: #fdf2f2; border-radius: 16px; padding: 30px; margin: 40px 0; border-left: 8px solid var(--primary); font-style: italic; font-weight: 700;">$1</blockquote>')
+            }} />
           </div>
 
           {/* Bottom Card */}
@@ -142,7 +142,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <p style={{ fontSize: '1.2rem', opacity: 0.8, marginBottom: '40px', fontWeight: 500 }}>Nasi kierowcy są rozstawieni w strategicznych punktach Polski. Dojazd w 15-20 minut gwarantowany.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
                 <a href="tel:+48572272930" className="btn-power" style={{ background: 'var(--primary)', padding: '20px 40px', fontSize: '1.4rem' }}>
-                   ZADZWOŃ TERAZ
+                  ZADZWOŃ TERAZ
                 </a>
               </div>
             </div>
@@ -172,7 +172,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <div style={{ fontWeight: 950, fontSize: '1.4rem', marginBottom: '10px' }}>OC SPRAWCY?</div>
               <p style={{ fontWeight: 600, fontSize: '0.9rem', marginBottom: '20px', opacity: 0.9 }}>Możesz mieć lawetę zupełnie ZA DARMO. Zadzwoń, pomożemy Ci to załatwić.</p>
               <a href="tel:+48572272930" style={{ color: 'white', fontWeight: 950, display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
-                DOWIEDZ SIĘ WIĘCEJ →
+                DOWIEDZ SIĘ WIĘCEJ
               </a>
             </div>
           </div>
