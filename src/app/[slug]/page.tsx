@@ -95,10 +95,13 @@ async function getPageData(slug: string) {
   const matchedHighway = getHighways().find(h => h.slug === normalizedSlug);
   if (matchedHighway) {
     matchedCity = { name: matchedHighway.name, slug: matchedHighway.id, province: matchedHighway.description } as City;
-    // Use [Miasto] placeholder so the existing logic correctly constructs titles for metadata
-    // while the H1 logic (which removes [Miasto]) stays clean.
-    const serviceBase = matchedHighway.title.replace(new RegExp(matchedHighway.name, 'i'), '').trim();
-    matchedService = { template: `${serviceBase} [Miasto]`, slug: slugify(matchedHighway.title), slugBefore: slugify(matchedHighway.title), slugAfter: '' };
+    // For highways, H1 should be simple: "Pomoc Drogowa [ID]"
+    matchedService = { 
+      template: "Pomoc Drogowa [Miasto]", 
+      slug: matchedHighway.slug, 
+      slugBefore: "pomoc-drogowa", 
+      slugAfter: "" 
+    };
   }
 
   if (!matchedCity || !matchedService) return null;
@@ -180,7 +183,10 @@ async function getPageData(slug: string) {
     }
   }
 
-  const serviceTitle = replaceSEOTemplate(service.template, city, "").trim();
+  let serviceTitle = replaceSEOTemplate(service.template, city, "").trim();
+  if (matchedHighway) {
+    serviceTitle = matchedHighway.title;
+  }
   let rawContent = content || "";
 
 
