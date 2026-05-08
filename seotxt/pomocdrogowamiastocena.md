@@ -1,4 +1,4 @@
-Pomoc drogowa w [Mieście] cena to jedno z pierwszych pytań jakie zadaje kierowca stojący przy unieruchomionym aucie na poboczu. I słusznie – bo branża holownicza ma złą reputację jeśli chodzi o transparentność cenową. Część firm podaje niskie kwoty w reklamach, a rzeczywisty rachunek okazuje się wielokrotnie wyższy. Laweciarz.pro działa inaczej: cena pomocy drogowej w [Mieście] jest zawsze podawana telefonicznie przed wyjazdem pojazdu i jest ustalana przed realizacją. To co słyszysz przez telefon – płacisz na fakturze.
+Pomoc drogowa w [Mieście] cena to jedno z pierwszych pytań jakie zadaje kierowca stojący przy unieruchomionym aucie na poboczu. I słusznie – bo branża holownicza ma złą reputację jeśli chodzi o transparentność cenową. Część firm podaje niskie kwoty w reklamach, a rzeczywisty rachunek okazuje się wielokrotnie wyższy. LAWECIARZ.PRO działa inaczej: cena pomocy drogowej w [Mieście] jest zawsze podawana telefonicznie przed wyjazdem pojazdu i jest ustalana przed realizacją. To co słyszysz przez telefon – płacisz na fakturze.
 
 Ten artykuł to kompletny przewodnik po cenach pomocy drogowej w [Mieście]: co wpływa na wycenę, ile realnie kosztuje laweta, holowanie i autopomoc, kiedy zapłacisz zero złotych z własnej kieszeni i jak nie dać się oszukać na zawyżonej cenie.
 
@@ -23,7 +23,7 @@ Od 100–130 zł netto za jedną interwencję techniczną – awaryjne odpalanie
 Od 80–120 zł netto przy standardowym wyciąganiu. Przy trudnym terenie, konieczności użycia bloczka przekierowującego lub przy pojazdach po kolizji z zablokowanymi kołami – wycena indywidualna.
 
 **Kolizja z winy innego kierowcy w [Mieście]:**
-0 zł z kieszeni klienta – koszty pokrywa OC sprawcy. Laweciarz.pro wystawia komplet dokumentów do rozliczenia z ubezpieczycielem.
+0 zł z kieszeni klienta – koszty pokrywa OC sprawcy. LAWECIARZ.PRO wystawia komplet dokumentów do rozliczenia z ubezpieczycielem.
 
 Zadzwoń po dokładną wycenę dla swojej sytuacji: [TWÓJ NUMER TELEFONU].
 
@@ -52,7 +52,7 @@ Zlecenia nocne (zazwyczaj 21:00–7:00) mogą być objęte dopłatą nocną ze w
 Podobnie jak dopłata nocna – wyjazdy w niedziele i ustawowe święta mogą być objęte dopłatą. Zawsze komunikowaną przed potwierdzeniem zlecenia.
 
 **Opłaty drogowe:**
-Przy trasach przez autostrady i drogi ekspresowe – opłaty viaTOLL są albo wliczone w stawkę za km, albo podawane jako osobna pozycja. Laweciarz.pro zawsze wyjaśnia zasadę rozliczenia opłat drogowych podczas wyceny.
+Przy trasach przez autostrady i drogi ekspresowe – opłaty viaTOLL są albo wliczone w stawkę za km, albo podawane jako osobna pozycja. LAWECIARZ.PRO zawsze wyjaśnia zasadę rozliczenia opłat drogowych podczas wyceny.
 
 Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
 
@@ -60,19 +60,19 @@ Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
 
 ## Cena lawety w [Mieście] – załadunek, transport, rozładunek wliczone
 
-Cena lawety w [Mieście] od laweciarz.pro jest ceną kompleksową – obejmuje wszystkie niezbędne elementy realizacji zlecenia bez ukrytych pozycji doliczanych po fakcie.
+Cena lawety w [Mieście] od LAWECIARZ.PRO jest ceną kompleksową – obejmuje wszystkie niezbędne elementy realizacji zlecenia bez ukrytych pozycji doliczanych po fakcie.
 
 **Co wchodzi w standardową cenę lawety:**
 
 Dojazd pojazdu holowniczego do miejsca zdarzenia. Ocena stanu pojazdu i dobór metody załadunku. Załadunek pojazdu na pełną platformę – wjazd własnym napędem lub wciąganie wyciągarką elektryczną. Mocowanie pojazdu certyfikowanymi pasami transportowymi w minimum czterech punktach. Transport do wskazanego miejsca docelowego (warsztat, serwis, parking, miejsce zamieszkania). Rozładunek pojazdu. Protokół przyjęcia i zdania pojazdu. Faktura VAT.
 
-**Czego NIE ma w cenie laweciarz.pro bez wcześniejszego uzgodnienia:**
+**Czego NIE ma w cenie LAWECIARZ.PRO bez wcześniejszego uzgodnienia:**
 
 Nie ma opłaty za wystawienie faktury. Nie ma osobnej opłaty za protokół. Nie ma opłaty za dokumentację fotograficzną przy zleceniach standardowych (przy powypadkowych – wliczona). Nie ma opłaty za rozmowę telefoniczną i wycenę.
 
 **Jedna kwota – bez rozdzielania na składowe:**
 
-Firmy stosujące nieuczciwą taktykę cenową podają niską stawkę „za transport" i doliczają osobno za załadunek, rozładunek, dojazd, protokół i inne pozycje. Laweciarz.pro podaje jedną kwotę za całe zlecenie – załadunek, transport i rozładunek wliczone.
+Firmy stosujące nieuczciwą taktykę cenową podają niską stawkę „za transport" i doliczają osobno za załadunek, rozładunek, dojazd, protokół i inne pozycje. LAWECIARZ.PRO podaje jedną kwotę za całe zlecenie – załadunek, transport i rozładunek wliczone.
 
 Zadzwoń: [TWÓJ NUMER TELEFONU].
 
@@ -86,17 +86,17 @@ Pomoc drogowa w [Mieście] może nie kosztować klienta ani złotówki z własne
 
 Jeśli Twój pojazd został uszkodzony z winy innego uczestnika ruchu, koszty pomocy drogowej – holowania, transportu do warsztatu, a w wielu przypadkach też pojazdu zastępczego – są pokrywane przez polisę OC sprawcy.
 
-Co zrobić na miejscu kolizji: Zbierz dane sprawcy (imię, nazwisko, numer polisy OC, nazwa towarzystwa ubezpieczeniowego, numer rejestracyjny pojazdu). Zrób zdjęcia miejsca zdarzenia i uszkodzeń obu pojazdów. Zadzwoń do laweciarz.pro pod [TWÓJ NUMER TELEFONU] – nasz kierowca sporządzi dokumentację fotograficzną stanu pojazdu i wystawiał fakturę zgodną z wymaganiami towarzystw ubezpieczeniowych.
+Co zrobić na miejscu kolizji: Zbierz dane sprawcy (imię, nazwisko, numer polisy OC, nazwa towarzystwa ubezpieczeniowego, numer rejestracyjny pojazdu). Zrób zdjęcia miejsca zdarzenia i uszkodzeń obu pojazdów. Zadzwoń do LAWECIARZ.PRO pod [TWÓJ NUMER TELEFONU] – nasz kierowca sporządzi dokumentację fotograficzną stanu pojazdu i wystawiał fakturę zgodną z wymaganiami towarzystw ubezpieczeniowych.
 
-Po zdarzeniu: Zgłoś szkodę do towarzystwa ubezpieczeniowego sprawcy. Dołącz fakturę za holowanie i protokół przyjęcia pojazdu od laweciarz.pro. Ubezpieczyciel ma obowiązek zwrotu kosztów holowania w pełnej wysokości przy kolizji z winy sprawcy.
+Po zdarzeniu: Zgłoś szkodę do towarzystwa ubezpieczeniowego sprawcy. Dołącz fakturę za holowanie i protokół przyjęcia pojazdu od LAWECIARZ.PRO. Ubezpieczyciel ma obowiązek zwrotu kosztów holowania w pełnej wysokości przy kolizji z winy sprawcy.
 
 **Scenariusz 2 – Assistance w polisie komunikacyjnej:**
 
 Większość polis komunikacyjnych zawiera pakiet Assistance obejmujący holowanie pojazdu do warsztatu na określony dystans – zazwyczaj 50–150 km. Sprawdź zakres swojej polisy.
 
-Jak skorzystać z Assistance: Opcja A – zadzwoń na infolinię swojego ubezpieczyciela, który zorganizuje pomoc przez swoje centrum. Opcja B – zadzwoń bezpośrednio do laweciarz.pro pod [TWÓJ NUMER TELEFONU], skorzystaj z szybszej pomocy i rozlicz fakturę z ubezpieczycielem po fakcie.
+Jak skorzystać z Assistance: Opcja A – zadzwoń na infolinię swojego ubezpieczyciela, który zorganizuje pomoc przez swoje centrum. Opcja B – zadzwoń bezpośrednio do LAWECIARZ.PRO pod [TWÓJ NUMER TELEFONU], skorzystaj z szybszej pomocy i rozlicz fakturę z ubezpieczycielem po fakcie.
 
-Laweciarz.pro wystawia dokumenty zgodne z wymaganiami wszystkich głównych towarzystw ubezpieczeniowych w Polsce.
+LAWECIARZ.PRO wystawia dokumenty zgodne z wymaganiami wszystkich głównych towarzystw ubezpieczeniowych w Polsce.
 
 Zadzwoń: [TWÓJ NUMER TELEFONU].
 
@@ -106,9 +106,9 @@ Zadzwoń: [TWÓJ NUMER TELEFONU].
 
 Dopłata nocna i świąteczna przy pomocy drogowej w [Mieście] to element, który uczciwa firma komunikuje zawsze przed potwierdzeniem zlecenia – a nieuczciwa dolicza na fakturze bez wcześniejszego uprzedzenia.
 
-**Dopłata nocna laweciarz.pro:**
+**Dopłata nocna LAWECIARZ.PRO:**
 
-Przy zleceniach realizowanych w godzinach nocnych (zazwyczaj 21:00–7:00) może obowiązywać dopłata procentowa do stawki podstawowej. Wynika ona z realnych wyższych kosztów operacyjnych dyżurów nocnych (wynagrodzenie nocne zgodnie z Kodeksem pracy, wyższe koszty utrzymania gotowości floty). Laweciarz.pro zawsze informuje o dopłacie nocnej podczas rozmowy telefonicznej, przed wysłaniem pojazdu.
+Przy zleceniach realizowanych w godzinach nocnych (zazwyczaj 21:00–7:00) może obowiązywać dopłata procentowa do stawki podstawowej. Wynika ona z realnych wyższych kosztów operacyjnych dyżurów nocnych (wynagrodzenie nocne zgodnie z Kodeksem pracy, wyższe koszty utrzymania gotowości floty). LAWECIARZ.PRO zawsze informuje o dopłacie nocnej podczas rozmowy telefonicznej, przed wysłaniem pojazdu.
 
 **Dopłata świąteczna:**
 
@@ -146,7 +146,7 @@ Po trzecie – sprawdź opinie firmy w Google Maps. Firma z setkami pozytywnych 
 
 Po czwarte – porównaj przynajmniej dwie wyceny telefoniczne. Przy braku pilności – to kilka minut które mogą zaoszczędzić kilkaset złotych.
 
-Laweciarz.pro: cena telefonicznie przed wyjazdem, wliczony załadunek i rozładunek, brak zmian na miejscu. Zadzwoń: [TWÓJ NUMER TELEFONU].
+LAWECIARZ.PRO: cena telefonicznie przed wyjazdem, wliczony załadunek i rozładunek, brak zmian na miejscu. Zadzwoń: [TWÓJ NUMER TELEFONU].
 
 ---
 
@@ -154,15 +154,15 @@ Laweciarz.pro: cena telefonicznie przed wyjazdem, wliczony załadunek i rozładu
 
 Holowanie z autostrady lub drogi ekspresowej w okolicach [Miasta] ma swoją specyfikę cenową. Kilka czynników sprawia że holowanie z drogi szybkiego ruchu jest droższe niż standardowe holowanie miejskie.
 
-**Opłaty autostradowe:** Laweta jadąca autostradą do miejsca zdarzenia i z powrotem ponosi opłaty viaTOLL lub autostrady płatnej. Te koszty muszą być uwzględnione w cenie zlecenia. Laweciarz.pro zawsze wyjaśnia zasadę rozliczenia opłat drogowych podczas wyceny telefonicznej.
+**Opłaty autostradowe:** Laweta jadąca autostradą do miejsca zdarzenia i z powrotem ponosi opłaty viaTOLL lub autostrady płatnej. Te koszty muszą być uwzględnione w cenie zlecenia. LAWECIARZ.PRO zawsze wyjaśnia zasadę rozliczenia opłat drogowych podczas wyceny telefonicznej.
 
 **Dłuższy dojazd:** Na drodze szybkiego ruchu miejsce zdarzenia może być kilkadziesiąt kilometrów od węzła. Dojazd pustej lawety generuje realny koszt który uczciwa firma wlicza w wycenę.
 
 **Czas pracy przy autostradzie:** Załadunek na pasie awaryjnym autostrady wymaga rozszerzonego oznakowania ostrzegawczego, kamizelki odblaskowej, zwiększonej ostrożności. To przekłada się na dłuższy czas pracy i wyższy koszt.
 
-**Zakaz holowania na linie na autostradzie:** Na autostradzie i drodze ekspresowej obowiązuje zakaz holowania pojazdu przez inny pojazd. Jedyna legalna i bezpieczna metoda to pełna platforma lawety – co stosuje laweciarz.pro bez wyjątków.
+**Zakaz holowania na linie na autostradzie:** Na autostradzie i drodze ekspresowej obowiązuje zakaz holowania pojazdu przez inny pojazd. Jedyna legalna i bezpieczna metoda to pełna platforma lawety – co stosuje LAWECIARZ.PRO bez wyjątków.
 
-Przy autostradach A1, A2, A4 i drogach ekspresowych S7, S8, S6 w okolicach [Miasta] – laweciarz.pro obsługuje zdarzenia przez całą dobę. Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
+Przy autostradach A1, A2, A4 i drogach ekspresowych S7, S8, S6 w okolicach [Miasta] – LAWECIARZ.PRO obsługuje zdarzenia przez całą dobę. Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
 
 ---
 
@@ -172,23 +172,23 @@ Pomoc drogowa dla pojazdów elektrycznych i hybrydowych w [Mieście] nie różni
 
 **Dlaczego EV wymaga pełnej platformy:**
 
-Silnik elektryczny jest trwale połączony z kołami napędowymi. Przy holowaniu na linie – koła obracają się, silnik generuje prąd, który przy uszkodzonej baterii niszczy silnik trakcyjny. Koszt naprawy: kilkadziesiąt tysięcy złotych. Jedyna bezpieczna metoda = pełna platforma laweciarz.pro.
+Silnik elektryczny jest trwale połączony z kołami napędowymi. Przy holowaniu na linie – koła obracają się, silnik generuje prąd, który przy uszkodzonej baterii niszczy silnik trakcyjny. Koszt naprawy: kilkadziesiąt tysięcy złotych. Jedyna bezpieczna metoda = pełna platforma LAWECIARZ.PRO.
 
 **Cena holowania EV w [Mieście]:**
 
-Identyczna jak dla porównywalnego samochodu spalinowego. Pełna platforma nie jest droższą opcją – jest standardem laweciarz.pro dla każdego pojazdu. EV właściciel płaci tyle samo co właściciel benzynowego SUV-a podobnych gabarytów.
+Identyczna jak dla porównywalnego samochodu spalinowego. Pełna platforma nie jest droższą opcją – jest standardem LAWECIARZ.PRO dla każdego pojazdu. EV właściciel płaci tyle samo co właściciel benzynowego SUV-a podobnych gabarytów.
 
 **Rozładowana bateria – co wtedy:**
 
-Laweciarz.pro przewozi EV na platformie do wskazanej stacji ładowania (GreenWay, Orlen Charge, Tesla Supercharger) lub do autoryzowanego serwisu EV danej marki.
+LAWECIARZ.PRO przewozi EV na platformie do wskazanej stacji ładowania (GreenWay, Orlen Charge, Tesla Supercharger) lub do autoryzowanego serwisu EV danej marki.
 
 Zadzwoń po wycenę holowania EV w [Mieście]: [TWÓJ NUMER TELEFONU].
 
 ---
 
-## Cennik pomocy drogowej w [Mieście] – transparentne zasady laweciarz.pro
+## Cennik pomocy drogowej w [Mieście] – transparentne zasady LAWECIARZ.PRO
 
-Laweciarz.pro nie publikuje sztywnego cennika online z jednego prostego powodu: cena każdego zlecenia pomocy drogowej w [Mieście] jest indywidualna i zależy od konkretnych warunków zdarzenia. Firma która twierdzi że „holowanie zawsze kosztuje X zł" albo zawyża kwotę z zapasem na każdy możliwy scenariusz, albo stosuje tę kwotę jako przynętę i zawyża na miejscu.
+LAWECIARZ.PRO nie publikuje sztywnego cennika online z jednego prostego powodu: cena każdego zlecenia pomocy drogowej w [Mieście] jest indywidualna i zależy od konkretnych warunków zdarzenia. Firma która twierdzi że „holowanie zawsze kosztuje X zł" albo zawyża kwotę z zapasem na każdy możliwy scenariusz, albo stosuje tę kwotę jako przynętę i zawyża na miejscu.
 
 **Zamiast sztywnego cennika – telefoniczna wycena w 2 minuty:**
 
@@ -210,7 +210,7 @@ Zanim zdecydujesz się na konkretną firmę pomocy drogowej w [Mieście], warto 
 
 Firma A: „3 zł za km" – ale doliczają 80 zł za załadunek, 80 zł za rozładunek i 50 zł za dojazd. Przy 10 km trasy = 30 + 80 + 80 + 50 = 240 zł.
 
-Firma B (laweciarz.pro): jedna kwota za całe zlecenie podawana telefonicznie. Przy 10 km trasy w [Mieście]: cena podawana telefonicznie, załadunek i rozładunek wliczone.
+Firma B (LAWECIARZ.PRO): jedna kwota za całe zlecenie podawana telefonicznie. Przy 10 km trasy w [Mieście]: cena podawana telefonicznie, załadunek i rozładunek wliczone.
 
 Zawsze pytaj o pełną kwotę za realizację całego zlecenia – nie o stawkę za km.
 
@@ -220,7 +220,7 @@ Tańsza firma, ale z 2-godzinnym czasem oczekiwania? Czy droższa o kilkadziesi�
 
 **Platforma vs. lina:**
 
-Firma holująca na linie może być tańsza – ale jeśli masz automatyczną skrzynię biegów lub EV, „oszczędność" kilkudziesięciu złotych może kosztować kilka tysięcy przy naprawie skrzyni. Laweciarz.pro – wyłącznie platforma.
+Firma holująca na linie może być tańsza – ale jeśli masz automatyczną skrzynię biegów lub EV, „oszczędność" kilkudziesięciu złotych może kosztować kilka tysięcy przy naprawie skrzyni. LAWECIARZ.PRO – wyłącznie platforma.
 
 Zadzwoń i porównaj: [TWÓJ NUMER TELEFONU].
 
@@ -238,7 +238,7 @@ Analizując ceny pomocy drogowej w [Mieście] warto znać które frazy i sytuacj
 
 **Holowanie poza granicami miasta na długich trasach** – przy kilkuset kilometrach koszt rośnie proporcjonalnie. Uzasadnione: realny koszt paliwa, czasu i amortyzacji.
 
-**Co NIE jest uzasadnione:** Nagłe podwyższenie ceny na miejscu zdarzenia bez uprzedzenia klienta. Naliczanie „trudnego załadunku" przy standardowym pojeździe na równej nawierzchni. „Opłata za specjalny sprzęt" która nigdy nie była wymieniana. Laweciarz.pro nie stosuje żadnej z tych praktyk.
+**Co NIE jest uzasadnione:** Nagłe podwyższenie ceny na miejscu zdarzenia bez uprzedzenia klienta. Naliczanie „trudnego załadunku" przy standardowym pojeździe na równej nawierzchni. „Opłata za specjalny sprzęt" która nigdy nie była wymieniana. LAWECIARZ.PRO nie stosuje żadnej z tych praktyk.
 
 Zadzwoń: [TWÓJ NUMER TELEFONU].
 
@@ -246,9 +246,9 @@ Zadzwoń: [TWÓJ NUMER TELEFONU].
 
 ## Pomoc drogowa [Miasto] cena – dla firm i flot
 
-Ceny pomocy drogowej w [Mieście] dla firm dysponujących flotą pojazdów mogą być korzystniejsze niż dla klientów jednorazowych. Laweciarz.pro oferuje umowy stałej współpracy dla podmiotów biznesowych.
+Ceny pomocy drogowej w [Mieście] dla firm dysponujących flotą pojazdów mogą być korzystniejsze niż dla klientów jednorazowych. LAWECIARZ.PRO oferuje umowy stałej współpracy dla podmiotów biznesowych.
 
-**Co zyskuje firma przy umowie z laweciarz.pro:**
+**Co zyskuje firma przy umowie z LAWECIARZ.PRO:**
 
 Stałe preferencyjne stawki – uzgodnione z góry, przewidywalne koszty. Priorytetowa obsługa – krótszy czas oczekiwania na pomoc drogową w [Mieście] przy awarii pojazdu firmowego. Zbiorcza fakturacja miesięczna – jedna faktura za wszystkie zlecenia miesiąca zamiast dziesiątek pojedynczych dokumentów. Raportowanie – zestawienie zrealizowanych zleceń z datami, pojazdami i kosztami – przydatne do rozliczeń wewnętrznych i analizy kosztów floty.
 
@@ -266,10 +266,10 @@ Skontaktuj się w sprawie warunków dla firm: [TWÓJ NUMER TELEFONU].
 Od 130 zł netto za transport w granicach miasta. Dokładna cena podawana telefonicznie przed wyjazdem. Bezpłatna wycena: [TWÓJ NUMER TELEFONU].
 
 **Czy cena zmienia się na miejscu zdarzenia?**
-W laweciarz.pro – nie. Cena telefoniczna jest ustalana przed realizacją. Jedynym wyjątkiem jest sytuacja gdy stan pojazdu drastycznie różni się od opisu klienta przez telefon – zawsze po uprzednim poinformowaniu i akceptacji klienta.
+W LAWECIARZ.PRO – nie. Cena telefoniczna jest ustalana przed realizacją. Jedynym wyjątkiem jest sytuacja gdy stan pojazdu drastycznie różni się od opisu klienta przez telefon – zawsze po uprzednim poinformowaniu i akceptacji klienta.
 
 **Czy holowanie z OC sprawcy jest bezpłatne?**
-Tak – koszty pokrywa ubezpieczyciel sprawcy. Laweciarz.pro wystawia komplet dokumentów do rozliczenia.
+Tak – koszty pokrywa ubezpieczyciel sprawcy. LAWECIARZ.PRO wystawia komplet dokumentów do rozliczenia.
 
 **Czy Assistance pokrywa pomoc drogową?**
 Zazwyczaj tak do określonego limitu kilometrów. Sprawdź zakres swojej polisy.
@@ -289,11 +289,11 @@ Zadzwoń: [TWÓJ NUMER TELEFONU].
 
 ## Pomoc drogowa [Miasto] cena – podsumowanie
 
-Laweciarz.pro to pomoc drogowa w [Mieście] z cenami transparentnymi, podawanymi przed wyjazdem pojazdu i zgodnymi z fakturą. Laweta, holowanie i autopomoc – jeden numer [TWÓJ NUMER TELEFONU], jedna rozmowa, wycena ustalana przed realizacją.
+LAWECIARZ.PRO to pomoc drogowa w [Mieście] z cenami transparentnymi, podawanymi przed wyjazdem pojazdu i zgodnymi z fakturą. Laweta, holowanie i autopomoc – jeden numer [TWÓJ NUMER TELEFONU], jedna rozmowa, wycena ustalana przed realizacją.
 
 Nie czekaj z pytaniem o cenę do momentu gdy kierowca lawety stoi przy Twoim aucie. Zadzwoń teraz, uzyskaj wycenę i zapisz numer. Przy awarii w [Mieście] będziesz wiedział dokładnie ile zapłacisz zanim w ogóle wyślemy pojazd.
 
-📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **laweciarz.pro** | ⏰ **24h / 365 dni**
+📞 **[TWÓJ NUMER TELEFONU]** | 🌐 **LAWECIARZ.PRO** | ⏰ **24h / 365 dni**
 💰 **Wycena: bezpłatna, telefonicznie**
 
 ---

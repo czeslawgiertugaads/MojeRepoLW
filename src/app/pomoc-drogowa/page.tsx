@@ -70,7 +70,7 @@ export default function PomocDrogowaPage() {
     .replace(/\[Miasta\]/gi, 'całego regionu')
     .replace(/\[Biernik\]/gi, 'Twój pojazd')
     .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
-    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
+    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">LAWECIARZ.PRO</strong>');
 
   content = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${content}</p>`;
   const contentChunks = content.split('<h2');
@@ -78,12 +78,12 @@ export default function PomocDrogowaPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Pomoc Drogowa i Holowanie 24/7 - laweciarz.pro",
+    "name": "Pomoc Drogowa i Holowanie 24/7 - LAWECIARZ.PRO",
     "image": "https://laweciarz.pro/images/hero-main.webp",
     "description": `Pomoc Drogowa i Holowanie 📞 572 272 930. LAWECIARZ.PRO to profesjonalna pomoc drogowa 24h w całej Polsce. Oferujemy holowanie, lawetę i serwis. Dojazd w 15 minut!`,
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -183,7 +183,7 @@ export default function PomocDrogowaPage() {
             <div className="hero-image-frame">
               <Image
                 src="/images/hero-main.webp"
-                alt="laweciarz.pro Pomoc Drogowa"
+                alt="LAWECIARZ.PRO Pomoc Drogowa"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -296,7 +296,7 @@ export default function PomocDrogowaPage() {
                         POTRZEBUJESZ POMOCY TERAZ?
                       </div>
                       <div style={{ fontSize: '13px', opacity: 0.6, fontWeight: 600 }}>
-                        Ekipa laweciarz.pro jest gotowa do wyjazdu 24h
+                        Ekipa LAWECIARZ.PRO jest gotowa do wyjazdu 24h
                       </div>
                     </div>
                     <a href="tel:+48572272930" className="btn-power" style={{ padding: '14px 28px', fontSize: '1rem', flexShrink: 0 }}>

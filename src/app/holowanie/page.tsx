@@ -70,7 +70,7 @@ export default function HolowaniePage() {
     .replace(/\[Miasta\]/gi, 'całego regionu')
     .replace(/\[Biernik\]/gi, 'Twój pojazd')
     .replace(/\[TWÓJ NUMER TELEFONU\]/g, '<span class="seo-phone" style="font-weight: 900; color: var(--primary);">572 272 930</span>')
-    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">laweciarz.pro</strong>');
+    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 950; color: var(--secondary);">LAWECIARZ.PRO</strong>');
 
   content = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${content}</p>`;
   const contentChunks = content.split('<h2');
@@ -183,7 +183,7 @@ export default function HolowaniePage() {
             <div className="hero-image-frame">
               <Image
                 src="/images/hero-main.webp"
-                alt="laweciarz.pro Holowanie 24h"
+                alt="LAWECIARZ.PRO Holowanie 24h"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -296,7 +296,7 @@ export default function HolowaniePage() {
                         POTRZEBUJESZ HOLOWANIA TERAZ?
                       </div>
                       <div style={{ fontSize: '13px', opacity: 0.6, fontWeight: 600 }}>
-                        Laweta laweciarz.pro wyjeżdża natychmiast po Twoim zgłoszeniu.
+                        Laweta LAWECIARZ.PRO wyjeżdża natychmiast po Twoim zgłoszeniu.
                       </div>
                     </div>
                     <a href="tel:+48572272930" className="btn-power" style={{ padding: '14px 28px', fontSize: '1rem', flexShrink: 0 }}>

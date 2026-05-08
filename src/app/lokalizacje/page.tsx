@@ -24,7 +24,7 @@ export default function LokalizacjePage() {
     "description": "Wybierz województwo, aby znaleźć pomoc drogową w Twojej okolicy. Obsługujemy całą Polskę 24/7. Profesjonalne usługi holowania.",
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",

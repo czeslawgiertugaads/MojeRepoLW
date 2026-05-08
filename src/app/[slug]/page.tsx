@@ -207,7 +207,7 @@ async function getPageData(slug: string) {
     .replace(/\*\*(.*?)\*\*/g, '<strong style="color: var(--primary); font-weight: 900;">$1</strong>')
     .replace(/\n\n/g, '</p><p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">')
     .replace(/572 272 930/g, '<span class="seo-phone" style="font-weight: 950; color: var(--primary); font-size: 1.1em; letter-spacing: -0.5px; white-space: nowrap;">572 272 930</span>')
-    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 900; color: var(--secondary);">laweciarz.pro</strong>');
+    .replace(/laweciarz\.pro/gi, '<strong class="seo-brand" style="font-weight: 900; color: var(--secondary);">LAWECIARZ.PRO</strong>');
 
   seoContent = `<p class="seo-p" style="margin-bottom: 25px; font-size: 0.95rem; line-height: 1.8; color: #222; font-weight: 500;">${seoContent}</p>`;
   const contentChunks = seoContent.split('<h2');

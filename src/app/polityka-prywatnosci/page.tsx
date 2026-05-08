@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: 'Polityka Prywatności - laweciarz.pro',
+  title: 'Polityka Prywatności - LAWECIARZ.PRO',
   robots: {
     index: false,
     follow: false,

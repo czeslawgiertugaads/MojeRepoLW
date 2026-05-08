@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Panel Administracyjny | laweciarz.pro',
+  title: 'Panel Administracyjny | LAWECIARZ.PRO',
   robots: {
     index: false,
     follow: false,

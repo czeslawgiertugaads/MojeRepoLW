@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ province:
   const provinceName = allCities.find(c => slugify(c.province || "Pozostałe") === provinceSlug)?.province || "Pozostałe";
 
   return {
-    title: `Pomoc Drogowa Województwo ${provinceName} - laweciarz.pro`,
+    title: `Pomoc Drogowa Województwo ${provinceName} - LAWECIARZ.PRO`,
     description: `Spis wszystkich miejscowości w województwie ${provinceName}. Najszybsza laweta i pomoc drogowa 24/7. Dojazd w 15 minut.`,
     alternates: {
       canonical: `/lokalizacje/${provinceSlug}`,
@@ -50,12 +50,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": `Pomoc Drogowa Województwo ${provinceName} - laweciarz.pro`,
+    "name": `Pomoc Drogowa Województwo ${provinceName} - LAWECIARZ.PRO`,
     "image": "https://laweciarz.pro/images/hero-main.webp",
     "description": `Spis wszystkich miejscowości w województwie ${provinceName}. Najszybsza laweta i pomoc drogowa 24/7. Profesjonalne usługi holowania. Dojazd w 15 minut.`,
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",

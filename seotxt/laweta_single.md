@@ -2,7 +2,7 @@
 
 Wyobraź sobie taką sytuację: jedziesz przez trasę w kierunku pracy, ważnego spotkania lub rodzinnej uroczystości, gdy nagle Twój samochód wydaje niepokojący dźwięk i odmawia dalszej jazdy. Silnik gaśnie, kontrolki na desce rozdzielczej zaczynają błyskać, a Ty – stojąc na poboczu – zastanawiasz się, co robić dalej. W takich momentach istnieje jedno sprawdzone, bezpieczne i rozsądne rozwiązanie: profesjonalna laweta, która dotrze do Ciebie szybko, przewiezie pojazd bez żadnych dodatkowych uszkodzeń i pozwoli Ci zachować spokój.
 
-Właśnie temu służy firma laweciarz.pro – specjalistyczny serwis transportu pojazdów działający całą dobę. Nasze usługi to coś więcej niż zwykły transport auta z punktu A do punktu B. To kompleksowe rozwiązanie problemu, które zaczyna się w chwili, gdy odbieramy Twój telefon, a kończy dopiero wtedy, gdy Twój pojazd bezpiecznie stoi w wybranym przez Ciebie miejscu – pod warsztatem, serwisem, domem lub na parkingu. Laweta od laweciarz.pro to synonim spokoju, sprawności i pełnego profesjonalizmu.
+Właśnie temu służy firma LAWECIARZ.PRO – specjalistyczny serwis transportu pojazdów działający całą dobę. Nasze usługi to coś więcej niż zwykły transport auta z punktu A do punktu B. To kompleksowe rozwiązanie problemu, które zaczyna się w chwili, gdy odbieramy Twój telefon, a kończy dopiero wtedy, gdy Twój pojazd bezpiecznie stoi w wybranym przez Ciebie miejscu – pod warsztatem, serwisem, domem lub na parkingu. Laweta od LAWECIARZ.PRO to synonim spokoju, sprawności i pełnego profesjonalizmu.
 
 Działamy całą dobę, przez cały rok. Nie ma dla nas godzin szczytu, trudnych warunków pogodowych ani dni, w które nie przyjmujemy zleceń. Nasz dyspozytor czuwa przy telefonie każdego dnia – w środku tygodnia, w weekendy, w święta i w dni wolne od pracy. Jeśli potrzebujesz lawety, wystarczy jeden telefon pod numer 572 272 930, a my zajmiemy się całą resztą.
 
@@ -29,7 +29,7 @@ Po każdej kolizji – nawet pozornie drobnej stłuczce – pojazd powinien zost
 Nowoczesne pojazdy z napędem elektrycznym wymagają specjalistycznego podejścia przy transporcie. Pojazdy EV absolutnie nie mogą być holowane tradycyjną metodą – jedynym właściwym i bezpiecznym sposobem ich transportu jest laweta z możliwością pełnego załadunku na platformę.
 
 **Brak możliwości uruchomienia silnika:**
-Rozładowany akumulator, uszkodzony rozrusznik lub usterka immobilizera to sytuacje, w których pojazd nie ruszy o własnych siłach. Jeśli próba awaryjnego odpalenia z zewnątrz nie przynosi rezultatu, transport od laweciarz.pro jest najszybszą formą dotarcia do miejsca naprawy.
+Rozładowany akumulator, uszkodzony rozrusznik lub usterka immobilizera to sytuacje, w których pojazd nie ruszy o własnych siłach. Jeśli próba awaryjnego odpalenia z zewnątrz nie przynosi rezultatu, transport od LAWECIARZ.PRO jest najszybszą formą dotarcia do miejsca naprawy.
 
 **Sytuacje trudne terenowo:**
 Zjechanie do rowu, utknięcie w zaspie śnieżnej, wjechanie w głębokie błoto – to przypadki, w których laweta wyposażona w profesjonalną wyciągarkę jest absolutnie niezbędna. Nie ryzykuj uszkodzenia podwozia próbując samodzielnie wydostać się z opresji.
@@ -40,9 +40,9 @@ Pamiętaj – w każdej z powyższych sytuacji numer 572 272 930 łączy Cię be
 
 ## [H2] Bezpieczny przewóz auta na lawecie w Twojej okolicy
 
-laweciarz.pro obsługuje cały region swojej działalności – od centrów miast, przez osiedla mieszkalne, strefy przemysłowe, aż po drogi ekspresowe i autostrady. Niezależnie od tego, gdzie jesteś w chwili awarii, możesz liczyć na nasz szybki dojazd.
+LAWECIARZ.PRO obsługuje cały region swojej działalności – od centrów miast, przez osiedla mieszkalne, strefy przemysłowe, aż po drogi ekspresowe i autostrady. Niezależnie od tego, gdzie jesteś w chwili awarii, możesz liczyć na nasz szybki dojazd.
 
-Co sprawia, że przewóz auta na lawecie laweciarz.pro jest w pełni bezpieczny?
+Co sprawia, że przewóz auta na lawecie LAWECIARZ.PRO jest w pełni bezpieczny?
 
 **Profesjonalny załadunek:** Każdy pojazd jest ładowany zgodnie z procedurami bezpieczeństwa. Używamy platform, które umożliwiają stabilny załadunek pojazdów o każdym prześwicie – zarówno standardowym, jak i obniżonym (np. auta sportowe).
 
@@ -58,7 +58,7 @@ Każdego dnia udowadniamy, że transport lawetą to wygodna i bezpieczna alterna
 
 ## [H2] Obsługa pojazdów powypadkowych i niesprawnych technicznie
 
-Pojazdy powypadkowe wymagają doświadczenia i specjalistycznego sprzętu. Po zdarzeniu drogowym samochód może mieć zablokowane koła lub uszkodzone zawieszenie, co uniemożliwia normalny załadunek. laweciarz.pro dysponuje sprzętem odpowiednim do każdej skomplikowanej sytuacji terenowej i technicznej.
+Pojazdy powypadkowe wymagają doświadczenia i specjalistycznego sprzętu. Po zdarzeniu drogowym samochód może mieć zablokowane koła lub uszkodzone zawieszenie, co uniemożliwia normalny załadunek. LAWECIARZ.PRO dysponuje sprzętem odpowiednim do każdej skomplikowanej sytuacji terenowej i technicznej.
 
 Nasz zespół jest przeszkolony w zakresie bezpiecznego zabezpieczenia miejsca zdarzenia, neutralizacji wycieków oraz precyzyjnego załadunku aut, które nie toczą się na własnych kołach. Wykorzystujemy do tego mocne wyciągarki elektryczne, które pozwalają bezpiecznie wprowadzić pojazd na platformę w każdych warunkach.
 
@@ -66,7 +66,7 @@ Nasz zespół jest przeszkolony w zakresie bezpiecznego zabezpieczenia miejsca z
 
 ## [H2] Nowoczesna flota – gwarancja bezpieczeństwa Twojego auta
 
-Jakość sprzętu ma bezpośredni wpływ na bezpieczeństwo Twojego pojazdu. laweciarz.pro inwestuje w nowoczesne rozwiązania:
+Jakość sprzętu ma bezpośredni wpływ na bezpieczeństwo Twojego pojazdu. LAWECIARZ.PRO inwestuje w nowoczesne rozwiązania:
 - **Platformy nowej generacji:** Pozwalają na precyzyjne dostosowanie kąta najazdu.
 - **Mocne wyciągarki:** Gwarantują załadunek pojazdów unieruchomionych.
 - **Monitoring GPS:** Pozwala nam na bieżąco informować Cię o czasie dojazdu i lokalizacji pomocy.
@@ -97,7 +97,7 @@ Zadzwoń do nas pod numer 572 272 930 – dyspozytor poda Ci wiążącą cenę j
 5. **Czekaj bezpiecznie** – najlepiej poza drogą, czekając na przyjazd naszego kierowcy.
 
 📞 **Telefon: 572 272 930**
-🌐 **Strona: laweciarz.pro**
+🌐 **Strona: LAWECIARZ.PRO**
 ⏰ **Dostępność: 24h / 7 dni w tygodniu**
 
-*laweciarz.pro – profesjonalna laweta i transport pojazdów. Obsługujemy auta osobowe, dostawcze, elektryczne oraz powypadkowe. Holowanie, laweta, autopomoc. Działamy 24h na dobę. Zadzwoń: 572 272 930.*
+*LAWECIARZ.PRO – profesjonalna laweta i transport pojazdów. Obsługujemy auta osobowe, dostawcze, elektryczne oraz powypadkowe. Holowanie, laweta, autopomoc. Działamy 24h na dobę. Zadzwoń: 572 272 930.*

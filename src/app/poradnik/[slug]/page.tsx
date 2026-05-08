@@ -35,12 +35,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": `${article.title} - laweciarz.pro`,
+    "name": `${article.title} - LAWECIARZ.PRO`,
     "image": `https://laweciarz.pro${article.image}`,
     "description": article.metaDescription,
     "brand": {
       "@type": "Brand",
-      "name": "laweciarz.pro"
+      "name": "LAWECIARZ.PRO"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
