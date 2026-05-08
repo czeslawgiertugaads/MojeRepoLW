@@ -56,7 +56,7 @@ export default function AdvantagesSection() {
         <div style={{ marginBottom: '60px', textAlign: 'center' }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>DLACZEGO MY</div>
           <h2 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 950, textTransform: 'uppercase', lineHeight: 1 }}>
-            Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>laweciarz.pro</span>
+            Laweta i Pomoc Drogowa 24h <span style={{ color: 'var(--primary)' }}>LAWECIARZ.PRO</span>
           </h2>
         </div>
         

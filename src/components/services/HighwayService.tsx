@@ -23,7 +23,7 @@ export default function HighwayService({ highwayName, phone, serviceName }: High
               Pomoc drogowa na {highwayName} to usługa kluczowa dla bezpieczeństwa na jednej z najważniejszych tras w Polsce. {highwayName} to kręgosłup komunikacyjny, który każdego dnia obsługuje tysiące pojazdów osobowych i ciężarowych. Każda awaria lub kolizja w tym miejscu wymaga błyskawicznej reakcji i profesjonalnego sprzętu.
             </p>
             <p>
-              <strong>laweciarz.pro</strong> świadczy kompleksową pomoc drogową na całej długości {highwayName} przez 365 dni w roku. Laweta, holowanie, wyciąganie z rowu czy drobne naprawy na miejscu – jesteśmy gotowi do działania o każdej porze dnia i nocy. Nasze pojazdy są strategicznie rozmieszczone przy węzłach, co gwarantuje najkrótszy czas dojazdu.
+              <strong>LAWECIARZ.PRO</strong> świadczy kompleksową pomoc drogową na całej długości {highwayName} przez 365 dni w roku. Laweta, holowanie, wyciąganie z rowu czy drobne naprawy na miejscu – jesteśmy gotowi do działania o każdej porze dnia i nocy. Nasze pojazdy są strategicznie rozmieszczone przy węzłach, co gwarantuje najkrótszy czas dojazdu.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-6 mt-10">
@@ -131,7 +131,7 @@ export default function HighwayService({ highwayName, phone, serviceName }: High
         {/* ─── SUMMARY ─── */}
         <section className="mt-20 text-center max-width-800 mx-auto">
           <p className="text-slate-400 text-sm italic">
-            laweciarz.pro – Twój zaufany partner na {highwayName}. Profesjonalne usługi pomocy drogowej, holowanie i autopomoc 24h. Bezpieczeństwo i szybkość działania to nasze priorytety.
+            LAWECIARZ.PRO – Twój zaufany partner na {highwayName}. Profesjonalne usługi pomocy drogowej, holowanie i autopomoc 24h. Bezpieczeństwo i szybkość działania to nasze priorytety.
           </p>
         </section>
       </div>

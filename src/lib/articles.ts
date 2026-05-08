@@ -83,7 +83,7 @@ Holowanie na lince jest dopuszczalne tylko w specyficznych warunkach:
 ---
 
 ## Dlaczego Laweta to Standard Premium?
-W profesjonalnej pomocy drogowej, jak **laweciarz.pro**, transport na lawecie to nie tylko wygoda, to przede wszystkim **bezpieczeństwo Twojego mienia**.
+W profesjonalnej pomocy drogowej, jak **LAWECIARZ.PRO**, transport na lawecie to nie tylko wygoda, to przede wszystkim **bezpieczeństwo Twojego mienia**.
 
 ### Kluczowe zalety lawety:
 - **Pełne ubezpieczenie OCP:** Twoje auto jest chronione finansowo od momentu wjazdu na najazdy.
@@ -127,7 +127,7 @@ Zamiast panikować, postępuj według tego schematu:
 Spisz oświadczenie ze sprawcą lub wezwij policję. Upewnij się, że masz numer polisy ubezpieczeniowej sprawcy i nazwę jego firmy kurierskiej.
 
 ### Krok 2: Wybór Profesjonalisty
-Zadzwoń bezpośrednio do nas. Poinformuj, że szkoda jest z OC sprawcy. **laweciarz.pro rozlicza się bezgotówkowo** – Ty podpisujesz cesję wierzytelności, a my odzyskujemy pieniądze bezpośrednio od firmy ubezpieczeniowej.
+Zadzwoń bezpośrednio do nas. Poinformuj, że szkoda jest z OC sprawcy. **LAWECIARZ.PRO rozlicza się bezgotówkowo** – Ty podpisujesz cesję wierzytelności, a my odzyskujemy pieniądze bezpośrednio od firmy ubezpieczeniowej.
 
 ### Krok 3: Odbiór Auta Zastępczego
 Często laweta przyjeżdża już z autem zastępczym na pokładzie. Możesz kontynuować podróż, podczas gdy my zajmujemy się Twoim rozbitym pojazdem.

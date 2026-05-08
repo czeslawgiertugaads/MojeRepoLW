@@ -38,7 +38,7 @@ export default function CoverageSection({ cities, showAll = false, showMap = tru
           }}>
             <Image 
               src="/images/Mapa_Polski.jpeg" 
-              alt="Mapa zasięgu laweciarz.pro" 
+              alt="Mapa zasięgu LAWECIARZ.PRO" 
               width={1200} 
               height={800} 
               style={{ width: '100%', height: 'auto', display: 'block' }}
