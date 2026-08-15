@@ -228,7 +228,7 @@ async function getPageData(slug: string) {
 
   const nearbyCities = cities
     .filter(c => c.district === city.district && c.slug !== city.slug)
-    .sort(() => 0.5 - Math.random())
+    .sort((a, b) => a.name.localeCompare(b.name, 'pl'))
     .slice(0, 12);
 
   return { city, service, serviceTitle: serviceTitleCapitalized, secondaryKeywords, contentChunks, nearbyCities, services };
@@ -561,8 +561,7 @@ export default async function DynamicPage({ params }: PageProps) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
             {services
               .filter(s => s.slug !== service.slug)
-              .sort(() => 0.5 - Math.random()) // Shuffle
-              .slice(0, 8) // Limit to 8 to hide full strategy and keep it clean
+              .slice(0, 8) // Limit to 8, preserving original order from services.json
               .map((s, idx) => (
                 <Link
                   key={`${s.slug}-${idx}`} // Added index to ensure uniqueness if data has duplicates
