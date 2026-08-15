@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "sitemap": "node scripts/generate-sitemaps.js",
-    "index": "node scripts/index-sitemap.mjs"
+    "index": "node scripts/index-sitemap.mjs",
+    "index-tabela": "node scripts/index-tabela.mjs"
   },
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^5.2.0",
