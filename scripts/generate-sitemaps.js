@@ -72,7 +72,12 @@ articles.forEach(a => allUrls.push({ loc: `${BASE_URL}/poradnik/${a.slug}`, prio
 // 3. Highways
 highways.forEach(h => allUrls.push({ loc: `${BASE_URL}/${h.slug}`, priority: '0.8', changefreq: 'weekly' }));
 
-// 4. City-Service combinations
+// 4. Province hub pages (/lokalizacje/[województwo])
+const provinces = Array.from(new Set(rawCities.map(c => c.province).filter(Boolean)));
+provinces.forEach(p => allUrls.push({ loc: `${BASE_URL}/lokalizacje/${slugify(p)}`, priority: '0.9', changefreq: 'weekly' }));
+console.log(`Added ${provinces.length} province hub pages.`);
+
+// 5. City-Service combinations
 // To avoid memory issues with 1.5M objects, we'll process in a way that writes chunks directly
 const publicDir = path.join(process.cwd(), 'public');
 if (!fs.existsSync(publicDir)) {
